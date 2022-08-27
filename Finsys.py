@@ -3080,9 +3080,7 @@ def main_sign_in():
                                 inv_canvas_1.itemconfig('aientry6',state='hidden')
                                 inv_canvas_1.itemconfig('aientry7',state='hidden')
                                 inv_canvas_1.itemconfig('aicombo5',state='hidden')
-
-                                
-                                
+   
                             else:
                                 pass
 
@@ -22105,6 +22103,10 @@ def main_sign_in():
 
                             dcanvas.coords("arlabel5",dwidth/4,dheight/0.87)
                             dcanvas.coords("arimage1",dwidth/6.5,dheight/0.88)
+                            dcanvas.coords("artree1",dwidth/12,dheight/0.65)
+                            dcanvas.coords("arhline1",dwidth/12,dheight/0.5,dwidth/1.09,dheight/0.5)
+                            dcanvas.coords("arhline2",dwidth/12,dheight/0.48,dwidth/1.09,dheight/0.48)
+                            dcanvas.coords("arlabel6",dwidth/10,dheight/0.493)
                         except:
                             pass
                         try:
@@ -22188,6 +22190,64 @@ def main_sign_in():
 
                     label_1 = Label(ar_canvas,width=3,height=1,text="To", font=('arial 12'),background="#1b3857",fg="white") 
                     window_label_1 = ar_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("arlabel4"),state=HIDDEN)
+
+                    fgthdi = ttk.Style()
+                    fgthdi.configure('mystyle106.Treeview.Heading', background='white',State='DISABLE',foreground='black')
+
+                    ar_scrollbar = Scrollbar(accountre_frame,orient="vertical")
+                    
+                    ac_tree = ttk.Treeview(ar_canvas, columns = (1,2,3,4,5,6,7,8), height = 10, show = "headings",style='mystyle106.Treeview',yscrollcommand=ar_scrollbar.set)
+                    ac_tree.heading(1, text="CUSTOMER NAME")
+                    ac_tree.heading(2, text="TRANSACTION TYPE")
+                    ac_tree.heading(3, text="CURRENT")
+                    ac_tree.heading(4, text="0-30")
+                    ac_tree.heading(5, text="30-60")
+                    ac_tree.heading(6, text="60-90")
+                    ac_tree.heading(7, text="90 AND OVER")
+                    ac_tree.heading(8, text="TOTAL")
+                    
+                    ac_tree.column(1, width = 150)
+                    ac_tree.column(2, width = 150)
+                    ac_tree.column(3, width = 150)
+                    ac_tree.column(4, width = 130)
+                    ac_tree.column(5, width = 130)
+                    ac_tree.column(6, width = 130)
+                    ac_tree.column(7, width = 130)
+                    ac_tree.column(8, width = 130)
+
+                    window_label_4 = ar_canvas.create_window(0, 0, anchor="nw", window=ac_tree,tags=('artree1'))
+
+                    ar_scrollbar.config(command=ac_tree.yview)
+                    ar_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    inv_sql="select * from auth_user where username=%s"
+                    inv_val=(nm_ent.get(),)
+                    fbcursor.execute(inv_sql,inv_val,)
+                    inv_dtl=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (inv_dtl[0],)
+                    fbcursor.execute(sql, val,)
+                    inv_dtls=fbcursor.fetchone()
+
+                    c_sql_i1 = "SELECT * FROM app1_invoice where cid_id=%s"
+                    c_val_i1 = (inv_dtls[0],)
+                    fbcursor.execute(c_sql_i1,c_val_i1,)
+                    c_data_i2 = fbcursor.fetchall()
+
+                    count0 = 0
+                    for i in c_data_i2:
+                        if True:
+                            ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41])) 
+                        else:
+                            pass
+                    count0 += 1
+
+                    ar_canvas.create_line(0,0,0,0,fill='black',width=1,tags=("arhline1"))
+                    ar_canvas.create_line(0,0,0,0,fill='black',width=1,tags=("arhline2"))
+
+                    label_1 = Label(ar_canvas,width=6,height=1,text="TOTAL", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = ar_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("arlabel6"))
 
                     ar_date_1=DateEntry(ar_canvas,width=40,justify=LEFT,foreground='white')
                     window_ar_date_1 = ar_canvas.create_window(0, 0, anchor="nw", height=30, window=ar_date_1,tags=('ardate1'),state=HIDDEN)
@@ -22378,6 +22438,10 @@ def main_sign_in():
 
                             dcanvas.coords("aylabel5",dwidth/4,dheight/0.87)
                             dcanvas.coords("ayimage1",dwidth/6.5,dheight/0.88)
+                            dcanvas.coords("aytree1",dwidth/12,dheight/0.65)
+                            dcanvas.coords("ayhline1",dwidth/12,dheight/0.5,dwidth/1.095,dheight/0.5)
+                            dcanvas.coords("ayhline2",dwidth/12,dheight/0.48,dwidth/1.095,dheight/0.48)
+                            dcanvas.coords("aylabel6",dwidth/10,dheight/0.493)
                         except:
                             pass
                         try:
@@ -22461,6 +22525,42 @@ def main_sign_in():
 
                     label_1 = Label(ap_canvas,width=3,height=1,text="To", font=('arial 12'),background="#1b3857",fg="white") 
                     window_label_1 = ap_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("aylabel4"),state=HIDDEN)
+
+                    fgthdi = ttk.Style()
+                    fgthdi.configure('mystyle107.Treeview.Heading', background='white',State='DISABLE',foreground='black')
+
+                    ap_scrollbar = Scrollbar(accountre_frame,orient="vertical")
+                    
+                    ap_tree = ttk.Treeview(ap_canvas, columns = (1,2,3,4,5,6,7,8), height = 10, show = "headings",style='mystyle107.Treeview',yscrollcommand=ap_scrollbar.set)
+                    ap_tree.heading(1, text="CUSTOMER NAME")
+                    ap_tree.heading(2, text="TRANSACTION TYPE")
+                    ap_tree.heading(3, text="CURRENT")
+                    ap_tree.heading(4, text="0-30")
+                    ap_tree.heading(5, text="30-60")
+                    ap_tree.heading(6, text="60-90")
+                    ap_tree.heading(7, text="90 AND OVER")
+                    ap_tree.heading(8, text="TOTAL")
+                    
+                    ap_tree.column(1, width = 150)
+                    ap_tree.column(2, width = 150)
+                    ap_tree.column(3, width = 150)
+                    ap_tree.column(4, width = 130)
+                    ap_tree.column(5, width = 130)
+                    ap_tree.column(6, width = 130)
+                    ap_tree.column(7, width = 130)
+                    ap_tree.column(8, width = 135)
+
+                    window_label_4 = ap_canvas.create_window(0, 0, anchor="nw", window=ap_tree,tags=('aytree1'))
+
+                    ap_scrollbar.config(command=ap_tree.yview)
+                    ap_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    
+                    ap_canvas.create_line(0,0,0,0,fill='black',width=1,tags=("ayhline1"))
+                    ap_canvas.create_line(0,0,0,0,fill='black',width=1,tags=("ayhline2"))
+
+                    label_1 = Label(ap_canvas,width=6,height=1,text="TOTAL", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = ap_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("aylabel6"))
 
                     ap_date_1=DateEntry(ap_canvas,width=40,justify=LEFT,foreground='white')
                     window_ap_date_1 = ap_canvas.create_window(0, 0, anchor="nw", height=30, window=ap_date_1,tags=('aydate1'),state=HIDDEN)
