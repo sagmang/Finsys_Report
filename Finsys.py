@@ -55,6 +55,12 @@ from forex_python.converter import CurrencyRates
 import datetime
 import re
 
+from dateutil.relativedelta import relativedelta
+
+import fiscalyear
+
+from fiscalyear import *
+
 finsysdb = mysql.connector.connect(
     host="localhost", user="root", password="", database="newfinsys", port="3306"
 )
@@ -4547,6 +4553,7 @@ def main_sign_in():
                             ai_entry_p_1_5.delete(0, END)
                             ai_entry_p_1_5.insert(0,mul_i)
 
+                            
                             try:
                                 n1 = float(en_str_1.get())
                             except:
@@ -4563,9 +4570,11 @@ def main_sign_in():
                                 n4 = float(en_str_4.get())
                             except:
                                 n4 = 0.0
+                            
                             sum_i = n1+n2+n3+n4
                             sub_entry_1.delete(0, END)
                             sub_entry_1.insert(0,round(sum_i,2))
+                           
 
                             global t1,t2,t3,t4
                             if ai_comb_p_1_2.get() == '28.0% GST (28%)':
@@ -4742,6 +4751,7 @@ def main_sign_in():
                             ai_entry_2_4.delete(0, END)
                             ai_entry_2_4.insert(0,mul_i)
 
+                             
                             try:
                                 n1 = float(en_str_1.get())
                             except:
@@ -4758,9 +4768,11 @@ def main_sign_in():
                                 n4 = float(en_str_4.get())
                             except:
                                 n4 = 0.0
+                            
                             sum_i = n1+n2+n3+n4
                             sub_entry_1.delete(0, END)
                             sub_entry_1.insert(0,round(sum_i,2))
+                            
 
                             global t1,t2,t3,t4
                             if ai_comb_P_2_2.get() == '28.0% GST (28%)':
@@ -4934,6 +4946,7 @@ def main_sign_in():
                             ai_entry_3_4.delete(0, END)
                             ai_entry_3_4.insert(0,mul_i)
 
+                              
                             try:
                                 n1 = float(en_str_1.get())
                             except:
@@ -4950,10 +4963,11 @@ def main_sign_in():
                                 n4 = float(en_str_4.get())
                             except:
                                 n4 = 0.0
+                            
                             sum_i = n1+n2+n3+n4
                             sub_entry_1.delete(0, END)
                             sub_entry_1.insert(0,round(sum_i,2))
-
+                            
                             global t1,t2,t3,t4
                             if ai_comb_P_3_2.get() == '28.0% GST (28%)':
                                 y3 = float(en_str_3.get())
@@ -5143,10 +5157,11 @@ def main_sign_in():
                                 n4 = float(en_str_4.get())
                             except:
                                 n4 = 0.0
+                            
                             sum_i = n1+n2+n3+n4
                             sub_entry_1.delete(0, END)
                             sub_entry_1.insert(0,round(sum_i,2))
-
+                            
                             global t1,t2,t3,t4
                             if ai_comb_P_4_2.get() == '28.0% GST (28%)':
                                 y4 = float(en_str_4.get())
@@ -5381,10 +5396,200 @@ def main_sign_in():
                         bu_inv_1_3=Spinbox(inv_canvas_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_1_3 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_1_3,tags=('bient13'),state=HIDDEN)
 
+                        def multiply_num_i5(event):
+
+                            try:
+                                n1 = float(en_str_1.get())
+                            except:
+                                n1=0.0
+                            try:
+                                n2 = float(en_str_2.get())
+                            except:
+                                n2 = 0.0
+                            try:
+                                n3 = float(en_str_3.get())
+                            except:
+                                n3 = 0.0
+                            try:
+                                n4 = float(en_str_4.get())
+                            except:
+                                n4 = 0.0
+                            try:
+                                n5 = float(en_str_5.get())
+                            except:
+                                n5 = 0.0 
+                            try:
+                                n6 = float(en_str_6.get())
+                            except:
+                                n6 = 0.0 
+                            try:
+                                n7 = float(en_str_7.get())
+                            except:
+                                n7 = 0.0 
+                            try:
+                                n8 = float(en_str_8.get())
+                            except:
+                                n8 = 0.0 
+
+                            sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            bsub_entry_1.delete(0, END)
+                            bsub_entry_1.insert(0,round(sum_i,2))
+
+                            global t1,t2,t3,t4,t5,t6,t7,t8
+                            if bu_inv_1_6.get() == '28.0% GST (28%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(28/100)
+                            elif bu_inv_1_6.get() == '28.0% IGST (28%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(28/100)
+                            elif bu_inv_1_6.get() == '18.0% GST (18%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(18/100)
+                            elif bu_inv_1_6.get() == '18.0% IGST (18%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(18/100)
+                            elif bu_inv_1_6.get() == '15.0% ST (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(15/100)
+                            elif bu_inv_1_6.get() == '14.5% ST (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(14.5/100)
+                            elif bu_inv_1_6.get() == '14.00% ST (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(14/100)
+                            elif bu_inv_1_6.get() == '14.0% VAT (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(14/100)
+                            elif bu_inv_1_6.get() == '12.36% ST (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(12.36/100)
+                            elif bu_inv_1_6.get() == '12.0% GST (12%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(12/100)
+                            elif bu_inv_1_6.get() == '12.0% IGST (12%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(12/100)
+                            elif bu_inv_1_6.get() == '6.0% GST (6%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(6/100)
+                            elif bu_inv_1_6.get() == '6.0% IGST (6%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(6/100)
+                            elif bu_inv_1_6.get() == '5.0% GST (5%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(5/100)
+                            elif bu_inv_1_6.get() == '5.0% IGST (5%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(5/100)
+                            elif bu_inv_1_6.get() == '5.0% VAT (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(5/100)
+                            elif bu_inv_1_6.get() == '4.0% VAT (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(4/100)
+                            elif bu_inv_1_6.get() == '3.0% GST (3%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(3/100)
+                            elif bu_inv_1_6.get() == '3.0% IGST (3%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(3/100)
+                            elif bu_inv_1_6.get() == '2.0% CST (100%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(2/100)
+                            elif bu_inv_1_6.get() == '0.25% GST (O.25%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0.25/100)
+                            elif bu_inv_1_6.get() == '0.25% IGST (0.25%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0.25/100)
+                            elif bu_inv_1_6.get() == '0% GST (0%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0/100)
+                            elif bu_inv_1_6.get() == '0% IGST (0%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0/100)
+                            elif bu_inv_1_6.get() == 'Exempt GST (0%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0/100)
+                            elif bu_inv_1_6.get() == 'Exempt IGST (0%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0/100)
+                            elif bu_inv_1_6.get() == 'Out of Scope(0%)':
+                                y5 = float(en_str_5.get())
+                                t5 = y5*(0/100)
+                            else:
+                                pass
+
+                            try:
+                                tm1  = t1
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm2 = t2
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm3 = t3
+                            except:
+                                tm3 = 0.0
+                            try:
+                                tm4  = t4
+                            except:
+                                tm4 = 0.0
+                            try:
+                                tm5  = t5
+                            except:
+                                pass
+                            try:
+                                tm6  = t6
+                            except:
+                                tm6 = 0.0
+                            try:
+                                tm7  = t7
+                            except:
+                                tm7 = 0.0
+                            try:
+                                tm8  = t8
+                            except:
+                                tm8 = 0.0
+                            
+                            
+                            sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            btax_entry_1.delete(0, END)
+                            btax_entry_1.insert(0,round(sum_ii,2))
+
+                            try:
+                                m1 = float(bsub_str.get())
+                            except:
+                                m1 =0.0
+                            try:
+                                m2 = float(btax_str.get())
+                            except:
+                                m2 =0.0
+
+                            sum_iii = m1+m2
+                            bgrand_entry_1.delete(0, END)
+                            bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            try:
+                                x1 = float(bgrd_str.get())
+                            except:
+                                x1 = 0.0
+                            try:
+                                x2 = float(bamount_entry_1.get())
+                            except:
+                                x2 = 0.0
+                            sum_iv = x1-x2
+                            bbal_entry_1.delete(0, END)
+                            bbal_entry_1.insert(0,round(sum_iv,2))
+
                         bu_inv_1_4=Spinbox(inv_canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_1_4 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_1_4,tags=('bient17'),state=HIDDEN)
+                        bu_inv_1_4.bind("<Button-1>",multiply_num_i5)
 
-                        bu_inv_1_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white")
+                        en_str_5 = StringVar()
+                        bu_inv_1_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=en_str_5)
                         window_bu_inv_1_5 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_1_5,tags=('bient21'),state=HIDDEN)
 
                         bu_inv_1_6=Entry(inv_canvas_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
@@ -5402,10 +5607,200 @@ def main_sign_in():
                         bu_inv_2_3=Spinbox(inv_canvas_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_2_3 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_2_3,tags=('bient14'),state=HIDDEN)
 
+                        def multiply_num_i6(event):
+
+                            try:
+                                n1 = float(en_str_1.get())
+                            except:
+                                n1=0.0
+                            try:
+                                n2 = float(en_str_2.get())
+                            except:
+                                n2 = 0.0
+                            try:
+                                n3 = float(en_str_3.get())
+                            except:
+                                n3 = 0.0
+                            try:
+                                n4 = float(en_str_4.get())
+                            except:
+                                n4 = 0.0
+                            try:
+                                n5 = float(en_str_5.get())
+                            except:
+                                n5 = 0.0 
+                            try:
+                                n6 = float(en_str_6.get())
+                            except:
+                                n6 = 0.0 
+                            try:
+                                n7 = float(en_str_7.get())
+                            except:
+                                n7 = 0.0 
+                            try:
+                                n8 = float(en_str_8.get())
+                            except:
+                                n8 = 0.0 
+
+                            sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            bsub_entry_1.delete(0, END)
+                            bsub_entry_1.insert(0,round(sum_i,2))
+
+                            global t1,t2,t3,t4,t5,t6,t7,t8
+                            if bu_inv_2_6.get() == '28.0% GST (28%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(28/100)
+                            elif bu_inv_2_6.get() == '28.0% IGST (28%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(28/100)
+                            elif bu_inv_2_6.get() == '18.0% GST (18%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(18/100)
+                            elif bu_inv_2_6.get() == '18.0% IGST (18%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(18/100)
+                            elif bu_inv_2_6.get() == '15.0% ST (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(15/100)
+                            elif bu_inv_2_6.get() == '14.5% ST (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(14.5/100)
+                            elif bu_inv_2_6.get() == '14.00% ST (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(14/100)
+                            elif bu_inv_2_6.get() == '14.0% VAT (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(14/100)
+                            elif bu_inv_2_6.get() == '12.36% ST (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(12.36/100)
+                            elif bu_inv_2_6.get() == '12.0% GST (12%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(12/100)
+                            elif bu_inv_2_6.get() == '12.0% IGST (12%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(12/100)
+                            elif bu_inv_2_6.get() == '6.0% GST (6%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(6/100)
+                            elif bu_inv_2_6.get() == '6.0% IGST (6%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(6/100)
+                            elif bu_inv_2_6.get() == '5.0% GST (5%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(5/100)
+                            elif bu_inv_2_6.get() == '5.0% IGST (5%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(5/100)
+                            elif bu_inv_2_6.get() == '5.0% VAT (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(5/100)
+                            elif bu_inv_2_6.get() == '4.0% VAT (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(4/100)
+                            elif bu_inv_2_6.get() == '3.0% GST (3%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(3/100)
+                            elif bu_inv_2_6.get() == '3.0% IGST (3%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(3/100)
+                            elif bu_inv_2_6.get() == '2.0% CST (100%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(2/100)
+                            elif bu_inv_2_6.get() == '0.25% GST (O.25%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0.25/100)
+                            elif bu_inv_2_6.get() == '0.25% IGST (0.25%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0.25/100)
+                            elif bu_inv_2_6.get() == '0% GST (0%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0/100)
+                            elif bu_inv_2_6.get() == '0% IGST (0%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0/100)
+                            elif bu_inv_2_6.get() == 'Exempt GST (0%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0/100)
+                            elif bu_inv_2_6.get() == 'Exempt IGST (0%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0/100)
+                            elif bu_inv_2_6.get() == 'Out of Scope(0%)':
+                                y6 = float(en_str_6.get())
+                                t6 = y6*(0/100)
+                            else:
+                                pass
+
+                            try:
+                                tm1  = t1
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm2 = t2
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm3 = t3
+                            except:
+                                tm3 = 0.0
+                            try:
+                                tm4  = t4
+                            except:
+                                tm4 = 0.0
+                            try:
+                                tm5  = t5
+                            except:
+                                pass
+                            try:
+                                tm6  = t6
+                            except:
+                                pass
+                            try:
+                                tm7  = t7
+                            except:
+                                tm7 = 0.0
+                            try:
+                                tm8  = t8
+                            except:
+                                tm8 = 0.0
+                            
+                            
+                            sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            btax_entry_1.delete(0, END)
+                            btax_entry_1.insert(0,round(sum_ii,2))
+
+                            try:
+                                m1 = float(bsub_str.get())
+                            except:
+                                m1 =0.0
+                            try:
+                                m2 = float(btax_str.get())
+                            except:
+                                m2 =0.0
+
+                            sum_iii = m1+m2
+                            bgrand_entry_1.delete(0, END)
+                            bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            try:
+                                x1 = float(bgrd_str.get())
+                            except:
+                                x1 = 0.0
+                            try:
+                                x2 = float(bamount_entry_1.get())
+                            except:
+                                x2 = 0.0
+                            sum_iv = x1-x2
+                            bbal_entry_1.delete(0, END)
+                            bbal_entry_1.insert(0,round(sum_iv,2))
+
                         bu_inv_2_4=Spinbox(inv_canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_2_4 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_2_4,tags=('bient18'),state=HIDDEN)
+                        bu_inv_2_4.bind("<Button-1>",multiply_num_i6)
 
-                        bu_inv_2_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white")
+                        en_str_6 = StringVar()
+                        bu_inv_2_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=en_str_6)
                         window_bu_inv_2_5 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_2_5,tags=('bient22'),state=HIDDEN)
 
                         bu_inv_2_6=Entry(inv_canvas_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
@@ -5423,10 +5818,200 @@ def main_sign_in():
                         bu_inv_3_3=Spinbox(inv_canvas_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_3_3 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_3_3,tags=('bient15'),state=HIDDEN)
 
+                        def multiply_num_i7(event):
+
+                            try:
+                                n1 = float(en_str_1.get())
+                            except:
+                                n1=0.0
+                            try:
+                                n2 = float(en_str_2.get())
+                            except:
+                                n2 = 0.0
+                            try:
+                                n3 = float(en_str_3.get())
+                            except:
+                                n3 = 0.0
+                            try:
+                                n4 = float(en_str_4.get())
+                            except:
+                                n4 = 0.0
+                            try:
+                                n5 = float(en_str_5.get())
+                            except:
+                                n5 = 0.0 
+                            try:
+                                n6 = float(en_str_6.get())
+                            except:
+                                n6 = 0.0 
+                            try:
+                                n7 = float(en_str_7.get())
+                            except:
+                                n7 = 0.0 
+                            try:
+                                n8 = float(en_str_8.get())
+                            except:
+                                n8 = 0.0 
+
+                            sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            bsub_entry_1.delete(0, END)
+                            bsub_entry_1.insert(0,round(sum_i,2))
+
+                            global t1,t2,t3,t4,t5,t6,t7,t8
+                            if bu_inv_3_6.get() == '28.0% GST (28%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(28/100)
+                            elif bu_inv_3_6.get() == '28.0% IGST (28%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(28/100)
+                            elif bu_inv_3_6.get() == '18.0% GST (18%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(18/100)
+                            elif bu_inv_3_6.get() == '18.0% IGST (18%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(18/100)
+                            elif bu_inv_3_6.get() == '15.0% ST (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(15/100)
+                            elif bu_inv_3_6.get() == '14.5% ST (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(14.5/100)
+                            elif bu_inv_3_6.get() == '14.00% ST (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(14/100)
+                            elif bu_inv_3_6.get() == '14.0% VAT (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(14/100)
+                            elif bu_inv_3_6.get() == '12.36% ST (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(12.36/100)
+                            elif bu_inv_3_6.get() == '12.0% GST (12%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(12/100)
+                            elif bu_inv_3_6.get() == '12.0% IGST (12%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(12/100)
+                            elif bu_inv_3_6.get() == '6.0% GST (6%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(6/100)
+                            elif bu_inv_3_6.get() == '6.0% IGST (6%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(6/100)
+                            elif bu_inv_3_6.get() == '5.0% GST (5%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(5/100)
+                            elif bu_inv_3_6.get() == '5.0% IGST (5%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(5/100)
+                            elif bu_inv_3_6.get() == '5.0% VAT (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(5/100)
+                            elif bu_inv_3_6.get() == '4.0% VAT (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(4/100)
+                            elif bu_inv_3_6.get() == '3.0% GST (3%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(3/100)
+                            elif bu_inv_3_6.get() == '3.0% IGST (3%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(3/100)
+                            elif bu_inv_3_6.get() == '2.0% CST (100%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(2/100)
+                            elif bu_inv_3_6.get() == '0.25% GST (O.25%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0.25/100)
+                            elif bu_inv_3_6.get() == '0.25% IGST (0.25%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0.25/100)
+                            elif bu_inv_3_6.get() == '0% GST (0%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0/100)
+                            elif bu_inv_3_6.get() == '0% IGST (0%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0/100)
+                            elif bu_inv_3_6.get() == 'Exempt GST (0%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0/100)
+                            elif bu_inv_3_6.get() == 'Exempt IGST (0%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0/100)
+                            elif bu_inv_3_6.get() == 'Out of Scope(0%)':
+                                y7 = float(en_str_7.get())
+                                t7 = y7*(0/100)
+                            else:
+                                pass
+
+                            try:
+                                tm1  = t1
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm2 = t2
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm3 = t3
+                            except:
+                                tm3 = 0.0
+                            try:
+                                tm4  = t4
+                            except:
+                                tm4 = 0.0
+                            try:
+                                tm5  = t5
+                            except:
+                                pass
+                            try:
+                                tm6  = t6
+                            except:
+                                pass
+                            try:
+                                tm7  = t7
+                            except:
+                                pass
+                            try:
+                                tm8  = t8
+                            except:
+                                tm8 = 0.0
+                            
+                            
+                            sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            btax_entry_1.delete(0, END)
+                            btax_entry_1.insert(0,round(sum_ii,2))
+
+                            try:
+                                m1 = float(bsub_str.get())
+                            except:
+                                m1 =0.0
+                            try:
+                                m2 = float(btax_str.get())
+                            except:
+                                m2 =0.0
+
+                            sum_iii = m1+m2
+                            bgrand_entry_1.delete(0, END)
+                            bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            try:
+                                x1 = float(bgrd_str.get())
+                            except:
+                                x1 = 0.0
+                            try:
+                                x2 = float(bamount_entry_1.get())
+                            except:
+                                x2 = 0.0
+                            sum_iv = x1-x2
+                            bbal_entry_1.delete(0, END)
+                            bbal_entry_1.insert(0,round(sum_iv,2))
+
                         bu_inv_3_4=Spinbox(inv_canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_3_4 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_3_4,tags=('bient19'),state=HIDDEN)
+                        bu_inv_3_4.bind("<Button-1>",multiply_num_i7)
 
-                        bu_inv_3_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white")
+                        en_str_7 = StringVar()
+                        bu_inv_3_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=en_str_7)
                         window_bu_inv_3_5 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_3_5,tags=('bient23'),state=HIDDEN)
 
                         bu_inv_3_6=Entry(inv_canvas_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
@@ -5444,10 +6029,201 @@ def main_sign_in():
                         bu_inv_4_3=Spinbox(inv_canvas_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_4_3 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_4_3,tags=('bient16'),state=HIDDEN)
 
+                        def multiply_num_i8(event):
+
+                            try:
+                                n1 = float(en_str_1.get())
+                            except:
+                                n1=0.0
+                            try:
+                                n2 = float(en_str_2.get())
+                            except:
+                                n2 = 0.0
+                            try:
+                                n3 = float(en_str_3.get())
+                            except:
+                                n3 = 0.0
+                            try:
+                                n4 = float(en_str_4.get())
+                            except:
+                                n4 = 0.0
+                            try:
+                                n5 = float(en_str_5.get())
+                            except:
+                                n5 = 0.0 
+                            try:
+                                n6 = float(en_str_6.get())
+                            except:
+                                n6 = 0.0 
+                            try:
+                                n7 = float(en_str_7.get())
+                            except:
+                                n7 = 0.0 
+                            try:
+                                n8 = float(en_str_8.get())
+                            except:
+                                n8 = 0.0 
+
+                            sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            bsub_entry_1.delete(0, END)
+                            bsub_entry_1.insert(0,round(sum_i,2))
+
+                            global t1,t2,t3,t4,t5,t6,t7,t8
+                            if bu_inv_4_6.get() == '28.0% GST (28%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(28/100)
+                            elif bu_inv_4_6.get() == '28.0% IGST (28%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(28/100)
+                            elif bu_inv_4_6.get() == '18.0% GST (18%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(18/100)
+                            elif bu_inv_4_6.get() == '18.0% IGST (18%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(18/100)
+                            elif bu_inv_4_6.get() == '15.0% ST (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(15/100)
+                            elif bu_inv_4_6.get() == '14.5% ST (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(14.5/100)
+                            elif bu_inv_4_6.get() == '14.00% ST (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(14/100)
+                            elif bu_inv_4_6.get() == '14.0% VAT (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(14/100)
+                            elif bu_inv_4_6.get() == '12.36% ST (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(12.36/100)
+                            elif bu_inv_4_6.get() == '12.0% GST (12%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(12/100)
+                            elif bu_inv_4_6.get() == '12.0% IGST (12%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(12/100)
+                            elif bu_inv_4_6.get() == '6.0% GST (6%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(6/100)
+                            elif bu_inv_4_6.get() == '6.0% IGST (6%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(6/100)
+                            elif bu_inv_4_6.get() == '5.0% GST (5%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(5/100)
+                            elif bu_inv_4_6.get() == '5.0% IGST (5%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(5/100)
+                            elif bu_inv_4_6.get() == '5.0% VAT (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(5/100)
+                            elif bu_inv_4_6.get() == '4.0% VAT (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(4/100)
+                            elif bu_inv_4_6.get() == '3.0% GST (3%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(3/100)
+                            elif bu_inv_4_6.get() == '3.0% IGST (3%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(3/100)
+                            elif bu_inv_4_6.get() == '2.0% CST (100%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(2/100)
+                            elif bu_inv_4_6.get() == '0.25% GST (O.25%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0.25/100)
+                            elif bu_inv_4_6.get() == '0.25% IGST (0.25%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0.25/100)
+                            elif bu_inv_4_6.get() == '0% GST (0%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0/100)
+                            elif bu_inv_4_6.get() == '0% IGST (0%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0/100)
+                            elif bu_inv_4_6.get() == 'Exempt GST (0%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0/100)
+                            elif bu_inv_4_6.get() == 'Exempt IGST (0%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0/100)
+                            elif bu_inv_4_6.get() == 'Out of Scope(0%)':
+                                y8 = float(en_str_8.get())
+                                t8 = y8*(0/100)
+                            else:
+                                pass
+
+                            try:
+                                tm1  = t1
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm2 = t2
+                            except:
+                                tm2 = 0.0
+                            try:
+                                tm3 = t3
+                            except:
+                                tm3 = 0.0
+                            try:
+                                tm4  = t4
+                            except:
+                                tm4 = 0.0
+                            try:
+                                tm5  = t5
+                            except:
+                                pass
+                            try:
+                                tm6  = t6
+                            except:
+                                pass
+                            try:
+                                tm7  = t7
+                            except:
+                                pass
+                            try:
+                                tm8  = t8
+                            except:
+                                pass
+                            
+                            
+                            sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            btax_entry_1.delete(0, END)
+                            btax_entry_1.insert(0,round(sum_ii,2))
+
+                            try:
+                                m1 = float(bsub_str.get())
+                            except:
+                                m1 =0.0
+                            try:
+                                m2 = float(btax_str.get())
+                            except:
+                                m2 =0.0
+
+                            sum_iii = m1+m2
+                            bgrand_entry_1.delete(0, END)
+                            bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            try:
+                                x1 = float(bgrd_str.get())
+                            except:
+                                x1 = 0.0
+                            try:
+                                x2 = float(bamount_entry_1.get())
+                            except:
+                                x2 = 0.0
+                            sum_iv = x1-x2
+                            bbal_entry_1.delete(0, END)
+                            bbal_entry_1.insert(0,round(sum_iv,2))
+
+
                         bu_inv_4_4=Spinbox(inv_canvas_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
                         window_bu_inv_4_4 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_4_4,tags=('bient20'),state=HIDDEN)
+                        bu_inv_4_4.bind("<Button-1>",multiply_num_i8)
 
-                        bu_inv_4_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white")
+                        en_str_8 = StringVar()
+                        bu_inv_4_5=Entry(inv_canvas_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=en_str_8)
                         window_bu_inv_4_5 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bu_inv_4_5,tags=('bient24'),state=HIDDEN)
 
                         bu_inv_4_6=Entry(inv_canvas_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
@@ -23402,6 +24178,8 @@ def main_sign_in():
                             dcanvas.coords("arhline1",dwidth/12,dheight/0.5,dwidth/1.09,dheight/0.5)
                             dcanvas.coords("arhline2",dwidth/12,dheight/0.48,dwidth/1.09,dheight/0.48)
                             dcanvas.coords("arlabel6",dwidth/10,dheight/0.493)
+                            dcanvas.coords("arlabel7",dwidth/3.2,dheight/0.493)
+                            dcanvas.coords("arlabel8",dwidth/1.24,dheight/0.493)
                         except:
                             pass
                         try:
@@ -23444,12 +24222,225 @@ def main_sign_in():
                             ar_canvas.itemconfig('ardate1',state='normal')
                             ar_canvas.itemconfig('ardate2',state='normal')
                             ar_canvas.itemconfig('arlabel3',state='normal')
-                            ar_canvas.itemconfig('arlabel4',state='normal')
+                            ar_canvas.itemconfig('arlabel4',state='normal')    
                         else:
                             ar_canvas.itemconfig('ardate1',state='hidden')
                             ar_canvas.itemconfig('ardate2',state='hidden')
                             ar_canvas.itemconfig('arlabel3',state='hidden')
                             ar_canvas.itemconfig('arlabel4',state='hidden')
+
+                    #--------Filter By Date------------#
+                    def filterby_date():
+                        if ar_comb_1.get() == 'All dates':
+
+                            s_date = '2000-01-01'
+                            e_date = '2050-01-01'
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_invoice WHERE invoicedate BETWEEN %s AND %s AND cid_id=%s"
+                            date_val = (s_date,e_date,inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            date_data_2 = fbcursor.fetchall()
+
+                            for record in ac_tree.get_children():
+                                ac_tree.delete(record)
+
+                            countd = 0
+                            for i in date_data_2:
+                                ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41]))
+                            countd += 1  
+
+                            try:
+                                total = 0.0
+                                for child in ac_tree.get_children():
+                                    total += float(ac_tree.item(child, 'values')[7])
+                                result_1['text'] = '{}'.format(total)
+                                result_2['text'] = '{}'.format(total)
+                            except:
+                                result_1['text'] = '{}'.format(0)
+                                result_2['text'] = '{}'.format(0)
+
+                        elif ar_comb_1.get() == 'Custom':
+
+                            start_date = ar_date_1.get_date()
+                            end_date = ar_date_2.get_date()
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_invoice WHERE invoicedate BETWEEN %s AND %s AND cid_id=%s"
+                            date_val = (start_date,end_date,inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            date_data = fbcursor.fetchall()
+
+                            for record in ac_tree.get_children():
+                                ac_tree.delete(record)
+
+                            countd = 0
+                            for i in date_data:
+                                ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41]))
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in ac_tree.get_children():
+                                    total += float(ac_tree.item(child, 'values')[7])
+                                result_1['text'] = '{}'.format(total)
+                                result_2['text'] = '{}'.format(total)
+                            except:
+                                result_1['text'] = '{}'.format(0)
+                                result_2['text'] = '{}'.format(0)
+
+                        elif ar_comb_1.get() == 'Today':
+
+                            today1 = date.today()
+                            print("Today is: ", today1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_invoice WHERE invoicedate=%s and cid_id=%s"
+                            date_val = (date.today(),inv_dtls[0],)
+                            fbcursor.execute(date_sql,date_val)
+                            date_data_1 = fbcursor.fetchall()
+
+
+                            for record in ac_tree.get_children():
+                                ac_tree.delete(record)
+
+                            countd = 0
+                            for i in date_data_1:
+                                ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41]))
+                            countd += 1  
+
+                            try:
+                                total = 0.0
+                                for child in ac_tree.get_children():
+                                    total += float(ac_tree.item(child, 'values')[7])
+                                result_1['text'] = '{}'.format(total)
+                                result_2['text'] = '{}'.format(total)
+                            except:
+                                result_1['text'] = '{}'.format(0)
+                                result_2['text'] = '{}'.format(0)
+
+                        elif ar_comb_1.get() == 'This month':
+
+                            today_gt2 = date.today()
+                            firsty_gt2= today_gt2.replace(day=1)
+                            last_monthy_gt2 = firsty_gt2 -relativedelta(day=1)
+
+                            end_todayy_gt2 = last_monthy_gt2
+                            end_firsty_gt2 = end_todayy_gt2.replace(day=1)
+                            end_monthy_gt2 = end_firsty_gt2 -relativedelta(days=1)+relativedelta(months=1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_invoice WHERE invoicedate BETWEEN %s AND %s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,inv_dtls[0],)
+                            fbcursor.execute(date_sql,date_val)
+                            date_data_3 = fbcursor.fetchall()
+
+
+                            for record in ac_tree.get_children():
+                                ac_tree.delete(record)
+
+                            countd = 0
+                            for i in date_data_3:
+                                ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41]))
+                            countd += 1  
+
+                            try:
+                                total = 0.0
+                                for child in ac_tree.get_children():
+                                    total += float(ac_tree.item(child, 'values')[7])
+                                result_1['text'] = '{}'.format(total)
+                                result_2['text'] = '{}'.format(total)
+                            except:
+                                result_1['text'] = '{}'.format(0)
+                                result_2['text'] = '{}'.format(0)
+
+                        elif ar_comb_1.get() == 'This financial year':
+
+                            fiscalyear.setup_fiscal_calendar(start_month=4)
+
+                            first_fiscal_year = date.today().year + 1
+                            print(first_fiscal_year)
+                            current_fiscal_year = FiscalDate.today().fiscal_year
+
+                            for x in range(0, 1):
+                                fy = FiscalYear(first_fiscal_year + x)
+                                fystart = fy.start.strftime("%Y-%m-%d")
+                                fyend = fy.end.strftime("%Y-%m-%d")
+                                print(fystart)
+                                print(fyend)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_invoice WHERE invoicedate BETWEEN %s AND %s and cid_id=%s"
+                            date_val = (fystart,fyend,inv_dtls[0],)
+                            fbcursor.execute(date_sql,date_val)
+                            date_data_3 = fbcursor.fetchall()
+
+
+                            for record in ac_tree.get_children():
+                                ac_tree.delete(record)
+
+                            countd = 0
+                            for i in date_data_3:
+                                ac_tree.insert(parent='',index='end',iid=i,text='',values=(i[1],'Invoice Balance Due',i[41],'','','','',i[41]))
+                            countd += 1  
+
+                            try:
+                                total = 0.0
+                                for child in ac_tree.get_children():
+                                    total += float(ac_tree.item(child, 'values')[7])
+                                result_1['text'] = '{}'.format(total)
+                                result_2['text'] = '{}'.format(total)
+                            except:
+                                result_1['text'] = '{}'.format(0)
+                                result_2['text'] = '{}'.format(0)
+
+                            
+                        else:
+                            pass
 
                     ar_comb_1 = ttk.Combobox(ar_canvas,font=('arial 10'))
                     ar_comb_1['values'] = ("All dates","Custom","Today","This month","This financial year",)
@@ -23457,7 +24448,7 @@ def main_sign_in():
                     window_ar_comb_1 = ar_canvas.create_window(0, 0, anchor="nw", width=300,height=30,window=ar_comb_1,tags=('arcombo1'))
                     ar_comb_1.bind("<<ComboboxSelected>>",custom_date_3)
 
-                    ar_btn_1=Button(ar_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12')
+                    ar_btn_1=Button(ar_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12',command=filterby_date)
                     window_ar_btn_1 = ar_canvas.create_window(0, 0, anchor="nw", window=ar_btn_1,tags=('arbutton2'))
 
                     ar_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("arpoly4"))
@@ -23543,6 +24534,19 @@ def main_sign_in():
 
                     label_1 = Label(ar_canvas,width=6,height=1,text="TOTAL", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = ar_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("arlabel6"))
+
+
+                    result_1 = Label(ar_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_result_1 = ar_canvas.create_window(0, 0, anchor="nw", window=result_1, tags=("arlabel7"))
+
+                    result_2 = Label(ar_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_result_2 = ar_canvas.create_window(0, 0, anchor="nw", window=result_2, tags=("arlabel8"))
+
+                    total = 0.0
+                    for child in ac_tree.get_children():
+                        total += float(ac_tree.item(child, 'values')[7])
+                    result_1['text'] = '{}'.format(total)
+                    result_2['text'] = '{}'.format(total)
 
                     ar_date_1=DateEntry(ar_canvas,width=40,justify=LEFT,foreground='white')
                     window_ar_date_1 = ar_canvas.create_window(0, 0, anchor="nw", height=30, window=ar_date_1,tags=('ardate1'),state=HIDDEN)
