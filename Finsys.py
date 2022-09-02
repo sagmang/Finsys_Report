@@ -2321,8 +2321,14 @@ def main_sign_in():
                             price = ai_entry_p_1_4.get()
                             total = ai_entry_p_1_5.get()
                             tax = ai_comb_p_1_2.get()
-                            subtotal = sub_entry_1.get()
-                            grandtotal = grand_entry_1.get()
+                            if sub_entry_1 is not None:
+                                subtotal = sub_entry_1.get()
+                            else:
+                                subtotal = bsub_entry_1.get()
+                            if grand_entry_1 is not None:
+                                grandtotal = grand_entry_1.get()
+                            else:
+                                grandtotal = bgrand_entry_1.get()
                             product2 = ai_comb_p_2.get()
                             hsn2 = ai_entry_p_2.get()
                             description2 = ai_entry_p_2_1.get('1.0', 'end-1c')
@@ -2344,9 +2350,18 @@ def main_sign_in():
                             price4 = ai_entry_4_3.get()
                             total4 = ai_entry_4_4.get()
                             tax4 = ai_comb_P_4_2.get()
-                            amtrecvd = amount_entry_1.get()
-                            taxamount = tax_entry_1.get()
-                            baldue = bal_entry_1.get()
+                            if amount_entry_1 is not None:
+                                amtrecvd = amount_entry_1.get()
+                            else:
+                                amtrecvd = bamount_entry_1.get()
+                            if tax_entry_1 is not None:
+                                taxamount = tax_entry_1.get()
+                            else:
+                                taxamount = btax_entry_1.get()
+                            if bal_entry_1 is not None:
+                                baldue = bal_entry_1.get()
+                            else:
+                                baldue = bbal_entry_1.get()
 
 
                             usr_sql = "SELECT id FROM auth_user WHERE username=%s"
@@ -6505,6 +6520,76 @@ def main_sign_in():
                                     dcanvas.coords("ailine23",dwidth/1.58,dheight/0.41,dwidth/1.084,dheight/0.41)
                                     dcanvas.coords("ailine24",dwidth/1.58,dheight/0.396,dwidth/1.084,dheight/0.396)
 
+                                    #-------------------------------H Lines-----------------------------------#
+                                    dcanvas.coords("ailine25",dwidth/21,dheight/0.446,dwidth/1.055,dheight/0.446)
+                                    dcanvas.coords("ailine26",dwidth/21,dheight/0.416,dwidth/1.055,dheight/0.416)
+                                    dcanvas.coords("ailine27",dwidth/21,dheight/0.390,dwidth/1.055,dheight/0.390)
+                                    dcanvas.coords("ailine28",dwidth/21,dheight/0.366,dwidth/1.055,dheight/0.366)
+                                    #-------------------------------V Lines-----------------------------------#
+                                    dcanvas.coords("ailine29",dwidth/21,dheight/0.476,dwidth/21,dheight/0.366)
+                                    dcanvas.coords("ailine30",dwidth/1.055,dheight/0.476,dwidth/1.055,dheight/0.366)
+                                    dcanvas.coords("ailine31",dwidth/11,dheight/0.476,dwidth/11,dheight/0.366)
+                                    dcanvas.coords("ailine32",dwidth/4.15,dheight/0.476,dwidth/4.15,dheight/0.366)
+                                    dcanvas.coords("ailine33",dwidth/2.55,dheight/0.476,dwidth/2.55,dheight/0.366)
+                                    dcanvas.coords("ailine34",dwidth/1.83,dheight/0.476,dwidth/1.83,dheight/0.366)
+                                    dcanvas.coords("ailine35",dwidth/1.58,dheight/0.476,dwidth/1.58,dheight/0.366)
+                                    dcanvas.coords("ailine36",dwidth/1.37,dheight/0.476,dwidth/1.37,dheight/0.366)
+                                    dcanvas.coords("ailine37",dwidth/1.22,dheight/0.476,dwidth/1.22,dheight/0.366)
+
+                                    #-------------------------------V Lines-----------------------------------#
+                                    dcanvas.coords("ailine38",dwidth/1.58,dheight/0.360,dwidth/1.58,dheight/0.290)
+                                    dcanvas.coords("ailine39",dwidth/1.348,dheight/0.360,dwidth/1.348,dheight/0.290)
+                                    dcanvas.coords("ailine40",dwidth/1.084,dheight/0.360,dwidth/1.084,dheight/0.290)
+                                    #-------------------------------H Lines-----------------------------------#
+                                    dcanvas.coords("ailine41",dwidth/1.58,dheight/0.360,dwidth/1.084,dheight/0.360)
+                                    dcanvas.coords("ailine43",dwidth/1.58,dheight/0.345,dwidth/1.084,dheight/0.345)
+                                    dcanvas.coords("ailine44",dwidth/1.58,dheight/0.330,dwidth/1.084,dheight/0.330)
+                                    dcanvas.coords("ailine45",dwidth/1.58,dheight/0.315,dwidth/1.084,dheight/0.315)
+                                    dcanvas.coords("ailine46",dwidth/1.58,dheight/0.303,dwidth/1.084,dheight/0.303)
+                                    dcanvas.coords("ailine42",dwidth/1.58,dheight/0.290,dwidth/1.084,dheight/0.290)
+
+                                    dcanvas.coords("bient1",dwidth/10.10,dheight/0.466)
+                                    dcanvas.coords("bient2",dwidth/10.10,dheight/0.436)
+                                    dcanvas.coords("bient3",dwidth/10.10,dheight/0.406)
+                                    dcanvas.coords("bient4",dwidth/10.10,dheight/0.382)
+                                    dcanvas.coords("bient5",dwidth/4.00,dheight/0.466)
+                                    dcanvas.coords("bient6",dwidth/4.00,dheight/0.436)
+                                    dcanvas.coords("bient7",dwidth/4.00,dheight/0.406)
+                                    dcanvas.coords("bient8",dwidth/4.00,dheight/0.382)
+                                    dcanvas.coords("bient9",dwidth/2.51,dheight/0.466)
+                                    dcanvas.coords("bient10",dwidth/2.51,dheight/0.436)
+                                    dcanvas.coords("bient11",dwidth/2.51,dheight/0.406)
+                                    dcanvas.coords("bient12",dwidth/2.51,dheight/0.382)
+                                    dcanvas.coords("bient13",dwidth/1.565,dheight/0.466)
+                                    dcanvas.coords("bient14",dwidth/1.565,dheight/0.436)
+                                    dcanvas.coords("bient15",dwidth/1.565,dheight/0.406)
+                                    dcanvas.coords("bient16",dwidth/1.565,dheight/0.382)
+                                    dcanvas.coords("bient17",dwidth/1.8,dheight/0.466)
+                                    dcanvas.coords("bient18",dwidth/1.8,dheight/0.436)
+                                    dcanvas.coords("bient19",dwidth/1.8,dheight/0.406)
+                                    dcanvas.coords("bient20",dwidth/1.8,dheight/0.382)
+                                    dcanvas.coords("bient21",dwidth/1.357,dheight/0.466)
+                                    dcanvas.coords("bient22",dwidth/1.357,dheight/0.436)
+                                    dcanvas.coords("bient23",dwidth/1.357,dheight/0.406)
+                                    dcanvas.coords("bient24",dwidth/1.357,dheight/0.382)
+                                    dcanvas.coords("bient25",dwidth/1.21,dheight/0.466)
+                                    dcanvas.coords("bient26",dwidth/1.21,dheight/0.436)
+                                    dcanvas.coords("bient27",dwidth/1.21,dheight/0.406)
+                                    dcanvas.coords("bient28",dwidth/1.21,dheight/0.382)
+
+                                    dcanvas.coords("bilabl1",dwidth/1.53,dheight/0.355)
+                                    dcanvas.coords("bilabl2",dwidth/1.53,dheight/0.340)
+                                    dcanvas.coords("bilabl3",dwidth/1.53,dheight/0.325)
+                                    dcanvas.coords("bilabl4",dwidth/1.53,dheight/0.310)
+                                    dcanvas.coords("bilabl5",dwidth/1.53,dheight/0.298)
+
+                                    dcanvas.coords("bient29",dwidth/1.33,dheight/0.355)
+                                    dcanvas.coords("bient30",dwidth/1.33,dheight/0.340)
+                                    dcanvas.coords("bient31",dwidth/1.33,dheight/0.325)
+                                    dcanvas.coords("bient32",dwidth/1.33,dheight/0.312)
+                                    dcanvas.coords("bient33",dwidth/1.33,dheight/0.298)
+                                    dcanvas.coords("bbutn1",dwidth/1.28,dheight/0.282)
+
                                 except:
                                     pass
 
@@ -7930,6 +8015,914 @@ def main_sign_in():
 
                             eai_save_btn1=Button(inv_canvas_edit_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=sales_edit_new_inv)
                             window_eai_save_btn1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=eai_save_btn1,tags=('aibutton2'))
+
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine25'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine26'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine27'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine28'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine29'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine30'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine31'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine32'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine33'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine34'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine35'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine36'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine37'),state=HIDDEN)
+
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine38'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine39'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine40'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine41'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine42'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine43'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine44'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine45'),state=HIDDEN)
+                            inv_canvas_edit_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=('ailine46'),state=HIDDEN)
+
+                            
+                            ebu_inv_1 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_1,tags=('bient1'),state=HIDDEN)
+
+                            ebu_inv_1_1 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_1_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_1_1,tags=('bient5'),state=HIDDEN)
+
+                            ebu_inv_1_2=scrolledtext.ScrolledText(inv_canvas_edit_1,width=21,background='#2f516f',foreground="white")
+                            window_ebu_inv_1_2 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_1_2,tags=('bient9'),state=HIDDEN)
+
+                            ebu_inv_1_3=Spinbox(inv_canvas_edit_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_1_3 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_1_3,tags=('bient13'),state=HIDDEN)
+
+                            # def multiply_num_i5(event):
+
+                            #     try:
+                            #         n1 = float(en_str_1.get())
+                            #     except:
+                            #         n1=0.0
+                            #     try:
+                            #         n2 = float(en_str_2.get())
+                            #     except:
+                            #         n2 = 0.0
+                            #     try:
+                            #         n3 = float(en_str_3.get())
+                            #     except:
+                            #         n3 = 0.0
+                            #     try:
+                            #         n4 = float(en_str_4.get())
+                            #     except:
+                            #         n4 = 0.0
+                            #     try:
+                            #         n5 = float(en_str_5.get())
+                            #     except:
+                            #         n5 = 0.0 
+                            #     try:
+                            #         n6 = float(en_str_6.get())
+                            #     except:
+                            #         n6 = 0.0 
+                            #     try:
+                            #         n7 = float(en_str_7.get())
+                            #     except:
+                            #         n7 = 0.0 
+                            #     try:
+                            #         n8 = float(en_str_8.get())
+                            #     except:
+                            #         n8 = 0.0 
+
+                            #     sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            #     bsub_entry_1.delete(0, END)
+                            #     bsub_entry_1.insert(0,round(sum_i,2))
+
+                            #     global t1,t2,t3,t4,t5,t6,t7,t8
+                            #     if bu_inv_1_6.get() == '28.0% GST (28%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(28/100)
+                            #     elif bu_inv_1_6.get() == '28.0% IGST (28%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(28/100)
+                            #     elif bu_inv_1_6.get() == '18.0% GST (18%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(18/100)
+                            #     elif bu_inv_1_6.get() == '18.0% IGST (18%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(18/100)
+                            #     elif bu_inv_1_6.get() == '15.0% ST (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(15/100)
+                            #     elif bu_inv_1_6.get() == '14.5% ST (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(14.5/100)
+                            #     elif bu_inv_1_6.get() == '14.00% ST (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(14/100)
+                            #     elif bu_inv_1_6.get() == '14.0% VAT (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(14/100)
+                            #     elif bu_inv_1_6.get() == '12.36% ST (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(12.36/100)
+                            #     elif bu_inv_1_6.get() == '12.0% GST (12%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(12/100)
+                            #     elif bu_inv_1_6.get() == '12.0% IGST (12%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(12/100)
+                            #     elif bu_inv_1_6.get() == '6.0% GST (6%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(6/100)
+                            #     elif bu_inv_1_6.get() == '6.0% IGST (6%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(6/100)
+                            #     elif bu_inv_1_6.get() == '5.0% GST (5%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(5/100)
+                            #     elif bu_inv_1_6.get() == '5.0% IGST (5%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(5/100)
+                            #     elif bu_inv_1_6.get() == '5.0% VAT (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(5/100)
+                            #     elif bu_inv_1_6.get() == '4.0% VAT (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(4/100)
+                            #     elif bu_inv_1_6.get() == '3.0% GST (3%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(3/100)
+                            #     elif bu_inv_1_6.get() == '3.0% IGST (3%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(3/100)
+                            #     elif bu_inv_1_6.get() == '2.0% CST (100%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(2/100)
+                            #     elif bu_inv_1_6.get() == '0.25% GST (O.25%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0.25/100)
+                            #     elif bu_inv_1_6.get() == '0.25% IGST (0.25%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0.25/100)
+                            #     elif bu_inv_1_6.get() == '0% GST (0%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0/100)
+                            #     elif bu_inv_1_6.get() == '0% IGST (0%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0/100)
+                            #     elif bu_inv_1_6.get() == 'Exempt GST (0%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0/100)
+                            #     elif bu_inv_1_6.get() == 'Exempt IGST (0%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0/100)
+                            #     elif bu_inv_1_6.get() == 'Out of Scope(0%)':
+                            #         y5 = float(en_str_5.get())
+                            #         t5 = y5*(0/100)
+                            #     else:
+                            #         pass
+
+                            #     try:
+                            #         tm1  = t1
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm2 = t2
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm3 = t3
+                            #     except:
+                            #         tm3 = 0.0
+                            #     try:
+                            #         tm4  = t4
+                            #     except:
+                            #         tm4 = 0.0
+                            #     try:
+                            #         tm5  = t5
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm6  = t6
+                            #     except:
+                            #         tm6 = 0.0
+                            #     try:
+                            #         tm7  = t7
+                            #     except:
+                            #         tm7 = 0.0
+                            #     try:
+                            #         tm8  = t8
+                            #     except:
+                            #         tm8 = 0.0
+                                
+                                
+                            #     sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            #     btax_entry_1.delete(0, END)
+                            #     btax_entry_1.insert(0,round(sum_ii,2))
+
+                            #     try:
+                            #         m1 = float(bsub_str.get())
+                            #     except:
+                            #         m1 =0.0
+                            #     try:
+                            #         m2 = float(btax_str.get())
+                            #     except:
+                            #         m2 =0.0
+
+                            #     sum_iii = m1+m2
+                            #     bgrand_entry_1.delete(0, END)
+                            #     bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            #     try:
+                            #         x1 = float(bgrd_str.get())
+                            #     except:
+                            #         x1 = 0.0
+                            #     try:
+                            #         x2 = float(bamount_entry_1.get())
+                            #     except:
+                            #         x2 = 0.0
+                            #     sum_iv = x1-x2
+                            #     bbal_entry_1.delete(0, END)
+                            #     bbal_entry_1.insert(0,round(sum_iv,2))
+
+                            ebu_inv_1_4=Spinbox(inv_canvas_edit_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_1_4 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_1_4,tags=('bient17'),state=HIDDEN)
+                            #ebu_inv_1_4.bind("<Button-1>",multiply_num_i5)
+
+                            een_str_5 = StringVar()
+                            ebu_inv_1_5=Entry(inv_canvas_edit_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=een_str_5)
+                            window_ebu_inv_1_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_1_5,tags=('bient21'),state=HIDDEN)
+
+                            ebu_inv_1_6=Entry(inv_canvas_edit_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_1_6 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_1_6,tags=('bient25'),state=HIDDEN)
+
+                            ebu_inv_2 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_2 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_2,tags=('bient2'),state=HIDDEN)
+
+                            ebu_inv_2_1 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_2_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_2_1,tags=('bient6'),state=HIDDEN)
+
+                            ebu_inv_2_2=scrolledtext.ScrolledText(inv_canvas_edit_1,width=21,background='#2f516f',foreground="white")
+                            window_ebu_inv_2_2 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_2_2,tags=('bient10'),state=HIDDEN)
+
+                            ebu_inv_2_3=Spinbox(inv_canvas_edit_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_2_3 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_2_3,tags=('bient14'),state=HIDDEN)
+
+                            # def multiply_num_i6(event):
+
+                            #     try:
+                            #         n1 = float(en_str_1.get())
+                            #     except:
+                            #         n1=0.0
+                            #     try:
+                            #         n2 = float(en_str_2.get())
+                            #     except:
+                            #         n2 = 0.0
+                            #     try:
+                            #         n3 = float(en_str_3.get())
+                            #     except:
+                            #         n3 = 0.0
+                            #     try:
+                            #         n4 = float(en_str_4.get())
+                            #     except:
+                            #         n4 = 0.0
+                            #     try:
+                            #         n5 = float(en_str_5.get())
+                            #     except:
+                            #         n5 = 0.0 
+                            #     try:
+                            #         n6 = float(en_str_6.get())
+                            #     except:
+                            #         n6 = 0.0 
+                            #     try:
+                            #         n7 = float(en_str_7.get())
+                            #     except:
+                            #         n7 = 0.0 
+                            #     try:
+                            #         n8 = float(en_str_8.get())
+                            #     except:
+                            #         n8 = 0.0 
+
+                            #     sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            #     bsub_entry_1.delete(0, END)
+                            #     bsub_entry_1.insert(0,round(sum_i,2))
+
+                            #     global t1,t2,t3,t4,t5,t6,t7,t8
+                            #     if bu_inv_2_6.get() == '28.0% GST (28%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(28/100)
+                            #     elif bu_inv_2_6.get() == '28.0% IGST (28%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(28/100)
+                            #     elif bu_inv_2_6.get() == '18.0% GST (18%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(18/100)
+                            #     elif bu_inv_2_6.get() == '18.0% IGST (18%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(18/100)
+                            #     elif bu_inv_2_6.get() == '15.0% ST (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(15/100)
+                            #     elif bu_inv_2_6.get() == '14.5% ST (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(14.5/100)
+                            #     elif bu_inv_2_6.get() == '14.00% ST (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(14/100)
+                            #     elif bu_inv_2_6.get() == '14.0% VAT (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(14/100)
+                            #     elif bu_inv_2_6.get() == '12.36% ST (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(12.36/100)
+                            #     elif bu_inv_2_6.get() == '12.0% GST (12%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(12/100)
+                            #     elif bu_inv_2_6.get() == '12.0% IGST (12%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(12/100)
+                            #     elif bu_inv_2_6.get() == '6.0% GST (6%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(6/100)
+                            #     elif bu_inv_2_6.get() == '6.0% IGST (6%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(6/100)
+                            #     elif bu_inv_2_6.get() == '5.0% GST (5%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(5/100)
+                            #     elif bu_inv_2_6.get() == '5.0% IGST (5%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(5/100)
+                            #     elif bu_inv_2_6.get() == '5.0% VAT (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(5/100)
+                            #     elif bu_inv_2_6.get() == '4.0% VAT (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(4/100)
+                            #     elif bu_inv_2_6.get() == '3.0% GST (3%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(3/100)
+                            #     elif bu_inv_2_6.get() == '3.0% IGST (3%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(3/100)
+                            #     elif bu_inv_2_6.get() == '2.0% CST (100%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(2/100)
+                            #     elif bu_inv_2_6.get() == '0.25% GST (O.25%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0.25/100)
+                            #     elif bu_inv_2_6.get() == '0.25% IGST (0.25%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0.25/100)
+                            #     elif bu_inv_2_6.get() == '0% GST (0%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0/100)
+                            #     elif bu_inv_2_6.get() == '0% IGST (0%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0/100)
+                            #     elif bu_inv_2_6.get() == 'Exempt GST (0%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0/100)
+                            #     elif bu_inv_2_6.get() == 'Exempt IGST (0%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0/100)
+                            #     elif bu_inv_2_6.get() == 'Out of Scope(0%)':
+                            #         y6 = float(en_str_6.get())
+                            #         t6 = y6*(0/100)
+                            #     else:
+                            #         pass
+
+                            #     try:
+                            #         tm1  = t1
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm2 = t2
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm3 = t3
+                            #     except:
+                            #         tm3 = 0.0
+                            #     try:
+                            #         tm4  = t4
+                            #     except:
+                            #         tm4 = 0.0
+                            #     try:
+                            #         tm5  = t5
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm6  = t6
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm7  = t7
+                            #     except:
+                            #         tm7 = 0.0
+                            #     try:
+                            #         tm8  = t8
+                            #     except:
+                            #         tm8 = 0.0
+                                
+                                
+                            #     sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            #     btax_entry_1.delete(0, END)
+                            #     btax_entry_1.insert(0,round(sum_ii,2))
+
+                            #     try:
+                            #         m1 = float(bsub_str.get())
+                            #     except:
+                            #         m1 =0.0
+                            #     try:
+                            #         m2 = float(btax_str.get())
+                            #     except:
+                            #         m2 =0.0
+
+                            #     sum_iii = m1+m2
+                            #     bgrand_entry_1.delete(0, END)
+                            #     bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            #     try:
+                            #         x1 = float(bgrd_str.get())
+                            #     except:
+                            #         x1 = 0.0
+                            #     try:
+                            #         x2 = float(bamount_entry_1.get())
+                            #     except:
+                            #         x2 = 0.0
+                            #     sum_iv = x1-x2
+                            #     bbal_entry_1.delete(0, END)
+                            #     bbal_entry_1.insert(0,round(sum_iv,2))
+
+                            ebu_inv_2_4=Spinbox(inv_canvas_edit_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_2_4 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_2_4,tags=('bient18'),state=HIDDEN)
+                            #ebu_inv_2_4.bind("<Button-1>",multiply_num_i6)
+
+                            een_str_6 = StringVar()
+                            ebu_inv_2_5=Entry(inv_canvas_edit_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=een_str_6)
+                            window_ebu_inv_2_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_2_5,tags=('bient22'),state=HIDDEN)
+
+                            ebu_inv_2_6=Entry(inv_canvas_edit_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_2_6 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_2_6,tags=('bient26'),state=HIDDEN)
+
+                            ebu_inv_3 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_3 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_3,tags=('bient3'),state=HIDDEN)
+
+                            ebu_inv_3_1 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_3_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_3_1,tags=('bient7'),state=HIDDEN)
+
+                            ebu_inv_3_2=scrolledtext.ScrolledText(inv_canvas_edit_1,width=21,background='#2f516f',foreground="white")
+                            window_ebu_inv_3_2 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_3_2,tags=('bient11'),state=HIDDEN)
+
+                            ebu_inv_3_3=Spinbox(inv_canvas_edit_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_3_3 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_3_3,tags=('bient15'),state=HIDDEN)
+
+                            # def multiply_num_i7(event):
+
+                            #     try:
+                            #         n1 = float(en_str_1.get())
+                            #     except:
+                            #         n1=0.0
+                            #     try:
+                            #         n2 = float(en_str_2.get())
+                            #     except:
+                            #         n2 = 0.0
+                            #     try:
+                            #         n3 = float(en_str_3.get())
+                            #     except:
+                            #         n3 = 0.0
+                            #     try:
+                            #         n4 = float(en_str_4.get())
+                            #     except:
+                            #         n4 = 0.0
+                            #     try:
+                            #         n5 = float(en_str_5.get())
+                            #     except:
+                            #         n5 = 0.0 
+                            #     try:
+                            #         n6 = float(en_str_6.get())
+                            #     except:
+                            #         n6 = 0.0 
+                            #     try:
+                            #         n7 = float(en_str_7.get())
+                            #     except:
+                            #         n7 = 0.0 
+                            #     try:
+                            #         n8 = float(en_str_8.get())
+                            #     except:
+                            #         n8 = 0.0 
+
+                            #     sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            #     bsub_entry_1.delete(0, END)
+                            #     bsub_entry_1.insert(0,round(sum_i,2))
+
+                            #     global t1,t2,t3,t4,t5,t6,t7,t8
+                            #     if bu_inv_3_6.get() == '28.0% GST (28%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(28/100)
+                            #     elif bu_inv_3_6.get() == '28.0% IGST (28%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(28/100)
+                            #     elif bu_inv_3_6.get() == '18.0% GST (18%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(18/100)
+                            #     elif bu_inv_3_6.get() == '18.0% IGST (18%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(18/100)
+                            #     elif bu_inv_3_6.get() == '15.0% ST (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(15/100)
+                            #     elif bu_inv_3_6.get() == '14.5% ST (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(14.5/100)
+                            #     elif bu_inv_3_6.get() == '14.00% ST (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(14/100)
+                            #     elif bu_inv_3_6.get() == '14.0% VAT (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(14/100)
+                            #     elif bu_inv_3_6.get() == '12.36% ST (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(12.36/100)
+                            #     elif bu_inv_3_6.get() == '12.0% GST (12%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(12/100)
+                            #     elif bu_inv_3_6.get() == '12.0% IGST (12%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(12/100)
+                            #     elif bu_inv_3_6.get() == '6.0% GST (6%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(6/100)
+                            #     elif bu_inv_3_6.get() == '6.0% IGST (6%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(6/100)
+                            #     elif bu_inv_3_6.get() == '5.0% GST (5%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(5/100)
+                            #     elif bu_inv_3_6.get() == '5.0% IGST (5%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(5/100)
+                            #     elif bu_inv_3_6.get() == '5.0% VAT (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(5/100)
+                            #     elif bu_inv_3_6.get() == '4.0% VAT (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(4/100)
+                            #     elif bu_inv_3_6.get() == '3.0% GST (3%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(3/100)
+                            #     elif bu_inv_3_6.get() == '3.0% IGST (3%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(3/100)
+                            #     elif bu_inv_3_6.get() == '2.0% CST (100%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(2/100)
+                            #     elif bu_inv_3_6.get() == '0.25% GST (O.25%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0.25/100)
+                            #     elif bu_inv_3_6.get() == '0.25% IGST (0.25%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0.25/100)
+                            #     elif bu_inv_3_6.get() == '0% GST (0%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0/100)
+                            #     elif bu_inv_3_6.get() == '0% IGST (0%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0/100)
+                            #     elif bu_inv_3_6.get() == 'Exempt GST (0%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0/100)
+                            #     elif bu_inv_3_6.get() == 'Exempt IGST (0%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0/100)
+                            #     elif bu_inv_3_6.get() == 'Out of Scope(0%)':
+                            #         y7 = float(en_str_7.get())
+                            #         t7 = y7*(0/100)
+                            #     else:
+                            #         pass
+
+                            #     try:
+                            #         tm1  = t1
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm2 = t2
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm3 = t3
+                            #     except:
+                            #         tm3 = 0.0
+                            #     try:
+                            #         tm4  = t4
+                            #     except:
+                            #         tm4 = 0.0
+                            #     try:
+                            #         tm5  = t5
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm6  = t6
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm7  = t7
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm8  = t8
+                            #     except:
+                            #         tm8 = 0.0
+                                
+                                
+                            #     sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            #     btax_entry_1.delete(0, END)
+                            #     btax_entry_1.insert(0,round(sum_ii,2))
+
+                            #     try:
+                            #         m1 = float(bsub_str.get())
+                            #     except:
+                            #         m1 =0.0
+                            #     try:
+                            #         m2 = float(btax_str.get())
+                            #     except:
+                            #         m2 =0.0
+
+                            #     sum_iii = m1+m2
+                            #     bgrand_entry_1.delete(0, END)
+                            #     bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            #     try:
+                            #         x1 = float(bgrd_str.get())
+                            #     except:
+                            #         x1 = 0.0
+                            #     try:
+                            #         x2 = float(bamount_entry_1.get())
+                            #     except:
+                            #         x2 = 0.0
+                            #     sum_iv = x1-x2
+                            #     bbal_entry_1.delete(0, END)
+                            #     bbal_entry_1.insert(0,round(sum_iv,2))
+
+                            ebu_inv_3_4=Spinbox(inv_canvas_edit_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_3_4 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_3_4,tags=('bient19'),state=HIDDEN)
+                            #ebu_inv_3_4.bind("<Button-1>",multiply_num_i7)
+
+                            een_str_7 = StringVar()
+                            ebu_inv_3_5=Entry(inv_canvas_edit_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=een_str_7)
+                            window_ebu_inv_3_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_3_5,tags=('bient23'),state=HIDDEN)
+
+                            ebu_inv_3_6=Entry(inv_canvas_edit_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_3_6 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_3_6,tags=('bient27'),state=HIDDEN)
+
+                            ebu_inv_4 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_4 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_4,tags=('bient4'),state=HIDDEN)
+
+                            ebu_inv_4_1 = Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_4_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw",height=30,window=ebu_inv_4_1,tags=('bient8'),state=HIDDEN)
+
+                            ebu_inv_4_2=scrolledtext.ScrolledText(inv_canvas_edit_1,width=21,background='#2f516f',foreground="white")
+                            window_ebu_inv_4_2 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_4_2,tags=('bient12'),state=HIDDEN)
+
+                            ebu_inv_4_3=Spinbox(inv_canvas_edit_1,width=16,from_=0 ,to=1000000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_4_3 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_4_3,tags=('bient16'),state=HIDDEN)
+
+                            # def multiply_num_i8(event):
+
+                            #     try:
+                            #         n1 = float(en_str_1.get())
+                            #     except:
+                            #         n1=0.0
+                            #     try:
+                            #         n2 = float(en_str_2.get())
+                            #     except:
+                            #         n2 = 0.0
+                            #     try:
+                            #         n3 = float(en_str_3.get())
+                            #     except:
+                            #         n3 = 0.0
+                            #     try:
+                            #         n4 = float(en_str_4.get())
+                            #     except:
+                            #         n4 = 0.0
+                            #     try:
+                            #         n5 = float(en_str_5.get())
+                            #     except:
+                            #         n5 = 0.0 
+                            #     try:
+                            #         n6 = float(en_str_6.get())
+                            #     except:
+                            #         n6 = 0.0 
+                            #     try:
+                            #         n7 = float(en_str_7.get())
+                            #     except:
+                            #         n7 = 0.0 
+                            #     try:
+                            #         n8 = float(en_str_8.get())
+                            #     except:
+                            #         n8 = 0.0 
+
+                            #     sum_i = n1+n2+n3+n4+n5+n6+n7+n8
+                            #     bsub_entry_1.delete(0, END)
+                            #     bsub_entry_1.insert(0,round(sum_i,2))
+
+                            #     global t1,t2,t3,t4,t5,t6,t7,t8
+                            #     if bu_inv_4_6.get() == '28.0% GST (28%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(28/100)
+                            #     elif bu_inv_4_6.get() == '28.0% IGST (28%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(28/100)
+                            #     elif bu_inv_4_6.get() == '18.0% GST (18%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(18/100)
+                            #     elif bu_inv_4_6.get() == '18.0% IGST (18%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(18/100)
+                            #     elif bu_inv_4_6.get() == '15.0% ST (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(15/100)
+                            #     elif bu_inv_4_6.get() == '14.5% ST (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(14.5/100)
+                            #     elif bu_inv_4_6.get() == '14.00% ST (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(14/100)
+                            #     elif bu_inv_4_6.get() == '14.0% VAT (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(14/100)
+                            #     elif bu_inv_4_6.get() == '12.36% ST (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(12.36/100)
+                            #     elif bu_inv_4_6.get() == '12.0% GST (12%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(12/100)
+                            #     elif bu_inv_4_6.get() == '12.0% IGST (12%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(12/100)
+                            #     elif bu_inv_4_6.get() == '6.0% GST (6%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(6/100)
+                            #     elif bu_inv_4_6.get() == '6.0% IGST (6%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(6/100)
+                            #     elif bu_inv_4_6.get() == '5.0% GST (5%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(5/100)
+                            #     elif bu_inv_4_6.get() == '5.0% IGST (5%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(5/100)
+                            #     elif bu_inv_4_6.get() == '5.0% VAT (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(5/100)
+                            #     elif bu_inv_4_6.get() == '4.0% VAT (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(4/100)
+                            #     elif bu_inv_4_6.get() == '3.0% GST (3%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(3/100)
+                            #     elif bu_inv_4_6.get() == '3.0% IGST (3%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(3/100)
+                            #     elif bu_inv_4_6.get() == '2.0% CST (100%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(2/100)
+                            #     elif bu_inv_4_6.get() == '0.25% GST (O.25%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0.25/100)
+                            #     elif bu_inv_4_6.get() == '0.25% IGST (0.25%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0.25/100)
+                            #     elif bu_inv_4_6.get() == '0% GST (0%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0/100)
+                            #     elif bu_inv_4_6.get() == '0% IGST (0%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0/100)
+                            #     elif bu_inv_4_6.get() == 'Exempt GST (0%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0/100)
+                            #     elif bu_inv_4_6.get() == 'Exempt IGST (0%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0/100)
+                            #     elif bu_inv_4_6.get() == 'Out of Scope(0%)':
+                            #         y8 = float(en_str_8.get())
+                            #         t8 = y8*(0/100)
+                            #     else:
+                            #         pass
+
+                            #     try:
+                            #         tm1  = t1
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm2 = t2
+                            #     except:
+                            #         tm2 = 0.0
+                            #     try:
+                            #         tm3 = t3
+                            #     except:
+                            #         tm3 = 0.0
+                            #     try:
+                            #         tm4  = t4
+                            #     except:
+                            #         tm4 = 0.0
+                            #     try:
+                            #         tm5  = t5
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm6  = t6
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm7  = t7
+                            #     except:
+                            #         pass
+                            #     try:
+                            #         tm8  = t8
+                            #     except:
+                            #         pass
+                                
+                                
+                            #     sum_ii = tm1+tm2+tm3+tm4+tm5+tm6+tm7+tm8
+                            #     btax_entry_1.delete(0, END)
+                            #     btax_entry_1.insert(0,round(sum_ii,2))
+
+                            #     try:
+                            #         m1 = float(bsub_str.get())
+                            #     except:
+                            #         m1 =0.0
+                            #     try:
+                            #         m2 = float(btax_str.get())
+                            #     except:
+                            #         m2 =0.0
+
+                            #     sum_iii = m1+m2
+                            #     bgrand_entry_1.delete(0, END)
+                            #     bgrand_entry_1.insert(0,round(sum_iii,2))
+
+
+                            #     try:
+                            #         x1 = float(bgrd_str.get())
+                            #     except:
+                            #         x1 = 0.0
+                            #     try:
+                            #         x2 = float(bamount_entry_1.get())
+                            #     except:
+                            #         x2 = 0.0
+                            #     sum_iv = x1-x2
+                            #     bbal_entry_1.delete(0, END)
+                            #     bbal_entry_1.insert(0,round(sum_iv,2))
+
+
+                            ebu_inv_4_4=Spinbox(inv_canvas_edit_1,width=13,from_=0 ,to=1000,justify=LEFT,background='#2f516f',foreground='white')
+                            window_ebu_inv_4_4 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_4_4,tags=('bient20'),state=HIDDEN)
+                            #ebu_inv_4_4.bind("<Button-1>",multiply_num_i8)
+
+                            een_str_8 = StringVar()
+                            ebu_inv_4_5=Entry(inv_canvas_edit_1,width=16,justify=LEFT,background='#2f516f',foreground="white",textvariable=een_str_8)
+                            window_ebu_inv_4_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_4_5,tags=('bient24'),state=HIDDEN)
+
+                            ebu_inv_4_6=Entry(inv_canvas_edit_1,width=25,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebu_inv_4_6 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebu_inv_4_6,tags=('bient28'),state=HIDDEN)
+
+                            label_5 = Label(inv_canvas_edit_1,width=10,height=1,text="Sub Total", font=('arial 10'),background="#1b3857",fg="white") 
+                            window_label_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_5,tags=('bilabl1'),state=HIDDEN)
+
+                            label_5 = Label(inv_canvas_edit_1,width=12,height=1,text="Tax Amount", font=('arial 10'),background="#1b3857",fg="white") 
+                            window_label_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_5,tags=('bilabl2'),state=HIDDEN)
+
+                            label_5 = Label(inv_canvas_edit_1,width=12,height=1,text="Grand Total", font=('arial 10'),background="#1b3857",fg="white") 
+                            window_label_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_5,tags=('bilabl3'),state=HIDDEN)
+
+                            label_5 = Label(inv_canvas_edit_1,width=12,height=1,text="Amount Received", font=('arial 10'),background="#1b3857",fg="white") 
+                            window_label_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_5,tags=('bilabl4'),state=HIDDEN)
+
+                            label_5 = Label(inv_canvas_edit_1,width=12,height=1,text="Balance Due", font=('arial 10'),background="#1b3857",fg="white") 
+                            window_label_5 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_5,tags=('bilabl5'),state=HIDDEN)
+
+                            ebsub_str=StringVar()
+                            ebsub_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=ebsub_str)
+                            window_ebsub_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebsub_entry_1,tags=('bient29'),state=HIDDEN)
+                            
+                            ebtax_str=StringVar()
+                            ebtax_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=ebtax_str)
+                            window_ebtax_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebtax_entry_1,tags=('bient30'),state=HIDDEN)
+
+                            ebgrd_str=StringVar()
+                            ebgrand_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=ebgrd_str)
+                            window_ebgrand_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebgrand_entry_1,tags=('bient31'),state=HIDDEN)
+
+                            
+                            ebamount_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            window_ebamount_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebamount_entry_1,tags=('bient32'),state=HIDDEN)
+
+                            ebbal_str=StringVar()
+                            ebbal_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT, background='#2f516f',foreground="white",textvariable=ebbal_str)
+                            window_ebbal_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebbal_entry_1,tags=('bient33'),state=HIDDEN)
+
+                            ebai_save_btn1=Button(inv_canvas_edit_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=sales_edit_new_inv)
+                            window_ebai_save_btn1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", window=ebai_save_btn1,tags=('bbutn1'),state=HIDDEN)
 
                             def einv_back_1_():
                                 inv_frame_edit_1.grid_forget()
@@ -23559,17 +24552,695 @@ def main_sign_in():
                             pl_canvas.itemconfig('pllabel3',state='hidden')
                             pl_canvas.itemconfig('pllabel4',state='hidden')
 
+                     #--------Filter By Date------------#
+                    def filterby_date_2():
+
+                        if pl_comb_1.get() == 'All dates':
+
+                            s_date = '2000-01-01'
+                            e_date = '2050-01-01'
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_1 = fbcursor.fetchall()
+
+                            for record in pl_tree.get_children():
+                                pl_tree.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_1:
+                                pl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                in_result_1['text'] = '{}'.format(total)
+                            except:
+                                in_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Cost of Goods Sold',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_2 = fbcursor.fetchall()
+
+                            for record in pl_tree_1.get_children():
+                                pl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_2:
+                                pl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_2 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                in_result_2['text'] = '{}'.format(total_2)
+                            except:
+                                in_result_2['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Other Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_3 = fbcursor.fetchall()
+
+                            for record in pl_tree_2.get_children():
+                                pl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_3:
+                                pl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_4 = fbcursor.fetchall()
+
+                            for record in pl_tree_3.get_children():
+                                pl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_4:
+                                pl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Other Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_5 = fbcursor.fetchall()
+
+                            for record in pl_tree_4.get_children():
+                                pl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_5:
+                                pl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))
+                            countd += 1  
+                            try:
+                                total_5 = 0.0
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                in_result_3['text'] = '{}'.format(total_5)
+                            except:
+                                in_result_3['text'] = '{}'.format(0)
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_3 = 0.0
+                                total_4 = 0.0
+                                total_5 = 0.0
+                                total_6 = 0.0
+                                total_7 = 0.0
+                                total_8 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                for child in pl_tree_2.get_children():
+                                    total_3 += float(pl_tree_2.item(child, 'values')[1])
+                                for child in pl_tree_3.get_children():
+                                    total_4 += float(pl_tree_3.item(child, 'values')[1])
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                total_6 = total_2+total_3
+                                total_7 = total_6-total_4
+                                total_8 = total_7-total_5
+                                in_result_4['text'] = '{}'.format(total_8)
+                            except:
+                                in_result_4['text'] = '{}'.format(0)
+
+
+                        elif pl_comb_1.get() == 'Custom':
+
+                            start_date = pl_date_1.get_date()
+                            end_date = pl_date_2.get_date()
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_1 = fbcursor.fetchall()
+
+                            for record in pl_tree.get_children():
+                                pl_tree.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_1:
+                                pl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                in_result_1['text'] = '{}'.format(total)
+                            except:
+                                in_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Cost of Goods Sold',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_2 = fbcursor.fetchall()
+
+                            for record in pl_tree_1.get_children():
+                                pl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_2:
+                                pl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_2 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                in_result_2['text'] = '{}'.format(total_2)
+                            except:
+                                in_result_2['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Other Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_3 = fbcursor.fetchall()
+
+                            for record in pl_tree_2.get_children():
+                                pl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_3:
+                                pl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_4 = fbcursor.fetchall()
+
+                            for record in pl_tree_3.get_children():
+                                pl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_4:
+                                pl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Other Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_5 = fbcursor.fetchall()
+
+                            for record in pl_tree_4.get_children():
+                                pl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_5:
+                                pl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))
+                            countd += 1  
+                            try:
+                                total_5 = 0.0
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                in_result_3['text'] = '{}'.format(total_5)
+                            except:
+                                in_result_3['text'] = '{}'.format(0)
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_3 = 0.0
+                                total_4 = 0.0
+                                total_5 = 0.0
+                                total_6 = 0.0
+                                total_7 = 0.0
+                                total_8 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                for child in pl_tree_2.get_children():
+                                    total_3 += float(pl_tree_2.item(child, 'values')[1])
+                                for child in pl_tree_3.get_children():
+                                    total_4 += float(pl_tree_3.item(child, 'values')[1])
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                total_6 = total_2+total_3
+                                total_7 = total_6-total_4
+                                total_8 = total_7-total_5
+                                in_result_4['text'] = '{}'.format(total_8)
+                            except:
+                                in_result_4['text'] = '{}'.format(0)
+
+                        elif pl_comb_1.get() == 'Today':
+
+                            today1 = date.today()
+                            print("Today is: ", today1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_1 = fbcursor.fetchall()
+
+                            for record in pl_tree.get_children():
+                                pl_tree.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_1:
+                                pl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                in_result_1['text'] = '{}'.format(total)
+                            except:
+                                in_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Cost of Goods Sold',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_2 = fbcursor.fetchall()
+
+                            for record in pl_tree_1.get_children():
+                                pl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_2:
+                                pl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_2 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                in_result_2['text'] = '{}'.format(total_2)
+                            except:
+                                in_result_2['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Other Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_3 = fbcursor.fetchall()
+
+                            for record in pl_tree_2.get_children():
+                                pl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_3:
+                                pl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_4 = fbcursor.fetchall()
+
+                            for record in pl_tree_3.get_children():
+                                pl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_4:
+                                pl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Other Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_5 = fbcursor.fetchall()
+
+                            for record in pl_tree_4.get_children():
+                                pl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_5:
+                                pl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))
+                            countd += 1  
+                            try:
+                                total_5 = 0.0
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                in_result_3['text'] = '{}'.format(total_5)
+                            except:
+                                in_result_3['text'] = '{}'.format(0)
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_3 = 0.0
+                                total_4 = 0.0
+                                total_5 = 0.0
+                                total_6 = 0.0
+                                total_7 = 0.0
+                                total_8 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                for child in pl_tree_2.get_children():
+                                    total_3 += float(pl_tree_2.item(child, 'values')[1])
+                                for child in pl_tree_3.get_children():
+                                    total_4 += float(pl_tree_3.item(child, 'values')[1])
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                total_6 = total_2+total_3
+                                total_7 = total_6-total_4
+                                total_8 = total_7-total_5
+                                in_result_4['text'] = '{}'.format(total_8)
+                            except:
+                                in_result_4['text'] = '{}'.format(0)
+
+                        elif pl_comb_1.get() == 'This month':
+
+                            today_gt2 = date.today()
+                            firsty_gt2= today_gt2.replace(day=1)
+                            last_monthy_gt2 = firsty_gt2 -relativedelta(day=1)
+
+                            end_todayy_gt2 = last_monthy_gt2
+                            end_firsty_gt2 = end_todayy_gt2.replace(day=1)
+                            end_monthy_gt2 = end_firsty_gt2 -relativedelta(days=1)+relativedelta(months=1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_1 = fbcursor.fetchall()
+
+                            for record in pl_tree.get_children():
+                                pl_tree.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_1:
+                                pl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                in_result_1['text'] = '{}'.format(total)
+                            except:
+                                in_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Cost of Goods Sold',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_2 = fbcursor.fetchall()
+
+                            for record in pl_tree_1.get_children():
+                                pl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_2:
+                                pl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_2 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                in_result_2['text'] = '{}'.format(total_2)
+                            except:
+                                in_result_2['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Other Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_3 = fbcursor.fetchall()
+
+                            for record in pl_tree_2.get_children():
+                                pl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_3:
+                                pl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_4 = fbcursor.fetchall()
+
+                            for record in pl_tree_3.get_children():
+                                pl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_4:
+                                pl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Other Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_5 = fbcursor.fetchall()
+
+                            for record in pl_tree_4.get_children():
+                                pl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_5:
+                                pl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))
+                            countd += 1  
+                            try:
+                                total_5 = 0.0
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                in_result_3['text'] = '{}'.format(total_5)
+                            except:
+                                in_result_3['text'] = '{}'.format(0)
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_3 = 0.0
+                                total_4 = 0.0
+                                total_5 = 0.0
+                                total_6 = 0.0
+                                total_7 = 0.0
+                                total_8 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                for child in pl_tree_2.get_children():
+                                    total_3 += float(pl_tree_2.item(child, 'values')[1])
+                                for child in pl_tree_3.get_children():
+                                    total_4 += float(pl_tree_3.item(child, 'values')[1])
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                total_6 = total_2+total_3
+                                total_7 = total_6-total_4
+                                total_8 = total_7-total_5
+                                in_result_4['text'] = '{}'.format(total_8)
+                            except:
+                                in_result_4['text'] = '{}'.format(0)
+
+                        elif pl_comb_1.get() == 'This financial year':
+
+                            fiscalyear.setup_fiscal_calendar(start_month=4)
+
+                            first_fiscal_year = date.today().year + 1
+                            print(first_fiscal_year)
+                            current_fiscal_year = FiscalDate.today().fiscal_year
+
+                            for x in range(0, 1):
+                                fy = FiscalYear(first_fiscal_year + x)
+                                fystart = fy.start.strftime("%Y-%m-%d")
+                                fyend = fy.end.strftime("%Y-%m-%d")
+                                print(fystart)
+                                print(fyend)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_1 = fbcursor.fetchall()
+
+                            for record in pl_tree.get_children():
+                                pl_tree.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_1:
+                                pl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                in_result_1['text'] = '{}'.format(total)
+                            except:
+                                in_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Cost of Goods Sold',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_2 = fbcursor.fetchall()
+
+                            for record in pl_tree_1.get_children():
+                                pl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_2:
+                                pl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_2 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                in_result_2['text'] = '{}'.format(total_2)
+                            except:
+                                in_result_2['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Other Income',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_3 = fbcursor.fetchall()
+
+                            for record in pl_tree_2.get_children():
+                                pl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_3:
+                                pl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_4 = fbcursor.fetchall()
+
+                            for record in pl_tree_3.get_children():
+                                pl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_4:
+                                pl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))  
+                            countd += 1  
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Other Expenses',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            pl_date_data_5 = fbcursor.fetchall()
+
+                            for record in pl_tree_4.get_children():
+                                pl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in pl_date_data_5:
+                                pl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7]))
+                            countd += 1  
+                            try:
+                                total_5 = 0.0
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                in_result_3['text'] = '{}'.format(total_5)
+                            except:
+                                in_result_3['text'] = '{}'.format(0)
+                            try:
+                                total = 0.0
+                                total_1 = 0.0
+                                total_3 = 0.0
+                                total_4 = 0.0
+                                total_5 = 0.0
+                                total_6 = 0.0
+                                total_7 = 0.0
+                                total_8 = 0.0
+                                for child in pl_tree.get_children():
+                                    total += float(pl_tree.item(child, 'values')[1])
+                                for child in pl_tree_1.get_children():
+                                    total_1 += float(pl_tree_1.item(child, 'values')[1])
+                                total_2 = total-total_1
+                                for child in pl_tree_2.get_children():
+                                    total_3 += float(pl_tree_2.item(child, 'values')[1])
+                                for child in pl_tree_3.get_children():
+                                    total_4 += float(pl_tree_3.item(child, 'values')[1])
+                                for child in pl_tree_4.get_children():
+                                    total_5 += float(pl_tree_4.item(child, 'values')[1])
+                                total_6 = total_2+total_3
+                                total_7 = total_6-total_4
+                                total_8 = total_7-total_5
+                                in_result_4['text'] = '{}'.format(total_8)
+                            except:
+                                in_result_4['text'] = '{}'.format(0)
+                        else:
+                            pass
+
                     pl_comb_1 = ttk.Combobox(pl_canvas,font=('arial 10'))
                     pl_comb_1['values'] = ("All dates","Custom","Today","This month","This financial year",)
                     pl_comb_1.current(0)
                     window_pl_comb_1 = pl_canvas.create_window(0, 0, anchor="nw", width=300,height=30,window=pl_comb_1,tags=('plcombo1'))
                     pl_comb_1.bind("<<ComboboxSelected>>",custom_date_1)
 
-                    pl_btn_1=Button(pl_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12')
-                    window_pl_btn_1 = pl_canvas.create_window(0, 0, anchor="nw", window=pl_btn_1,tags=('plbutton1'))
-
-                    pl_btn_2=Button(pl_canvas,text='Back', width=20,height=1,foreground="white",background="#1b3857",font='arial 12')
-                    window_pl_btn_2 = pl_canvas.create_window(0, 0, anchor="nw", window=pl_btn_2,tags=('plbutton2'))
+                    pl_btn_1=Button(pl_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12',command=filterby_date_2)
+                    window_pl_btn_1 = pl_canvas.create_window(0, 0, anchor="nw", window=pl_btn_1,tags=('plbutton2'))
 
                     pl_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("plpoly4"))
 
@@ -24116,14 +25787,30 @@ def main_sign_in():
                             dcanvas.coords("bllabel14",dwidth/7,dheight/0.376)
                             dcanvas.coords("bllabel15",dwidth/6,dheight/0.317)
                             dcanvas.coords("blhline9",dwidth/10,dheight/0.329,dwidth/1.12,dheight/0.329)
-                            dcanvas.coords("bllabel16",dwidth/6.5,dheight/0.348)
+                            dcanvas.coords("bllabel16",dwidth/6.5,dheight/0.281)
                             dcanvas.coords("blhline10",dwidth/10,dheight/0.321,dwidth/1.12,dheight/0.321)
                             dcanvas.coords("bllabel17",dwidth/8,dheight/0.326)
+                            dcanvas.coords("blhline11",dwidth/10,dheight/0.283,dwidth/1.12,dheight/0.283)
+                            dcanvas.coords("blhline12",dwidth/10,dheight/0.277,dwidth/1.12,dheight/0.277)
+                            dcanvas.coords("bllabel18",dwidth/7,dheight/0.274)
+                            dcanvas.coords("blhline13",dwidth/10,dheight/0.248,dwidth/1.12,dheight/0.248)
+                            dcanvas.coords("blhline14",dwidth/10,dheight/0.243,dwidth/1.12,dheight/0.243)
+                            dcanvas.coords("bllabel19",dwidth/7,dheight/0.2462)
+                            dcanvas.coords("bllabel20",dwidth/10,dheight/0.242)
 
                             dcanvas.coords("bltree1",dwidth/6.5,dheight/0.613)
                             dcanvas.coords("bltree2",dwidth/5.7,dheight/0.482)
                             dcanvas.coords("bltree3",dwidth/5.8,dheight/0.368)
                             dcanvas.coords("bltree4",dwidth/5.7,dheight/0.31)
+                            dcanvas.coords("bltree5",dwidth/6.5,dheight/0.269)
+
+                            dcanvas.coords("bpllabel16",dwidth/1.3,dheight/0.512)
+                            dcanvas.coords("bpllabel17",dwidth/1.3,dheight/0.415)
+                            dcanvas.coords("bpllabel18",dwidth/1.3,dheight/0.401)
+                            dcanvas.coords("bpllabel19",dwidth/1.3,dheight/0.326)
+                            dcanvas.coords("bpllabel20",dwidth/1.3,dheight/0.281)
+                            dcanvas.coords("bpllabel21",dwidth/1.3,dheight/0.2462)
+                            dcanvas.coords("bpllabel22",dwidth/1.3,dheight/0.242)
                         except:
                             pass
                         try:
@@ -24172,6 +25859,748 @@ def main_sign_in():
                             bl_canvas.itemconfig('bldate2',state='hidden')
                             bl_canvas.itemconfig('bllabel3',state='hidden')
                             bl_canvas.itemconfig('bllabel4',state='hidden')
+                    
+                    #--------Filter By Date------------#
+                    def filterby_date_3():
+
+                        if bl_comb_1.get() == 'All dates':
+
+                            s_date = '2000-01-01'
+                            e_date = '2050-01-01'
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Current Assets',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_1 = fbcursor.fetchall()
+
+                            for record in bl_tree.get_children():
+                                bl_tree.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_1:
+                                bl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                bl_result_1['text'] = '{}'.format(total)
+                            except:
+                                bl_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Account Receivable(Debtors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_2 = fbcursor.fetchall()
+
+                            for record in bl_tree_1.get_children():
+                                bl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_2:
+                                bl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                bl_result_2['text'] = '{}'.format(total_1)
+                            except:
+                                bl_result_2['text'] = '{}'.format(0)
+
+                            try:
+                                total = 0.0
+                                total_2 = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                total_2 = total+total_1
+                                bl_result_3['text'] = '{}'.format(total_2)
+                            except:
+                                bl_result_3['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Current Liabilities',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_3 = fbcursor.fetchall()
+
+                            for record in bl_tree_2.get_children():
+                                bl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_3:
+                                bl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                bl_result_4['text'] = '{}'.format(total_3)
+                            except:
+                                bl_result_4['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Accounts Payable(Creditors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_4 = fbcursor.fetchall()
+
+                            for record in bl_tree_3.get_children():
+                                bl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_4:
+                                bl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                bl_result_5['text'] = '{}'.format(total_4)
+                            except:
+                                bl_result_5['text'] = '{}'.format(0)
+                            
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (s_date,e_date,'Equity',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_5 = fbcursor.fetchall()
+
+                            for record in bl_tree_4.get_children():
+                                bl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_5:
+                                bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                bl_result_6['text'] = '{}'.format(total_5)
+                            except:
+                                bl_result_6['text'] = '{}'.format(0)
+
+                            try:
+                                total_6 = 0.0
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                total_6 = total_3+total_4+total_5
+                                bl_result_7['text'] = '{}'.format(total_6)
+                            except:
+                                bl_result_7['text'] = '{}'.format(0)
+
+                        elif bl_comb_1.get() == 'Custom':
+
+                            start_date = bl_date_1.get_date()
+                            end_date = bl_date_2.get_date()
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Current Assets',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_1 = fbcursor.fetchall()
+
+                            for record in bl_tree.get_children():
+                                bl_tree.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_1:
+                                bl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                bl_result_1['text'] = '{}'.format(total)
+                            except:
+                                bl_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Account Receivable(Debtors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_2 = fbcursor.fetchall()
+
+                            for record in bl_tree_1.get_children():
+                                bl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_2:
+                                bl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                bl_result_2['text'] = '{}'.format(total_1)
+                            except:
+                                bl_result_2['text'] = '{}'.format(0)
+
+                            try:
+                                total = 0.0
+                                total_2 = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                total_2 = total+total_1
+                                bl_result_3['text'] = '{}'.format(total_2)
+                            except:
+                                bl_result_3['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Current Liabilities',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_3 = fbcursor.fetchall()
+
+                            for record in bl_tree_2.get_children():
+                                bl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_3:
+                                bl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                bl_result_4['text'] = '{}'.format(total_3)
+                            except:
+                                bl_result_4['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Accounts Payable(Creditors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_4 = fbcursor.fetchall()
+
+                            for record in bl_tree_3.get_children():
+                                bl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_4:
+                                bl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                bl_result_5['text'] = '{}'.format(total_4)
+                            except:
+                                bl_result_5['text'] = '{}'.format(0)
+                            
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (start_date,end_date,'Equity',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_5 = fbcursor.fetchall()
+
+                            for record in bl_tree_4.get_children():
+                                bl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_5:
+                                bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                bl_result_6['text'] = '{}'.format(total_5)
+                            except:
+                                bl_result_6['text'] = '{}'.format(0)
+
+                            try:
+                                total_6 = 0.0
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                total_6 = total_3+total_4+total_5
+                                bl_result_7['text'] = '{}'.format(total_6)
+                            except:
+                                bl_result_7['text'] = '{}'.format(0)
+
+                        elif bl_comb_1.get() == 'Today':
+
+                            today1 = date.today()
+                            print("Today is: ", today1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Current Assets',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_1 = fbcursor.fetchall()
+
+                            for record in bl_tree.get_children():
+                                bl_tree.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_1:
+                                bl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                bl_result_1['text'] = '{}'.format(total)
+                            except:
+                                bl_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Account Receivable(Debtors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_2 = fbcursor.fetchall()
+
+                            for record in bl_tree_1.get_children():
+                                bl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_2:
+                                bl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                bl_result_2['text'] = '{}'.format(total_1)
+                            except:
+                                bl_result_2['text'] = '{}'.format(0)
+
+                            try:
+                                total = 0.0
+                                total_2 = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                total_2 = total+total_1
+                                bl_result_3['text'] = '{}'.format(total_2)
+                            except:
+                                bl_result_3['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Current Liabilities',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_3 = fbcursor.fetchall()
+
+                            for record in bl_tree_2.get_children():
+                                bl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_3:
+                                bl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                bl_result_4['text'] = '{}'.format(total_3)
+                            except:
+                                bl_result_4['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Accounts Payable(Creditors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_4 = fbcursor.fetchall()
+
+                            for record in bl_tree_3.get_children():
+                                bl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_4:
+                                bl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                bl_result_5['text'] = '{}'.format(total_4)
+                            except:
+                                bl_result_5['text'] = '{}'.format(0)
+                            
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof=%s AND acctype=%s and cid_id=%s"
+                            date_val = (date.today(),'Equity',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_5 = fbcursor.fetchall()
+
+                            for record in bl_tree_4.get_children():
+                                bl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_5:
+                                bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                bl_result_6['text'] = '{}'.format(total_5)
+                            except:
+                                bl_result_6['text'] = '{}'.format(0)
+
+                            try:
+                                total_6 = 0.0
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                total_6 = total_3+total_4+total_5
+                                bl_result_7['text'] = '{}'.format(total_6)
+                            except:
+                                bl_result_7['text'] = '{}'.format(0)
+                        
+                        elif bl_comb_1.get() == 'This month':
+
+                            today_gt2 = date.today()
+                            firsty_gt2= today_gt2.replace(day=1)
+                            last_monthy_gt2 = firsty_gt2 -relativedelta(day=1)
+
+                            end_todayy_gt2 = last_monthy_gt2
+                            end_firsty_gt2 = end_todayy_gt2.replace(day=1)
+                            end_monthy_gt2 = end_firsty_gt2 -relativedelta(days=1)+relativedelta(months=1)
+
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Current Assets',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_1 = fbcursor.fetchall()
+
+                            for record in bl_tree.get_children():
+                                bl_tree.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_1:
+                                bl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                bl_result_1['text'] = '{}'.format(total)
+                            except:
+                                bl_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Account Receivable(Debtors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_2 = fbcursor.fetchall()
+
+                            for record in bl_tree_1.get_children():
+                                bl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_2:
+                                bl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                bl_result_2['text'] = '{}'.format(total_1)
+                            except:
+                                bl_result_2['text'] = '{}'.format(0)
+
+                            try:
+                                total = 0.0
+                                total_2 = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                total_2 = total+total_1
+                                bl_result_3['text'] = '{}'.format(total_2)
+                            except:
+                                bl_result_3['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Current Liabilities',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_3 = fbcursor.fetchall()
+
+                            for record in bl_tree_2.get_children():
+                                bl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_3:
+                                bl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                bl_result_4['text'] = '{}'.format(total_3)
+                            except:
+                                bl_result_4['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Accounts Payable(Creditors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_4 = fbcursor.fetchall()
+
+                            for record in bl_tree_3.get_children():
+                                bl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_4:
+                                bl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                bl_result_5['text'] = '{}'.format(total_4)
+                            except:
+                                bl_result_5['text'] = '{}'.format(0)
+                            
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (last_monthy_gt2,end_monthy_gt2,'Equity',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_5 = fbcursor.fetchall()
+
+                            for record in bl_tree_4.get_children():
+                                bl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_5:
+                                bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                bl_result_6['text'] = '{}'.format(total_5)
+                            except:
+                                bl_result_6['text'] = '{}'.format(0)
+
+                            try:
+                                total_6 = 0.0
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                total_6 = total_3+total_4+total_5
+                                bl_result_7['text'] = '{}'.format(total_6)
+                            except:
+                                bl_result_7['text'] = '{}'.format(0)
+
+                        elif bl_comb_1.get() == 'This financial year':
+
+                            fiscalyear.setup_fiscal_calendar(start_month=4)
+
+                            first_fiscal_year = date.today().year + 1
+                            print(first_fiscal_year)
+                            current_fiscal_year = FiscalDate.today().fiscal_year
+
+                            for x in range(0, 1):
+                                fy = FiscalYear(first_fiscal_year + x)
+                                fystart = fy.start.strftime("%Y-%m-%d")
+                                fyend = fy.end.strftime("%Y-%m-%d")
+                                print(fystart)
+                                print(fyend)
+                            
+                            inv_sql="select * from auth_user where username=%s"
+                            inv_val=(nm_ent.get(),)
+                            fbcursor.execute(inv_sql,inv_val,)
+                            inv_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (inv_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            inv_dtls=fbcursor.fetchone()
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Current Assets',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_1 = fbcursor.fetchall()
+
+                            for record in bl_tree.get_children():
+                                bl_tree.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_1:
+                                bl_tree.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                bl_result_1['text'] = '{}'.format(total)
+                            except:
+                                bl_result_1['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Account Receivable(Debtors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_2 = fbcursor.fetchall()
+
+                            for record in bl_tree_1.get_children():
+                                bl_tree_1.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_2:
+                                bl_tree_1.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1  
+                            try:
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                bl_result_2['text'] = '{}'.format(total_1)
+                            except:
+                                bl_result_2['text'] = '{}'.format(0)
+
+                            try:
+                                total = 0.0
+                                total_2 = 0.0
+                                for child in bl_tree.get_children():
+                                    total += float(bl_tree.item(child, 'values')[1])
+                                total_1 = 0.0
+                                for child in bl_tree_1.get_children():
+                                    total_1 += float(bl_tree_1.item(child, 'values')[1])
+                                total_2 = total+total_1
+                                bl_result_3['text'] = '{}'.format(total_2)
+                            except:
+                                bl_result_3['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Current Liabilities',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_3 = fbcursor.fetchall()
+
+                            for record in bl_tree_2.get_children():
+                                bl_tree_2.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_3:
+                                bl_tree_2.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                bl_result_4['text'] = '{}'.format(total_3)
+                            except:
+                                bl_result_4['text'] = '{}'.format(0)
+
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Accounts Payable(Creditors)',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_4 = fbcursor.fetchall()
+
+                            for record in bl_tree_3.get_children():
+                                bl_tree_3.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_4:
+                                bl_tree_3.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                bl_result_5['text'] = '{}'.format(total_4)
+                            except:
+                                bl_result_5['text'] = '{}'.format(0)
+                            
+                            date_sql = "SELECT * FROM app1_accounts1 WHERE asof BETWEEN %s AND %s AND acctype=%s and cid_id=%s"
+                            date_val = (fystart,fyend,'Equity',inv_dtls[0])
+                            fbcursor.execute(date_sql,date_val)
+                            bl_date_data_5 = fbcursor.fetchall()
+
+                            for record in bl_tree_4.get_children():
+                                bl_tree_4.delete(record)
+
+                            countd = 0
+                            for i in bl_date_data_5:
+                                bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                            countd += 1 
+                            try:
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                bl_result_6['text'] = '{}'.format(total_5)
+                            except:
+                                bl_result_6['text'] = '{}'.format(0)
+
+                            try:
+                                total_6 = 0.0
+                                total_3 = 0.0
+                                for child in bl_tree_2.get_children():
+                                    total_3 += float(bl_tree_2.item(child, 'values')[1])
+                                total_4 = 0.0
+                                for child in bl_tree_3.get_children():
+                                    total_4 += float(bl_tree_3.item(child, 'values')[1])
+                                total_5 = 0.0
+                                for child in bl_tree_4.get_children():
+                                    total_5 += float(bl_tree_4.item(child, 'values')[1])
+                                total_6 = total_3+total_4+total_5
+                                bl_result_7['text'] = '{}'.format(total_6)
+                            except:
+                                bl_result_7['text'] = '{}'.format(0)
+
+                        else:
+                            pass
+
 
                     bl_comb_1 = ttk.Combobox(bl_canvas,font=('arial 10'))
                     bl_comb_1['values'] = ("All dates","Custom","Today","This month","This financial year",)
@@ -24179,11 +26608,8 @@ def main_sign_in():
                     window_bl_comb_1 = bl_canvas.create_window(0, 0, anchor="nw", width=300,height=30,window=bl_comb_1,tags=('blcombo1'))
                     bl_comb_1.bind("<<ComboboxSelected>>",custom_date_2)
 
-                    bl_btn_1=Button(bl_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12')
-                    window_bl_btn_1 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_btn_1,tags=('blbutton1'))
-
-                    bl_btn_2=Button(bl_canvas,text='Back', width=20,height=1,foreground="white",background="#1b3857",font='arial 12')
-                    window_bl_btn_2 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_btn_2,tags=('blbutton2'))
+                    bl_btn_1=Button(bl_canvas,text='Run Report', width=20,height=1,foreground="white",background="#1b3857",font='arial 12',command=filterby_date_3)
+                    window_bl_btn_1 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_btn_1,tags=('blbutton2'))
 
                     bl_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("blpoly4"))
 
@@ -24224,6 +26650,7 @@ def main_sign_in():
 
                     label_1 = Label(bl_canvas,width=32,height=1,text="Total Account Receivable(Debtors)", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel8"))
+
 
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline4"))
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline5"))
@@ -24315,14 +26742,43 @@ def main_sign_in():
                             pass
                     count0 += 1
 
+                    bl_result_2 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_2 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_2, tags=("bpllabel17"))
+
+                    total_1 = 0.0
+                    for child in bl_tree_1.get_children():
+                        total_1 += float(bl_tree_1.item(child, 'values')[1])
+                    bl_result_2['text'] = '{}'.format(total_1)
+
                     label_1 = Label(bl_canvas,width=20,height=1,text="Total Current Assets", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel11"))
+
+                    bl_result_1 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_1 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_1, tags=("bpllabel16"))
+
+                    total = 0.0
+                    for child in bl_tree.get_children():
+                        total += float(bl_tree.item(child, 'values')[1])
+                    bl_result_1['text'] = '{}'.format(total)
 
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline3"))
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline6"))
 
                     label_1 = Label(bl_canvas,width=12,height=1,text="Total Assets", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel12"))
+
+                    bl_result_3 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_3 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_3, tags=("bpllabel18"))
+
+                    total = 0.0
+                    total_2 = 0.0
+                    for child in bl_tree.get_children():
+                        total += float(bl_tree.item(child, 'values')[1])
+                    total_1 = 0.0
+                    for child in bl_tree_1.get_children():
+                        total_1 += float(bl_tree_1.item(child, 'values')[1])
+                    total_2 = total+total_1
+                    bl_result_3['text'] = '{}'.format(total_2)
 
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline7"))
                     bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline8"))
@@ -24380,6 +26836,14 @@ def main_sign_in():
                     label_1 = Label(bl_canvas,width=27,height=1,text="Total Current Liabilities", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel17"))
 
+                    bl_result_4 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_4 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_4, tags=("bpllabel19"))
+ 
+                    total_3 = 0.0
+                    for child in bl_tree_2.get_children():
+                        total_3 += float(bl_tree_2.item(child, 'values')[1])
+                    bl_result_4['text'] = '{}'.format(total_3)
+
                     label_1 = Label(bl_canvas,width=25,height=1,text="Account Payable(Creditors)", font=('arial 12 bold'),background="white",fg="black") 
                     window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel15"))
 
@@ -24423,10 +26887,95 @@ def main_sign_in():
                             pass
                     count0 += 1  
 
-                    # label_1 = Label(bl_canvas,width=32,height=1,text="Total Account Payable(Creditors)", font=('arial 12 bold'),background="white",fg="black") 
-                    # window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel16"))
+                    label_1 = Label(bl_canvas,width=32,height=1,text="Total Account Payable(Creditors)", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel16"))
 
+                    bl_result_5 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_5 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_5, tags=("bpllabel20"))
+ 
+                    total_4 = 0.0
+                    for child in bl_tree_3.get_children():
+                        total_4 += float(bl_tree_3.item(child, 'values')[1])
+                    bl_result_5['text'] = '{}'.format(total_4)
+
+                    bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline11"))
+                    bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline12"))
+
+                    label_1 = Label(bl_canvas,width=8,height=1,text="Equity", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel18"))
+
+                    fgthdi = ttk.Style()
+                    fgthdi.theme_use("default")
+                    fgthdi.configure('mystyle117.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                    fgthdi.configure('mystyle117.Treeview.Heading', background='white',State='DISABLE',foreground='black')
+
+                    bl_scrollbar_4 = Scrollbar(balance_frame,orient="vertical")
                     
+                    bl_tree_4 = ttk.Treeview(bl_canvas, columns = (1,2), height = 6, show = "headings",style='mystyle117.Treeview',yscrollcommand=bl_scrollbar_4.set)
+                    
+                    bl_tree_4.column(1, width = 805)
+                    bl_tree_4.column(2, width = 170)
+
+                    window_label_4 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_tree_4,tags=('bltree5'))
+
+                    bl_scrollbar_4.config(command=bl_tree_4.yview)
+                    bl_scrollbar_4.grid(row=0,column=2,sticky='ns')
+
+                    inv_sql="select * from auth_user where username=%s"
+                    inv_val=(nm_ent.get(),)
+                    fbcursor.execute(inv_sql,inv_val,)
+                    inv_dtl=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (inv_dtl[0],)
+                    fbcursor.execute(sql, val,)
+                    inv_dtls=fbcursor.fetchone()
+
+                    c_sql_i1 = "SELECT * FROM app1_accounts1 where acctype=%s and cid_id=%s"
+                    c_val_i1 = ('Equity',inv_dtls[0],)
+                    fbcursor.execute(c_sql_i1,c_val_i1,)
+                    ap_data_7 = fbcursor.fetchall()
+
+                    count0 = 0
+                    for i in ap_data_7:
+                        if True:
+                            bl_tree_4.insert(parent='',index='end',iid=i,text='',values=(i[3],i[7])) 
+                        else:
+                            pass
+                    count0 += 1  
+
+                    bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline13"))
+                    bl_canvas.create_line(0,0,0,0,fill='#2f516f',width=1,tags=("blhline14"))
+
+                    label_1 = Label(bl_canvas,width=13,height=1,text="Total Equity", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel19"))
+
+                    bl_result_6 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_6 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_6, tags=("bpllabel21"))
+ 
+                    total_5 = 0.0
+                    for child in bl_tree_4.get_children():
+                        total_5 += float(bl_tree_4.item(child, 'values')[1])
+                    bl_result_6['text'] = '{}'.format(total_5)
+
+                    label_1 = Label(bl_canvas,width=29,height=1,text="Total Liabilities and Equity", font=('arial 12 bold'),background="white",fg="black") 
+                    window_label_1 = bl_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("bllabel20"))
+
+                    bl_result_7 = Label(bl_canvas, text='0',font=('arial 12 bold'),background="white",fg="black")
+                    window_bl_result_7 = bl_canvas.create_window(0, 0, anchor="nw", window=bl_result_7, tags=("bpllabel22"))
+
+                    total_6 = 0.0
+                    total_3 = 0.0
+                    for child in bl_tree_2.get_children():
+                        total_3 += float(bl_tree_2.item(child, 'values')[1])
+                    total_4 = 0.0
+                    for child in bl_tree_3.get_children():
+                        total_4 += float(bl_tree_3.item(child, 'values')[1])
+                    total_5 = 0.0
+                    for child in bl_tree_4.get_children():
+                        total_5 += float(bl_tree_4.item(child, 'values')[1])
+                    total_6 = total_3+total_4+total_5
+                    bl_result_7['text'] = '{}'.format(total_6)
 
                     bl_date_1=DateEntry(bl_canvas,width=40,justify=LEFT,foreground='white')
                     window_bl_date_1 = bl_canvas.create_window(0, 0, anchor="nw", height=30, window=bl_date_1,tags=('bldate1'),state=HIDDEN)
@@ -25488,7 +28037,7 @@ def main_sign_in():
                     fgthdi.configure('mystyle107.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
                     fgthdi.configure('mystyle107.Treeview.Heading', background='white',State='DISABLE',foreground='black')
 
-                    ap_scrollbar = Scrollbar(accountre_frame,orient="vertical")
+                    ap_scrollbar = Scrollbar(accountpay_frame,orient="vertical")
                     
                     ap_tree = ttk.Treeview(ap_canvas, columns = (1,2,3,4,5,6,7,8), height = 10, show = "headings",style='mystyle107.Treeview',yscrollcommand=ap_scrollbar.set)
                     ap_tree.heading(1, text="CUSTOMER NAME")
