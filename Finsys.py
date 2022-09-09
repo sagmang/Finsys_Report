@@ -118,6 +118,7 @@ inventory = PhotoImage(file="images/inventory.png")
 noninventory = PhotoImage(file="images/noninventory.png")
 service = PhotoImage(file="images/service.png")
 bundle = PhotoImage(file="images/bundle.png")
+finsys = PhotoImage(file="images/finsys.png")
 
 
 #------------------------------------------------------------------------------------------------------------Login Button Function
@@ -196,18 +197,20 @@ def main_sign_in():
                     
 
                     #------------------------------------------------------settings 
-                    def close_lst_2():
-                            lst_prf2.place_forget()
-                            set_btn4 = Button(tp_lb_srh, image=stn_img,command=settings, bg="#213b52", fg="black",border=0)
-                            set_btn4.grid(row=2,column=5,padx=(0,30))
-                    def select_settings(event):
-
-                        selected_indices_1 = lst_prf2.curselection()
-                        selected_langs = ",".join([lst_prf2.get(i) for i in selected_indices_1])
-                        lst_prf2.place_forget()
+                    
+                    def select_settings():
                         
-                        if selected_indices_1 == "Accounts And Settings":
+                        set_btn_1.grid_forget()
+                        lst_prf_1.place_forget()
+                        set_btn_2 = Button(tp_lb_srh, image=stn_img,command=settings, bg="#213b52", fg="black",border=0)
+                        set_btn_2.grid(row=2,column=5,padx=(0,30))
 
+                    def lst_prf_slt_1(event):
+                        selected_indices = lst_prf_1.curselection()
+                        selected_langs = ",".join([lst_prf_1.get(i) for i in selected_indices])
+                        lst_prf_1.place_forget()
+
+                        if selected_langs == "Accounts and Settings":
                             acc_frame = Frame(tab1)
                             acc_frame.grid(row=0,column=0,sticky='nsew')
 
@@ -220,7 +223,7 @@ def main_sign_in():
                                 x1 = dwidth/63
                                 x2 = dwidth/1.021
                                 y1 = dheight/14 
-                                y2 = dheight/3.505
+                                y2 = dheight/0.32
 
                                 dcanvas.coords("aspoly1",x1 + r1,y1,
                                 x1 + r1,y1,
@@ -246,7 +249,40 @@ def main_sign_in():
                                 x1,y1 + r1,
                                 x1,y1,
                                 )
-                            acc_canvas=Canvas(acc_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,1000))
+
+                                dcanvas.coords("asbutton1",dwidth/3.1,dheight/5)
+                                dcanvas.coords("asbutton2",dwidth/1.485,dheight/5)
+
+                                dcanvas.coords("ashline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
+
+                                dcanvas.coords("aslabel1",dwidth/13,dheight/2.5)
+                                dcanvas.coords("aslabel2",dwidth/13.85,dheight/1.85)
+                                dcanvas.coords("aslabel3",dwidth/1.935,dheight/1.85)
+                                dcanvas.coords("aslabel4",dwidth/13.95,dheight/1.42)
+                                dcanvas.coords("aslabel5",dwidth/1.935,dheight/1.42)
+                                dcanvas.coords("aslabel6",dwidth/18,dheight/1.14)
+                                dcanvas.coords("aslabel7",dwidth/1.935,dheight/1.14)
+                                dcanvas.coords("aslabel8",dwidth/13.6,dheight/0.95)
+                                dcanvas.coords("aslabel9",dwidth/13,dheight/0.82)
+                                dcanvas.coords("aslabel10",dwidth/18,dheight/0.73)
+                                dcanvas.coords("aslabel11",dwidth/1.97,dheight/0.73)
+                                dcanvas.coords("aslabel12",dwidth/15,dheight/0.65)
+                                dcanvas.coords("aslabel13",dwidth/1.935,dheight/0.65)
+
+                                dcanvas.coords("asentry1",dwidth/13.8,dheight/1.665)
+                                dcanvas.coords("asentry2",dwidth/1.93,dheight/1.665)
+                                dcanvas.coords("asentry3",dwidth/13.8,dheight/1.3)
+                                dcanvas.coords("asentry4",dwidth/1.93,dheight/1.3)
+                                dcanvas.coords("asentry5",dwidth/13.8,dheight/1.06)
+                                dcanvas.coords("asentry6",dwidth/1.93,dheight/1.06)
+                                dcanvas.coords("asentry7",dwidth/13.8,dheight/0.9)
+                                dcanvas.coords("asentry8",dwidth/13.8,dheight/0.7)
+                                dcanvas.coords("asentry9",dwidth/1.93,dheight/0.7)
+                                dcanvas.coords("asentry10",dwidth/13.8,dheight/0.621)
+                                dcanvas.coords("asentry11",dwidth/1.93,dheight/0.621)
+
+
+                            acc_canvas=Canvas(acc_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
 
                             acc_frame.grid_rowconfigure(0,weight=1)
                             acc_frame.grid_columnconfigure(0,weight=1)
@@ -254,29 +290,269 @@ def main_sign_in():
                             vertibar=Scrollbar(acc_frame, orient=VERTICAL)
                             vertibar.grid(row=0,column=1,sticky='ns')
                             vertibar.config(command=acc_canvas.yview)
+
                             acc_canvas.bind("<Configure>", acc_responsive_widgets)
                             acc_canvas.config(yscrollcommand=vertibar.set)
                             acc_canvas.grid(row=0,column=0,sticky='nsew')
 
+
                             acc_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("aspoly1"))
-                        else:
-                            pass
+
+                            acc_btn1=Button(acc_canvas,text='ACCOUNTS AND SETTINGS', width=28,height=1,foreground="white",background="#1b3857",font='arial 20',activebackground='#24a0ed', activeforeground='white')
+                            window_acc_btn1 = acc_canvas.create_window(0, 0, anchor="nw", window=acc_btn1,tags=('asbutton1'))
+
+                            # def acc_settings_1():
+                        
+                            #     a_lst_prf_1.place_forget()
+                            #     acc_btn2_2=Button(acc_canvas,text='▼', width=2,height=1,foreground="#24a0ed",background="#1b3857",font='arial 20',activebackground='#24a0ed', activeforeground='white',command=acc_settings)
+                            #     window_acc_btn2_2 = acc_canvas.create_window(0, 0, anchor="nw", window=acc_btn2_2,tags=('asbutton2'))
                             
+                            def a_lst_prf_slt_1(event):
+                                selected_indices_1 = a_lst_prf_1.curselection()
+                                selected_langs_1 = ",".join([a_lst_prf_1.get(i) for i in selected_indices_1])
+                                a_lst_prf_1.place_forget()
+
+                                if selected_langs_1 == "BILLING AND SUBCRIPTION":
+                                    acc_frame.grid_forget()
+                                    acc_frame_1 = Frame(tab1)
+                                    acc_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                                    def acc_responsive_widgets(event):
+                                        dwidth = event.width
+                                        dheight = event.height
+                                        dcanvas = event.widget
+
+                                        r1 = 25
+                                        x1 = dwidth/63
+                                        x2 = dwidth/1.021
+                                        y1 = dheight/14 
+                                        y2 = dheight/0.32
+
+                                        dcanvas.coords("bspoly1",x1 + r1,y1,
+                                        x1 + r1,y1,
+                                        x2 - r1,y1,
+                                        x2 - r1,y1,     
+                                        x2,y1,     
+                                        #--------------------
+                                        x2,y1 + r1,     
+                                        x2,y1 + r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2,
+                                        #--------------------
+                                        x2 - r1,y2,     
+                                        x2 - r1,y2,     
+                                        x1 + r1,y2,
+                                        x1 + r1,y2,
+                                        x1,y2,
+                                        #--------------------
+                                        x1,y2 - r1,
+                                        x1,y2 - r1,
+                                        x1,y1 + r1,
+                                        x1,y1 + r1,
+                                        x1,y1,
+                                        )
+
+                                        dcanvas.coords("bsbutton2",dwidth/23,dheight/35)
+
+                                        r1 = 25
+                                        x1 = dwidth/3.5
+                                        x2 = dwidth/1.4
+                                        y1 = dheight/10
+                                        y2 = dheight/.95
+
+                                        dcanvas.coords("bspoly2",x1 + r1,y1,
+                                        x1 + r1,y1,
+                                        x2 - r1,y1,
+                                        x2 - r1,y1,     
+                                        x2,y1,     
+                                        #--------------------
+                                        x2,y1 + r1,     
+                                        x2,y1 + r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2,
+                                        #--------------------
+                                        x2 - r1,y2,     
+                                        x2 - r1,y2,     
+                                        x1 + r1,y2,
+                                        x1 + r1,y2,
+                                        x1,y2,
+                                        #--------------------
+                                        x1,y2 - r1,
+                                        x1,y2 - r1,
+                                        x1,y1 + r1,
+                                        x1,y1 + r1,
+                                        x1,y1,
+                                        )
+
+                                        dcanvas.coords("bslabel1",dwidth/2.45,dheight/8)
+                                        dcanvas.coords("bslabel2",dwidth/3,dheight/3.3)
+                                        dcanvas.coords("bslabel3",dwidth/3.42,dheight/2.4)
+                                        dcanvas.coords("bslabel4",dwidth/3,dheight/1.4)
+                                        dcanvas.coords("bsbutton3",dwidth/2.3,dheight/1.25)
+                                        dcanvas.coords("bslabel5",dwidth/3,dheight/1.14)
+                                        dcanvas.coords("bsimage1",dwidth/2.3,dheight/1.85)
+                                    
+                                    acc_canvas_1=Canvas(acc_frame_1, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
+
+                                    acc_frame_1.grid_rowconfigure(0,weight=1)
+                                    acc_frame_1.grid_columnconfigure(0,weight=1)
+
+                                    vertibar=Scrollbar(acc_frame_1, orient=VERTICAL)
+                                    vertibar.grid(row=0,column=1,sticky='ns')
+                                    vertibar.config(command=acc_canvas_1.yview)
+
+                                    acc_canvas_1.bind("<Configure>", acc_responsive_widgets)
+                                    acc_canvas_1.config(yscrollcommand=vertibar.set)
+                                    acc_canvas_1.grid(row=0,column=0,sticky='nsew')
+                                    
+                                    acc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("bspoly1"))
+
+                                    acc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#C1BCAC",tags=("bspoly2"))
+
+                                    label_1 = Label(acc_canvas_1,width=10,height=2,text="finsYs", font=('arial 32'),background="#C1BCAC",fg="white") 
+                                    window_label_1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('bslabel1'))
+
+                                    label_1 = Label(acc_canvas_1,width=50,height=3,text="We hope you're enjoying your trial.To keep using \nFinsYs after free trial.please subscribe.", font=('arial 12'),background="#C1BCAC",fg="black") 
+                                    window_label_1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('bslabel2'))
+
+                                    label_1 = Label(acc_canvas_1,width=18,height=2,text="Cancel your trial", font=('arial 12'),background="#C1BCAC",fg="blue") 
+                                    window_label_1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('bslabel3'))
+
+                                    bs_image_1 = Image.open("images/finsys.png")
+                                    resize_image = bs_image_1.resize((155,90))
+                                    bs_image_1 = ImageTk.PhotoImage(resize_image)
+                                    bslogo = Label(acc_canvas_1, width=155, height=90, background="#C1BCAC", image = bs_image_1) 
+                                    window_image = acc_canvas_1.create_window(0, 0, anchor="nw", window=bslogo,tags=('bsimage1'))
+                                    bslogo.photo = bs_image_1
+
+                                    label_1 = Label(acc_canvas_1,width=50,height=2,text="Subscribe for 1095/month +applicable taxes", font=('arial 12'),background="#C1BCAC",fg="black") 
+                                    window_label_1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('bslabel4'))
+
+                                    bs_btn2=Button(acc_canvas_1,text='Subscribe', bd=0, foreground="white",background="red",font='arial 10 bold',activebackground="#1b3857",height=2,width=20)
+                                    window_bs_btn2 = acc_canvas_1.create_window(0, 0, anchor="nw", window=bs_btn2,tags=('bsbutton3'))
+
+                                    label_1 = Label(acc_canvas_1,width=50,height=2,text="We won’t send you spam. Unsubscribe at any time.", font=('arial 12'),background="#C1BCAC",fg="black") 
+                                    window_label_1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('bslabel5'))
+
+                                    def bs_back_1_():
+                                        acc_frame_1.grid_forget()
+                                        acc_frame.grid(row=0,column=0,sticky='nsew')
+
+                                    bs_btn1=Button(acc_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=bs_back_1_)
+                                    window_bs_btn1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=bs_btn1,tags=('bsbutton2'))
+
+
+                            def acc_settings():
+
+                                # create a list box
+                                a_langs_1 = ("BILLING AND SUBCRIPTION","SALES","EXPENSE")
+
+                                a_langs_var = StringVar(value=a_langs_1)
+                                global a_lst_prf_1
+                                a_lst_prf_1 = Listbox(acc_canvas,listvariable=a_langs_var,height=3 ,selectmode='extended',bg="black",fg="white",width=28)
+                                a_lst_prf_1.bind('<<ListboxSelect>>', a_lst_prf_slt_1)
+                                a_lst_prf_1.place(relx=0.68, rely=0.30)
+                                
+
+                                # global acc_btn2_1
+                                # acc_btn2_1=Button(acc_canvas,text='▼', width=2,height=1,foreground="#24a0ed",background="#1b3857",font='arial 20',activebackground='#24a0ed', activeforeground='white',command=acc_settings_1)
+                                # window_acc_btn2_1 = acc_canvas.create_window(0, 0, anchor="nw", window=acc_btn2_1,tags=('asbutton2'))
+
+                            acc_btn2=Button(acc_canvas,text='▼', width=2,height=1,foreground="#24a0ed",background="#1b3857",font='arial 20',activebackground='#24a0ed', activeforeground='white',command=acc_settings)
+                            window_acc_btn2 = acc_canvas.create_window(0, 0, anchor="nw", window=acc_btn2,tags=('asbutton2'))
+
+                            acc_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("ashline"))
+
+                            label_1 = Label(acc_canvas,width=10,height=2,text="Personal Info", font=('arial 18'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel1'))
+
+                            label_1 = Label(acc_canvas,width=10,height=2,text="First Name", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel2'))
+
+                            acc_entry_1=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_1 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_1, tags=('asentry1'))
+
+                            label_1 = Label(acc_canvas,width=10,height=2,text="Last Name", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel3'))
+
+                            acc_entry_2=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_2 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_2, tags=('asentry2'))
+
+                            label_1 = Label(acc_canvas,width=7,height=2,text="E-mail", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel4'))
+
+                            acc_entry_3=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_3 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_3, tags=('asentry3'))
+
+                            label_1 = Label(acc_canvas,width=10,height=2,text="Username", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel5'))
+
+                            acc_entry_4=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_4 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_4, tags=('asentry4'))
+
+                            label_1 = Label(acc_canvas,width=28,height=2,text="Enter your Current Password", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel6'))
+
+                            acc_entry_5=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_5 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_5, tags=('asentry5'))
+
+                            label_1 = Label(acc_canvas,width=18,height=2,text="Enter New Password", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel7'))
+
+                            acc_entry_6=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_6 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_6, tags=('asentry6'))
+
+                            label_1 = Label(acc_canvas,width=18,height=2,text="Re-type New Password", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel8'))
+
+                            acc_entry_7=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_7 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_7, tags=('asentry7'))
+
+                            label_1 = Label(acc_canvas,width=11,height=2,text="Company Info", font=('arial 18'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel9'))
+
+                            label_1 = Label(acc_canvas,width=18,height=2,text="Company Name", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel10'))
+
+                            acc_entry_8=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_8 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_8, tags=('asentry8'))
+
+                            label_1 = Label(acc_canvas,width=18,height=2,text="Company Address", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel11'))
+
+                            acc_entry_9=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_9 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_9, tags=('asentry9'))
+
+                            label_1 = Label(acc_canvas,width=5,height=2,text="City", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel12'))
+
+                            acc_entry_10=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_10 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_10, tags=('asentry10'))
+
+                            label_1 = Label(acc_canvas,width=6,height=2,text="State", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel13'))
+
+                            acc_entry_11=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_11 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_11, tags=('asentry11'))
                             
                     def settings():
+                        set_btn.grid_forget()
 
                         # create a list box
-                        stng = ("Accounts And Settings","Customize From Style","Chart Of Accounts")
+                        langs_1 = ("Accounts and Settings","Customize Form Style","Chart of Accounts")
 
-                        stngs = StringVar(value=stng)
-                        global lst_prf2
-                        lst_prf2 = Listbox(root,listvariable=stngs,height=3 ,selectmode='extended',bg="black",fg="white")
+                        langs_var = StringVar(value=langs_1)
+                        global lst_prf_1
+                        lst_prf_1 = Listbox(root,listvariable=langs_var,height=3 ,selectmode='extended',bg="black",fg="white")
+                        lst_prf_1.bind('<<ListboxSelect>>', lst_prf_slt_1)
+                        lst_prf_1.place(relx=0.70, rely=0.10)
+                        
 
-                        lst_prf2.place(relx=0.70, rely=0.10)
-                        lst_prf2.bind('<<ListboxSelect>>',select_settings )
-                        set_btn.grid_forget()
-                        set_btn2 = Button(tp_lb_srh, image=stn_img,command=close_lst_2, bg="#213b52", fg="black",border=0)
-                        set_btn2.grid(row=2,column=5,padx=(0,30))
+                        global set_btn_1
+                        set_btn_1 = Button(tp_lb_srh, image=stn_img,command=select_settings, bg="#213b52", fg="black",border=0)
+                        set_btn_1.grid(row=2,column=5,padx=(0,30))
 
                     set_btn = Button(tp_lb_srh, image=stn_img,command=settings, bg="#213b52", fg="black",border=0)
                     set_btn.grid(row=2,column=5,padx=(0,30))
