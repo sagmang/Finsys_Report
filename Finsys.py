@@ -119,6 +119,8 @@ noninventory = PhotoImage(file="images/noninventory.png")
 service = PhotoImage(file="images/service.png")
 bundle = PhotoImage(file="images/bundle.png")
 finsys = PhotoImage(file="images/finsys.png")
+on = PhotoImage(file = "images/on.png")
+off = PhotoImage(file = "images/off.png")
 
 
 #------------------------------------------------------------------------------------------------------------Login Button Function
@@ -317,7 +319,7 @@ def main_sign_in():
                                     acc_frame_1 = Frame(tab1)
                                     acc_frame_1.grid(row=0,column=0,sticky='nsew')
 
-                                    def acc_responsive_widgets(event):
+                                    def acc_responsive_widgets_1(event):
                                         dwidth = event.width
                                         dheight = event.height
                                         dcanvas = event.widget
@@ -388,7 +390,7 @@ def main_sign_in():
 
                                         dcanvas.coords("bslabel1",dwidth/2.45,dheight/8)
                                         dcanvas.coords("bslabel2",dwidth/3,dheight/3.3)
-                                        dcanvas.coords("bslabel3",dwidth/3.42,dheight/2.4)
+                                        dcanvas.coords("bslabel3",dwidth/2.3,dheight/2.4)
                                         dcanvas.coords("bslabel4",dwidth/3,dheight/1.4)
                                         dcanvas.coords("bsbutton3",dwidth/2.3,dheight/1.25)
                                         dcanvas.coords("bslabel5",dwidth/3,dheight/1.14)
@@ -403,7 +405,7 @@ def main_sign_in():
                                     vertibar.grid(row=0,column=1,sticky='ns')
                                     vertibar.config(command=acc_canvas_1.yview)
 
-                                    acc_canvas_1.bind("<Configure>", acc_responsive_widgets)
+                                    acc_canvas_1.bind("<Configure>", acc_responsive_widgets_1)
                                     acc_canvas_1.config(yscrollcommand=vertibar.set)
                                     acc_canvas_1.grid(row=0,column=0,sticky='nsew')
                                     
@@ -443,6 +445,304 @@ def main_sign_in():
                                     bs_btn1=Button(acc_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=bs_back_1_)
                                     window_bs_btn1 = acc_canvas_1.create_window(0, 0, anchor="nw", window=bs_btn1,tags=('bsbutton2'))
 
+                                elif selected_langs_1 == "SALES":
+                                    acc_frame.grid_forget()
+                                    acc_frame_2 = Frame(tab1)
+                                    acc_frame_2.grid(row=0,column=0,sticky='nsew')
+
+                                    def acc_responsive_widgets_2(event):
+                                        dwidth = event.width
+                                        dheight = event.height
+                                        dcanvas = event.widget
+
+                                        r1 = 25
+                                        x1 = dwidth/63
+                                        x2 = dwidth/1.021
+                                        y1 = dheight/14 
+                                        y2 = dheight/0.5
+
+                                        dcanvas.coords("slpoly1",x1 + r1,y1,
+                                        x1 + r1,y1,
+                                        x2 - r1,y1,
+                                        x2 - r1,y1,     
+                                        x2,y1,     
+                                        #--------------------
+                                        x2,y1 + r1,     
+                                        x2,y1 + r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2,
+                                        #--------------------
+                                        x2 - r1,y2,     
+                                        x2 - r1,y2,     
+                                        x1 + r1,y2,
+                                        x1 + r1,y2,
+                                        x1,y2,
+                                        #--------------------
+                                        x1,y2 - r1,
+                                        x1,y2 - r1,
+                                        x1,y1 + r1,
+                                        x1,y1 + r1,
+                                        x1,y1,
+                                        )
+
+                                        dcanvas.coords("slbutton2",dwidth/23,dheight/35)
+                                        dcanvas.coords("sllabel1",dwidth/13,dheight/6)
+                                        dcanvas.coords("slhline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
+                                        dcanvas.coords("sllabel2",dwidth/15,dheight/2.6)
+                                        dcanvas.coords("slbutton3",dwidth/2,dheight/2.6)
+                                        dcanvas.coords("sllabel3",dwidth/12,dheight/2.1)
+                                        dcanvas.coords("sllabel4",dwidth/11.6,dheight/1.8)
+                                        dcanvas.coords("sllabel5",dwidth/14,dheight/1.55)
+                                        dcanvas.coords("sllabel6",dwidth/15,dheight/1.35)
+                                        dcanvas.coords("slcombo1",dwidth/2,dheight/1.31)
+                                        dcanvas.coords("sllabel7",dwidth/14.5,dheight/1.215)
+                                        dcanvas.coords("sllabel8",dwidth/21,dheight/1.09)
+                                        dcanvas.coords("sllabel9",dwidth/13,dheight/.95)
+                                        dcanvas.coords("slhline1",dwidth/21,dheight/0.82,dwidth/1.055,dheight/0.82)
+                                        dcanvas.coords("sllabel10",dwidth/14,dheight/0.78)
+                                        dcanvas.coords("sllabel11",dwidth/11.8,dheight/0.72)
+                                        dcanvas.coords("sllabel12",dwidth/15,dheight/0.67)
+                                        dcanvas.coords("sllabel13",dwidth/14,dheight/0.62)
+                                        dcanvas.coords("slbutton1",dwidth/8,dheight/0.56)   
+
+                                    acc_canvas_2=Canvas(acc_frame_2, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
+
+                                    acc_frame_2.grid_rowconfigure(0,weight=1)
+                                    acc_frame_2.grid_columnconfigure(0,weight=1)
+
+                                    vertibar=Scrollbar(acc_frame_2, orient=VERTICAL)
+                                    vertibar.grid(row=0,column=1,sticky='ns')
+                                    vertibar.config(command=acc_canvas_2.yview)
+
+                                    acc_canvas_2.bind("<Configure>", acc_responsive_widgets_2)
+                                    acc_canvas_2.config(yscrollcommand=vertibar.set)
+                                    acc_canvas_2.grid(row=0,column=0,sticky='nsew')
+                                    
+                                    acc_canvas_2.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("slpoly1"))
+
+                                    label_1 = Label(acc_canvas_2,width=20,height=2,text="SALES FORM CONTENT", font=('arial 20'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel1'))
+
+                                    acc_canvas_2.create_line(0,0,0,0,fill='gray',width=1,tags=("slhline"))
+
+                                    label_1 = Label(acc_canvas_2,width=20,height=2,text="Item wise discount", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel2'))
+
+                                    
+                                    #global is_on
+                                    is_on = True
+                                    
+                                    def Switch():
+                                        global is_on
+                                        
+                                        if is_on:
+                                            on_button.config(image = off)
+                                            is_on = False
+                                        else:
+                                            
+                                            on_button.config(image = on)
+                                            is_on = True
+                                            
+                                            
+  
+                                    on_button = Button(acc_canvas_2, image = on, bd = 0,
+                                                    command = switch)
+                                    window_on_button = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button,tags=('slbutton3'))
+
+                                    label_1 = Label(acc_canvas_2,width=8,height=2,text="Deposit", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel3'))
+
+                                    label_1 = Label(acc_canvas_2,width=30,height=2,text="Round off final amount for transaction", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel4'))
+
+                                    label_1 = Label(acc_canvas_2,width=15,height=2,text="Total discount", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel5'))
+
+                                    label_1 = Label(acc_canvas_2,width=23,height=2,text="Preferred invoice term", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel6'))
+
+                                    sl_combo = ttk.Combobox(acc_canvas_2, font=('arial 10'))
+                                    sl_combo['values'] = ("Choose","DUE ON RECEIPT","NET 15","NET 30","NET 60",)
+                                    sl_combo.current(0)
+                                    window_sl_combo = acc_canvas_2.create_window(0, 0, anchor="nw", width=150, height=30,window=sl_combo, tags=("slcombo1"))
+
+                                    label_1 = Label(acc_canvas_2,width=15,height=2,text="Service date", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel7'))
+
+                                    label_1 = Label(acc_canvas_2,width=40,height=2,text="Classification of tax and retail services", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel8'))
+
+                                    label_1 = Label(acc_canvas_2,width=23,height=2,text="PRODUCT AND SERVICES", font=('arial 20'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel9'))
+
+                                    acc_canvas_2.create_line(0,0,0,0,fill='gray',width=1,tags=("slhline1"))
+
+                                    label_1 = Label(acc_canvas_2,width=40,height=2,text="Show Product/Service column on sales forms", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel10'))
+
+                                    label_1 = Label(acc_canvas_2,width=16,height=2,text="Show SKU column", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel11'))
+
+                                    label_1 = Label(acc_canvas_2,width=28,height=2,text="Track quantity and price/rate", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel12'))
+
+                                    label_1 = Label(acc_canvas_2,width=30,height=2,text="Track inventory quantity on hand", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel13'))
+
+
+                                    def sl_back_1_():
+                                        acc_frame_2.grid_forget()
+                                        acc_frame.grid(row=0,column=0,sticky='nsew')
+
+                                    sl_btn1=Button(acc_canvas_2,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=sl_back_1_)
+                                    window_sl_btn1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=sl_btn1,tags=('slbutton2'))
+
+                                    sl_btn2=Button(acc_canvas_2,text='Save', bd=0, foreground="white",background="#2f516f",font='arial 14 bold',activebackground="#1b3857",activeforeground="white",width=15,height=2)
+                                    window_sl_btn2 = acc_canvas_2.create_window(0, 0, anchor="nw", window=sl_btn2,tags=('slbutton1'))
+                                
+                                elif selected_langs_1 == "EXPENSE":
+                                    acc_frame.grid_forget()
+                                    acc_frame_3 = Frame(tab1)
+                                    acc_frame_3.grid(row=0,column=0,sticky='nsew')
+
+                                    def acc_responsive_widgets_3(event):
+                                        dwidth = event.width
+                                        dheight = event.height
+                                        dcanvas = event.widget
+
+                                        r1 = 25
+                                        x1 = dwidth/63
+                                        x2 = dwidth/1.021
+                                        y1 = dheight/14 
+                                        y2 = dheight/0.5
+
+                                        dcanvas.coords("expoly1",x1 + r1,y1,
+                                        x1 + r1,y1,
+                                        x2 - r1,y1,
+                                        x2 - r1,y1,     
+                                        x2,y1,     
+                                        #--------------------
+                                        x2,y1 + r1,     
+                                        x2,y1 + r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2 - r1,     
+                                        x2,y2,
+                                        #--------------------
+                                        x2 - r1,y2,     
+                                        x2 - r1,y2,     
+                                        x1 + r1,y2,
+                                        x1 + r1,y2,
+                                        x1,y2,
+                                        #--------------------
+                                        x1,y2 - r1,
+                                        x1,y2 - r1,
+                                        x1,y1 + r1,
+                                        x1,y1 + r1,
+                                        x1,y1,
+                                        )
+
+                                        dcanvas.coords("exbutton2",dwidth/23,dheight/35)
+                                        dcanvas.coords("exlabel1",dwidth/13,dheight/6)
+                                        dcanvas.coords("exhline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
+                                        dcanvas.coords("exlabel2",dwidth/15,dheight/2.6)
+                                        dcanvas.coords("exbutton3",dwidth/2,dheight/2.6)
+                                        dcanvas.coords("exlabel3",dwidth/16,dheight/2.1)
+                                        dcanvas.coords("exlabel4",dwidth/12,dheight/1.8)
+                                        dcanvas.coords("exlabel5",dwidth/21.3,dheight/1.55)
+                                        dcanvas.coords("exlabel6",dwidth/15,dheight/1.35)
+                                        dcanvas.coords("excombo1",dwidth/2,dheight/1.31)
+                                        dcanvas.coords("exlabel7",dwidth/12,dheight/1.1)
+                                        dcanvas.coords("exhline1",dwidth/21,dheight/0.95,dwidth/1.055,dheight/0.95)
+                                        dcanvas.coords("exlabel8",dwidth/13,dheight/0.9)
+                                        dcanvas.coords("exlabel9",dwidth/14,dheight/0.82)
+                                        dcanvas.coords("exbutton1",dwidth/8,dheight/0.7)   
+
+                                    acc_canvas_3=Canvas(acc_frame_3, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
+
+                                    acc_frame_3.grid_rowconfigure(0,weight=1)
+                                    acc_frame_3.grid_columnconfigure(0,weight=1)
+
+                                    vertibar=Scrollbar(acc_frame_3, orient=VERTICAL)
+                                    vertibar.grid(row=0,column=1,sticky='ns')
+                                    vertibar.config(command=acc_canvas_3.yview)
+
+                                    acc_canvas_3.bind("<Configure>", acc_responsive_widgets_3)
+                                    acc_canvas_3.config(yscrollcommand=vertibar.set)
+                                    acc_canvas_3.grid(row=0,column=0,sticky='nsew')
+                                    
+                                    acc_canvas_3.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("expoly1"))
+
+                                    label_1 = Label(acc_canvas_3,width=20,height=2,text="BILLS AND EXPENSE", font=('arial 20'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel1'))
+
+                                    acc_canvas_3.create_line(0,0,0,0,fill='gray',width=1,tags=("exhline"))
+
+                                    label_1 = Label(acc_canvas_3,width=45,height=2,text="Show Items table on expense and purchase forms", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel2'))
+
+                                    
+                                    #global is_on
+                                    is_on = 0
+                                    print(is_on)
+                                    
+                                    def switch():
+                                        global is_on
+                                        is_on = 0
+                                        if is_on == 0:
+                                            is_on = 1
+                                            button.config(image = on)    
+                                            
+                                        else:
+                                            is_on = 0
+                                            button.config(image = off)
+                                            
+                                            
+  
+                                    on_button = Button(acc_canvas_3, image = on, bd = 0,
+                                                    command = switch)
+                                    window_on_button = acc_canvas_3.create_window(0, 0, anchor="nw", window=on_button,tags=('exbutton3'))
+
+                                    label_1 = Label(acc_canvas_3,width=38,height=2,text="Track expenses and items by customer", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel3'))
+
+                                    label_1 = Label(acc_canvas_3,width=30,height=2,text="Make expenses and items billable", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel4'))
+
+                                    label_1 = Label(acc_canvas_3,width=50,height=2,text="Round off final amounts for expense transactions", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel5'))
+
+                                    label_1 = Label(acc_canvas_3,width=27,height=2,text="Default bill payment terms", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel6'))
+
+                                    ex_combo = ttk.Combobox(acc_canvas_3, font=('arial 10'))
+                                    ex_combo['values'] = ("Choose","DUE ON RECEIPT","NET 15","NET 30","NET 60",)
+                                    ex_combo.current(0)
+                                    window_ex_combo = acc_canvas_3.create_window(0, 0, anchor="nw", width=150, height=30,window=ex_combo, tags=("excombo1"))
+
+                                    label_1 = Label(acc_canvas_3,width=18,height=2,text="PURCHASE ORDERS", font=('arial 20'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel7'))
+
+                                    acc_canvas_3.create_line(0,0,0,0,fill='gray',width=1,tags=("exhline1"))
+
+                                    label_1 = Label(acc_canvas_3,width=20,height=2,text="Use purchase orders", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel8'))
+
+                                    label_1 = Label(acc_canvas_3,width=26,height=2,text="Custom transaction number", font=('arial 17'),background="#1b3857",fg="white") 
+                                    window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel9'))
+
+
+                                    def ex_back_1_():
+                                        acc_frame_3.grid_forget()
+                                        acc_frame.grid(row=0,column=0,sticky='nsew')
+
+                                    ex_btn1=Button(acc_canvas_3,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=ex_back_1_)
+                                    window_ex_btn1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_btn1,tags=('exbutton2'))
+
+                                    ex_btn2=Button(acc_canvas_3,text='Save', bd=0, foreground="white",background="#2f516f",font='arial 14 bold',activebackground="#1b3857",activeforeground="white",width=15,height=2)
+                                    window_ex_btn2 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_btn2,tags=('exbutton1'))
+
+                        
 
                             def acc_settings():
 
@@ -536,7 +836,723 @@ def main_sign_in():
 
                             acc_entry_11=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_11 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_11, tags=('asentry11'))
+
+                        elif selected_langs == "Customize Form Style":    
+                            cs_frame = Frame(tab1)
+                            cs_frame.grid(row=0,column=0,sticky='nsew')
+
+                            def cs_responsive_widgets(event):
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+
+                                dcanvas.coords("cstree1",dwidth/12,dheight/1.8)
+                                
+
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("cspoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("cshline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+                                dcanvas.coords("cslabel1",dwidth/2.5,dheight/8.00)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.8
+
+
+                                dcanvas.coords("cspoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("csbutton1",dwidth/2.1,dheight/2.4)
+                                dcanvas.coords("csbutton2",dwidth/1.59,dheight/2.4)
+                                dcanvas.coords("csbutton3",dwidth/1.28,dheight/2.26)
+                                dcanvas.coords("cscombo1",dwidth/1.179,dheight/1.52)
+
+                            cs_canvas=Canvas(cs_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
+
+                            cs_frame.grid_rowconfigure(0,weight=1)
+                            cs_frame.grid_columnconfigure(0,weight=1)
+
+                            vertibar=Scrollbar(cs_frame, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=cs_canvas.yview)
+
+                            cs_canvas.bind("<Configure>", cs_responsive_widgets)
+                            cs_canvas.config(yscrollcommand=vertibar.set)
+                            cs_canvas.grid(row=0,column=0,sticky='nsew')
+
+
+                            cs_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cspoly1"))
+
+                            label_1 = Label(cs_canvas,width=20,height=1,text="CUSTOM FORM STYLES", font=('arial 25'),background="#1b3857",fg="white") 
+                            window_label_1 = cs_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("cslabel1"))
+
+                            cs_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("cshline"))
+
                             
+                            cs_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cspoly2"))
+
+
+                            fgthi = ttk.Style()
+                            fgthi.theme_use("default")
+                            fgthi.configure('mystyle103.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                            fgthi.configure('mystyle103.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                            cs_scrollbar = Scrollbar(cs_frame,orient="vertical")
+
+                            cs_tree = ttk.Treeview(cs_canvas, columns = (1,2,3,4,5), height = 10, show = "headings",style='mystyle103.Treeview',yscrollcommand=cs_scrollbar.set)
+                            cs_tree.heading(1)
+                            cs_tree.heading(2, text="NAME")
+                            cs_tree.heading(3, text="FORM-TYPE")
+                            cs_tree.heading(4, text="LAST EDITED")
+                            cs_tree.heading(5, text="APPLIED")
+                            
+                            cs_tree.column(1, width = 50)
+                            cs_tree.column(2, width = 300)
+                            cs_tree.column(3, width = 270)
+                            cs_tree.column(4, width = 300)
+                            cs_tree.column(5, width = 200)
+                            window_label_4 = cs_canvas.create_window(0, 0, anchor="nw", window=cs_tree,tags=('cstree1'))
+
+                            cs_scrollbar.config(command=cs_tree.yview)
+                            cs_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                            def add_newstyle():
+                                cs_frame.grid_forget()
+                                cs_frame_1 = Frame(tab1)
+                                cs_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                                def cs_responsive_widgets_1(event):
+                                    dwidth = event.width
+                                    dheight = event.height
+                                    dcanvas = event.widget
+                                    
+                                    r1 = 25
+                                    x1 = dwidth/63
+                                    x2 = dwidth/1.021
+                                    y1 = dheight/14 
+                                    y2 = dheight/3.505
+
+                                    dcanvas.coords("nspoly1",x1 + r1,y1,
+                                    x1 + r1,y1,
+                                    x2 - r1,y1,
+                                    x2 - r1,y1,     
+                                    x2,y1,     
+                                    #--------------------
+                                    x2,y1 + r1,     
+                                    x2,y1 + r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2,
+                                    #--------------------
+                                    x2 - r1,y2,     
+                                    x2 - r1,y2,     
+                                    x1 + r1,y2,
+                                    x1 + r1,y2,
+                                    x1,y2,
+                                    #--------------------
+                                    x1,y2 - r1,
+                                    x1,y2 - r1,
+                                    x1,y1 + r1,
+                                    x1,y1 + r1,
+                                    x1,y1,
+                                    )
+
+                                    dcanvas.coords("nslabel1",dwidth/2.5,dheight/8.24)
+                                    dcanvas.coords("nshline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                    r2 = 25
+                                    x11 = dwidth/63
+                                    x21 = dwidth/1.021
+                                    y11 = dheight/2.8
+                                    y21 = dheight/0.32
+
+
+                                    dcanvas.coords("nspoly2",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+                                    dcanvas.coords("nsbutton3",dwidth/23,dheight/3.415)
+                                    dcanvas.coords("nslabel2",dwidth/21,dheight/2.3)
+                                    dcanvas.coords("nsentry1",dwidth/20,dheight/2.05)
+                                    dcanvas.coords("nslabel3",dwidth/22.2,dheight/1.64)
+                                    dcanvas.coords("nsentry2",dwidth/20,dheight/1.5)
+                                    dcanvas.coords("nsbutton4",dwidth/20,dheight/1.25)
+                                    dcanvas.coords("nsbutton5",dwidth/5.8,dheight/1.25)
+                                    dcanvas.coords("nsbutton6",dwidth/20,dheight/1)
+                                    dcanvas.coords("nsbutton7",dwidth/5.8,dheight/1)
+                                    dcanvas.coords("nslabel4",dwidth/22.8,dheight/0.83)
+                                    dcanvas.coords("nsentry3",dwidth/20,dheight/0.798)
+                                    dcanvas.coords("nsbutton8",dwidth/20,dheight/0.75)
+                                    dcanvas.coords("nsbutton9",dwidth/9,dheight/0.75)
+                                    dcanvas.coords("nsbutton10",dwidth/5.72,dheight/0.75)
+                                    dcanvas.coords("nsbutton11",dwidth/4.2,dheight/0.75)
+                                    dcanvas.coords("nsbutton12",dwidth/20,dheight/0.695)
+                                    dcanvas.coords("nsbutton13",dwidth/9,dheight/0.695)
+                                    dcanvas.coords("nsbutton14",dwidth/5.72,dheight/0.695)
+                                    dcanvas.coords("nsbutton15",dwidth/4.2,dheight/0.695)
+                                    dcanvas.coords("nsbutton16",dwidth/20,dheight/0.65)
+                                    dcanvas.coords("nsbutton17",dwidth/9,dheight/0.65)
+                                    dcanvas.coords("nsbutton18",dwidth/5.72,dheight/0.65)
+                                    dcanvas.coords("nsbutton19",dwidth/4.2,dheight/0.65)
+                                    dcanvas.coords("nslabel5",dwidth/22.8,dheight/0.595)
+                                    dcanvas.coords("nsentry4",dwidth/20,dheight/0.58)
+                                    dcanvas.coords("nsbutton20",dwidth/20,dheight/0.55)
+                                    dcanvas.coords("nsbutton21",dwidth/9,dheight/0.55)
+                                    dcanvas.coords("nsbutton22",dwidth/5.72,dheight/0.55)
+                                    dcanvas.coords("nsbutton23",dwidth/4.2,dheight/0.55)
+                                    dcanvas.coords("nsbutton24",dwidth/20,dheight/0.52)
+                                    dcanvas.coords("nsbutton25",dwidth/9,dheight/0.52)
+                                    dcanvas.coords("nsbutton26",dwidth/5.72,dheight/0.52)
+                                    dcanvas.coords("nsbutton27",dwidth/4.2,dheight/0.52)
+                                    dcanvas.coords("nsbutton28",dwidth/20,dheight/0.493)
+                                    dcanvas.coords("nsbutton29",dwidth/9,dheight/0.493)
+                                    dcanvas.coords("nsbutton30",dwidth/5.72,dheight/0.493)
+                                    dcanvas.coords("nsbutton31",dwidth/4.2,dheight/0.493) 
+                                    dcanvas.coords("nslabel6",dwidth/22.5,dheight/0.464)
+                                    dcanvas.coords("nsentry5",dwidth/20,dheight/0.45)
+                                    dcanvas.coords("nsbutton32",dwidth/20,dheight/0.43)
+                                    dcanvas.coords("nsbutton33",dwidth/5.8,dheight/0.43)
+                                    dcanvas.coords("nsbutton34",dwidth/20,dheight/0.4)
+                                    dcanvas.coords("nsbutton35",dwidth/5.8,dheight/0.4)
+                                    dcanvas.coords("nscheck1",dwidth/8.5,dheight/0.37)
+                                    dcanvas.coords("nsbutton1",dwidth/8.5,dheight/0.355)
+
+                                    r2 = 25
+                                    x11 = dwidth/3
+                                    x21 = dwidth/1.05
+                                    y11 = dheight/2.3
+                                    y21 = dheight/0.38
+
+
+                                    dcanvas.coords("nspoly3",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("naivlabel1",dwidth/2.58,dheight/1.85)
+                                    dcanvas.coords("naivlabel2",dwidth/2.65,dheight/1.70)
+                                    dcanvas.coords("naivlabel3",dwidth/2.65,dheight/1.55)
+                                    dcanvas.coords("naivlabel4",dwidth/2.65,dheight/1.42)
+                                    dcanvas.coords("naivlabel5",dwidth/2.65,dheight/1.32)
+                                    dcanvas.coords("naivlabel6",dwidth/2.60,dheight/1.22)
+                                    dcanvas.coords("naivlabel7",dwidth/2.70,dheight/1.14)
+                                    dcanvas.coords("naivlabel8",dwidth/2.85,dheight/1.0)
+                                    dcanvas.coords("naivlabel9",dwidth/1.36,dheight/1.0)
+                                    dcanvas.coords("naivlabel10",dwidth/1.35,dheight/0.95)
+                                    dcanvas.coords("naivlabel11",dwidth/1.36,dheight/0.90)
+                                    dcanvas.coords("naivlabel12",dwidth/1.38,dheight/0.85)
+
+                                    dcanvas.coords("naivtree1",dwidth/2.5,dheight/0.75)
+                                    dcanvas.coords("naivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
+                                    dcanvas.coords("naivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
+                                    dcanvas.coords("naivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
+                                    dcanvas.coords("naivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
+
+                                    dcanvas.coords("naivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
+                                    dcanvas.coords("naivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
+                                    dcanvas.coords("naivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
+                                    dcanvas.coords("naivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
+                                    dcanvas.coords("naivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
+                                    dcanvas.coords("naivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
+                                    dcanvas.coords("naivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
+                                    dcanvas.coords("naivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
+
+                                    dcanvas.coords("naivtlabel1",dwidth/7.2,dheight/0.729)
+                                    dcanvas.coords("naivtlabel2",dwidth/7.2,dheight/0.69)
+                                    dcanvas.coords("naivtlabel3",dwidth/7.2,dheight/0.66)
+                                    dcanvas.coords("naivtlabel4",dwidth/7.2,dheight/0.63)
+
+                                    dcanvas.coords("naivtlabel5",dwidth/5,dheight/0.729)
+                                    dcanvas.coords("naivtlabel6",dwidth/5,dheight/0.69)
+                                    dcanvas.coords("naivtlabel7",dwidth/5,dheight/0.66)
+                                    dcanvas.coords("naivtlabel8",dwidth/5,dheight/0.63)
+
+                                    dcanvas.coords("naivtlabel9",dwidth/2.9,dheight/0.729)
+                                    dcanvas.coords("naivtlabel10",dwidth/2.9,dheight/0.69)
+                                    dcanvas.coords("naivtlabel11",dwidth/2.9,dheight/0.66)
+                                    dcanvas.coords("naivtlabel12",dwidth/2.9,dheight/0.63)
+
+                                    dcanvas.coords("naivtlabel13",dwidth/2.1,dheight/0.729)
+                                    dcanvas.coords("naivtlabel14",dwidth/2.1,dheight/0.69)
+                                    dcanvas.coords("naivtlabel15",dwidth/2.1,dheight/0.66)
+                                    dcanvas.coords("naivtlabel16",dwidth/2.1,dheight/0.63)
+
+                                    dcanvas.coords("naivtlabel17",dwidth/1.5,dheight/0.729)
+                                    dcanvas.coords("naivtlabel18",dwidth/1.5,dheight/0.69)
+                                    dcanvas.coords("naivtlabel19",dwidth/1.5,dheight/0.66)
+                                    dcanvas.coords("naivtlabel20",dwidth/1.5,dheight/0.63)
+
+                                    dcanvas.coords("naivtlabel21",dwidth/1.33,dheight/0.729)
+                                    dcanvas.coords("naivtlabel22",dwidth/1.33,dheight/0.69)
+                                    dcanvas.coords("naivtlabel23",dwidth/1.33,dheight/0.66)
+                                    dcanvas.coords("naivtlabel24",dwidth/1.33,dheight/0.63)
+
+                                    dcanvas.coords("nnaivtlabel25",dwidth/1.9,dheight/0.729)
+                                    dcanvas.coords("naivtlabel26",dwidth/1.9,dheight/0.69)
+                                    dcanvas.coords("naivtlabel27",dwidth/1.9,dheight/0.66)
+                                    dcanvas.coords("naivtlabel28",dwidth/1.9,dheight/0.63)
+
+                                    dcanvas.coords("naivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
+                                    dcanvas.coords("naivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
+                                    dcanvas.coords("naivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("naivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
+                                    dcanvas.coords("naivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("naivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
+                                    dcanvas.coords("naivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
+
+                                    dcanvas.coords("naivlabel13",dwidth/1.54,dheight/0.59)
+
+                                    dcanvas.coords("naivlabels13",dwidth/1.3,dheight/0.59)
+                                    dcanvas.coords("naivlabel14",dwidth/1.54,dheight/0.565)
+                                    dcanvas.coords("naivlabels14",dwidth/1.3,dheight/0.565)
+                                    dcanvas.coords("naivlabel15",dwidth/1.5,dheight/0.54)
+                                    dcanvas.coords("naivlabels15",dwidth/1.3,dheight/0.54)
+
+                                    dcanvas.coords("naivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
+
+                                    dcanvas.coords("naivlabel16",dwidth/2.52,dheight/0.395)
+
+                                    dcanvas.coords("naivbutton3",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("naivlabel17",dwidth/2.80,dheight/0.95)
+                                    dcanvas.coords("naivlabel18",dwidth/1.15,dheight/1.0)
+                                    dcanvas.coords("naivlabel19",dwidth/1.14,dheight/0.95)
+                                    dcanvas.coords("naivlabel20",dwidth/1.16,dheight/0.90)
+                                    dcanvas.coords("naivlabel21",dwidth/1.18,dheight/0.85)
+
+
+                                cs_canvas_1=Canvas(cs_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,2000))
+
+                                cs_frame_1.grid_columnconfigure(0,weight=1)
+                                cs_frame_1.grid_rowconfigure(0,weight=1)
+
+                                
+                                vertibar=Scrollbar(cs_frame_1, orient=VERTICAL)
+                                vertibar.grid(row=0,column=1,sticky='ns')
+                                vertibar.config(command=cs_canvas_1.yview)
+
+                                cs_canvas_1.bind("<Configure>", cs_responsive_widgets_1)
+                                cs_canvas_1.config(yscrollcommand=vertibar.set)
+                                cs_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("nspoly1"))
+
+                                label_1 = Label(cs_canvas_1,width=20,height=1,text="CREATE FORM STYLES", font=('arial 20'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel1"))
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("nshline"))
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("nspoly2"))
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text="Form Name", font=('arial 12'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel2"))
+
+                                ns_entry_1=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
+                                window_ns_entry_1 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_1, tags=('nsentry1'))
+
+                                label_1 = Label(cs_canvas_1,width=16,height=1,text="Change Template", font=('arial 12'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel3"))
+
+
+                                def Classic(event):
+                                    ns_entry_2.delete(0,"end")
+                                    ns_entry_2.insert(0, "Classic")
+
+                                def Modern(event):
+                                    ns_entry_2.delete(0,"end")
+                                    ns_entry_2.insert(0, "Modern")
+
+                                def Fresh(event):
+                                    ns_entry_2.delete(0,"end")
+                                    ns_entry_2.insert(0, "Fresh")
+
+                                def Friendly(event):
+                                    ns_entry_2.delete(0,"end")
+                                    ns_entry_2.insert(0, "Friendly")
+
+                                ns_entry_2=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
+                                window_ns_entry_2 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_2, tags=('nsentry2'))
+
+                                ns_btn1=Button(cs_canvas_1,text='Classic', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn1, tags=("nsbutton4"))
+                                ns_btn1.bind("<Button-1>",Classic)
+
+                                ns_btn2=Button(cs_canvas_1,text='Modern', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn2, tags=("nsbutton5"))
+                                ns_btn2.bind("<Button-1>",Modern)
+
+                                ns_btn3=Button(cs_canvas_1,text='Fresh', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn3, tags=("nsbutton6"))
+                                ns_btn3.bind("<Button-1>",Fresh)
+
+                                ns_btn4=Button(cs_canvas_1,text='Friendly', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn4, tags=("nsbutton7"))
+                                ns_btn4.bind("<Button-1>",Friendly)
+
+                                label_1 = Label(cs_canvas_1,width=16,height=1,text="Primary Colours", font=('arial 12'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel4"))
+
+                                ns_entry_3=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
+                                window_ns_entry_3 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_3, tags=('nsentry3'))
+
+                                ns_btn5=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12')
+                                window_ns_btn5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn5, tags=("nsbutton8"))
+
+                                ns_btn6=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12')
+                                window_ns_btn6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn6, tags=("nsbutton9"))
+
+                                ns_btn7=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12')
+                                window_ns_btn7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn7, tags=("nsbutton10"))
+
+                                ns_btn8=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12')
+                                window_ns_btn8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn8, tags=("nsbutton11"))
+
+                                ns_btn9=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12')
+                                window_ns_btn9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn9, tags=("nsbutton12"))
+
+                                ns_btn10=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12')
+                                window_ns_btn10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn10, tags=("nsbutton13"))
+
+                                ns_btn11=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12')
+                                window_ns_btn11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn11, tags=("nsbutton14"))
+
+                                ns_btn12=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12')
+                                window_ns_btn12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn12, tags=("nsbutton15"))
+
+                                ns_btn13=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12')
+                                window_ns_btn13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn13, tags=("nsbutton16"))
+
+                                ns_btn14=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12')
+                                window_ns_btn14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn14, tags=("nsbutton17"))
+
+                                ns_btn15=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12')
+                                window_ns_btn15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn15, tags=("nsbutton18"))
+
+                                ns_btn16=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12')
+                                window_ns_btn16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn16, tags=("nsbutton19"))
+
+                                label_1 = Label(cs_canvas_1,width=18,height=1,text="Secondary Colours", font=('arial 12'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel5"))
+
+                                ns_entry_4=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
+                                window_ns_entry_4 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_4, tags=('nsentry4'))
+
+                                ns_btn17=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12')
+                                window_ns_btn17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn17, tags=("nsbutton20"))
+
+                                ns_btn18=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12')
+                                window_ns_btn18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn18, tags=("nsbutton21"))
+
+                                ns_btn19=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12')
+                                window_ns_btn19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn19, tags=("nsbutton22"))
+
+                                ns_btn20=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12')
+                                window_ns_btn20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn20, tags=("nsbutton23"))
+
+                                ns_btn21=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12')
+                                window_ns_btn21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn21, tags=("nsbutton24"))
+
+                                ns_btn22=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12')
+                                window_ns_btn22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn22, tags=("nsbutton25"))
+
+                                ns_btn23=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12')
+                                window_ns_btn23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn23, tags=("nsbutton26"))
+
+                                ns_btn24=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12')
+                                window_ns_btn24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn24, tags=("nsbutton27"))
+
+                                ns_btn25=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12')
+                                window_ns_btn25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn25, tags=("nsbutton28"))
+
+                                ns_btn26=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12')
+                                window_ns_btn26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn26, tags=("nsbutton29"))
+
+                                ns_btn27=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12')
+                                window_ns_btn27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn27, tags=("nsbutton30"))
+
+                                ns_btn28=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12')
+                                window_ns_btn28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn28, tags=("nsbutton31"))
+
+                                label_1 = Label(cs_canvas_1,width=14,height=1,text="Try New Fonts", font=('arial 12'),background="#1b3857",fg="white") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel6"))
+
+                                def Serif(event):
+                                    ns_entry_5.delete(0,"end")
+                                    ns_entry_5.insert(0, "Serif Serif font")
+
+                                def Sans(event):
+                                    ns_entry_5.delete(0,"end")
+                                    ns_entry_5.insert(0, "Sans-serif Sans-serif font")
+
+                                def Monospace(event):
+                                    ns_entry_5.delete(0,"end")
+                                    ns_entry_5.insert(0, "Monospace Monospace font")
+
+                                def System(event):
+                                    ns_entry_5.delete(0,"end")
+                                    ns_entry_5.insert(0, "System-ui System-ui font")
+
+                                ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
+                                window_ns_entry_5 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_5, tags=('nsentry5'))
+                                
+                                ns_btn29=Button(cs_canvas_1,text='Serif\nSerif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn29, tags=("nsbutton32"))
+                                ns_btn29.bind("<Button-1>",Serif)
+
+                                ns_btn30=Button(cs_canvas_1,text='Sans-serif\nSans-serif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn30, tags=("nsbutton33"))
+                                ns_btn30.bind("<Button-1>",Sans)
+
+                                ns_btn31=Button(cs_canvas_1,text='Monospace\nMonospace font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn31, tags=("nsbutton34"))
+                                ns_btn31.bind("<Button-1>",Monospace)
+
+                                ns_btn32=Button(cs_canvas_1,text='System-ui\nSystem-ui font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                window_ns_btn32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn32, tags=("nsbutton35"))
+                                ns_btn32.bind("<Button-1>",System)
+
+                                ns_chk_str_1 = BooleanVar()
+                                ns_chkbtn2 = Checkbutton(cs_canvas_1, text = "Apply this theme", variable = ns_chk_str_1, font=("arial", 12),background="#1b3857",foreground="white",selectcolor="#2f516f")
+                                window_ns_chkbtn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_chkbtn2,tags=("nscheck1"))
+
+                                # if ns_entry_2.get() == "Classic" and ns_entry_5.get() == "Serif Serif font":
+                                #     cs_canvas_1.itemconfig('nspoly3',state='normal')
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"))
+
+                                label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel1"))
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel2"))
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel3"))
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel4"))
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel5"))
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel6"))
+
+                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="skyblue") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel7"))
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel8"))
+
+                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel17"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel9"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel18"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel10"))
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel19"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel11"))
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel20"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel12"))
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel21"))
+
+                                fgthvi = ttk.Style()
+                                fgthvi.configure('mystyle10.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                                iview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle10.Treeview')
+                                iview_tree.pack(side = 'top')
+                                iview_tree.heading(1)
+                                iview_tree.heading(2, text="PRODUCT/SERVICES")
+                                iview_tree.heading(3, text="HSN")
+                                iview_tree.heading(4, text="QTY")
+                                iview_tree.heading(5, text="PRICE")
+                                iview_tree.heading(6, text="TOTAL")
+                                iview_tree.heading(7, text="TAX(%)")
+                                
+                                iview_tree.column(1, width = 30)
+                                iview_tree.column(2, width = 100)
+                                iview_tree.column(3, width = 100)
+                                iview_tree.column(4, width = 100)
+                                iview_tree.column(5, width = 100)
+                                iview_tree.column(6, width = 100)
+                                iview_tree.column(7, width = 100)
+
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=iview_tree,tags=('naivtree1'))
+
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline3'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline4'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline5'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline6'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline7'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline8'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline9'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline10'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel13"))
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels13"))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel14"))
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels14"))
+
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel15"))
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels15"))
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'))
+
+                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel16"))
+
+                                ns_sub_btn1=Button(cs_canvas_1,text='Submit', width=15,height=2,bd=0, foreground="white",background="#2f516f",font='arial 12',activebackground="#2f516f")
+                                window_ns_sub_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_sub_btn1,tags=('nsbutton1'))
+
+                                def ns_back_1_():
+                                    cs_frame_1.grid_forget()
+                                    cs_frame.grid(row=0,column=0,sticky='nsew')
+
+                                ns_bck_btn1=Button(cs_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=ns_back_1_)
+                                window_ns_bck_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_bck_btn1,tags=('nsbutton3'))
+
+                            cs_btn1=Button(cs_canvas,text='New Style', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=add_newstyle)
+                            window_cs_btn1 = cs_canvas.create_window(0, 0, anchor="nw", window=cs_btn1, tags=("csbutton2"))
+
+                            cs_comb_1 = ttk.Combobox(cs_canvas,font=('arial 10'))
+                            cs_comb_1['values'] = ("Actions","Edit","Delete")
+                            cs_comb_1.current(0)
+                            window_cs_comb_1 = cs_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=cs_comb_1,tags=('csbutton3'))
+                            cs_comb_1.bind("<<ComboboxSelected>>")
+
+
+
                     def settings():
                         set_btn.grid_forget()
 
@@ -2320,7 +3336,9 @@ def main_sign_in():
                     inv_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("ipoly2"))
 
                     fgthdi = ttk.Style()
-                    fgthdi.configure('mystyle105.Treeview.Heading', background='#2f516f',State='DISABLE')
+                    fgthdi.theme_use("default")
+                    fgthdi.configure('mystyle104.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                    fgthdi.configure('mystyle104.Treeview.Heading', background='#2f516f',State='DISABLE')
 
                     inv_scrollbar = Scrollbar(inv_frame,orient="vertical")
                     
@@ -11168,6 +12186,8 @@ def main_sign_in():
 
 
                     fgthi = ttk.Style()
+                    fgthi.theme_use("default")
+                    fgthi.configure('mystyle105.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
                     fgthi.configure('mystyle105.Treeview.Heading', background='#2f516f',State='DISABLE')
 
                     cus_scrollbar = Scrollbar(cus_frame,orient="vertical")
@@ -28226,7 +29246,7 @@ def main_sign_in():
 
                     bl_scrollbar = Scrollbar(balance_frame,orient="vertical")
                     
-                    bl_tree = ttk.Treeview(bl_canvas, columns = (1,2), height = 6, show = "headings",style='mystyle113.Treeview',yscrollcommand=bl_scrollbar.set)
+                    bl_tree = ttk.Treeview(bl_canvas, columns = (1,2), height = 5, show = "headings",style='mystyle113.Treeview',yscrollcommand=bl_scrollbar.set)
                     
                     bl_tree.column(1, width = 810)
                     bl_tree.column(2, width = 170)
