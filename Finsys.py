@@ -254,6 +254,7 @@ def main_sign_in():
 
                                 dcanvas.coords("asbutton1",dwidth/3.1,dheight/5)
                                 dcanvas.coords("asbutton2",dwidth/1.485,dheight/5)
+                                dcanvas.coords("asbutton3",dwidth/2.5,dheight/0.4)
 
                                 dcanvas.coords("ashline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
 
@@ -268,8 +269,15 @@ def main_sign_in():
                                 dcanvas.coords("aslabel9",dwidth/13,dheight/0.82)
                                 dcanvas.coords("aslabel10",dwidth/18,dheight/0.73)
                                 dcanvas.coords("aslabel11",dwidth/1.97,dheight/0.73)
-                                dcanvas.coords("aslabel12",dwidth/15,dheight/0.65)
-                                dcanvas.coords("aslabel13",dwidth/1.935,dheight/0.65)
+                                dcanvas.coords("aslabel12",dwidth/15,dheight/0.64)
+                                dcanvas.coords("aslabel13",dwidth/1.935,dheight/0.64)
+                                dcanvas.coords("aslabel14",dwidth/15,dheight/0.574)
+                                dcanvas.coords("aslabel15",dwidth/1.935,dheight/0.574)
+                                dcanvas.coords("aslabel16",dwidth/15,dheight/0.515)
+                                dcanvas.coords("aslabel17",dwidth/1.94,dheight/0.515)
+                                dcanvas.coords("aslabel18",dwidth/16,dheight/0.47)
+                                dcanvas.coords("aslabel19",dwidth/1.95,dheight/0.47)
+                                dcanvas.coords("aslabel20",dwidth/18,dheight/0.44)
 
                                 dcanvas.coords("asentry1",dwidth/13.8,dheight/1.665)
                                 dcanvas.coords("asentry2",dwidth/1.93,dheight/1.665)
@@ -282,6 +290,13 @@ def main_sign_in():
                                 dcanvas.coords("asentry9",dwidth/1.93,dheight/0.7)
                                 dcanvas.coords("asentry10",dwidth/13.8,dheight/0.621)
                                 dcanvas.coords("asentry11",dwidth/1.93,dheight/0.621)
+                                dcanvas.coords("asentry12",dwidth/13.8,dheight/0.554)
+                                dcanvas.coords("asentry13",dwidth/1.93,dheight/0.554)
+                                dcanvas.coords("asentry14",dwidth/13.8,dheight/0.5)
+                                dcanvas.coords("asentry15",dwidth/1.93,dheight/0.5)
+
+                                dcanvas.coords("ascombo1",dwidth/13.8,dheight/0.455)
+                                dcanvas.coords("ascombo2",dwidth/1.93,dheight/0.455)
 
 
                             acc_canvas=Canvas(acc_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
@@ -491,19 +506,38 @@ def main_sign_in():
                                         dcanvas.coords("slhline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
                                         dcanvas.coords("sllabel2",dwidth/15,dheight/2.6)
                                         dcanvas.coords("slbutton3",dwidth/2,dheight/2.6)
+                                        dcanvas.coords("slbutton4",dwidth/2,dheight/2.6)
                                         dcanvas.coords("sllabel3",dwidth/12,dheight/2.1)
+                                        dcanvas.coords("slbutton5",dwidth/2,dheight/2.1)
+                                        dcanvas.coords("slbutton6",dwidth/2,dheight/2.1)
                                         dcanvas.coords("sllabel4",dwidth/11.6,dheight/1.8)
+                                        dcanvas.coords("slbutton7",dwidth/2,dheight/1.8)
+                                        dcanvas.coords("slbutton8",dwidth/2,dheight/1.8)
                                         dcanvas.coords("sllabel5",dwidth/14,dheight/1.55)
+                                        dcanvas.coords("slbutton9",dwidth/2,dheight/1.55)
+                                        dcanvas.coords("slbutton10",dwidth/2,dheight/1.55)
                                         dcanvas.coords("sllabel6",dwidth/15,dheight/1.35)
                                         dcanvas.coords("slcombo1",dwidth/2,dheight/1.31)
                                         dcanvas.coords("sllabel7",dwidth/14.5,dheight/1.215)
+                                        dcanvas.coords("slbutton11",dwidth/2,dheight/1.215)
+                                        dcanvas.coords("slbutton12",dwidth/2,dheight/1.215)
                                         dcanvas.coords("sllabel8",dwidth/21,dheight/1.09)
+                                        dcanvas.coords("slbutton13",dwidth/2,dheight/1.09)
+                                        dcanvas.coords("slbutton14",dwidth/2,dheight/1.09)
                                         dcanvas.coords("sllabel9",dwidth/13,dheight/.95)
                                         dcanvas.coords("slhline1",dwidth/21,dheight/0.82,dwidth/1.055,dheight/0.82)
                                         dcanvas.coords("sllabel10",dwidth/14,dheight/0.78)
+                                        dcanvas.coords("slbutton15",dwidth/2,dheight/0.78)
+                                        dcanvas.coords("slbutton16",dwidth/2,dheight/0.78)
                                         dcanvas.coords("sllabel11",dwidth/11.8,dheight/0.72)
+                                        dcanvas.coords("slbutton17",dwidth/2,dheight/0.72)
+                                        dcanvas.coords("slbutton18",dwidth/2,dheight/0.72)
                                         dcanvas.coords("sllabel12",dwidth/15,dheight/0.67)
+                                        dcanvas.coords("slbutton19",dwidth/2,dheight/0.67)
+                                        dcanvas.coords("slbutton20",dwidth/2,dheight/0.67)
                                         dcanvas.coords("sllabel13",dwidth/14,dheight/0.62)
+                                        dcanvas.coords("slbutton21",dwidth/2,dheight/0.62)
+                                        dcanvas.coords("slbutton22",dwidth/2,dheight/0.62)
                                         dcanvas.coords("slbutton1",dwidth/8,dheight/0.56)   
 
                                     acc_canvas_2=Canvas(acc_frame_2, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
@@ -529,35 +563,70 @@ def main_sign_in():
                                     label_1 = Label(acc_canvas_2,width=20,height=2,text="Item wise discount", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel2'))
 
+                                    def on_off_switch_1():
+                                        acc_canvas_2.itemconfig('slbutton3',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton4',state='normal')
+
+                                    def on_off_switch_2():  
+                                        acc_canvas_2.itemconfig('slbutton3',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton4',state='hidden')
                                     
-                                    #global is_on
-                                    is_on = True
-                                    
-                                    def Switch():
-                                        global is_on
-                                        
-                                        if is_on:
-                                            on_button.config(image = off)
-                                            is_on = False
-                                        else:
-                                            
-                                            on_button.config(image = on)
-                                            is_on = True
-                                            
-                                            
-  
-                                    on_button = Button(acc_canvas_2, image = on, bd = 0,
-                                                    command = switch)
-                                    window_on_button = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button,tags=('slbutton3'))
+                                    off_button = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_1)
+                                    window_off_button = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button,tags=('slbutton3'))
+
+                                    on_button = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_2)
+                                    window_on_button = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button,tags=('slbutton4'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_2,width=8,height=2,text="Deposit", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel3'))
 
+                                    def on_off_switch_3():
+                                        acc_canvas_2.itemconfig('slbutton5',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton6',state='normal')
+
+                                    def on_off_switch_4():  
+                                        acc_canvas_2.itemconfig('slbutton5',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton6',state='hidden')
+                                    
+                                    off_button_1 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_3)
+                                    window_off_button_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_1,tags=('slbutton5'))
+
+                                    on_button_1 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_4)
+                                    window_on_button_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_1,tags=('slbutton6'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_2,width=30,height=2,text="Round off final amount for transaction", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel4'))
 
+                                    def on_off_switch_5():
+                                        acc_canvas_2.itemconfig('slbutton7',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton8',state='normal')
+
+                                    def on_off_switch_6():  
+                                        acc_canvas_2.itemconfig('slbutton7',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton8',state='hidden')
+                                    
+                                    off_button_2 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_5)
+                                    window_off_button_2 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_2,tags=('slbutton7'))
+
+                                    on_button_2 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_6)
+                                    window_on_button_2 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_2,tags=('slbutton8'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_2,width=15,height=2,text="Total discount", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel5'))
+
+                                    def on_off_switch_7():
+                                        acc_canvas_2.itemconfig('slbutton9',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton10',state='normal')
+
+                                    def on_off_switch_8():  
+                                        acc_canvas_2.itemconfig('slbutton9',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton10',state='hidden')
+                                    
+                                    off_button_3 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_7)
+                                    window_off_button_3 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_3,tags=('slbutton9'))
+
+                                    on_button_3 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_8)
+                                    window_on_button_3 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_3,tags=('slbutton10'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_2,width=23,height=2,text="Preferred invoice term", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel6'))
@@ -570,8 +639,37 @@ def main_sign_in():
                                     label_1 = Label(acc_canvas_2,width=15,height=2,text="Service date", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel7'))
 
+                                    def on_off_switch_9():
+                                        acc_canvas_2.itemconfig('slbutton11',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton12',state='normal')
+
+                                    def on_off_switch_10():  
+                                        acc_canvas_2.itemconfig('slbutton11',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton12',state='hidden')
+                                    
+                                    off_button_4 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_9)
+                                    window_off_button_4 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_4,tags=('slbutton11'))
+
+                                    on_button_4 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_10)
+                                    window_on_button_4 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_4,tags=('slbutton12'),state=HIDDEN)
+
+
                                     label_1 = Label(acc_canvas_2,width=40,height=2,text="Classification of tax and retail services", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel8'))
+
+                                    def on_off_switch_11():
+                                        acc_canvas_2.itemconfig('slbutton13',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton14',state='normal')
+
+                                    def on_off_switch_12():  
+                                        acc_canvas_2.itemconfig('slbutton13',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton14',state='hidden')
+                                    
+                                    off_button_5 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_11)
+                                    window_off_button_5 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_5,tags=('slbutton13'))
+
+                                    on_button_5 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_12)
+                                    window_on_button_5 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_5,tags=('slbutton14'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_2,width=23,height=2,text="PRODUCT AND SERVICES", font=('arial 20'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel9'))
@@ -581,14 +679,70 @@ def main_sign_in():
                                     label_1 = Label(acc_canvas_2,width=40,height=2,text="Show Product/Service column on sales forms", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel10'))
 
+                                    def on_off_switch_13():
+                                        acc_canvas_2.itemconfig('slbutton15',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton16',state='normal')
+
+                                    def on_off_switch_14():  
+                                        acc_canvas_2.itemconfig('slbutton15',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton16',state='hidden')
+                                    
+                                    off_button_6 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_13)
+                                    window_off_button_6 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_6,tags=('slbutton15'))
+
+                                    on_button_6 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_14)
+                                    window_on_button_6 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_6,tags=('slbutton16'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_2,width=16,height=2,text="Show SKU column", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel11'))
+
+                                    def on_off_switch_15():
+                                        acc_canvas_2.itemconfig('slbutton17',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton18',state='normal')
+
+                                    def on_off_switch_16():  
+                                        acc_canvas_2.itemconfig('slbutton17',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton18',state='hidden')
+                                    
+                                    off_button_7 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_15)
+                                    window_off_button_7 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_7,tags=('slbutton17'))
+
+                                    on_button_7 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_16)
+                                    window_on_button_7 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_7,tags=('slbutton18'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_2,width=28,height=2,text="Track quantity and price/rate", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel12'))
 
+                                    def on_off_switch_17():
+                                        acc_canvas_2.itemconfig('slbutton19',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton20',state='normal')
+
+                                    def on_off_switch_18():  
+                                        acc_canvas_2.itemconfig('slbutton19',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton20',state='hidden')
+                                    
+                                    off_button_8 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_17)
+                                    window_off_button_8 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_8,tags=('slbutton19'))
+
+                                    on_button_8 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_18)
+                                    window_on_button_8 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_8,tags=('slbutton20'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_2,width=30,height=2,text="Track inventory quantity on hand", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('sllabel13'))
+
+                                    def on_off_switch_19():
+                                        acc_canvas_2.itemconfig('slbutton21',state='hidden')
+                                        acc_canvas_2.itemconfig('slbutton22',state='normal')
+
+                                    def on_off_switch_20():  
+                                        acc_canvas_2.itemconfig('slbutton21',state='normal')
+                                        acc_canvas_2.itemconfig('slbutton22',state='hidden')
+                                    
+                                    off_button_9 = Button(acc_canvas_2, image = off, bd = 0,command=on_off_switch_19)
+                                    window_off_button_9 = acc_canvas_2.create_window(0, 0, anchor="nw", window=off_button_9,tags=('slbutton21'))
+
+                                    on_button_9 = Button(acc_canvas_2, image = on, bd = 0,command=on_off_switch_20)
+                                    window_on_button_9 = acc_canvas_2.create_window(0, 0, anchor="nw", window=on_button_9,tags=('slbutton22'),state=HIDDEN)
 
 
                                     def sl_back_1_():
@@ -646,16 +800,27 @@ def main_sign_in():
                                         dcanvas.coords("exlabel1",dwidth/13,dheight/6)
                                         dcanvas.coords("exhline",dwidth/21,dheight/3,dwidth/1.055,dheight/3)
                                         dcanvas.coords("exlabel2",dwidth/15,dheight/2.6)
-                                        dcanvas.coords("exbutton3",dwidth/2,dheight/2.6)
+                                        dcanvas.coords("exbutton4",dwidth/1.97,dheight/2.6)
+                                        dcanvas.coords("exbutton5",dwidth/1.97,dheight/2.6)
                                         dcanvas.coords("exlabel3",dwidth/16,dheight/2.1)
+                                        dcanvas.coords("exbutton6",dwidth/1.97,dheight/2.1)
+                                        dcanvas.coords("exbutton7",dwidth/1.97,dheight/2.1)
                                         dcanvas.coords("exlabel4",dwidth/12,dheight/1.8)
+                                        dcanvas.coords("exbutton8",dwidth/1.97,dheight/1.8)
+                                        dcanvas.coords("exbutton9",dwidth/1.97,dheight/1.8)
                                         dcanvas.coords("exlabel5",dwidth/21.3,dheight/1.55)
+                                        dcanvas.coords("exbutton10",dwidth/1.97,dheight/1.55)
+                                        dcanvas.coords("exbutton11",dwidth/1.97,dheight/1.55)
                                         dcanvas.coords("exlabel6",dwidth/15,dheight/1.35)
                                         dcanvas.coords("excombo1",dwidth/2,dheight/1.31)
                                         dcanvas.coords("exlabel7",dwidth/12,dheight/1.1)
                                         dcanvas.coords("exhline1",dwidth/21,dheight/0.95,dwidth/1.055,dheight/0.95)
                                         dcanvas.coords("exlabel8",dwidth/13,dheight/0.9)
+                                        dcanvas.coords("exbutton12",dwidth/1.97,dheight/0.9)
+                                        dcanvas.coords("exbutton13",dwidth/1.97,dheight/0.9)
                                         dcanvas.coords("exlabel9",dwidth/14,dheight/0.82)
+                                        dcanvas.coords("exbutton14",dwidth/1.97,dheight/0.82)
+                                        dcanvas.coords("exbutton15",dwidth/1.97,dheight/0.82)
                                         dcanvas.coords("exbutton1",dwidth/8,dheight/0.7)   
 
                                     acc_canvas_3=Canvas(acc_frame_3, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
@@ -681,36 +846,70 @@ def main_sign_in():
                                     label_1 = Label(acc_canvas_3,width=45,height=2,text="Show Items table on expense and purchase forms", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel2'))
 
+                                    def ex_on_off_switch_1():
+                                        acc_canvas_3.itemconfig('exbutton4',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton5',state='normal')
+
+                                    def ex_on_off_switch_2():  
+                                        acc_canvas_3.itemconfig('exbutton4',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton5',state='hidden')
                                     
-                                    #global is_on
-                                    is_on = 0
-                                    print(is_on)
-                                    
-                                    def switch():
-                                        global is_on
-                                        is_on = 0
-                                        if is_on == 0:
-                                            is_on = 1
-                                            button.config(image = on)    
-                                            
-                                        else:
-                                            is_on = 0
-                                            button.config(image = off)
-                                            
-                                            
-  
-                                    on_button = Button(acc_canvas_3, image = on, bd = 0,
-                                                    command = switch)
-                                    window_on_button = acc_canvas_3.create_window(0, 0, anchor="nw", window=on_button,tags=('exbutton3'))
+                                    ex_off_button = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_1)
+                                    window_ex_off_button = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button,tags=('exbutton4'))
+
+                                    ex_on_button = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_2)
+                                    window_ex_on_button = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button,tags=('exbutton5'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_3,width=38,height=2,text="Track expenses and items by customer", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel3'))
 
+                                    def ex_on_off_switch_3():
+                                        acc_canvas_3.itemconfig('exbutton6',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton7',state='normal')
+
+                                    def ex_on_off_switch_4():  
+                                        acc_canvas_3.itemconfig('exbutton6',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton7',state='hidden')
+                                    
+                                    ex_off_button_1 = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_3)
+                                    window_ex_off_button_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button_1,tags=('exbutton6'))
+
+                                    ex_on_button_1 = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_4)
+                                    window_ex_on_button_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button_1,tags=('exbutton7'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_3,width=30,height=2,text="Make expenses and items billable", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel4'))
 
+                                    def ex_on_off_switch_5():
+                                        acc_canvas_3.itemconfig('exbutton8',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton9',state='normal')
+
+                                    def ex_on_off_switch_6():  
+                                        acc_canvas_3.itemconfig('exbutton8',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton9',state='hidden')
+                                    
+                                    ex_off_button_2 = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_5)
+                                    window_ex_off_button_2 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button_2,tags=('exbutton8'))
+
+                                    ex_on_button_2 = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_6)
+                                    window_ex_on_button_2 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button_2,tags=('exbutton9'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_3,width=50,height=2,text="Round off final amounts for expense transactions", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel5'))
+
+                                    def ex_on_off_switch_7():
+                                        acc_canvas_3.itemconfig('exbutton10',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton11',state='normal')
+
+                                    def ex_on_off_switch_8():  
+                                        acc_canvas_3.itemconfig('exbutton10',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton11',state='hidden')
+                                    
+                                    ex_off_button_3 = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_7)
+                                    window_ex_off_button_3 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button_3,tags=('exbutton10'))
+
+                                    ex_on_button_3 = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_8)
+                                    window_ex_on_button_3 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button_3,tags=('exbutton11'),state=HIDDEN)
 
                                     label_1 = Label(acc_canvas_3,width=27,height=2,text="Default bill payment terms", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel6'))
@@ -728,8 +927,36 @@ def main_sign_in():
                                     label_1 = Label(acc_canvas_3,width=20,height=2,text="Use purchase orders", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel8'))
 
+                                    def ex_on_off_switch_9():
+                                        acc_canvas_3.itemconfig('exbutton12',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton13',state='normal')
+
+                                    def ex_on_off_switch_10():  
+                                        acc_canvas_3.itemconfig('exbutton12',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton13',state='hidden')
+                                    
+                                    ex_off_button_4 = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_9)
+                                    window_ex_off_button_4 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button_4,tags=('exbutton12'))
+
+                                    ex_on_button_4 = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_10)
+                                    window_ex_on_button_4 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button_4,tags=('exbutton13'),state=HIDDEN)
+
                                     label_1 = Label(acc_canvas_3,width=26,height=2,text="Custom transaction number", font=('arial 17'),background="#1b3857",fg="white") 
                                     window_label_1 = acc_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('exlabel9'))
+
+                                    def ex_on_off_switch_11():
+                                        acc_canvas_3.itemconfig('exbutton14',state='hidden')
+                                        acc_canvas_3.itemconfig('exbutton15',state='normal')
+
+                                    def ex_on_off_switch_12():  
+                                        acc_canvas_3.itemconfig('exbutton14',state='normal')
+                                        acc_canvas_3.itemconfig('exbutton15',state='hidden')
+                                    
+                                    ex_off_button_5 = Button(acc_canvas_3, image = off, bd = 0,command=ex_on_off_switch_11)
+                                    window_ex_off_button_5 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_off_button_5,tags=('exbutton14'))
+
+                                    ex_on_button_5 = Button(acc_canvas_3, image = on, bd = 0,command=ex_on_off_switch_12)
+                                    window_ex_on_button_5 = acc_canvas_3.create_window(0, 0, anchor="nw", window=ex_on_button_5,tags=('exbutton15'),state=HIDDEN)
 
 
                                     def ex_back_1_():
@@ -836,6 +1063,52 @@ def main_sign_in():
 
                             acc_entry_11=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_11 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_11, tags=('asentry11'))
+
+                            label_1 = Label(acc_canvas,width=8,height=2,text="Pincode", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel14'))
+
+                            acc_entry_12=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_12 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_12, tags=('asentry12'))
+
+                            label_1 = Label(acc_canvas,width=6,height=2,text="Email", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel15'))
+
+                            acc_entry_13=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_13 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_13, tags=('asentry13'))
+
+                            label_1 = Label(acc_canvas,width=13,height=2,text="Phone Number", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel16'))
+
+                            acc_entry_14=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_14 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_14, tags=('asentry14'))
+
+                            label_1 = Label(acc_canvas,width=20,height=2,text="Legal Business Name", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel17'))
+
+                            acc_entry_15=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_15 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_15, tags=('asentry15'))
+
+                            label_1 = Label(acc_canvas,width=14,height=2,text="Your Industry", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel18'))
+
+                            as_combo_1 = ttk.Combobox(acc_canvas, font=('arial 10'))
+                            as_combo_1['values'] = ("Accounting Services","Consultants, Doctors, Lawyers and similar","Information Technology","Manufacturing","Professional, Scientific and Technical Services","Resturant/Bar and similar","Retail and similar","Other Financial Services",)
+                            as_combo_1.current(0)
+                            window_as_combo_1 = acc_canvas.create_window(0, 0, anchor="nw", width=540, height=30,window=as_combo_1,tags=('ascombo1'))  
+
+                            label_1 = Label(acc_canvas,width=13,height=2,text="Company Type", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel19'))
+
+                            as_combo_2 = ttk.Combobox(acc_canvas, font=('arial 10'))
+                            as_combo_2['values'] = ("Private Limited Company","Public Limited Company","Joint-Venture Company","Partnership Firm Company","One Person Company","Branch Office Company","Non Government Organization",)
+                            as_combo_2.current(0)
+                            window_as_combo_2 = acc_canvas.create_window(0, 0, anchor="nw", width=540, height=30,window=as_combo_2,tags=('ascombo2'))  
+
+                            label_1 = Label(acc_canvas,width=50,height=2,text="Do you want to change Company Image ? Browse here ⤓", font=('arial 12'),background="#1b3857",fg="white") 
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel20'))    
+
+                            as_btn1=Button(acc_canvas,text='UPDATE PROFILE', bd=0, foreground="white",background="#2f516f",font='arial 14 bold',activebackground="#1b3857",activeforeground="white",width=25,height=2)
+                            window_as_btn1 = acc_canvas.create_window(0, 0, anchor="nw", window=as_btn1,tags=('asbutton3'))   
 
                         elif selected_langs == "Customize Form Style":    
                             cs_frame = Frame(tab1)
@@ -1090,6 +1363,8 @@ def main_sign_in():
                                     dcanvas.coords("nscheck1",dwidth/8.5,dheight/0.37)
                                     dcanvas.coords("nsbutton1",dwidth/8.5,dheight/0.355)
 
+                                    #--------------------------Classic------------------------------
+
                                     r2 = 25
                                     x11 = dwidth/3
                                     x21 = dwidth/1.05
@@ -1135,7 +1410,7 @@ def main_sign_in():
                                     dcanvas.coords("naivlabel11",dwidth/1.36,dheight/0.90)
                                     dcanvas.coords("naivlabel12",dwidth/1.38,dheight/0.85)
 
-                                    dcanvas.coords("naivtree1",dwidth/2.5,dheight/0.75)
+                                    dcanvas.coords("naivtree1",dwidth/2.9,dheight/0.75)
                                     dcanvas.coords("naivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
                                     dcanvas.coords("naivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
                                     dcanvas.coords("naivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
@@ -1193,13 +1468,13 @@ def main_sign_in():
                                     dcanvas.coords("naivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
                                     dcanvas.coords("naivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
 
-                                    dcanvas.coords("naivlabel13",dwidth/1.54,dheight/0.59)
+                                    dcanvas.coords("naivlabel13",dwidth/1.5,dheight/0.59)
 
-                                    dcanvas.coords("naivlabels13",dwidth/1.3,dheight/0.59)
-                                    dcanvas.coords("naivlabel14",dwidth/1.54,dheight/0.565)
-                                    dcanvas.coords("naivlabels14",dwidth/1.3,dheight/0.565)
-                                    dcanvas.coords("naivlabel15",dwidth/1.5,dheight/0.54)
-                                    dcanvas.coords("naivlabels15",dwidth/1.3,dheight/0.54)
+                                    dcanvas.coords("naivlabels13",dwidth/1.21,dheight/0.59)
+                                    dcanvas.coords("naivlabel14",dwidth/1.475,dheight/0.565)
+                                    dcanvas.coords("naivlabels14",dwidth/1.21,dheight/0.565)
+                                    dcanvas.coords("naivlabel15",dwidth/1.47,dheight/0.54)
+                                    dcanvas.coords("naivlabels15",dwidth/1.21,dheight/0.54)
 
                                     dcanvas.coords("naivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
 
@@ -1212,6 +1487,311 @@ def main_sign_in():
                                     dcanvas.coords("naivlabel19",dwidth/1.14,dheight/0.95)
                                     dcanvas.coords("naivlabel20",dwidth/1.16,dheight/0.90)
                                     dcanvas.coords("naivlabel21",dwidth/1.18,dheight/0.85)
+                                    #-----------------------------Modern------------------------------------
+
+                                    r2 = 25
+                                    x11 = dwidth/3
+                                    x21 = dwidth/1.05
+                                    y11 = dheight/2.3
+                                    y21 = dheight/0.38
+
+
+                                    dcanvas.coords("nspoly4",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("nsivlabel1",dwidth/2.58,dheight/1.85)
+                                    dcanvas.coords("nsivlabel2",dwidth/2.65,dheight/1.70)
+                                    dcanvas.coords("nsivlabel3",dwidth/2.65,dheight/1.55)
+                                    dcanvas.coords("nsivlabel4",dwidth/2.65,dheight/1.42)
+                                    dcanvas.coords("nsivlabel5",dwidth/2.65,dheight/1.32)
+                                    dcanvas.coords("nsivlabel6",dwidth/2.60,dheight/1.22)
+                                    dcanvas.coords("nsivlabel7",dwidth/1.35,dheight/1.85)
+                                    dcanvas.coords("nsivlabel8",dwidth/1.85,dheight/1.0)
+                                    dcanvas.coords("nsivlabel17",dwidth/1.85,dheight/0.95)
+                                    dcanvas.coords("nsivtree1",dwidth/2.9,dheight/0.75)
+                                    dcanvas.coords("nsivtree2",dwidth/2.9,dheight/0.6)
+                                    dcanvas.coords("nsivlabel13",dwidth/1.5,dheight/0.5)
+                                    dcanvas.coords("nsivlabels13",dwidth/1.21,dheight/0.5)
+                                    dcanvas.coords("nsivlabel14",dwidth/1.475,dheight/0.49)
+                                    dcanvas.coords("nsivlabels14",dwidth/1.21,dheight/0.49)
+                                    dcanvas.coords("nsivlabel15",dwidth/1.47,dheight/0.48)
+                                    dcanvas.coords("nsivlabels15",dwidth/1.21,dheight/0.48)
+                                    dcanvas.coords("nsivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
+                                    dcanvas.coords("nsivlabel16",dwidth/2.52,dheight/0.395)
+
+                                #--------------------------Fresh------------------------------
+
+                                    r2 = 25
+                                    x11 = dwidth/3
+                                    x21 = dwidth/1.05
+                                    y11 = dheight/2.3
+                                    y21 = dheight/0.38
+
+
+                                    dcanvas.coords("fnspoly3",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("fnaivlabel1",dwidth/2.58,dheight/1.85)
+                                    dcanvas.coords("fnaivlabel2",dwidth/2.65,dheight/1.70)
+                                    dcanvas.coords("fnaivlabel3",dwidth/2.65,dheight/1.55)
+                                    dcanvas.coords("fnaivlabel4",dwidth/2.65,dheight/1.42)
+                                    dcanvas.coords("fnaivlabel5",dwidth/2.65,dheight/1.32)
+                                    dcanvas.coords("fnaivlabel6",dwidth/2.60,dheight/1.22)
+                                    dcanvas.coords("fnaivlabel8",dwidth/2.85,dheight/1.0)
+                                    dcanvas.coords("fnaivlabel9",dwidth/1.38,dheight/1.0)
+                                    dcanvas.coords("fnaivlabel10",dwidth/1.38,dheight/0.95)
+                                    dcanvas.coords("fnaivlabel11",dwidth/1.38,dheight/0.90)
+                                    dcanvas.coords("fnaivlabel12",dwidth/1.38,dheight/0.85)
+
+                                    dcanvas.coords("fnaivtree1",dwidth/2.9,dheight/0.75)
+                                    dcanvas.coords("fnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
+                                    dcanvas.coords("fnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
+                                    dcanvas.coords("fnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
+                                    dcanvas.coords("fnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
+
+                                    dcanvas.coords("fnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
+                                    dcanvas.coords("fnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
+                                    dcanvas.coords("fnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
+                                    dcanvas.coords("fnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
+                                    dcanvas.coords("fnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
+                                    dcanvas.coords("fnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
+                                    dcanvas.coords("fnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
+                                    dcanvas.coords("fnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
+
+                                    dcanvas.coords("fnaivtlabel1",dwidth/7.2,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel2",dwidth/7.2,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel3",dwidth/7.2,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel4",dwidth/7.2,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel5",dwidth/5,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel6",dwidth/5,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel7",dwidth/5,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel8",dwidth/5,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel9",dwidth/2.9,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel10",dwidth/2.9,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel11",dwidth/2.9,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel12",dwidth/2.9,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel13",dwidth/2.1,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel14",dwidth/2.1,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel15",dwidth/2.1,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel16",dwidth/2.1,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel17",dwidth/1.5,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel18",dwidth/1.5,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel19",dwidth/1.5,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel20",dwidth/1.5,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel21",dwidth/1.33,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel22",dwidth/1.33,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel23",dwidth/1.33,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel24",dwidth/1.33,dheight/0.63)
+
+                                    dcanvas.coords("fnaivtlabel25",dwidth/1.9,dheight/0.729)
+                                    dcanvas.coords("fnaivtlabel26",dwidth/1.9,dheight/0.69)
+                                    dcanvas.coords("fnaivtlabel27",dwidth/1.9,dheight/0.66)
+                                    dcanvas.coords("fnaivtlabel28",dwidth/1.9,dheight/0.63)
+
+                                    dcanvas.coords("fnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
+                                    dcanvas.coords("fnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
+                                    dcanvas.coords("fnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("fnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
+                                    dcanvas.coords("fnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("fnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
+                                    dcanvas.coords("fnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
+
+                                    dcanvas.coords("fnaivlabel13",dwidth/1.5,dheight/0.59)
+
+                                    dcanvas.coords("fnaivlabels13",dwidth/1.21,dheight/0.59)
+                                    dcanvas.coords("fnaivlabel14",dwidth/1.475,dheight/0.565)
+                                    dcanvas.coords("fnaivlabels14",dwidth/1.21,dheight/0.565)
+                                    dcanvas.coords("fnaivlabel15",dwidth/1.47,dheight/0.54)
+                                    dcanvas.coords("fnaivlabels15",dwidth/1.21,dheight/0.54)
+
+                                    dcanvas.coords("fnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
+
+                                    dcanvas.coords("fnaivlabel16",dwidth/2.52,dheight/0.395)
+
+                                    dcanvas.coords("fnaivbutton3",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("fnaivlabel17",dwidth/2.80,dheight/0.95)
+                                    dcanvas.coords("fnaivlabel18",dwidth/1.16,dheight/1.0)
+                                    dcanvas.coords("fnaivlabel19",dwidth/1.16,dheight/0.95)
+                                    dcanvas.coords("fnaivlabel20",dwidth/1.16,dheight/0.90)
+                                    dcanvas.coords("fnaivlabel21",dwidth/1.16,dheight/0.85)
+                                
+                                #-----------------------------Friendly---------------------------
+
+                                    r2 = 25
+                                    x11 = dwidth/3
+                                    x21 = dwidth/1.05
+                                    y11 = dheight/2.3
+                                    y21 = dheight/0.38
+
+
+                                    dcanvas.coords("frnspoly3",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("frnaivlabel1",dwidth/2.58,dheight/1.85)
+                                    dcanvas.coords("frnaivlabel2",dwidth/2.65,dheight/1.70)
+                                    dcanvas.coords("frnaivlabel3",dwidth/2.65,dheight/1.55)
+                                    dcanvas.coords("frnaivlabel4",dwidth/2.65,dheight/1.42)
+                                    dcanvas.coords("frnaivlabel5",dwidth/2.65,dheight/1.32)
+                                    dcanvas.coords("frnaivlabel6",dwidth/2.60,dheight/1.22)
+                                    dcanvas.coords("frnaivlabel7",dwidth/1.35,dheight/1.85)
+                                    dcanvas.coords("frnaivlabel8",dwidth/2.85,dheight/1.0)
+                                    dcanvas.coords("frnaivlabel9",dwidth/2.06,dheight/1.0)
+                                    dcanvas.coords("frnaivlabel10",dwidth/2.05,dheight/0.95)
+                                    dcanvas.coords("frnaivlabel11",dwidth/2.06,dheight/0.90)
+                                    dcanvas.coords("frnaivlabel12",dwidth/2.08,dheight/0.85)
+
+                                    dcanvas.coords("frnaivtree1",dwidth/2.9,dheight/0.75)
+                                    dcanvas.coords("frnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
+                                    dcanvas.coords("frnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
+                                    dcanvas.coords("frnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
+                                    dcanvas.coords("frnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
+
+                                    dcanvas.coords("frnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
+                                    dcanvas.coords("frnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
+                                    dcanvas.coords("frnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
+                                    dcanvas.coords("frnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
+                                    dcanvas.coords("frnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
+                                    dcanvas.coords("frnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
+                                    dcanvas.coords("frnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
+                                    dcanvas.coords("frnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
+
+                                    dcanvas.coords("frnaivtlabel1",dwidth/7.2,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel2",dwidth/7.2,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel3",dwidth/7.2,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel4",dwidth/7.2,dheight/0.63)
+
+                                    dcanvas.coords("frnaivtlabel5",dwidth/5,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel6",dwidth/5,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel7",dwidth/5,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel8",dwidth/5,dheight/0.63)
+
+                                    dcanvas.coords("frnaivtlabel9",dwidth/2.9,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel10",dwidth/2.9,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel11",dwidth/2.9,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel12",dwidth/2.9,dheight/0.63)
+
+                                    dcanvas.coords("frnaivtlabel13",dwidth/2.1,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel14",dwidth/2.1,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel15",dwidth/2.1,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel16",dwidth/2.1,dheight/0.63)
+
+                                    dcanvas.coords("frnaivtlabel17",dwidth/1.5,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel18",dwidth/1.5,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel19",dwidth/1.5,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel20",dwidth/1.5,dheight/0.63)
+
+                                    dcanvas.coords("frnaivtlabel21",dwidth/1.33,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel22",dwidth/1.33,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel23",dwidth/1.33,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel24",dwidth/1.33,dheight/0.63)
+
+                                    dcanvas.coords("frnnaivtlabel25",dwidth/1.9,dheight/0.729)
+                                    dcanvas.coords("frnaivtlabel26",dwidth/1.9,dheight/0.69)
+                                    dcanvas.coords("frnaivtlabel27",dwidth/1.9,dheight/0.66)
+                                    dcanvas.coords("frnaivtlabel28",dwidth/1.9,dheight/0.63)
+
+                                    dcanvas.coords("frnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
+                                    dcanvas.coords("frnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
+                                    dcanvas.coords("frnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("frnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
+                                    dcanvas.coords("frnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
+                                    dcanvas.coords("frnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
+                                    dcanvas.coords("frnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
+
+                                    dcanvas.coords("frnaivlabel13",dwidth/1.5,dheight/0.59)
+
+                                    dcanvas.coords("frnaivlabels13",dwidth/1.21,dheight/0.59)
+                                    dcanvas.coords("frnaivlabel14",dwidth/1.475,dheight/0.565)
+                                    dcanvas.coords("frnaivlabels14",dwidth/1.21,dheight/0.565)
+                                    dcanvas.coords("frnaivlabel15",dwidth/1.47,dheight/0.54)
+                                    dcanvas.coords("frnaivlabels15",dwidth/1.21,dheight/0.54)
+
+                                    dcanvas.coords("frnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
+
+                                    dcanvas.coords("frnaivlabel16",dwidth/2.52,dheight/0.395)
+
+                                    dcanvas.coords("frnaivbutton3",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("frnaivlabel17",dwidth/2.80,dheight/0.95)
+                                    dcanvas.coords("frnaivlabel18",dwidth/1.74,dheight/1.0)
+                                    dcanvas.coords("frnaivlabel19",dwidth/1.74,dheight/0.95)
+                                    dcanvas.coords("frnaivlabel20",dwidth/1.74,dheight/0.90)
+                                    dcanvas.coords("frnaivlabel21",dwidth/1.74,dheight/0.85)
+                                    dcanvas.coords("frnaivlabels19",dwidth/1.53,dheight/1.0)
+                                    dcanvas.coords("frnaivlabels20",dwidth/1.33,dheight/1.0)
+                                    dcanvas.coords("frnaivlabels21",dwidth/1.18,dheight/1.0)
 
 
                                 cs_canvas_1=Canvas(cs_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,2000))
@@ -1247,40 +1827,599 @@ def main_sign_in():
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel3"))
 
 
-                                def Classic(event):
+                                def Classic():
                                     ns_entry_2.delete(0,"end")
                                     ns_entry_2.insert(0, "Classic")
 
-                                def Modern(event):
+                                    #----------------------------------------Classic-----------------------------------------
+
+                                    if ns_entry_2.get()=="Classic":
+                                        print('hai')
+                                        cs_canvas_1.itemconfig('nspoly3',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel1',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel2',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel3',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel4',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel5',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel6',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel7',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel8',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel17',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel9',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel18',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel10',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel19',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel11',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel20',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel12',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel21',state='normal')
+                                        cs_canvas_1.itemconfig('naivtree1',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel13',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabels13',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel14',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabels14',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel15',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabels15',state='normal')
+                                        cs_canvas_1.itemconfig('naivline23',state='normal')
+                                        cs_canvas_1.itemconfig('naivlabel16',state='normal')
+
+                                        cs_canvas_1.itemconfig('nspoly4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('fnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('frnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
+                                        
+                                    else:
+                                        cs_canvas_1.itemconfig('nspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('naivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel16',state='hidden')
+                                
+                                    
+                                def Modern():
                                     ns_entry_2.delete(0,"end")
                                     ns_entry_2.insert(0, "Modern")
+                                    #----------------------------------------Modern-----------------------------------------
 
-                                def Fresh(event):
+                                    if ns_entry_2.get()=="Modern":
+                                        print('hello')
+                                        cs_canvas_1.itemconfig('nspoly4',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel1',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel2',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel3',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel4',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel5',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel6',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel7',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel8',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel17',state='normal')
+                                        cs_canvas_1.itemconfig('nsivtree1',state='normal')
+                                        cs_canvas_1.itemconfig('nsivtree2',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel13',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabels13',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel14',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabels14',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel15',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabels15',state='normal')
+                                        cs_canvas_1.itemconfig('nsivline23',state='normal')
+                                        cs_canvas_1.itemconfig('nsivlabel16',state='normal')
+
+
+                                        cs_canvas_1.itemconfig('nspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('naivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('fnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('frnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
+                                        
+                                    else:
+                                        cs_canvas_1.itemconfig('nspoly4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
+
+                                def Fresh():
                                     ns_entry_2.delete(0,"end")
                                     ns_entry_2.insert(0, "Fresh")
+                                    #----------------------------------------Fresh-----------------------------------------
 
-                                def Friendly(event):
+                                    if ns_entry_2.get()=="Fresh":
+                                        print('helloo')
+
+                                        cs_canvas_1.itemconfig('fnspoly3',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel1',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel2',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel3',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel4',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel5',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel6',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel8',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel17',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel9',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel18',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel10',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel19',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel11',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel20',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel12',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel21',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivtree1',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel13',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabels13',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel14',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabels14',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel15',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabels15',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivline23',state='normal')
+                                        cs_canvas_1.itemconfig('fnaivlabel16',state='normal')
+
+                                        cs_canvas_1.itemconfig('nspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('naivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('nspoly4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('frnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
+
+                                    
+                                    else:
+                                        
+                                        cs_canvas_1.itemconfig('fnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
+                                    
+
+                                def Friendly():
                                     ns_entry_2.delete(0,"end")
                                     ns_entry_2.insert(0, "Friendly")
+
+                                    #----------------------------------------Friendly-----------------------------------------
+
+                                    if ns_entry_2.get()=="Friendly":
+                                        print('hai')
+                                        cs_canvas_1.itemconfig('frnspoly3',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel1',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel2',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel3',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel4',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel5',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel6',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel7',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel8',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel17',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel9',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel18',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel10',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel19',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel11',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel20',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel12',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel21',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivtree1',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel13',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels13',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel14',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels14',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel15',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels15',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivline23',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabel16',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels19',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels20',state='normal')
+                                        cs_canvas_1.itemconfig('frnaivlabels21',state='normal')
+
+                                        cs_canvas_1.itemconfig('nspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('naivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('naivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('naivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('nspoly4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivtree2',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
+
+                                        cs_canvas_1.itemconfig('fnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
+                                    
+                                    else:
+                                        cs_canvas_1.itemconfig('frnspoly3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivline23',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
+                                        cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
 
                                 ns_entry_2=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_2 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_2, tags=('nsentry2'))
 
-                                ns_btn1=Button(cs_canvas_1,text='Classic', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn1=Button(cs_canvas_1,text='Classic', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Classic)
                                 window_ns_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn1, tags=("nsbutton4"))
-                                ns_btn1.bind("<Button-1>",Classic)
+                                #ns_btn1.bind("<Button-1>",Classic)
 
-                                ns_btn2=Button(cs_canvas_1,text='Modern', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn2=Button(cs_canvas_1,text='Modern', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Modern)
                                 window_ns_btn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn2, tags=("nsbutton5"))
-                                ns_btn2.bind("<Button-1>",Modern)
+                                #ns_btn2.bind("<Button-1>",Modern)
 
-                                ns_btn3=Button(cs_canvas_1,text='Fresh', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn3=Button(cs_canvas_1,text='Fresh', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Fresh)
                                 window_ns_btn3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn3, tags=("nsbutton6"))
-                                ns_btn3.bind("<Button-1>",Fresh)
+                                #ns_btn3.bind("<Button-1>",Fresh)
 
-                                ns_btn4=Button(cs_canvas_1,text='Friendly', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn4=Button(cs_canvas_1,text='Friendly', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Friendly)
                                 window_ns_btn4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn4, tags=("nsbutton7"))
-                                ns_btn4.bind("<Button-1>",Friendly)
+                                #ns_btn4.bind("<Button-1>",Friendly)
 
                                 label_1 = Label(cs_canvas_1,width=16,height=1,text="Primary Colours", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel4"))
@@ -1369,123 +2508,136 @@ def main_sign_in():
                                 label_1 = Label(cs_canvas_1,width=14,height=1,text="Try New Fonts", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel6"))
 
-                                def Serif(event):
+                                def Serif():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Serif Serif font")
 
-                                def Sans(event):
+                                    # #----------------------------------------Classic-----------------------------------------
+
+                                    # if ns_entry_2.get()=="Classic" and ns_entry_5.get()=="Serif Serif font":
+                                    #     print('hai')
+                                    #     cs_canvas_1.itemconfig('nspoly3',state='normal')
+                                    #     cs_canvas_1.itemconfig('naivlabel1',state='normal')
+                                    #     c_label_1.config(font=('Garamond bold',12))
+                                    # else:
+                                    #     cs_canvas_1.itemconfig('nspoly3',state='hidden')
+                                    #     cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                
+
+                                def Sans():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Sans-serif Sans-serif font")
 
-                                def Monospace(event):
+                                def Monospace():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Monospace Monospace font")
 
-                                def System(event):
+                                def System():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "System-ui System-ui font")
 
                                 ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_5 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_5, tags=('nsentry5'))
                                 
-                                ns_btn29=Button(cs_canvas_1,text='Serif\nSerif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn29=Button(cs_canvas_1,text='Serif\nSerif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Serif)
                                 window_ns_btn29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn29, tags=("nsbutton32"))
-                                ns_btn29.bind("<Button-1>",Serif)
+                                #ns_btn29.bind("<Button-1>",Serif)
 
-                                ns_btn30=Button(cs_canvas_1,text='Sans-serif\nSans-serif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn30=Button(cs_canvas_1,text='Sans-serif\nSans-serif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Sans)
                                 window_ns_btn30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn30, tags=("nsbutton33"))
-                                ns_btn30.bind("<Button-1>",Sans)
+                                #ns_btn30.bind("<Button-1>",Sans)
 
-                                ns_btn31=Button(cs_canvas_1,text='Monospace\nMonospace font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn31=Button(cs_canvas_1,text='Monospace\nMonospace font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Monospace)
                                 window_ns_btn31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn31, tags=("nsbutton34"))
-                                ns_btn31.bind("<Button-1>",Monospace)
+                                #ns_btn31.bind("<Button-1>",Monospace)
 
-                                ns_btn32=Button(cs_canvas_1,text='System-ui\nSystem-ui font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12')
+                                ns_btn32=Button(cs_canvas_1,text='System-ui\nSystem-ui font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=System)
                                 window_ns_btn32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn32, tags=("nsbutton35"))
-                                ns_btn32.bind("<Button-1>",System)
+                                #ns_btn32.bind("<Button-1>",System)
 
                                 ns_chk_str_1 = BooleanVar()
                                 ns_chkbtn2 = Checkbutton(cs_canvas_1, text = "Apply this theme", variable = ns_chk_str_1, font=("arial", 12),background="#1b3857",foreground="white",selectcolor="#2f516f")
                                 window_ns_chkbtn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_chkbtn2,tags=("nscheck1"))
 
-                                # if ns_entry_2.get() == "Classic" and ns_entry_5.get() == "Serif Serif font":
-                                #     cs_canvas_1.itemconfig('nspoly3',state='normal')
+                                #----------------------------------------Classic-----------------------------------------
 
-                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"))
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel1"))
+                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("naivlabel1"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel2"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel2"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel3"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel3"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel4"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel4"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel5"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel5"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel6"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel6"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="skyblue") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel7"))
+                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel7"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel8"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel8"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel17"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel17"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel9"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel9"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel18"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel18"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel10"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel10"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel19"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel19"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel11"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel11"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel20"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel20"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel12"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel12"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=15,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel21"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel21"),state=HIDDEN)
 
-                                fgthvi = ttk.Style()
-                                fgthvi.configure('mystyle10.Treeview.Heading', background='#2f516f',State='DISABLE')
+                                fgthvi_1 = ttk.Style()
+                                fgthvi_1.theme_use("default")
+                                fgthvi_1.configure('mystyle10.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                                fgthvi_1.configure('mystyle10.Treeview.Heading', background='#2f516f',State='DISABLE')
 
-                                iview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle10.Treeview')
-                                iview_tree.pack(side = 'top')
-                                iview_tree.heading(1)
-                                iview_tree.heading(2, text="PRODUCT/SERVICES")
-                                iview_tree.heading(3, text="HSN")
-                                iview_tree.heading(4, text="QTY")
-                                iview_tree.heading(5, text="PRICE")
-                                iview_tree.heading(6, text="TOTAL")
-                                iview_tree.heading(7, text="TAX(%)")
+                                nsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 2, show = "headings",style='mystyle10.Treeview')
+                                nsview_tree.pack(side = 'top')
+                                nsview_tree.heading(1)
+                                nsview_tree.heading(2, text="PRODUCT/SERVICES")
+                                nsview_tree.heading(3, text="HSN")
+                                nsview_tree.heading(4, text="QTY")
+                                nsview_tree.heading(5, text="PRICE")
+                                nsview_tree.heading(6, text="TOTAL")
+                                nsview_tree.heading(7, text="TAX(%)")
                                 
-                                iview_tree.column(1, width = 30)
-                                iview_tree.column(2, width = 100)
-                                iview_tree.column(3, width = 100)
-                                iview_tree.column(4, width = 100)
-                                iview_tree.column(5, width = 100)
-                                iview_tree.column(6, width = 100)
-                                iview_tree.column(7, width = 100)
+                                nsview_tree.column(1, width = 30)
+                                nsview_tree.column(2, width = 200)
+                                nsview_tree.column(3, width = 110)
+                                nsview_tree.column(4, width = 90)
+                                nsview_tree.column(5, width = 105)
+                                nsview_tree.column(6, width = 110)
+                                nsview_tree.column(7, width = 150)
 
-                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=iview_tree,tags=('naivtree1'))
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree,tags=('naivtree1'),state=HIDDEN)
 
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
@@ -1500,37 +2652,399 @@ def main_sign_in():
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel13"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels13"))
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels13"),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel14"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel14"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels14"))
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels14"),state=HIDDEN)
 
 
                                 label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel15"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel15"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels15"))
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels15"),state=HIDDEN)
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'),state=HIDDEN)
 
                                 label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel16"))
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel16"),state=HIDDEN)
+
+                                
+
+                                #--------------------------------------Modern------------------------------------
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly4"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel1"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel2"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel3"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel4"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel5"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel6"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel7"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To:", font=('arial 14 bold'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel8"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel17"),state=HIDDEN)
+
+                                fgthvi = ttk.Style()
+                                fgthvi.configure('mystyle11.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                                fgthvi.configure('mystyle11.Treeview.Heading', background='skyblue',State='DISABLE')
+
+                                nsview_tree_1 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5), height = 4, show = "headings",style='mystyle11.Treeview')
+                                nsview_tree_1.pack(side = 'top')
+                                nsview_tree_1.heading(1)
+                                nsview_tree_1.heading(2, text="INVOICE NO")
+                                nsview_tree_1.heading(3, text="INVOICE DATE")
+                                nsview_tree_1.heading(4, text="DUE DATE")
+                                nsview_tree_1.heading(5, text="TERMS")
+                                
+                                nsview_tree_1.column(1, width = 30)
+                                nsview_tree_1.column(2, width = 200)
+                                nsview_tree_1.column(3, width = 190)
+                                nsview_tree_1.column(4, width = 190)
+                                nsview_tree_1.column(5, width = 185)
+                                
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_1,tags=('nsivtree1'),state=HIDDEN)
+
+                                fgthvi_1 = ttk.Style()
+                                fgthvi_1.theme_use("default")
+                                fgthvi_1.configure('mystyle12.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                                fgthvi_1.configure('mystyle12.Treeview.Heading', background='skyblue',State='DISABLE')
+
+                                nsview_tree_2 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 4, show = "headings",style='mystyle12.Treeview')
+                                nsview_tree_2.pack(side = 'top')
+                                nsview_tree_2.heading(1)
+                                nsview_tree_2.heading(2, text="PRODUCT/SERVICES")
+                                nsview_tree_2.heading(3, text="HSN")
+                                nsview_tree_2.heading(4, text="QTY")
+                                nsview_tree_2.heading(5, text="PRICE")
+                                nsview_tree_2.heading(6, text="TOTAL")
+                                nsview_tree_2.heading(7, text="TAX(%)")
+                                
+                                nsview_tree_2.column(1, width = 30)
+                                nsview_tree_2.column(2, width = 200)
+                                nsview_tree_2.column(3, width = 110)
+                                nsview_tree_2.column(4, width = 90)
+                                nsview_tree_2.column(5, width = 105)
+                                nsview_tree_2.column(6, width = 110)
+                                nsview_tree_2.column(7, width = 150)
+
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_2,tags=('nsivtree2'),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel14"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels14"),state=HIDDEN)
+
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel15"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels15"),state=HIDDEN)
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('nsivline23'),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel16"),state=HIDDEN)
+
+                                #----------------------------------------Fresh-----------------------------------------
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("fnspoly3"),state=HIDDEN)
+
+                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("fnaivlabel1"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel2"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel3"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel4"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel5"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel6"),state=HIDDEN)
+
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel8"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel17"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel9"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel18"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel10"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel19"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel11"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel20"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel12"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel21"),state=HIDDEN)
+
+                                fgthvi_1 = ttk.Style()
+                                fgthvi_1.theme_use("default")
+                                fgthvi_1.configure('mystyle13.Treeview', background='skyblue',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                                fgthvi_1.configure('mystyle13.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
+
+                                fnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 2, show = "headings",style='mystyle13.Treeview')
+                                fnsview_tree.pack(side = 'top')
+                                fnsview_tree.heading(1)
+                                fnsview_tree.heading(2, text="PRODUCT/SERVICES")
+                                fnsview_tree.heading(3, text="HSN")
+                                fnsview_tree.heading(4, text="QTY")
+                                fnsview_tree.heading(5, text="PRICE")
+                                fnsview_tree.heading(6, text="TOTAL")
+                                fnsview_tree.heading(7, text="TAX(%)")
+                                
+                                fnsview_tree.column(1, width = 30)
+                                fnsview_tree.column(2, width = 200)
+                                fnsview_tree.column(3, width = 110)
+                                fnsview_tree.column(4, width = 90)
+                                fnsview_tree.column(5, width = 105)
+                                fnsview_tree.column(6, width = 110)
+                                fnsview_tree.column(7, width = 150)
+
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=fnsview_tree,tags=('fnaivtree1'),state=HIDDEN)
+
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline3'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline4'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline5'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline6'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline7'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline8'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline9'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline10'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
+
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel14"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels14"),state=HIDDEN)
+
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel15"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels15"),state=HIDDEN)
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('fnaivline23'),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel16"),state=HIDDEN)
+
+                                #----------------------------------------Friendly-----------------------------------------
+
+                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("frnspoly3"),state=HIDDEN)
+
+                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("frnaivlabel1"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel2"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel3"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel4"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel5"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel6"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel7"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel8"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel17"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel9"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel18"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel10"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel19"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel11"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel20"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel12"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel21"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Date', font=('arial 12'),background="#98c1d9",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels19"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Please Pay', font=('arial 12'),background="skyblue",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels20"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Due Date', font=('arial 12'),background="#98c1d9",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels21"),state=HIDDEN)
+
+
+                                fgthvi_1 = ttk.Style()
+                                fgthvi_1.theme_use("default")
+                                fgthvi_1.configure('mystyle14.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
+                                fgthvi_1.configure('mystyle14.Treeview.Heading', background='white',State='DISABLE',foreground='black')
+
+                                frnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 2, show = "headings",style='mystyle14.Treeview')
+                                frnsview_tree.pack(side = 'top')
+                                frnsview_tree.heading(1)
+                                frnsview_tree.heading(2, text="PRODUCT/SERVICES")
+                                frnsview_tree.heading(3, text="HSN")
+                                frnsview_tree.heading(4, text="QTY")
+                                frnsview_tree.heading(5, text="PRICE")
+                                frnsview_tree.heading(6, text="TOTAL")
+                                frnsview_tree.heading(7, text="TAX(%)")
+                                
+                                frnsview_tree.column(1, width = 30)
+                                frnsview_tree.column(2, width = 200)
+                                frnsview_tree.column(3, width = 110)
+                                frnsview_tree.column(4, width = 90)
+                                frnsview_tree.column(5, width = 105)
+                                frnsview_tree.column(6, width = 110)
+                                frnsview_tree.column(7, width = 150)
+
+                                window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=frnsview_tree,tags=('frnaivtree1'),state=HIDDEN)
+
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline3'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline4'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline5'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline6'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline7'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline8'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline9'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline10'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
+
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
+                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels13"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel14"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels14"),state=HIDDEN)
+
+
+                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel15"),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels15"),state=HIDDEN)
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('frnaivline23'),state=HIDDEN)
+
+                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel16"),state=HIDDEN)
+
+
 
                                 ns_sub_btn1=Button(cs_canvas_1,text='Submit', width=15,height=2,bd=0, foreground="white",background="#2f516f",font='arial 12',activebackground="#2f516f")
                                 window_ns_sub_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_sub_btn1,tags=('nsbutton1'))
