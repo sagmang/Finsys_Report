@@ -277,7 +277,7 @@ def main_sign_in():
                                 dcanvas.coords("aslabel17",dwidth/1.94,dheight/0.515)
                                 dcanvas.coords("aslabel18",dwidth/16,dheight/0.47)
                                 dcanvas.coords("aslabel19",dwidth/1.95,dheight/0.47)
-                                dcanvas.coords("aslabel20",dwidth/18,dheight/0.44)
+                                dcanvas.coords("aslabel20",dwidth/18,dheight/0.43)
 
                                 dcanvas.coords("asentry1",dwidth/13.8,dheight/1.665)
                                 dcanvas.coords("asentry2",dwidth/1.93,dheight/1.665)
@@ -294,10 +294,104 @@ def main_sign_in():
                                 dcanvas.coords("asentry13",dwidth/1.93,dheight/0.554)
                                 dcanvas.coords("asentry14",dwidth/13.8,dheight/0.5)
                                 dcanvas.coords("asentry15",dwidth/1.93,dheight/0.5)
+                                dcanvas.coords("asentry16",dwidth/13.8,dheight/0.418)
 
                                 dcanvas.coords("ascombo1",dwidth/13.8,dheight/0.455)
                                 dcanvas.coords("ascombo2",dwidth/1.93,dheight/0.455)
 
+                            as_sql="select * from auth_user where username=%s"
+                            as_val=(nm_ent.get(),)
+                            fbcursor.execute(as_sql,as_val,)
+                            as_dtl=fbcursor.fetchone()
+
+                            def as_update_profile():
+                                first_name=acc_entry_1.get()
+                                pro_email=acc_entry_3.get()
+                                last_name=acc_entry_2.get()
+                                pro_username=acc_entry_4.get()
+                                pro_new_pass=acc_entry_6.get()
+
+                                sql_signup='select * from auth_user'
+                                fbcursor.execute(sql_signup)
+                                check_none=fbcursor.fetchone()
+
+                                if as_dtl[4]==pro_username and as_dtl[1]==acc_entry_5.get() and pro_new_pass=="" :
+                                            passw=acc_entry_5.get()
+                                    
+                                            prof_edit="update auth_user set first_name=%s,last_name=%s,email=%s,username=%s,password=%s where id=%s" #adding values into db
+                                            prof_edit_val=(first_name,last_name,pro_email,pro_username,passw,as_dtl[0])
+                                            fbcursor.execute(prof_edit,prof_edit_val)
+                                            finsysdb.commit()
+
+                                            #compnay
+                                            cmp_name=acc_entry_8.get()
+                                            cmp_cty=acc_entry_10.get()
+                                            cmp_pin=acc_entry_12.get()
+                                            cmp_phn=acc_entry_14.get()
+                                            cmp_ind=as_combo_1.get()
+                                            cmp_addr=acc_entry_9.get()
+                                            cmp_st=acc_entry_11.get()
+                                            cmp_em=acc_entry_13.get()
+                                            cmp_bname=acc_entry_15.get()
+                                            cmp_typ=as_combo_2.get()
+                                            logo=acc_entry_16.get()
+
+                                            cmp_edit="update app1_company set cname=%s,caddress=%s,city=%s,state=%s,pincode=%s,cemail=%s,phone=%s,cimg=%s,bname=%s,industry=%s,ctype=%s where id_id =%s" #adding values into db
+                                            cmp_edit_val=(cmp_name,cmp_addr,cmp_cty,cmp_st,cmp_pin,cmp_em,cmp_phn,logo,cmp_bname,cmp_ind,cmp_typ,as_dtl[0])
+                                            fbcursor.execute(cmp_edit,cmp_edit_val)
+                                            finsysdb.commit()
+                                            
+                                        
+                                else:
+                                    # #username same password change
+                                    if acc_entry_6.get()=="":
+                                        
+                                        pro_new_passd=acc_entry_5.get()
+                                        
+                                    else:
+                                        pro_new_passd=acc_entry_6.get()
+                                    if pro_new_pass==acc_entry_7.get() and acc_entry_7.get()==pro_new_pass:
+                                            if acc_entry_5.get()==as_dtl[1]:
+                                                print(pro_new_pass)
+                                                prof_edit="update auth_user set first_name=%s,last_name=%s,email=%s,username=%s,password=%s where id=%s" #adding values into db
+                                                prof_edit_val=(first_name,last_name,pro_email,pro_username,pro_new_passd,as_dtl[0])
+                                                fbcursor.execute(prof_edit,prof_edit_val)
+                                                finsysdb.commit()
+
+                                                #compnay
+                                                cmp_name=acc_entry_8.get()
+                                                cmp_cty=acc_entry_10.get()
+                                                cmp_pin=acc_entry_12.get()
+                                                cmp_phn=acc_entry_14.get()
+                                                cmp_ind=as_combo_1.get()
+                                                cmp_addr=acc_entry_9.get()
+                                                cmp_st=acc_entry_11.get()
+                                                cmp_em=acc_entry_13.get()
+                                                cmp_bname=acc_entry_15.get()
+                                                cmp_typ=as_combo_2.get()
+                                                logo=acc_entry_16.get()
+
+                                                cmp_edit="update app1_company set cname=%s,caddress=%s,city=%s,state=%s,pincode=%s,cemail=%s,phone=%s,cimg=%s,bname=%s,industry=%s,ctype=%s where id_id =%s" #adding values into db
+                                                cmp_edit_val=(cmp_name,cmp_addr,cmp_cty,cmp_st,cmp_pin,cmp_em,cmp_phn,logo,cmp_bname,cmp_ind,cmp_typ,as_dtl[0])
+                                                fbcursor.execute(cmp_edit,cmp_edit_val)
+                                                finsysdb.commit()
+                                                
+                                            else:
+                                                messagebox.showerror("Updation Failed","Please check your current password")
+                                    else:
+
+                                            messagebox.showerror("Updation Failed","password and conform password does not match")
+                                        
+                                    
+                                Sys_top_frame2.pack_forget()
+                                Sys_top_frame.pack_forget()
+                                acc_frame.grid_forget()
+                                main_frame_signin.pack(fill=X,)
+
+                            cmp_sql = "SELECT * FROM app1_company WHERE id_id=%s"
+                            cmp_val = (as_dtl[0],)
+                            fbcursor.execute(cmp_sql,cmp_val)
+                            as_cmp_dtl = fbcursor.fetchone()
 
                             acc_canvas=Canvas(acc_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,2000))
 
@@ -1000,42 +1094,89 @@ def main_sign_in():
 
                             acc_entry_1=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_1 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_1, tags=('asentry1'))
+                            acc_entry_1.delete(0,END)
+                            acc_entry_1.insert(0,as_dtl[5])
 
                             label_1 = Label(acc_canvas,width=10,height=2,text="Last Name", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel3'))
 
                             acc_entry_2=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_2 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_2, tags=('asentry2'))
+                            acc_entry_2.delete(0,END)
+                            acc_entry_2.insert(0,as_dtl[6])
 
                             label_1 = Label(acc_canvas,width=7,height=2,text="E-mail", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel4'))
 
                             acc_entry_3=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_3 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_3, tags=('asentry3'))
+                            acc_entry_3.delete(0,END)
+                            acc_entry_3.insert(0,as_dtl[7])
 
                             label_1 = Label(acc_canvas,width=10,height=2,text="Username", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel5'))
 
                             acc_entry_4=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_4 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_4, tags=('asentry4'))
+                            acc_entry_4.delete(0,END)
+                            acc_entry_4.insert(0,as_dtl[4])
 
                             label_1 = Label(acc_canvas,width=28,height=2,text="Enter your Current Password", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel6'))
 
-                            acc_entry_5=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            acc_entry_5=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white",show="*")
                             window_acc_entry_5 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_5, tags=('asentry5'))
+                            acc_entry_5.delete(0,END)
+                            acc_entry_5.insert(0,as_dtl[1])
 
                             label_1 = Label(acc_canvas,width=18,height=2,text="Enter New Password", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel7'))
 
-                            acc_entry_6=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            
+                            acc_entry_6=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white",show="*")
                             window_acc_entry_6 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_6, tags=('asentry6'))
+                            def as_pas_val_fun1_1(value):
+            
+                                pattern = r'(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$'
+                                if re.fullmatch(pattern, value) is None:
+                                                    
+                                    return False
+
+                                acc_entry_6.config(fg="white")
+                                return True
+
+                            def as_pass_inval_fun1_1():
+                                acc_entry_6.config(fg="red")
+
+                            as_pas_val1_1 = (acc_canvas.register(as_pas_val_fun1_1), '%P')
+                            as_pass_inval1_1 = (acc_canvas.register(as_pass_inval_fun1_1),)
+
+                            acc_entry_6.config(validate='focusout', validatecommand=as_pas_val1_1, invalidcommand=as_pass_inval1_1)
 
                             label_1 = Label(acc_canvas,width=18,height=2,text="Re-type New Password", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel8'))
 
-                            acc_entry_7=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+
+                            acc_entry_7=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white",show="*")
                             window_acc_entry_7 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_7, tags=('asentry7'))
+
+                            def as_pas_val_fun1(value):
+            
+                                pattern = r'(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$'
+                                if re.fullmatch(pattern, value) is None:
+                                                    
+                                    return False
+
+                                acc_entry_7.config(fg="white")
+                                return True
+
+                            def as_pass_inval_fun1():
+                                acc_entry_7.config(fg="red")
+
+                            as_pas_val1 = (acc_canvas.register(as_pas_val_fun1), '%P')
+                            as_pass_inval1 = (acc_canvas.register(as_pass_inval_fun1),)
+
+                            acc_entry_7.config(validate='focusout', validatecommand=as_pas_val1, invalidcommand=as_pass_inval1)
 
                             label_1 = Label(acc_canvas,width=11,height=2,text="Company Info", font=('arial 18'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel9'))
@@ -1045,48 +1186,64 @@ def main_sign_in():
 
                             acc_entry_8=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_8 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_8, tags=('asentry8'))
+                            acc_entry_8.delete(0,END)
+                            acc_entry_8.insert(0,as_cmp_dtl[1])
 
                             label_1 = Label(acc_canvas,width=18,height=2,text="Company Address", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel11'))
 
                             acc_entry_9=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_9 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_9, tags=('asentry9'))
+                            acc_entry_9.delete(0,END)
+                            acc_entry_9.insert(0,as_cmp_dtl[2])
 
                             label_1 = Label(acc_canvas,width=5,height=2,text="City", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel12'))
 
                             acc_entry_10=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_10 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_10, tags=('asentry10'))
+                            acc_entry_10.delete(0,END)
+                            acc_entry_10.insert(0,as_cmp_dtl[3])
 
                             label_1 = Label(acc_canvas,width=6,height=2,text="State", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel13'))
 
                             acc_entry_11=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_11 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_11, tags=('asentry11'))
+                            acc_entry_11.delete(0,END)
+                            acc_entry_11.insert(0,as_cmp_dtl[4])
 
                             label_1 = Label(acc_canvas,width=8,height=2,text="Pincode", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel14'))
 
                             acc_entry_12=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_12 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_12, tags=('asentry12'))
+                            acc_entry_12.delete(0,END)
+                            acc_entry_12.insert(0,as_cmp_dtl[5])
 
                             label_1 = Label(acc_canvas,width=6,height=2,text="Email", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel15'))
 
                             acc_entry_13=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_13 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_13, tags=('asentry13'))
+                            acc_entry_13.delete(0,END)
+                            acc_entry_13.insert(0,as_cmp_dtl[6])
 
                             label_1 = Label(acc_canvas,width=13,height=2,text="Phone Number", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel16'))
 
                             acc_entry_14=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_14 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_14, tags=('asentry14'))
+                            acc_entry_14.delete(0,END)
+                            acc_entry_14.insert(0,as_cmp_dtl[7])
 
                             label_1 = Label(acc_canvas,width=20,height=2,text="Legal Business Name", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel17'))
 
                             acc_entry_15=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_acc_entry_15 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_15, tags=('asentry15'))
+                            acc_entry_15.delete(0,END)
+                            acc_entry_15.insert(0,as_cmp_dtl[9])
 
                             label_1 = Label(acc_canvas,width=14,height=2,text="Your Industry", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel18'))
@@ -1095,6 +1252,8 @@ def main_sign_in():
                             as_combo_1['values'] = ("Accounting Services","Consultants, Doctors, Lawyers and similar","Information Technology","Manufacturing","Professional, Scientific and Technical Services","Resturant/Bar and similar","Retail and similar","Other Financial Services",)
                             as_combo_1.current(0)
                             window_as_combo_1 = acc_canvas.create_window(0, 0, anchor="nw", width=540, height=30,window=as_combo_1,tags=('ascombo1'))  
+                            as_combo_1.delete(0,'end')
+                            as_combo_1.insert(0,as_cmp_dtl[10])
 
                             label_1 = Label(acc_canvas,width=13,height=2,text="Company Type", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel19'))
@@ -1103,11 +1262,33 @@ def main_sign_in():
                             as_combo_2['values'] = ("Private Limited Company","Public Limited Company","Joint-Venture Company","Partnership Firm Company","One Person Company","Branch Office Company","Non Government Organization",)
                             as_combo_2.current(0)
                             window_as_combo_2 = acc_canvas.create_window(0, 0, anchor="nw", width=540, height=30,window=as_combo_2,tags=('ascombo2'))  
+                            as_combo_2.delete(0,'end')
+                            as_combo_2.insert(0,as_cmp_dtl[11])
 
                             label_1 = Label(acc_canvas,width=50,height=2,text="Do you want to change Company Image ? Browse here ⤓", font=('arial 12'),background="#1b3857",fg="white") 
-                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel20'))    
+                            window_label_1 = acc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=('aslabel20'))  
 
-                            as_btn1=Button(acc_canvas,text='UPDATE PROFILE', bd=0, foreground="white",background="#2f516f",font='arial 14 bold',activebackground="#1b3857",activeforeground="white",width=25,height=2)
+                            def as_fil_ents(event):
+                                sql_log_sql_1='select * from auth_user where username=%s'
+                                val_1=(nm_ent.get(),)
+                                fbcursor.execute(sql_log_sql_1,val_1)
+                                check_logins=fbcursor.fetchone()
+                                cmp_logo = askopenfilename(filetypes=(("png file ",'.png'),('PDF', '*.pdf',),("jpg file", ".jpg"),  ("All files", "*.*"),))
+                                logo_crp_1=cmp_logo.split('/',-1)
+                                
+                                im1 = Image.open(r""+cmp_logo) 
+                                im1 = im1.save("profilepic/propic"+str(check_logins[0])+".png")
+
+                                acc_entry_16.delete("0",END)
+                                acc_entry_16.insert(0,logo_crp_1[-1])  
+
+                            acc_entry_16=Entry(acc_canvas,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_acc_entry_16 = acc_canvas.create_window(0, 0, anchor="nw", height=30,window=acc_entry_16, tags=('asentry16'))
+                            acc_entry_16.delete(0,END)
+                            acc_entry_16.insert(0,as_cmp_dtl[8])
+                            acc_entry_16.bind("<Button-1>",as_fil_ents)
+
+                            as_btn1=Button(acc_canvas,text='UPDATE PROFILE', bd=0, foreground="white",background="#2f516f",font='arial 14 bold',activebackground="#1b3857",activeforeground="white",width=25,height=2,command=as_update_profile)
                             window_as_btn1 = acc_canvas.create_window(0, 0, anchor="nw", window=as_btn1,tags=('asbutton3'))   
 
                         elif selected_langs == "Customize Form Style":    
@@ -2424,85 +2605,182 @@ def main_sign_in():
                                 label_1 = Label(cs_canvas_1,width=16,height=1,text="Primary Colours", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel4"))
 
+                                def color_1_1():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#E9967A")
+                                
+                                def color_1_2():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#8FBC8F")
+                                
+                                def color_1_3():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#B0C4DE")
+
+                                def color_1_4():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#87CEFA")
+
+                                def color_1_5():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#F0E68C")
+                                
+                                def color_1_6():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#DDA0DD")
+
+                                def color_1_7():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#2F4F4F")
+
+                                def color_1_8():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#98FB98")
+                                
+                                def color_1_9():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#DB7093")
+
+                                def color_1_10():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#D2B48C")
+                                
+                                def color_1_11():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#D3D3D3")
+                                
+                                def color_1_12():
+                                    ns_entry_3.delete(0,"end")
+                                    ns_entry_3.insert(0, "#F5F5F5")
+
+
                                 ns_entry_3=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_3 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_3, tags=('nsentry3'))
 
-                                ns_btn5=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12')
+                                ns_btn5=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12',command=color_1_1)
                                 window_ns_btn5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn5, tags=("nsbutton8"))
 
-                                ns_btn6=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12')
+                                ns_btn6=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12',command=color_1_2)
                                 window_ns_btn6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn6, tags=("nsbutton9"))
 
-                                ns_btn7=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12')
+                                ns_btn7=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12',command=color_1_3)
                                 window_ns_btn7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn7, tags=("nsbutton10"))
 
-                                ns_btn8=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12')
+                                ns_btn8=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12',command=color_1_4)
                                 window_ns_btn8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn8, tags=("nsbutton11"))
 
-                                ns_btn9=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12')
+                                ns_btn9=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12',command=color_1_5)
                                 window_ns_btn9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn9, tags=("nsbutton12"))
 
-                                ns_btn10=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12')
+                                ns_btn10=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12',command=color_1_6)
                                 window_ns_btn10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn10, tags=("nsbutton13"))
 
-                                ns_btn11=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12')
+                                ns_btn11=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12',command=color_1_7)
                                 window_ns_btn11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn11, tags=("nsbutton14"))
 
-                                ns_btn12=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12')
+                                ns_btn12=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12',command=color_1_8)
                                 window_ns_btn12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn12, tags=("nsbutton15"))
 
-                                ns_btn13=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12')
+                                ns_btn13=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12',command=color_1_9)
                                 window_ns_btn13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn13, tags=("nsbutton16"))
 
-                                ns_btn14=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12')
+                                ns_btn14=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12',command=color_1_10)
                                 window_ns_btn14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn14, tags=("nsbutton17"))
 
-                                ns_btn15=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12')
+                                ns_btn15=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12',command=color_1_11)
                                 window_ns_btn15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn15, tags=("nsbutton18"))
 
-                                ns_btn16=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12')
+                                ns_btn16=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12',command=color_1_12)
                                 window_ns_btn16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn16, tags=("nsbutton19"))
 
                                 label_1 = Label(cs_canvas_1,width=18,height=1,text="Secondary Colours", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel5"))
 
+                                def color_2_1():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#E9967A")
+                                
+                                def color_2_2():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#8FBC8F")
+                                
+                                def color_2_3():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#B0C4DE")
+
+                                def color_2_4():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#87CEFA")
+
+                                def color_2_5():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#F0E68C")
+                                
+                                def color_2_6():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#DDA0DD")
+
+                                def color_2_7():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#2F4F4F")
+
+                                def color_2_8():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#98FB98")
+                                
+                                def color_2_9():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#DB7093")
+
+                                def color_2_10():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#D2B48C")
+                                
+                                def color_2_11():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#D3D3D3")
+                                
+                                def color_2_12():
+                                    ns_entry_4.delete(0,"end")
+                                    ns_entry_4.insert(0, "#F5F5F5")
+
                                 ns_entry_4=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_4 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_4, tags=('nsentry4'))
 
-                                ns_btn17=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12')
+                                ns_btn17=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12',command=color_2_1)
                                 window_ns_btn17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn17, tags=("nsbutton20"))
 
-                                ns_btn18=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12')
+                                ns_btn18=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12',command=color_2_2)
                                 window_ns_btn18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn18, tags=("nsbutton21"))
 
-                                ns_btn19=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12')
+                                ns_btn19=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12',command=color_2_3)
                                 window_ns_btn19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn19, tags=("nsbutton22"))
 
-                                ns_btn20=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12')
+                                ns_btn20=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12',command=color_2_4)
                                 window_ns_btn20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn20, tags=("nsbutton23"))
 
-                                ns_btn21=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12')
+                                ns_btn21=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12',command=color_2_5)
                                 window_ns_btn21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn21, tags=("nsbutton24"))
 
-                                ns_btn22=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12')
+                                ns_btn22=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12',command=color_2_6)
                                 window_ns_btn22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn22, tags=("nsbutton25"))
 
-                                ns_btn23=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12')
+                                ns_btn23=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12',command=color_2_7)
                                 window_ns_btn23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn23, tags=("nsbutton26"))
 
-                                ns_btn24=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12')
+                                ns_btn24=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12',command=color_2_8)
                                 window_ns_btn24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn24, tags=("nsbutton27"))
 
-                                ns_btn25=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12')
+                                ns_btn25=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12',command=color_2_9)
                                 window_ns_btn25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn25, tags=("nsbutton28"))
 
-                                ns_btn26=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12')
+                                ns_btn26=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12',command=color_2_10)
                                 window_ns_btn26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn26, tags=("nsbutton29"))
 
-                                ns_btn27=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12')
+                                ns_btn27=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12',command=color_2_11)
                                 window_ns_btn27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn27, tags=("nsbutton30"))
 
-                                ns_btn28=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12')
+                                ns_btn28=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12',command=color_2_12)
                                 window_ns_btn28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn28, tags=("nsbutton31"))
 
                                 label_1 = Label(cs_canvas_1,width=14,height=1,text="Try New Fonts", font=('arial 12'),background="#1b3857",fg="white") 
@@ -2512,29 +2790,375 @@ def main_sign_in():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Serif Serif font")
 
-                                    # #----------------------------------------Classic-----------------------------------------
+                                    #----------------------------------------Classic-----------------------------------------
 
-                                    # if ns_entry_2.get()=="Classic" and ns_entry_5.get()=="Serif Serif font":
-                                    #     print('hai')
-                                    #     cs_canvas_1.itemconfig('nspoly3',state='normal')
-                                    #     cs_canvas_1.itemconfig('naivlabel1',state='normal')
-                                    #     c_label_1.config(font=('Garamond bold',12))
-                                    # else:
-                                    #     cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                    #     cs_canvas_1.itemconfig('naivlabel1',state='hidden')
+                                    if ns_entry_2.get()=="Classic":
+                                        print('wow')
+                                        c_label_1.config(font=('Garamond bold',12))
+                                        c_label_2.config(font=('Garamond',12))
+                                        c_label_3.config(font=('Garamond',12))
+                                        c_label_4.config(font=('Garamond',12))
+                                        c_label_5.config(font=('Garamond',12))
+                                        c_label_6.config(font=('Garamond',12))
+                                        c_label_7.config(font=('Garamond bold',20))
+                                        c_label_8.config(font=('Garamond bold',14))
+                                        c_label_9.config(font=('Garamond',12))
+                                        c_label_10.config(font=('Garamond bold',12))
+                                        c_label_11.config(font=('Garamond',12))
+                                        c_label_12.config(font=('Garamond bold',12))
+                                        c_label_13.config(font=('Garamond',12))
+                                        c_label_14.config(font=('Garamond bold',12))
+                                        c_label_15.config(font=('Garamond',12))
+                                        c_label_16.config(font=('Garamond bold',12))
+                                        c_label_17.config(font=('Garamond',12))
+                                        c_label_18.config(font=('Garamond bold',12))
+                                        c_label_19.config(font=('Garamond bold',12))
+                                        c_label_20.config(font=('Garamond bold',12))
+                                        c_label_21.config(font=('Garamond bold',12))
+                                        c_label_22.config(font=('Garamond bold',12))
+                                        c_label_23.config(font=('Garamond bold',12))
+                                        c_label_24.config(font=('Garamond',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Modern-----------------------------------------
+
+                                    if ns_entry_2.get()=="Modern":
+                                        print('wow')
+                                        m_label_1.config(font=('Garamond bold',12))
+                                        m_label_2.config(font=('Garamond',12))
+                                        m_label_3.config(font=('Garamond',12))
+                                        m_label_4.config(font=('Garamond',12))
+                                        m_label_5.config(font=('Garamond',12))
+                                        m_label_6.config(font=('Garamond',12))
+                                        m_label_7.config(font=('Garamond bold',20))
+                                        m_label_8.config(font=('Garamond bold',14))
+                                        m_label_9.config(font=('Garamond',12))
+                                        m_label_10.config(font=('Garamond bold',12))
+                                        m_label_11.config(font=('Garamond bold',12))
+                                        m_label_12.config(font=('Garamond bold',12))
+                                        m_label_13.config(font=('Garamond bold',12))
+                                        m_label_14.config(font=('Garamond bold',12))
+                                        m_label_15.config(font=('Garamond bold',12))
+                                        m_label_16.config(font=('Garamond',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Fresh-----------------------------------------
+
+                                    if ns_entry_2.get()=="Fresh":
+                                        print('wow')
+                                        f_label_1.config(font=('Garamond bold',12))
+                                        f_label_2.config(font=('Garamond',12))
+                                        f_label_3.config(font=('Garamond',12))
+                                        f_label_4.config(font=('Garamond',12))
+                                        f_label_5.config(font=('Garamond',12))
+                                        f_label_6.config(font=('Garamond',12))
+                                        f_label_7.config(font=('Garamond bold',14))
+                                        f_label_8.config(font=('Garamond',12))
+                                        f_label_9.config(font=('Garamond bold',12))
+                                        f_label_10.config(font=('Garamond',12))
+                                        f_label_11.config(font=('Garamond bold',12))
+                                        f_label_12.config(font=('Garamond',12))
+                                        f_label_13.config(font=('Garamond bold',12))
+                                        f_label_14.config(font=('Garamond',12))
+                                        f_label_15.config(font=('Garamond bold',12))
+                                        f_label_16.config(font=('Garamond',12))
+                                        f_label_17.config(font=('Garamond bold',12))
+                                        f_label_18.config(font=('Garamond bold',12))
+                                        f_label_19.config(font=('Garamond bold',12))
+                                        f_label_20.config(font=('Garamond bold',12))
+                                        f_label_21.config(font=('Garamond bold',12))
+                                        f_label_22.config(font=('Garamond bold',12))
+                                        f_label_23.config(font=('Garamond',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Friendly-----------------------------------------
+
+                                    if ns_entry_2.get()=="Friendly":
+                                        print('wow')
+                                        fr_label_1.config(font=('Garamond bold',12))
+                                        fr_label_2.config(font=('Garamond',12))
+                                        fr_label_3.config(font=('Garamond',12))
+                                        fr_label_4.config(font=('Garamond',12))
+                                        fr_label_5.config(font=('Garamond',12))
+                                        fr_label_6.config(font=('Garamond',12))
+                                        fr_label_7.config(font=('Garamond bold',20))
+                                        fr_label_8.config(font=('Garamond bold',14))
+                                        fr_label_9.config(font=('Garamond',12))
+                                        fr_label_10.config(font=('Garamond bold',12))
+                                        fr_label_11.config(font=('Garamond',12))
+                                        fr_label_12.config(font=('Garamond bold',12))
+                                        fr_label_13.config(font=('Garamond',12))
+                                        fr_label_14.config(font=('Garamond bold',12))
+                                    else:
+                                        pass
                                 
 
                                 def Sans():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Sans-serif Sans-serif font")
 
+                                    #----------------------------------------Classic-----------------------------------------
+
+                                    if ns_entry_2.get()=="Classic":
+                                        print('wow')
+                                        c_label_1.config(font=('Arial bold',12))
+                                        c_label_2.config(font=('Arial',12))
+                                        c_label_3.config(font=('Arial',12))
+                                        c_label_4.config(font=('Arial',12))
+                                        c_label_5.config(font=('Arial',12))
+                                        c_label_6.config(font=('Arial',12))
+                                        c_label_7.config(font=('Arial bold',20))
+                                        c_label_8.config(font=('Arial bold',14))
+                                        c_label_9.config(font=('Arial',12))
+                                        c_label_10.config(font=('Arial bold',12))
+                                        c_label_11.config(font=('Arial',12))
+                                        c_label_12.config(font=('Arial bold',12))
+                                        c_label_13.config(font=('Arial',12))
+                                        c_label_14.config(font=('Arial bold',12))
+                                        c_label_15.config(font=('Arial',12))
+                                        c_label_16.config(font=('Arial bold',12))
+                                        c_label_17.config(font=('Arial',12))
+                                        c_label_18.config(font=('Arial bold',12))
+                                        c_label_19.config(font=('Arial bold',12))
+                                        c_label_20.config(font=('Arial bold',12))
+                                        c_label_21.config(font=('Arial bold',12))
+                                        c_label_22.config(font=('Arial bold',12))
+                                        c_label_23.config(font=('Arial bold',12))
+                                        c_label_24.config(font=('Arial',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Modern-----------------------------------------
+
+                                    if ns_entry_2.get()=="Modern":
+                                        print('wow')
+                                        m_label_1.config(font=('Arial bold',12))
+                                        m_label_2.config(font=('Arial',12))
+                                        m_label_3.config(font=('Arial',12))
+                                        m_label_4.config(font=('Arial',12))
+                                        m_label_5.config(font=('Arial',12))
+                                        m_label_6.config(font=('Arial',12))
+                                        m_label_7.config(font=('Arial bold',20))
+                                        m_label_8.config(font=('Arial bold',14))
+                                        m_label_9.config(font=('Arial',12))
+                                        m_label_10.config(font=('Arial bold',12))
+                                        m_label_11.config(font=('Arial bold',12))
+                                        m_label_12.config(font=('Arial bold',12))
+                                        m_label_13.config(font=('Arial bold',12))
+                                        m_label_14.config(font=('Arial bold',12))
+                                        m_label_15.config(font=('Arial bold',12))
+                                        m_label_16.config(font=('Arial',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Fresh-----------------------------------------
+
+                                    if ns_entry_2.get()=="Fresh":
+                                        print('wow')
+                                        f_label_1.config(font=('Arial bold',12))
+                                        f_label_2.config(font=('Arial',12))
+                                        f_label_3.config(font=('Arial',12))
+                                        f_label_4.config(font=('Arial',12))
+                                        f_label_5.config(font=('Arial',12))
+                                        f_label_6.config(font=('Arial',12))
+                                        f_label_7.config(font=('Arial bold',14))
+                                        f_label_8.config(font=('Arial',12))
+                                        f_label_9.config(font=('Arial bold',12))
+                                        f_label_10.config(font=('Arial',12))
+                                        f_label_11.config(font=('Arial bold',12))
+                                        f_label_12.config(font=('Arial',12))
+                                        f_label_13.config(font=('Arial bold',12))
+                                        f_label_14.config(font=('Arial',12))
+                                        f_label_15.config(font=('Arial bold',12))
+                                        f_label_16.config(font=('Arial',12))
+                                        f_label_17.config(font=('Arial bold',12))
+                                        f_label_18.config(font=('Arial bold',12))
+                                        f_label_19.config(font=('Arial bold',12))
+                                        f_label_20.config(font=('Arial bold',12))
+                                        f_label_21.config(font=('Arial bold',12))
+                                        f_label_22.config(font=('Arial bold',12))
+                                        f_label_23.config(font=('Arial',12))
+                                    else:
+                                        pass
+
                                 def Monospace():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Monospace Monospace font")
 
+                                    #----------------------------------------Classic-----------------------------------------
+
+                                    if ns_entry_2.get()=="Classic":
+                                        print('wow')
+                                        c_label_1.config(font=('Helvetica bold',12))
+                                        c_label_2.config(font=('Helvetica',12))
+                                        c_label_3.config(font=('Helvetica',12))
+                                        c_label_4.config(font=('Helvetica',12))
+                                        c_label_5.config(font=('Helvetica',12))
+                                        c_label_6.config(font=('Helvetica',12))
+                                        c_label_7.config(font=('Helvetica bold',20))
+                                        c_label_8.config(font=('Helvetica bold',14))
+                                        c_label_9.config(font=('Helvetica',12))
+                                        c_label_10.config(font=('Helvetica bold',12))
+                                        c_label_11.config(font=('Helvetica',12))
+                                        c_label_12.config(font=('Helvetica bold',12))
+                                        c_label_13.config(font=('Helvetica',12))
+                                        c_label_14.config(font=('Helvetica bold',12))
+                                        c_label_15.config(font=('Helvetica',12))
+                                        c_label_16.config(font=('Helvetica bold',12))
+                                        c_label_17.config(font=('Helvetica',12))
+                                        c_label_18.config(font=('Helvetica bold',12))
+                                        c_label_19.config(font=('Helvetica bold',12))
+                                        c_label_20.config(font=('Helvetica bold',12))
+                                        c_label_21.config(font=('Helvetica bold',12))
+                                        c_label_22.config(font=('Helvetica bold',12))
+                                        c_label_23.config(font=('Helvetica bold',12))
+                                        c_label_24.config(font=('Helvetica',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Modern-----------------------------------------
+
+                                    if ns_entry_2.get()=="Modern":
+                                        print('wow')
+                                        m_label_1.config(font=('Helvetica bold',12))
+                                        m_label_2.config(font=('Helvetica',12))
+                                        m_label_3.config(font=('Helvetica',12))
+                                        m_label_4.config(font=('Helvetica',12))
+                                        m_label_5.config(font=('Helvetica',12))
+                                        m_label_6.config(font=('Helvetica',12))
+                                        m_label_7.config(font=('Helvetica bold',20))
+                                        m_label_8.config(font=('Helvetica bold',14))
+                                        m_label_9.config(font=('Helvetica',12))
+                                        m_label_10.config(font=('Helvetica bold',12))
+                                        m_label_11.config(font=('Helvetica bold',12))
+                                        m_label_12.config(font=('Helvetica bold',12))
+                                        m_label_13.config(font=('Helvetica bold',12))
+                                        m_label_14.config(font=('Helvetica bold',12))
+                                        m_label_15.config(font=('Helvetica bold',12))
+                                        m_label_16.config(font=('Helvetica',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Fresh-----------------------------------------
+
+                                    if ns_entry_2.get()=="Fresh":
+                                        print('wow')
+                                        f_label_1.config(font=('Helvetica bold',12))
+                                        f_label_2.config(font=('Helvetica',12))
+                                        f_label_3.config(font=('Helvetica',12))
+                                        f_label_4.config(font=('Helvetica',12))
+                                        f_label_5.config(font=('Helvetica',12))
+                                        f_label_6.config(font=('Helvetica',12))
+                                        f_label_7.config(font=('Helvetica bold',14))
+                                        f_label_8.config(font=('Helvetica',12))
+                                        f_label_9.config(font=('Helvetica bold',12))
+                                        f_label_10.config(font=('Helvetica',12))
+                                        f_label_11.config(font=('Helvetica bold',12))
+                                        f_label_12.config(font=('Helvetica',12))
+                                        f_label_13.config(font=('Helvetica bold',12))
+                                        f_label_14.config(font=('Helvetica',12))
+                                        f_label_15.config(font=('Helvetica bold',12))
+                                        f_label_16.config(font=('Helvetica',12))
+                                        f_label_17.config(font=('Helvetica bold',12))
+                                        f_label_18.config(font=('Helvetica bold',12))
+                                        f_label_19.config(font=('Helvetica bold',12))
+                                        f_label_20.config(font=('Helvetica bold',12))
+                                        f_label_21.config(font=('Helvetica bold',12))
+                                        f_label_22.config(font=('Helvetica bold',12))
+                                        f_label_23.config(font=('Helvetica',12))
+                                    else:
+                                        pass
+
                                 def System():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "System-ui System-ui font")
+
+                                    #----------------------------------------Classic-----------------------------------------
+
+                                    if ns_entry_2.get()=="Classic":
+                                        print('wow')
+                                        c_label_1.config(font=('Roboto bold',12))
+                                        c_label_2.config(font=('Roboto',12))
+                                        c_label_3.config(font=('Roboto',12))
+                                        c_label_4.config(font=('Roboto',12))
+                                        c_label_5.config(font=('Roboto',12))
+                                        c_label_6.config(font=('Roboto',12))
+                                        c_label_7.config(font=('Roboto bold',20))
+                                        c_label_8.config(font=('Roboto bold',14))
+                                        c_label_9.config(font=('Roboto',12))
+                                        c_label_10.config(font=('Roboto bold',12))
+                                        c_label_11.config(font=('Roboto',12))
+                                        c_label_12.config(font=('Roboto bold',12))
+                                        c_label_13.config(font=('Roboto',12))
+                                        c_label_14.config(font=('Roboto bold',12))
+                                        c_label_15.config(font=('Roboto',12))
+                                        c_label_16.config(font=('Roboto bold',12))
+                                        c_label_17.config(font=('Roboto',12))
+                                        c_label_18.config(font=('Roboto bold',12))
+                                        c_label_19.config(font=('Roboto bold',12))
+                                        c_label_20.config(font=('Roboto bold',12))
+                                        c_label_21.config(font=('Roboto bold',12))
+                                        c_label_22.config(font=('Roboto bold',12))
+                                        c_label_23.config(font=('Roboto bold',12))
+                                        c_label_24.config(font=('Roboto',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Modern-----------------------------------------
+
+                                    if ns_entry_2.get()=="Modern":
+                                        print('wow')
+                                        m_label_1.config(font=('Roboto bold',12))
+                                        m_label_2.config(font=('Roboto',12))
+                                        m_label_3.config(font=('Roboto',12))
+                                        m_label_4.config(font=('Roboto',12))
+                                        m_label_5.config(font=('Roboto',12))
+                                        m_label_6.config(font=('Roboto',12))
+                                        m_label_7.config(font=('Roboto bold',20))
+                                        m_label_8.config(font=('Roboto bold',14))
+                                        m_label_9.config(font=('Roboto',12))
+                                        m_label_10.config(font=('Roboto bold',12))
+                                        m_label_11.config(font=('Roboto bold',12))
+                                        m_label_12.config(font=('Roboto bold',12))
+                                        m_label_13.config(font=('Roboto bold',12))
+                                        m_label_14.config(font=('Roboto bold',12))
+                                        m_label_15.config(font=('Roboto bold',12))
+                                        m_label_16.config(font=('Roboto',12))
+                                    else:
+                                        pass
+
+                                    #----------------------------------------Fresh-----------------------------------------
+
+                                    if ns_entry_2.get()=="Fresh":
+                                        print('wow')
+                                        f_label_1.config(font=('Roboto bold',12))
+                                        f_label_2.config(font=('Roboto',12))
+                                        f_label_3.config(font=('Roboto',12))
+                                        f_label_4.config(font=('Roboto',12))
+                                        f_label_5.config(font=('Roboto',12))
+                                        f_label_6.config(font=('Roboto',12))
+                                        f_label_7.config(font=('Roboto bold',14))
+                                        f_label_8.config(font=('Roboto',12))
+                                        f_label_9.config(font=('Roboto bold',12))
+                                        f_label_10.config(font=('Roboto',12))
+                                        f_label_11.config(font=('Roboto bold',12))
+                                        f_label_12.config(font=('Roboto',12))
+                                        f_label_13.config(font=('Roboto bold',12))
+                                        f_label_14.config(font=('Roboto',12))
+                                        f_label_15.config(font=('Roboto bold',12))
+                                        f_label_16.config(font=('Roboto',12))
+                                        f_label_17.config(font=('Roboto bold',12))
+                                        f_label_18.config(font=('Roboto bold',12))
+                                        f_label_19.config(font=('Roboto bold',12))
+                                        f_label_20.config(font=('Roboto bold',12))
+                                        f_label_21.config(font=('Roboto bold',12))
+                                        f_label_22.config(font=('Roboto bold',12))
+                                        f_label_23.config(font=('Roboto',12))
+                                    else:
+                                        pass
 
                                 ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_5 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_5, tags=('nsentry5'))
@@ -2566,53 +3190,53 @@ def main_sign_in():
                                 c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
                                 window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("naivlabel1"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel2"),state=HIDDEN)
+                                c_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_c_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_2, tags=("naivlabel2"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel3"),state=HIDDEN)
+                                c_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_c_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_3, tags=("naivlabel3"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel4"),state=HIDDEN)
+                                c_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_4, tags=("naivlabel4"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel5"),state=HIDDEN)
+                                c_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_5, tags=("naivlabel5"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel6"),state=HIDDEN)
+                                c_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_6, tags=("naivlabel6"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel7"),state=HIDDEN)
+                                c_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_c_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_7, tags=("naivlabel7"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel8"),state=HIDDEN)
+                                c_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_c_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_8, tags=("naivlabel8"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel17"),state=HIDDEN)
+                                c_label_9 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_9, tags=("naivlabel17"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel9"),state=HIDDEN)
+                                c_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_10, tags=("naivlabel9"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel18"),state=HIDDEN)
+                                c_label_11 = Label(cs_canvas_1,width=11,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_11, tags=("naivlabel18"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel10"),state=HIDDEN)
+                                c_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_12, tags=("naivlabel10"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel19"),state=HIDDEN)
+                                c_label_13 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_13, tags=("naivlabel19"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel11"),state=HIDDEN)
+                                c_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_14, tags=("naivlabel11"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel20"),state=HIDDEN)
+                                c_label_15 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_15, tags=("naivlabel20"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel12"),state=HIDDEN)
+                                c_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_16, tags=("naivlabel12"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel21"),state=HIDDEN)
+                                c_label_17 = Label(cs_canvas_1,width=15,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_c_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_17, tags=("naivlabel21"),state=HIDDEN)
 
                                 fgthvi_1 = ttk.Style()
                                 fgthvi_1.theme_use("default")
@@ -2660,29 +3284,29 @@ def main_sign_in():
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel13"),state=HIDDEN)
+                                c_label_18 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_18, tags=("naivlabel13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels13"),state=HIDDEN)
+                                c_label_19 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_19, tags=("naivlabels13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel14"),state=HIDDEN)
+                                c_label_20 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_20, tags=("naivlabel14"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels14"),state=HIDDEN)
+                                c_label_21 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_21, tags=("naivlabels14"),state=HIDDEN)
 
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel15"),state=HIDDEN)
+                                c_label_22 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_22, tags=("naivlabel15"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabels15"),state=HIDDEN)
+                                c_label_23 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_c_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_23, tags=("naivlabels15"),state=HIDDEN)
 
                                 cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("naivlabel16"),state=HIDDEN)
+                                c_label_24 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_c_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_24, tags=("naivlabel16"),state=HIDDEN)
 
                                 
 
@@ -2690,32 +3314,32 @@ def main_sign_in():
 
                                 cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly4"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel1"),state=HIDDEN)
+                                m_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_1, tags=("nsivlabel1"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel2"),state=HIDDEN)
+                                m_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_m_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_2, tags=("nsivlabel2"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel3"),state=HIDDEN)
+                                m_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_m_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_3, tags=("nsivlabel3"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel4"),state=HIDDEN)
+                                m_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_m_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_4, tags=("nsivlabel4"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel5"),state=HIDDEN)
+                                m_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_m_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_5, tags=("nsivlabel5"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel6"),state=HIDDEN)
+                                m_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_m_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_6, tags=("nsivlabel6"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel7"),state=HIDDEN)
+                                m_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_m_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_7, tags=("nsivlabel7"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To:", font=('arial 14 bold'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel8"),state=HIDDEN)
+                                m_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To:", font=('arial 14 bold'),background="skyblue",fg="black") 
+                                window_m_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_8, tags=("nsivlabel8"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel17"),state=HIDDEN)
+                                m_label_9 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_m_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_9, tags=("nsivlabel17"),state=HIDDEN)
 
                                 fgthvi = ttk.Style()
                                 fgthvi.configure('mystyle11.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
@@ -2762,82 +3386,82 @@ def main_sign_in():
 
                                 window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_2,tags=('nsivtree2'),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel13"),state=HIDDEN)
+                                m_label_10 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_10, tags=("nsivlabel13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels13"),state=HIDDEN)
+                                m_label_11 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_11, tags=("nsivlabels13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel14"),state=HIDDEN)
+                                m_label_12 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_12, tags=("nsivlabel14"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels14"),state=HIDDEN)
+                                m_label_13 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_13, tags=("nsivlabels14"),state=HIDDEN)
 
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel15"),state=HIDDEN)
+                                m_label_14 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_14, tags=("nsivlabel15"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabels15"),state=HIDDEN)
+                                m_label_15 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_m_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_15, tags=("nsivlabels15"),state=HIDDEN)
 
                                 cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('nsivline23'),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nsivlabel16"),state=HIDDEN)
+                                m_label_16 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_m_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_16, tags=("nsivlabel16"),state=HIDDEN)
 
                                 #----------------------------------------Fresh-----------------------------------------
 
                                 cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("fnspoly3"),state=HIDDEN)
 
-                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                                window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("fnaivlabel1"),state=HIDDEN)
+                                f_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_1, tags=("fnaivlabel1"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel2"),state=HIDDEN)
+                                f_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_f_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_2, tags=("fnaivlabel2"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel3"),state=HIDDEN)
+                                f_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_f_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_3, tags=("fnaivlabel3"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel4"),state=HIDDEN)
+                                f_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_f_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_4, tags=("fnaivlabel4"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel5"),state=HIDDEN)
+                                f_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_f_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_5, tags=("fnaivlabel5"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel6"),state=HIDDEN)
+                                f_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_f_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_6, tags=("fnaivlabel6"),state=HIDDEN)
 
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel8"),state=HIDDEN)
+                                f_label_7 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_f_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_7, tags=("fnaivlabel8"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel17"),state=HIDDEN)
+                                f_label_8 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_f_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_8, tags=("fnaivlabel17"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel9"),state=HIDDEN)
+                                f_label_9 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_f_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_9, tags=("fnaivlabel9"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel18"),state=HIDDEN)
+                                f_label_10 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_f_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_10, tags=("fnaivlabel18"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel10"),state=HIDDEN)
+                                f_label_11 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_f_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_11, tags=("fnaivlabel10"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel19"),state=HIDDEN)
+                                f_label_12 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_f_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_12, tags=("fnaivlabel19"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel11"),state=HIDDEN)
+                                f_label_13 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_f_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_13, tags=("fnaivlabel11"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel20"),state=HIDDEN)
+                                f_label_14 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_f_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_14, tags=("fnaivlabel20"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel12"),state=HIDDEN)
+                                f_label_15 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="skyblue",fg="black") 
+                                window_f_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_15, tags=("fnaivlabel12"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel21"),state=HIDDEN)
+                                f_label_16 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
+                                window_f_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_16, tags=("fnaivlabel21"),state=HIDDEN)
 
                                 fgthvi_1 = ttk.Style()
                                 fgthvi_1.theme_use("default")
@@ -2885,93 +3509,93 @@ def main_sign_in():
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel13"),state=HIDDEN)
+                                f_label_17 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_17, tags=("fnaivlabel13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels13"),state=HIDDEN)
+                                f_label_18 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_18, tags=("fnaivlabels13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel14"),state=HIDDEN)
+                                f_label_19 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_19, tags=("fnaivlabel14"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels14"),state=HIDDEN)
+                                f_label_20 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_20, tags=("fnaivlabels14"),state=HIDDEN)
 
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel15"),state=HIDDEN)
+                                f_label_21 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_21, tags=("fnaivlabel15"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabels15"),state=HIDDEN)
+                                f_label_22 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_f_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_22, tags=("fnaivlabels15"),state=HIDDEN)
 
                                 cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('fnaivline23'),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("fnaivlabel16"),state=HIDDEN)
+                                f_label_23 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_f_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_23, tags=("fnaivlabel16"),state=HIDDEN)
 
                                 #----------------------------------------Friendly-----------------------------------------
 
                                 cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("frnspoly3"),state=HIDDEN)
 
-                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                                window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("frnaivlabel1"),state=HIDDEN)
+                                fr_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_1, tags=("frnaivlabel1"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel2"),state=HIDDEN)
+                                fr_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
+                                window_fr_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_2, tags=("frnaivlabel2"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel3"),state=HIDDEN)
+                                fr_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
+                                window_fr_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_3, tags=("frnaivlabel3"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel4"),state=HIDDEN)
+                                fr_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_4, tags=("frnaivlabel4"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel5"),state=HIDDEN)
+                                fr_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_5, tags=("frnaivlabel5"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel6"),state=HIDDEN)
+                                fr_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_6, tags=("frnaivlabel6"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel7"),state=HIDDEN)
+                                fr_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
+                                window_fr_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_7, tags=("frnaivlabel7"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel8"),state=HIDDEN)
+                                fr_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
+                                window_fr_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_8, tags=("frnaivlabel8"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel17"),state=HIDDEN)
+                                fr_label_9 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_9, tags=("frnaivlabel17"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel9"),state=HIDDEN)
+                                fr_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_10, tags=("frnaivlabel9"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel18"),state=HIDDEN)
+                                fr_label_11 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_11, tags=("frnaivlabel18"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel10"),state=HIDDEN)
+                                fr_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_12, tags=("frnaivlabel10"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel19"),state=HIDDEN)
+                                fr_label_13 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_13, tags=("frnaivlabel19"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel11"),state=HIDDEN)
+                                fr_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_14, tags=("frnaivlabel11"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel20"),state=HIDDEN)
+                                fr_label_15 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_15, tags=("frnaivlabel20"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel12"),state=HIDDEN)
+                                fr_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_16, tags=("frnaivlabel12"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel21"),state=HIDDEN)
+                                fr_label_17 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_17, tags=("frnaivlabel21"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels19"),state=HIDDEN)
+                                fr_label_18 = Label(cs_canvas_1,width=13,height=8,text='Date', font=('arial 12'),background="#98c1d9",fg="black") 
+                                window_fr_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_18, tags=("frnaivlabels19"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Please Pay', font=('arial 12'),background="skyblue",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels20"),state=HIDDEN)
+                                fr_label_19 = Label(cs_canvas_1,width=13,height=8,text='Please Pay', font=('arial 12'),background="skyblue",fg="black") 
+                                window_fr_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_19, tags=("frnaivlabels20"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=13,height=8,text='Due Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels21"),state=HIDDEN)
+                                fr_label_20 = Label(cs_canvas_1,width=13,height=8,text='Due Date', font=('arial 12'),background="#98c1d9",fg="black") 
+                                window_fr_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_20, tags=("frnaivlabels21"),state=HIDDEN)
 
 
                                 fgthvi_1 = ttk.Style()
@@ -3020,29 +3644,29 @@ def main_sign_in():
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
                                 # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel13"),state=HIDDEN)
+                                fr_label_21 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_21, tags=("frnaivlabel13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels13"),state=HIDDEN)
+                                fr_label_22 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_22, tags=("frnaivlabels13"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel14"),state=HIDDEN)
+                                fr_label_23 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_23, tags=("frnaivlabel14"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels14"),state=HIDDEN)
+                                fr_label_24 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_24, tags=("frnaivlabels14"),state=HIDDEN)
 
 
-                                label_1 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel15"),state=HIDDEN)
+                                fr_label_25 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_25, tags=("frnaivlabel15"),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabels15"),state=HIDDEN)
+                                fr_label_26 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
+                                window_fr_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_26, tags=("frnaivlabels15"),state=HIDDEN)
 
                                 cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('frnaivline23'),state=HIDDEN)
 
-                                label_1 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("frnaivlabel16"),state=HIDDEN)
+                                fr_label_27 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
+                                window_fr_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_27, tags=("frnaivlabel16"),state=HIDDEN)
 
 
 
@@ -35893,7 +36517,7 @@ def cmpny_crt1():
     username=sys_usr.get()
     password=sys_pass.get()
     con_password=sys_cf.get()
-    join_dt=datetime.today()
+    join_dt=datetime.date.today()
     sql_signup='select * from auth_user'
     fbcursor.execute(sql_signup)
     check_none=fbcursor.fetchone()
