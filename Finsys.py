@@ -1912,12 +1912,11 @@ def main_sign_in():
                                     dcanvas.coords("nsentry10",dwidth/20,dheight/1.17)
                                     dcanvas.coords("nsbutton7",dwidth/9,dheight/1)
 
-                                    # dcanvas.coords("nslabel3",dwidth/22.2,dheight/1.64)
-                                    # dcanvas.coords("nsentry2",dwidth/20,dheight/1.5)
-                                    # dcanvas.coords("nsbutton4",dwidth/20,dheight/1.25)
-                                    # dcanvas.coords("nsbutton5",dwidth/5.8,dheight/1.25)
-                                    # dcanvas.coords("nsbutton6",dwidth/20,dheight/1)
-                                    # dcanvas.coords("nsbutton7",dwidth/5.8,dheight/1)
+                                    dcanvas.coords("nslabel7",dwidth/21,dheight/1)
+                                    dcanvas.coords("nsentry2",dwidth/20,dheight/0.95)
+                                    dcanvas.coords("nsbutton4",dwidth/20,dheight/0.88)
+                                    dcanvas.coords("nsbutton5",dwidth/5.8,dheight/0.88)
+                                    
                                     dcanvas.coords("nslabel4",dwidth/22.8,dheight/0.83)
                                     dcanvas.coords("nsentry3",dwidth/20,dheight/0.798)
                                     dcanvas.coords("nsbutton8",dwidth/20,dheight/0.75)
@@ -2021,41 +2020,38 @@ def main_sign_in():
                                     x11,y11,
                                     )
 
-                                    dcanvas.coords("naivlabel1",dwidth/2.65,dheight/1.70)
-                                    dcanvas.coords("naivlabel2",dwidth/2.65,dheight/1.55)
-                                    dcanvas.coords("naivlabel3",dwidth/2.65,dheight/1.42)
-                                    dcanvas.coords("naivlabel4",dwidth/2.65,dheight/1.32)
-                                    dcanvas.coords("naivlabel5",dwidth/2.65,dheight/1.22)
-                                    dcanvas.coords("naivlabel6",dwidth/2.65,dheight/1.12)
+                                    dcanvas.coords("naivlabel1",dwidth/1.33,dheight/1.72)
+                                    dcanvas.coords("naivlabel2",dwidth/1.33,dheight/1.59)
+                                    dcanvas.coords("naivlabel3",dwidth/1.33,dheight/1.48)
+                                    dcanvas.coords("naivlabel4",dwidth/1.33,dheight/1.38)
+                                    dcanvas.coords("naivlabel5",dwidth/1.33,dheight/1.29)
+                                    dcanvas.coords("naivlabel6",dwidth/1.33,dheight/1.2)
                                     dcanvas.coords("naivlabel7",dwidth/1.8,dheight/2.11)
-                                    dcanvas.coords("nline1",dwidth/2.95,dheight/1.8,dwidth/1.057,dheight/1.8)
-                                    dcanvas.coords("nimage1",dwidth/1.33,dheight/1.70)
-                                    dcanvas.coords("naivlabel8",dwidth/2.87,dheight/1.0)
-                                    dcanvas.coords("nline2",dwidth/1.4,dheight/1.03,dwidth/1.06,dheight/1.03)
-                                    dcanvas.coords("nline3",dwidth/1.4,dheight/0.965,dwidth/1.06,dheight/0.965)
-                                    dcanvas.coords("nline4",dwidth/1.4,dheight/0.915,dwidth/1.06,dheight/0.915)
-                                    dcanvas.coords("nline5",dwidth/1.4,dheight/0.865,dwidth/1.06,dheight/0.865)
-                                    dcanvas.coords("nline6",dwidth/1.4,dheight/0.82,dwidth/1.06,dheight/0.82)
-                                    dcanvas.coords("nline7",dwidth/1.4,dheight/1.03,dwidth/1.4,dheight/0.82)
-                                    dcanvas.coords("nline8",dwidth/1.06,dheight/1.03,dwidth/1.06,dheight/0.82)
-                                    dcanvas.coords("nline9",dwidth/1.2,dheight/1.03,dwidth/1.2,dheight/0.82)
+                                    dcanvas.coords("nline1",dwidth/2.95,dheight/0.875,dwidth/1.057,dheight/0.875)
 
-                                    dcanvas.coords("naivlabel9",dwidth/1.35,dheight/1.01)
-                                    dcanvas.coords("naivlabel10",dwidth/1.35,dheight/0.955)
-                                    dcanvas.coords("naivlabel11",dwidth/1.35,dheight/0.90)
-                                    dcanvas.coords("naivlabel12",dwidth/1.35,dheight/0.85)
+                                    dcanvas.coords("nimage1",dwidth/2.65,dheight/1.72)
+
+                                    dcanvas.coords("naivlabel8",dwidth/2.87,dheight/1.16)
+                                    dcanvas.coords("naivlabel17",dwidth/2.60,dheight/1.11)
+                                   
+                                    dcanvas.coords("naivlabel9",dwidth/1.35,dheight/0.865)
+                                    dcanvas.coords("naivlabel10",dwidth/1.35,dheight/0.835)
+                                    dcanvas.coords("naivlabel11",dwidth/1.35,dheight/0.805)
+                                    dcanvas.coords("naivlabel12",dwidth/1.35,dheight/0.785)
+
+                                    dcanvas.coords("naivlabel18",dwidth/1.16,dheight/0.865)
+                                    dcanvas.coords("naivlabel19",dwidth/1.16,dheight/0.835)
+                                    dcanvas.coords("naivlabel20",dwidth/1.16,dheight/0.805)
+                                    dcanvas.coords("naivlabel21",dwidth/1.16,dheight/0.785)
+
+                                    dcanvas.coords("nline2",dwidth/2.95,dheight/0.759,dwidth/1.057,dheight/0.759)
 
                                     dcanvas.coords("naivtree1",dwidth/2.9,dheight/0.75)
-                                    dcanvas.coords("nline10",dwidth/2.9,dheight/0.75,dwidth/2.9,dheight/0.605)   
-                                    dcanvas.coords("nline11",dwidth/1.068,dheight/0.75,dwidth/1.068,dheight/0.605)
-                                    dcanvas.coords("nline12",dwidth/2.9,dheight/0.605,dwidth/1.07,dheight/0.605)
-                                    dcanvas.coords("nline13",dwidth/2.725,dheight/0.75,dwidth/2.725,dheight/0.605)    
-                                    dcanvas.coords("nline14",dwidth/1.941,dheight/0.75,dwidth/1.941,dheight/0.605) 
-                                    dcanvas.coords("nline15",dwidth/1.67,dheight/0.75,dwidth/1.67,dheight/0.605)
-                                    dcanvas.coords("nline16",dwidth/1.5,dheight/0.75,dwidth/1.5,dheight/0.605) 
-                                    dcanvas.coords("nline17",dwidth/1.345,dheight/0.75,dwidth/1.345,dheight/0.605)
-                                    dcanvas.coords("nline18",dwidth/1.22,dheight/0.75,dwidth/1.22,dheight/0.605) 
-
+                                    
+                                    dcanvas.coords("nline3",dwidth/2.9,dheight/0.7,dwidth/1.062,dheight/0.7)
+                                    dcanvas.coords("nline4",dwidth/2.9,dheight/0.67,dwidth/1.062,dheight/0.67)
+                                    dcanvas.coords("nline5",dwidth/2.9,dheight/0.64,dwidth/1.062,dheight/0.64)
+                                    dcanvas.coords("nline6",dwidth/2.9,dheight/0.61,dwidth/1.062,dheight/0.61)
 
                                     dcanvas.coords("naivtlabel1",dwidth/2.88,dheight/0.729)
                                     dcanvas.coords("naivtlabel2",dwidth/2.88,dheight/0.69)
@@ -2092,14 +2088,7 @@ def main_sign_in():
                                     dcanvas.coords("naivtlabel27",dwidth/1.33,dheight/0.66)
                                     dcanvas.coords("naivtlabel28",dwidth/1.33,dheight/0.63)
 
-                                    dcanvas.coords("naivline16",dwidth/1.5,dheight/0.6,dwidth/1.5,dheight/0.52)
-                                    dcanvas.coords("naivline17",dwidth/1.22,dheight/0.6,dwidth/1.22,dheight/0.52)  
-                                    dcanvas.coords("naivline18",dwidth/1.068,dheight/0.6,dwidth/1.068,dheight/0.52)
-                                    dcanvas.coords("naivline19",dwidth/1.5,dheight/0.6,dwidth/1.068,dheight/0.6)
-                                    dcanvas.coords("naivline20",dwidth/1.5,dheight/0.52,dwidth/1.068,dheight/0.52)
-                                    dcanvas.coords("naivline21",dwidth/1.5,dheight/0.572,dwidth/1.068,dheight/0.572)
-                                    dcanvas.coords("naivline22",dwidth/1.5,dheight/0.545,dwidth/1.068,dheight/0.545)
-
+                                    
                                     dcanvas.coords("naivlabel13",dwidth/1.47,dheight/0.59)
                                     dcanvas.coords("naivlabels13",dwidth/1.21,dheight/0.59)
                                     dcanvas.coords("naivlabel14",dwidth/1.47,dheight/0.565)
@@ -2107,367 +2096,18 @@ def main_sign_in():
                                     dcanvas.coords("naivlabel15",dwidth/1.47,dheight/0.54)
                                     dcanvas.coords("naivlabels15",dwidth/1.21,dheight/0.54)
 
+                                    dcanvas.coords("naivlabels16",dwidth/2.5,dheight/0.50)
+                                    dcanvas.coords("naivlabels17",dwidth/2.5,dheight/0.49)
+                                    dcanvas.coords("naivlabels18",dwidth/2.5,dheight/0.48)
+                                    dcanvas.coords("naivlabels19",dwidth/2.5,dheight/0.47)
+
                                     dcanvas.coords("naivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
 
                                     dcanvas.coords("naivlabel16",dwidth/2.52,dheight/0.395)
 
                                     dcanvas.coords("naivbutton3",dwidth/23,dheight/3.415)
 
-                                    dcanvas.coords("naivlabel17",dwidth/2.60,dheight/0.95)
-                                    dcanvas.coords("naivlabel18",dwidth/1.16,dheight/1.01)
-                                    dcanvas.coords("naivlabel19",dwidth/1.16,dheight/0.955)
-                                    dcanvas.coords("naivlabel20",dwidth/1.16,dheight/0.90)
-                                    dcanvas.coords("naivlabel21",dwidth/1.16,dheight/0.85)
-
                                     
-                                    #-----------------------------Modern------------------------------------
-
-                                    r2 = 25
-                                    x11 = dwidth/3
-                                    x21 = dwidth/1.05
-                                    y11 = dheight/2.3
-                                    y21 = dheight/0.38
-
-
-                                    dcanvas.coords("nspoly4",x11 + r2,y11,
-                                    x11 + r2,y11,
-                                    x21 - r2,y11,
-                                    x21 - r2,y11,     
-                                    x21,y11,     
-                                    #--------------------
-                                    x21,y11 + r2,     
-                                    x21,y11 + r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21,
-                                    #--------------------
-                                    x21 - r2,y21,     
-                                    x21 - r2,y21,     
-                                    x11 + r2,y21,
-                                    x11 + r2,y21,
-                                    x11,y21,
-                                    #--------------------
-                                    x11,y21 - r2,
-                                    x11,y21 - r2,
-                                    x11,y11 + r2,
-                                    x11,y11 + r2,
-                                    x11,y11,
-                                    )
-
-                                    dcanvas.coords("nsivlabel1",dwidth/2.58,dheight/1.85)
-                                    dcanvas.coords("nsivlabel2",dwidth/2.65,dheight/1.70)
-                                    dcanvas.coords("nsivlabel3",dwidth/2.65,dheight/1.55)
-                                    dcanvas.coords("nsivlabel4",dwidth/2.65,dheight/1.42)
-                                    dcanvas.coords("nsivlabel5",dwidth/2.65,dheight/1.32)
-                                    dcanvas.coords("nsivlabel6",dwidth/2.60,dheight/1.22)
-                                    dcanvas.coords("nsivlabel7",dwidth/1.35,dheight/1.85)
-                                    dcanvas.coords("nsivlabel8",dwidth/1.85,dheight/1.0)
-                                    dcanvas.coords("nsivlabel17",dwidth/1.85,dheight/0.95)
-                                    dcanvas.coords("nsivtree1",dwidth/2.9,dheight/0.75)
-                                    dcanvas.coords("nsivlabel18",dwidth/2.55,dheight/0.73)
-                                    dcanvas.coords("nsivlabel19",dwidth/1.8,dheight/0.73)
-                                    dcanvas.coords("nsivlabel20",dwidth/1.45,dheight/0.73)
-                                    dcanvas.coords("nsivlabel21",dwidth/1.22,dheight/0.73)
-                                    dcanvas.coords("nsivtree2",dwidth/2.9,dheight/0.65)
-
-                                    dcanvas.coords("nsivtlabel1",dwidth/2.88,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel2",dwidth/2.88,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel3",dwidth/2.88,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel4",dwidth/2.88,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel5",dwidth/2.67,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel6",dwidth/2.67,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel7",dwidth/2.67,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel8",dwidth/2.67,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel9",dwidth/1.9,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel10",dwidth/1.9,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel11",dwidth/1.9,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel12",dwidth/1.9,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel13",dwidth/1.65,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel14",dwidth/1.65,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel15",dwidth/1.65,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel16",dwidth/1.65,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel17",dwidth/1.5,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel18",dwidth/1.5,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel19",dwidth/1.5,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel20",dwidth/1.5,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel21",dwidth/1.2,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel22",dwidth/1.2,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel23",dwidth/1.2,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel24",dwidth/1.2,dheight/0.53)
-
-                                    dcanvas.coords("nsivtlabel25",dwidth/1.4,dheight/0.629)
-                                    dcanvas.coords("nsivtlabel26",dwidth/1.4,dheight/0.59)
-                                    dcanvas.coords("nsivtlabel27",dwidth/1.4,dheight/0.56)
-                                    dcanvas.coords("nsivtlabel28",dwidth/1.4,dheight/0.53)
-
-                                    dcanvas.coords("nsivlabel13",dwidth/1.5,dheight/0.5)
-                                    dcanvas.coords("nsivlabels13",dwidth/1.21,dheight/0.5)
-                                    dcanvas.coords("nsivlabel14",dwidth/1.475,dheight/0.49)
-                                    dcanvas.coords("nsivlabels14",dwidth/1.21,dheight/0.49)
-                                    dcanvas.coords("nsivlabel15",dwidth/1.47,dheight/0.48)
-                                    dcanvas.coords("nsivlabels15",dwidth/1.21,dheight/0.48)
-                                    dcanvas.coords("nsivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-                                    dcanvas.coords("nsivlabel16",dwidth/2.52,dheight/0.395)
-
-                                #--------------------------Fresh------------------------------
-
-                                    r2 = 25
-                                    x11 = dwidth/3
-                                    x21 = dwidth/1.05
-                                    y11 = dheight/2.3
-                                    y21 = dheight/0.38
-
-
-                                    dcanvas.coords("fnspoly3",x11 + r2,y11,
-                                    x11 + r2,y11,
-                                    x21 - r2,y11,
-                                    x21 - r2,y11,     
-                                    x21,y11,     
-                                    #--------------------
-                                    x21,y11 + r2,     
-                                    x21,y11 + r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21,
-                                    #--------------------
-                                    x21 - r2,y21,     
-                                    x21 - r2,y21,     
-                                    x11 + r2,y21,
-                                    x11 + r2,y21,
-                                    x11,y21,
-                                    #--------------------
-                                    x11,y21 - r2,
-                                    x11,y21 - r2,
-                                    x11,y11 + r2,
-                                    x11,y11 + r2,
-                                    x11,y11,
-                                    )
-
-                                    dcanvas.coords("fnaivlabel1",dwidth/2.58,dheight/1.85)
-                                    dcanvas.coords("fnaivlabel2",dwidth/2.65,dheight/1.70)
-                                    dcanvas.coords("fnaivlabel3",dwidth/2.65,dheight/1.55)
-                                    dcanvas.coords("fnaivlabel4",dwidth/2.65,dheight/1.42)
-                                    dcanvas.coords("fnaivlabel5",dwidth/2.65,dheight/1.32)
-                                    dcanvas.coords("fnaivlabel6",dwidth/2.60,dheight/1.22)
-                                    dcanvas.coords("fnaivlabel7",dwidth/2.70,dheight/1.14)
-                                    dcanvas.coords("fnaivlabel8",dwidth/2.85,dheight/1.0)
-                                    dcanvas.coords("fnaivlabel9",dwidth/1.38,dheight/1.0)
-                                    dcanvas.coords("fnaivlabel10",dwidth/1.38,dheight/0.95)
-                                    dcanvas.coords("fnaivlabel11",dwidth/1.38,dheight/0.90)
-                                    dcanvas.coords("fnaivlabel12",dwidth/1.38,dheight/0.85)
-
-                                    dcanvas.coords("fnaivtree1",dwidth/2.9,dheight/0.75)
-                                    dcanvas.coords("fnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
-                                    dcanvas.coords("fnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
-                                    dcanvas.coords("fnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
-                                    dcanvas.coords("fnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
-
-                                    dcanvas.coords("fnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
-                                    dcanvas.coords("fnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
-                                    dcanvas.coords("fnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
-                                    dcanvas.coords("fnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
-                                    dcanvas.coords("fnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
-                                    dcanvas.coords("fnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
-                                    dcanvas.coords("fnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
-                                    dcanvas.coords("fnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
-
-                                    dcanvas.coords("fnaivtlabel1",dwidth/2.88,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel2",dwidth/2.88,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel3",dwidth/2.88,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel4",dwidth/2.88,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel5",dwidth/2.67,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel6",dwidth/2.67,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel7",dwidth/2.67,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel8",dwidth/2.67,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel9",dwidth/1.9,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel10",dwidth/1.9,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel11",dwidth/1.9,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel12",dwidth/1.9,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel13",dwidth/1.65,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel14",dwidth/1.65,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel15",dwidth/1.65,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel16",dwidth/1.65,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel17",dwidth/1.5,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel18",dwidth/1.5,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel19",dwidth/1.5,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel20",dwidth/1.5,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel21",dwidth/1.2,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel22",dwidth/1.2,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel23",dwidth/1.2,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel24",dwidth/1.2,dheight/0.63)
-
-                                    dcanvas.coords("fnaivtlabel25",dwidth/1.4,dheight/0.729)
-                                    dcanvas.coords("fnaivtlabel26",dwidth/1.4,dheight/0.69)
-                                    dcanvas.coords("fnaivtlabel27",dwidth/1.4,dheight/0.66)
-                                    dcanvas.coords("fnaivtlabel28",dwidth/1.4,dheight/0.63)
-
-                                    dcanvas.coords("fnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
-                                    dcanvas.coords("fnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
-                                    dcanvas.coords("fnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
-                                    dcanvas.coords("fnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
-                                    dcanvas.coords("fnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
-                                    dcanvas.coords("fnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
-                                    dcanvas.coords("fnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
-
-                                    dcanvas.coords("fnaivlabel13",dwidth/1.5,dheight/0.59)
-
-                                    dcanvas.coords("fnaivlabels13",dwidth/1.21,dheight/0.59)
-                                    dcanvas.coords("fnaivlabel14",dwidth/1.475,dheight/0.565)
-                                    dcanvas.coords("fnaivlabels14",dwidth/1.21,dheight/0.565)
-                                    dcanvas.coords("fnaivlabel15",dwidth/1.47,dheight/0.54)
-                                    dcanvas.coords("fnaivlabels15",dwidth/1.21,dheight/0.54)
-
-                                    dcanvas.coords("fnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-
-                                    dcanvas.coords("fnaivlabel16",dwidth/2.52,dheight/0.395)
-
-                                    dcanvas.coords("fnaivbutton3",dwidth/23,dheight/3.415)
-
-                                    dcanvas.coords("fnaivlabel17",dwidth/2.80,dheight/0.95)
-                                    dcanvas.coords("fnaivlabel18",dwidth/1.16,dheight/1.0)
-                                    dcanvas.coords("fnaivlabel19",dwidth/1.16,dheight/0.95)
-                                    dcanvas.coords("fnaivlabel20",dwidth/1.16,dheight/0.90)
-                                    dcanvas.coords("fnaivlabel21",dwidth/1.16,dheight/0.85)
-                                
-                                #-----------------------------Friendly---------------------------
-
-                                    r2 = 25
-                                    x11 = dwidth/3
-                                    x21 = dwidth/1.05
-                                    y11 = dheight/2.3
-                                    y21 = dheight/0.38
-
-
-                                    dcanvas.coords("frnspoly3",x11 + r2,y11,
-                                    x11 + r2,y11,
-                                    x21 - r2,y11,
-                                    x21 - r2,y11,     
-                                    x21,y11,     
-                                    #--------------------
-                                    x21,y11 + r2,     
-                                    x21,y11 + r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21 - r2,     
-                                    x21,y21,
-                                    #--------------------
-                                    x21 - r2,y21,     
-                                    x21 - r2,y21,     
-                                    x11 + r2,y21,
-                                    x11 + r2,y21,
-                                    x11,y21,
-                                    #--------------------
-                                    x11,y21 - r2,
-                                    x11,y21 - r2,
-                                    x11,y11 + r2,
-                                    x11,y11 + r2,
-                                    x11,y11,
-                                    )
-
-                                    dcanvas.coords("frnaivlabel1",dwidth/2.58,dheight/1.85)
-                                    dcanvas.coords("frnaivlabel2",dwidth/2.65,dheight/1.70)
-                                    dcanvas.coords("frnaivlabel3",dwidth/2.65,dheight/1.55)
-                                    dcanvas.coords("frnaivlabel4",dwidth/2.65,dheight/1.42)
-                                    dcanvas.coords("frnaivlabel5",dwidth/2.65,dheight/1.32)
-                                    dcanvas.coords("frnaivlabel6",dwidth/2.60,dheight/1.22)
-                                    dcanvas.coords("frnaivlabel7",dwidth/1.35,dheight/1.85)
-                                    dcanvas.coords("frnaivlabel8",dwidth/2.85,dheight/1.0)
-                                    dcanvas.coords("frnaivlabel9",dwidth/2.06,dheight/1.0)
-                                    dcanvas.coords("frnaivlabel10",dwidth/2.05,dheight/0.95)
-                                    dcanvas.coords("frnaivlabel11",dwidth/2.06,dheight/0.90)
-                                    dcanvas.coords("frnaivlabel12",dwidth/2.08,dheight/0.85)
-
-                                    dcanvas.coords("frnaivtree1",dwidth/2.9,dheight/0.75)
-                                    dcanvas.coords("frnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
-                                    dcanvas.coords("frnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
-                                    dcanvas.coords("frnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
-                                    dcanvas.coords("frnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
-
-                                    dcanvas.coords("frnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
-                                    dcanvas.coords("frnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
-                                    dcanvas.coords("frnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
-                                    dcanvas.coords("frnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
-                                    dcanvas.coords("frnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
-                                    dcanvas.coords("frnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
-                                    dcanvas.coords("frnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
-                                    dcanvas.coords("frnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
-
-                                    dcanvas.coords("frnaivtlabel1",dwidth/2.88,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel2",dwidth/2.88,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel3",dwidth/2.88,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel4",dwidth/2.88,dheight/0.63)
-
-                                    dcanvas.coords("frnaivtlabel5",dwidth/2.67,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel6",dwidth/2.67,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel7",dwidth/2.67,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel8",dwidth/2.67,dheight/0.63)
-
-                                    dcanvas.coords("frnaivtlabel9",dwidth/1.9,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel10",dwidth/1.9,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel11",dwidth/1.9,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel12",dwidth/1.9,dheight/0.63)
-
-                                    dcanvas.coords("frnaivtlabel13",dwidth/1.65,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel14",dwidth/1.65,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel15",dwidth/1.65,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel16",dwidth/1.65,dheight/0.63)
-
-                                    dcanvas.coords("frnaivtlabel17",dwidth/1.5,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel18",dwidth/1.5,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel19",dwidth/1.5,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel20",dwidth/1.5,dheight/0.63)
-
-                                    dcanvas.coords("frnaivtlabel21",dwidth/1.2,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel22",dwidth/1.2,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel23",dwidth/1.2,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel24",dwidth/1.2,dheight/0.63)
-
-                                    dcanvas.coords("frnnaivtlabel25",dwidth/1.4,dheight/0.729)
-                                    dcanvas.coords("frnaivtlabel26",dwidth/1.4,dheight/0.69)
-                                    dcanvas.coords("frnaivtlabel27",dwidth/1.4,dheight/0.66)
-                                    dcanvas.coords("frnaivtlabel28",dwidth/1.4,dheight/0.63)
-
-                                    dcanvas.coords("frnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
-                                    dcanvas.coords("frnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
-                                    dcanvas.coords("frnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
-                                    dcanvas.coords("frnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
-                                    dcanvas.coords("frnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
-                                    dcanvas.coords("frnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
-                                    dcanvas.coords("frnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
-
-                                    dcanvas.coords("frnaivlabel13",dwidth/1.5,dheight/0.59)
-
-                                    dcanvas.coords("frnaivlabels13",dwidth/1.21,dheight/0.59)
-                                    dcanvas.coords("frnaivlabel14",dwidth/1.475,dheight/0.565)
-                                    dcanvas.coords("frnaivlabels14",dwidth/1.21,dheight/0.565)
-                                    dcanvas.coords("frnaivlabel15",dwidth/1.47,dheight/0.54)
-                                    dcanvas.coords("frnaivlabels15",dwidth/1.21,dheight/0.54)
-
-                                    dcanvas.coords("frnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-
-                                    dcanvas.coords("frnaivlabel16",dwidth/2.52,dheight/0.395)
-
-                                    dcanvas.coords("frnaivbutton3",dwidth/23,dheight/3.415)
-
-                                    dcanvas.coords("frnaivlabel17",dwidth/2.80,dheight/0.95)
-                                    dcanvas.coords("frnaivlabel18",dwidth/1.74,dheight/1.0)
-                                    dcanvas.coords("frnaivlabel19",dwidth/1.74,dheight/0.95)
-                                    dcanvas.coords("frnaivlabel20",dwidth/1.74,dheight/0.90)
-                                    dcanvas.coords("frnaivlabel21",dwidth/1.74,dheight/0.85)
-                                    dcanvas.coords("frnaivlabels19",dwidth/1.53,dheight/1.0)
-                                    dcanvas.coords("frnaivlabels20",dwidth/1.33,dheight/1.0)
-                                    dcanvas.coords("frnaivlabels21",dwidth/1.18,dheight/1.0)
-
-
                                 cs_canvas_1=Canvas(cs_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,2000))
 
                                 cs_frame_1.grid_columnconfigure(0,weight=1)
@@ -2599,1184 +2239,6 @@ def main_sign_in():
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel3"))
 
 
-                                # def Classic():
-                                #     ns_entry_2.delete(0,"end")
-                                #     ns_entry_2.insert(0, "Classic")
-
-                                #     #----------------------------------------Classic-----------------------------------------
-
-                                #     if ns_entry_2.get()=="Classic":
-                                #         print('hai')
-                                #         cs_canvas_1.itemconfig('nspoly3',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtree1',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabels13',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabels14',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabels15',state='normal')
-                                #         cs_canvas_1.itemconfig('naivline23',state='normal')
-                                #         cs_canvas_1.itemconfig('naivlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel22',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel23',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel24',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel25',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel26',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel27',state='normal')
-                                #         cs_canvas_1.itemconfig('naivtlabel28',state='normal')
-
-                                #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-                                        
-                                #     else:
-                                #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-                                
-                                    
-                                # def Modern():
-                                #     ns_entry_2.delete(0,"end")
-                                #     ns_entry_2.insert(0, "Modern")
-                                #     #----------------------------------------Modern-----------------------------------------
-
-                                #     if ns_entry_2.get()=="Modern":
-                                #         print('hello')
-                                #         cs_canvas_1.itemconfig('nspoly4',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtree1',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtree2',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel22',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel23',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel24',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel25',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel26',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel27',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivtlabel28',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabels13',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabels14',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabels15',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivline23',state='normal')
-                                #         cs_canvas_1.itemconfig('nsivlabel16',state='normal')
-
-
-                                #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-                                        
-                                #     else:
-                                #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                # def Fresh():
-                                #     ns_entry_2.delete(0,"end")
-                                #     ns_entry_2.insert(0, "Fresh")
-                                #     #----------------------------------------Fresh-----------------------------------------
-
-                                #     if ns_entry_2.get()=="Fresh":
-                                #         print('helloo')
-
-                                #         cs_canvas_1.itemconfig('fnspoly3',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtree1',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel22',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel23',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel24',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel25',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel26',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel27',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel28',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabels13',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabels14',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabels15',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivline23',state='normal')
-                                #         cs_canvas_1.itemconfig('fnaivlabel16',state='normal')
-
-                                #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-
-                                    
-                                #     else:
-                                        
-                                #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                    
-
-                                # def Friendly():
-                                #     ns_entry_2.delete(0,"end")
-                                #     ns_entry_2.insert(0, "Friendly")
-
-                                #     #----------------------------------------Friendly-----------------------------------------
-
-                                #     if ns_entry_2.get()=="Friendly":
-                                #         print('hai')
-                                #         cs_canvas_1.itemconfig('frnspoly3',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtree1',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel1',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel2',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel3',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel4',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel5',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel6',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel7',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel8',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel9',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel10',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel11',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel12',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel17',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel18',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel19',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel20',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel21',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel22',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel23',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel24',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel25',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel26',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel27',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel28',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel13',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels13',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel14',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels14',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel15',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels15',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivline23',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabel16',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels19',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels20',state='normal')
-                                #         cs_canvas_1.itemconfig('frnaivlabels21',state='normal')
-
-                                #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                    
-                                #     else:
-                                #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-
-                                # ns_entry_2=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                                # window_ns_entry_2 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_2, tags=('nsentry2'))
-
-                                # ns_btn1=Button(cs_canvas_1,text='Classic', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Classic)
-                                # window_ns_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn1, tags=("nsbutton4"))
-                                # #ns_btn1.bind("<Button-1>",Classic)
-
-                                # ns_btn2=Button(cs_canvas_1,text='Modern', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Modern)
-                                # window_ns_btn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn2, tags=("nsbutton5"))
-                                # #ns_btn2.bind("<Button-1>",Modern)
-
-                                # ns_btn3=Button(cs_canvas_1,text='Fresh', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Fresh)
-                                # window_ns_btn3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn3, tags=("nsbutton6"))
-                                # #ns_btn3.bind("<Button-1>",Fresh)
-
-                                # ns_btn4=Button(cs_canvas_1,text='Friendly', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Friendly)
-                                # window_ns_btn4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn4, tags=("nsbutton7"))
-                                # #ns_btn4.bind("<Button-1>",Friendly)
 
                                 label_1 = Label(cs_canvas_1,width=16,height=1,text="Primary Colours", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel4"))
@@ -3784,376 +2246,99 @@ def main_sign_in():
                                 def color_1_1():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#E9967A")
-                                    # #----------------------------------------Classic-----------------------------------------
 
-                                    # if ns_entry_2.get()=="Classic":
+                                    c_label_1.config(fg="#E9967A")
                                     c_label_7.config(fg="#E9967A")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#E9967A")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#E9967A")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#E9967A")
-                                    #     fr_label_19.config(background="#E9967A")
-                                    # else:
-                                    #     pass
+                                    
+      
                                 
                                 def color_1_2():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#8FBC8F")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#8FBC8F")
                                     c_label_7.config(fg="#8FBC8F")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#8FBC8F")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#8FBC8F")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#8FBC8F")
-                                    #     fr_label_19.config(background="#8FBC8F")
-                                    # else:
-                                    #     pass
+                                    
+                                    
                                 
                                 def color_1_3():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#B0C4DE")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#B0C4DE")
                                     c_label_7.config(fg="#B0C4DE")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#B0C4DE")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#B0C4DE")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#B0C4DE")
-                                    #     fr_label_19.config(background="#B0C4DE")
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_1_4():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#87CEFA")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#87CEFA")
                                     c_label_7.config(fg="#87CEFA")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#87CEFA")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#87CEFA")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#87CEFA")
-                                    #     fr_label_19.config(background="#87CEFA")
-                                    # else:
-                                    #     pass
-
+                                    
                                 def color_1_5():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#F0E68C")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#F0E68C")
                                     c_label_7.config(fg="#F0E68C")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#F0E68C")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#F0E68C")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#F0E68C")
-                                    #     fr_label_19.config(background="#F0E68C")
-                                    # else:
-                                    #     pass
+                                    
                                 
                                 def color_1_6():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#DDA0DD")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#DDA0DD")
                                     c_label_7.config(fg="#DDA0DD")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#DDA0DD")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#DDA0DD")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#DDA0DD")
-                                    #     fr_label_19.config(background="#DDA0DD")
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_1_7():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#2F4F4F")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#2F4F4F")
                                     c_label_7.config(fg="#2F4F4F")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#2F4F4F")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#2F4F4F")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#2F4F4F")
-                                    #     fr_label_19.config(background="#2F4F4F")
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_1_8():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#98FB98")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#98FB98")
                                     c_label_7.config(fg="#98FB98")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#98FB98")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#98FB98")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#98FB98")
-                                    #     fr_label_19.config(background="#98FB98")
-                                    # else:
-                                    #     pass
-                                
+                                    
+                                    
                                 def color_1_9():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#DB7093")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#DB7093")
                                     c_label_7.config(fg="#DB7093")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#DB7093")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#DB7093")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#DB7093")
-                                    #     fr_label_19.config(background="#DB7093")
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_1_10():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#D2B48C")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#D2B48C")
                                     c_label_7.config(fg="#D2B48C")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#D2B48C")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#D2B48C")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#D2B48C")
-                                    #     fr_label_19.config(background="#D2B48C")
-                                    # else:
-                                    #     pass
+                                    
                                 
                                 def color_1_11():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#D3D3D3")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
-                                    c_label_7.config(fg="#D3D3D3")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#D3D3D3")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#D3D3D3")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#D3D3D3")
-                                    #     fr_label_19.config(background="#D3D3D3")
-                                    # else:
-                                    #     pass
+                                    
+                                    c_label_1.config(fg="#D3D3D3")
+                                    c_label_7.config(fg="#D3D3D3")        
+                                    
                                 
                                 def color_1_12():
                                     ns_entry_3.delete(0,"end")
                                     ns_entry_3.insert(0, "#F5F5F5")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
+                                    c_label_1.config(fg="#F5F5F5")
                                     c_label_7.config(fg="#F5F5F5")
-                                    # else:
-                                    #     pass
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_7.config(fg="#F5F5F5")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_24.config(fg="#F5F5F5")
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_7.config(fg="#F5F5F5")
-                                    #     fr_label_19.config(background="#F5F5F5")
-                                    # else:
-                                    #     pass
-
+                                    
 
                                 ns_entry_3=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_3 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_3, tags=('nsentry3'))
@@ -4201,518 +2386,82 @@ def main_sign_in():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#E9967A")
                                 
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#E9967A")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#E9967A',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#E9967A")
-                                    #     f_label_10.config(background="#E9967A")
-                                    #     f_label_11.config(background="#E9967A")
-                                    #     f_label_12.config(background="#E9967A")
-                                    #     f_label_13.config(background="#E9967A")
-                                    #     f_label_14.config(background="#E9967A")
-                                    #     f_label_15.config(background="#E9967A")
-                                    #     f_label_16.config(background="#E9967A")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#E9967A")
-                                    #     fr_label_20.config(background="#E9967A")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                
                                 
                                 def color_2_2():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#8FBC8F")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+       
 
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#8FBC8F")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#8FBC8F',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#8FBC8F")
-                                    #     f_label_10.config(background="#8FBC8F")
-                                    #     f_label_11.config(background="#8FBC8F")
-                                    #     f_label_12.config(background="#8FBC8F")
-                                    #     f_label_13.config(background="#8FBC8F")
-                                    #     f_label_14.config(background="#8FBC8F")
-                                    #     f_label_15.config(background="#8FBC8F")
-                                    #     f_label_16.config(background="#8FBC8F")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#8FBC8F")
-                                    #     fr_label_20.config(background="#8FBC8F")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-                                
                                 def color_2_3():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#B0C4DE")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#B0C4DE")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#B0C4DE',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#B0C4DE")
-                                    #     f_label_10.config(background="#B0C4DE")
-                                    #     f_label_11.config(background="#B0C4DE")
-                                    #     f_label_12.config(background="#B0C4DE")
-                                    #     f_label_13.config(background="#B0C4DE")
-                                    #     f_label_14.config(background="#B0C4DE")
-                                    #     f_label_15.config(background="#B0C4DE")
-                                    #     f_label_16.config(background="#B0C4DE")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#B0C4DE")
-                                    #     fr_label_20.config(background="#B0C4DE")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_2_4():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#87CEFA")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#87CEFA")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#87CEFA',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#87CEFA")
-                                    #     f_label_10.config(background="#87CEFA")
-                                    #     f_label_11.config(background="#87CEFA")
-                                    #     f_label_12.config(background="#87CEFA")
-                                    #     f_label_13.config(background="#87CEFA")
-                                    #     f_label_14.config(background="#87CEFA")
-                                    #     f_label_15.config(background="#87CEFA")
-                                    #     f_label_16.config(background="#87CEFA")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#87CEFA")
-                                    #     fr_label_20.config(background="#87CEFA")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
+                                    
                                 def color_2_5():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#F0E68C")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#F0E68C")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#F0E68C',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#F0E68C")
-                                    #     f_label_10.config(background="#F0E68C")
-                                    #     f_label_11.config(background="#F0E68C")
-                                    #     f_label_12.config(background="#F0E68C")
-                                    #     f_label_13.config(background="#F0E68C")
-                                    #     f_label_14.config(background="#F0E68C")
-                                    #     f_label_15.config(background="#F0E68C")
-                                    #     f_label_16.config(background="#F0E68C")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#F0E68C")
-                                    #     fr_label_20.config(background="#F0E68C")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                
                                 
                                 def color_2_6():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#DDA0DD")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#DDA0DD")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#DDA0DD',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#DDA0DD")
-                                    #     f_label_10.config(background="#DDA0DD")
-                                    #     f_label_11.config(background="#DDA0DD")
-                                    #     f_label_12.config(background="#DDA0DD")
-                                    #     f_label_13.config(background="#DDA0DD")
-                                    #     f_label_14.config(background="#DDA0DD")
-                                    #     f_label_15.config(background="#DDA0DD")
-                                    #     f_label_16.config(background="#DDA0DD")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#DDA0DD")
-                                    #     fr_label_20.config(background="#DDA0DD")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
+                                    
                                 def color_2_7():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#2F4F4F")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#2F4F4F")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#2F4F4F',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#2F4F4F")
-                                    #     f_label_10.config(background="#2F4F4F")
-                                    #     f_label_11.config(background="#2F4F4F")
-                                    #     f_label_12.config(background="#2F4F4F")
-                                    #     f_label_13.config(background="#2F4F4F")
-                                    #     f_label_14.config(background="#2F4F4F")
-                                    #     f_label_15.config(background="#2F4F4F")
-                                    #     f_label_16.config(background="#2F4F4F")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#2F4F4F")
-                                    #     fr_label_20.config(background="#2F4F4F")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_2_8():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#98FB98")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#98FB98")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#98FB98',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#98FB98")
-                                    #     f_label_10.config(background="#98FB98")
-                                    #     f_label_11.config(background="#98FB98")
-                                    #     f_label_12.config(background="#98FB98")
-                                    #     f_label_13.config(background="#98FB98")
-                                    #     f_label_14.config(background="#98FB98")
-                                    #     f_label_15.config(background="#98FB98")
-                                    #     f_label_16.config(background="#98FB98")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#98FB98")
-                                    #     fr_label_20.config(background="#98FB98")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-                                
+                                    
                                 def color_2_9():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#DB7093")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#DB7093")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#DB7093',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#DB7093")
-                                    #     f_label_10.config(background="#DB7093")
-                                    #     f_label_11.config(background="#DB7093")
-                                    #     f_label_12.config(background="#DB7093")
-                                    #     f_label_13.config(background="#DB7093")
-                                    #     f_label_14.config(background="#DB7093")
-                                    #     f_label_15.config(background="#DB7093")
-                                    #     f_label_16.config(background="#DB7093")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#DB7093")
-                                    #     fr_label_20.config(background="#DB7093")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
 
                                 def color_2_10():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#D2B48C")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#D2B48C")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#D2B48C',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#D2B48C")
-                                    #     f_label_10.config(background="#D2B48C")
-                                    #     f_label_11.config(background="#D2B48C")
-                                    #     f_label_12.config(background="#D2B48C")
-                                    #     f_label_13.config(background="#D2B48C")
-                                    #     f_label_14.config(background="#D2B48C")
-                                    #     f_label_15.config(background="#D2B48C")
-                                    #     f_label_16.config(background="#D2B48C")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#D2B48C")
-                                    #     fr_label_20.config(background="#D2B48C")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
                                 
                                 def color_2_11():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#D3D3D3")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#D3D3D3")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#D3D3D3',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#D3D3D3")
-                                    #     f_label_10.config(background="#D3D3D3")
-                                    #     f_label_11.config(background="#D3D3D3")
-                                    #     f_label_12.config(background="#D3D3D3")
-                                    #     f_label_13.config(background="#D3D3D3")
-                                    #     f_label_14.config(background="#D3D3D3")
-                                    #     f_label_15.config(background="#D3D3D3")
-                                    #     f_label_16.config(background="#D3D3D3")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#D3D3D3")
-                                    #     fr_label_20.config(background="#D3D3D3")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
                                 
                                 def color_2_12():
                                     ns_entry_4.delete(0,"end")
                                     ns_entry_4.insert(0, "#F5F5F5")
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
+                                    
                                     fgthvi_1.configure('mystyle10.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     m_label_8.config(background="#F5F5F5")
-                                    #     fgthvi.configure('mystyle11.Treeview.Heading', background='#F5F5F5',State='DISABLE')
-                                    #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     f_label_9.config(background="#F5F5F5")
-                                    #     f_label_10.config(background="#F5F5F5")
-                                    #     f_label_11.config(background="#F5F5F5")
-                                    #     f_label_12.config(background="#F5F5F5")
-                                    #     f_label_13.config(background="#F5F5F5")
-                                    #     f_label_14.config(background="#F5F5F5")
-                                    #     f_label_15.config(background="#F5F5F5")
-                                    #     f_label_16.config(background="#F5F5F5")
-                                    #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     fr_label_18.config(background="#F5F5F5")
-                                    #     fr_label_20.config(background="#F5F5F5")
-                                    #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                    # else:
-                                    #     pass
+                                    
 
                                 ns_entry_4=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_4 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_4, tags=('nsentry4'))
@@ -4760,10 +2509,6 @@ def main_sign_in():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Serif Serif font")
 
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
-                                    #     print('wow')
                                     c_label_1.config(font=('Garamond bold',12))
                                     c_label_2.config(font=('Garamond',12))
                                     c_label_3.config(font=('Garamond',12))
@@ -4816,194 +2561,12 @@ def main_sign_in():
                                     c_label_50.config(font=('Garamond',12))
                                     c_label_51.config(font=('Garamond',12))
                                     c_label_52.config(font=('Garamond',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     print('wow')
-                                    #     m_label_1.config(font=('Garamond bold',12))
-                                    #     m_label_2.config(font=('Garamond',12))
-                                    #     m_label_3.config(font=('Garamond',12))
-                                    #     m_label_4.config(font=('Garamond',12))
-                                    #     m_label_5.config(font=('Garamond',12))
-                                    #     m_label_6.config(font=('Garamond',12))
-                                    #     m_label_7.config(font=('Garamond bold',20))
-                                    #     m_label_8.config(font=('Garamond bold',14))
-                                    #     m_label_9.config(font=('Garamond',12))
-                                    #     m_label_10.config(font=('Garamond bold',12))
-                                    #     m_label_11.config(font=('Garamond bold',12))
-                                    #     m_label_12.config(font=('Garamond bold',12))
-                                    #     m_label_13.config(font=('Garamond bold',12))
-                                    #     m_label_14.config(font=('Garamond bold',12))
-                                    #     m_label_15.config(font=('Garamond bold',12))
-                                    #     m_label_16.config(font=('Garamond',12))
-                                    #     m_label_17.config(font=('Garamond',12))
-                                    #     m_label_18.config(font=('Garamond',12))
-                                    #     m_label_19.config(font=('Garamond',12))
-                                    #     m_label_20.config(font=('Garamond',12))
-                                    #     m_label_25.config(font=('Garamond',12))
-                                    #     m_label_26.config(font=('Garamond',12))
-                                    #     m_label_27.config(font=('Garamond',12))
-                                    #     m_label_28.config(font=('Garamond',12))
-                                    #     m_label_29.config(font=('Garamond',12))
-                                    #     m_label_30.config(font=('Garamond',12))
-                                    #     m_label_31.config(font=('Garamond',12))
-                                    #     m_label_32.config(font=('Garamond',12))
-                                    #     m_label_33.config(font=('Garamond',12))
-                                    #     m_label_34.config(font=('Garamond',12))
-                                    #     m_label_35.config(font=('Garamond',12))
-                                    #     m_label_36.config(font=('Garamond',12))
-                                    #     m_label_37.config(font=('Garamond',12))
-                                    #     m_label_38.config(font=('Garamond',12))
-                                    #     m_label_39.config(font=('Garamond',12))
-                                    #     m_label_40.config(font=('Garamond',12))
-                                    #     m_label_41.config(font=('Garamond',12))
-                                    #     m_label_42.config(font=('Garamond',12))
-                                    #     m_label_43.config(font=('Garamond',12))
-                                    #     m_label_44.config(font=('Garamond',12))
-                                    #     m_label_45.config(font=('Garamond',12))
-                                    #     m_label_46.config(font=('Garamond',12))
-                                    #     m_label_47.config(font=('Garamond',12))
-                                    #     m_label_48.config(font=('Garamond',12))
-                                    #     m_label_49.config(font=('Garamond',12))
-                                    #     m_label_50.config(font=('Garamond',12))
-                                    #     m_label_51.config(font=('Garamond',12))
-                                    #     m_label_52.config(font=('Garamond',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     print('wow')
-                                    #     f_label_1.config(font=('Garamond bold',12))
-                                    #     f_label_2.config(font=('Garamond',12))
-                                    #     f_label_3.config(font=('Garamond',12))
-                                    #     f_label_4.config(font=('Garamond',12))
-                                    #     f_label_5.config(font=('Garamond',12))
-                                    #     f_label_6.config(font=('Garamond',12))
-                                    #     f_label_24.config(font=('Garamond bold',20))
-                                    #     f_label_7.config(font=('Garamond bold',14))
-                                    #     f_label_8.config(font=('Garamond',12))
-                                    #     f_label_9.config(font=('Garamond bold',12))
-                                    #     f_label_10.config(font=('Garamond',12))
-                                    #     f_label_11.config(font=('Garamond bold',12))
-                                    #     f_label_12.config(font=('Garamond',12))
-                                    #     f_label_13.config(font=('Garamond bold',12))
-                                    #     f_label_14.config(font=('Garamond',12))
-                                    #     f_label_15.config(font=('Garamond bold',12))
-                                    #     f_label_16.config(font=('Garamond',12))
-                                    #     f_label_17.config(font=('Garamond bold',12))
-                                    #     f_label_18.config(font=('Garamond bold',12))
-                                    #     f_label_19.config(font=('Garamond bold',12))
-                                    #     f_label_20.config(font=('Garamond bold',12))
-                                    #     f_label_21.config(font=('Garamond bold',12))
-                                    #     f_label_22.config(font=('Garamond bold',12))
-                                    #     f_label_23.config(font=('Garamond',12))
-                                    #     f_label_25.config(font=('Garamond',12))
-                                    #     f_label_26.config(font=('Garamond',12))
-                                    #     f_label_27.config(font=('Garamond',12))
-                                    #     f_label_28.config(font=('Garamond',12))
-                                    #     f_label_29.config(font=('Garamond',12))
-                                    #     f_label_30.config(font=('Garamond',12))
-                                    #     f_label_31.config(font=('Garamond',12))
-                                    #     f_label_32.config(font=('Garamond',12))
-                                    #     f_label_33.config(font=('Garamond',12))
-                                    #     f_label_34.config(font=('Garamond',12))
-                                    #     f_label_35.config(font=('Garamond',12))
-                                    #     f_label_36.config(font=('Garamond',12))
-                                    #     f_label_37.config(font=('Garamond',12))
-                                    #     f_label_38.config(font=('Garamond',12))
-                                    #     f_label_39.config(font=('Garamond',12))
-                                    #     f_label_40.config(font=('Garamond',12))
-                                    #     f_label_41.config(font=('Garamond',12))
-                                    #     f_label_42.config(font=('Garamond',12))
-                                    #     f_label_43.config(font=('Garamond',12))
-                                    #     f_label_44.config(font=('Garamond',12))
-                                    #     f_label_45.config(font=('Garamond',12))
-                                    #     f_label_46.config(font=('Garamond',12))
-                                    #     f_label_47.config(font=('Garamond',12))
-                                    #     f_label_48.config(font=('Garamond',12))
-                                    #     f_label_49.config(font=('Garamond',12))
-                                    #     f_label_50.config(font=('Garamond',12))
-                                    #     f_label_51.config(font=('Garamond',12))
-                                    #     f_label_52.config(font=('Garamond',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     print('wow')
-                                    #     fr_label_1.config(font=('Garamond bold',12))
-                                    #     fr_label_2.config(font=('Garamond',12))
-                                    #     fr_label_3.config(font=('Garamond',12))
-                                    #     fr_label_4.config(font=('Garamond',12))
-                                    #     fr_label_5.config(font=('Garamond',12))
-                                    #     fr_label_6.config(font=('Garamond',12))
-                                    #     fr_label_7.config(font=('Garamond bold',20))
-                                    #     fr_label_8.config(font=('Garamond bold',14))
-                                    #     fr_label_9.config(font=('Garamond',12))
-                                    #     fr_label_10.config(font=('Garamond bold',12))
-                                    #     fr_label_11.config(font=('Garamond',12))
-                                    #     fr_label_12.config(font=('Garamond bold',12))
-                                    #     fr_label_13.config(font=('Garamond',12))
-                                    #     fr_label_14.config(font=('Garamond bold',12))
-                                    #     fr_label_15.config(font=('Garamond',12))
-                                    #     fr_label_16.config(font=('Garamond bold',12))
-                                    #     fr_label_17.config(font=('Garamond',12))
-                                    #     fr_label_18.config(font=('Garamond',12))
-                                    #     fr_label_19.config(font=('Garamond',12))
-                                    #     fr_label_20.config(font=('Garamond',12))
-                                    #     fr_label_21.config(font=('Garamond',12))
-                                    #     fr_label_22.config(font=('Garamond bold',12))
-                                    #     fr_label_23.config(font=('Garamond bold',12))
-                                    #     fr_label_24.config(font=('Garamond bold',12))
-                                    #     fr_label_25.config(font=('Garamond',12))
-                                    #     fr_label_26.config(font=('Garamond',12))
-                                    #     fr_label_27.config(font=('Garamond',12))
-                                    #     fr_label_28.config(font=('Garamond',12))
-                                    #     fr_label_29.config(font=('Garamond',12))
-                                    #     fr_label_30.config(font=('Garamond',12))
-                                    #     fr_label_31.config(font=('Garamond',12))
-                                    #     fr_label_32.config(font=('Garamond',12))
-                                    #     fr_label_33.config(font=('Garamond',12))
-                                    #     fr_label_34.config(font=('Garamond',12))
-                                    #     fr_label_35.config(font=('Garamond',12))
-                                    #     fr_label_36.config(font=('Garamond',12))
-                                    #     fr_label_37.config(font=('Garamond',12))
-                                    #     fr_label_38.config(font=('Garamond',12))
-                                    #     fr_label_39.config(font=('Garamond',12))
-                                    #     fr_label_40.config(font=('Garamond',12))
-                                    #     fr_label_41.config(font=('Garamond',12))
-                                    #     fr_label_42.config(font=('Garamond',12))
-                                    #     fr_label_43.config(font=('Garamond',12))
-                                    #     fr_label_44.config(font=('Garamond',12))
-                                    #     fr_label_45.config(font=('Garamond',12))
-                                    #     fr_label_46.config(font=('Garamond',12))
-                                    #     fr_label_47.config(font=('Garamond',12))
-                                    #     fr_label_48.config(font=('Garamond',12))
-                                    #     fr_label_49.config(font=('Garamond',12))
-                                    #     fr_label_50.config(font=('Garamond',12))
-                                    #     fr_label_51.config(font=('Garamond',12))
-                                    #     fr_label_52.config(font=('Garamond',12))
-                                    #     frr_label_25.config(font=('Garamond bold',12))
-                                    #     frr_label_26.config(font=('Garamond bold',12))
-                                    #     frr_label_27.config(font=('Garamond',12))
-                                    # else:
-                                    #     pass
-                                
-
+                                    
                                 def Sans():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Sans-serif Sans-serif font")
 
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
-                                    #     print('wow')
+                                    
                                     c_label_1.config(font=('Arial bold',12))
                                     c_label_2.config(font=('Arial',12))
                                     c_label_3.config(font=('Arial',12))
@@ -5056,194 +2619,12 @@ def main_sign_in():
                                     c_label_50.config(font=('Arial',12))
                                     c_label_51.config(font=('Arial',12))
                                     c_label_52.config(font=('Arial',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     print('wow')
-                                    #     m_label_1.config(font=('Arial bold',12))
-                                    #     m_label_2.config(font=('Arial',12))
-                                    #     m_label_3.config(font=('Arial',12))
-                                    #     m_label_4.config(font=('Arial',12))
-                                    #     m_label_5.config(font=('Arial',12))
-                                    #     m_label_6.config(font=('Arial',12))
-                                    #     m_label_7.config(font=('Arial bold',20))
-                                    #     m_label_8.config(font=('Arial bold',14))
-                                    #     m_label_9.config(font=('Arial',12))
-                                    #     m_label_10.config(font=('Arial bold',12))
-                                    #     m_label_11.config(font=('Arial bold',12))
-                                    #     m_label_12.config(font=('Arial bold',12))
-                                    #     m_label_13.config(font=('Arial bold',12))
-                                    #     m_label_14.config(font=('Arial bold',12))
-                                    #     m_label_15.config(font=('Arial bold',12))
-                                    #     m_label_16.config(font=('Arial',12))
-                                    #     m_label_17.config(font=('Arial',12))
-                                    #     m_label_18.config(font=('Arial',12))
-                                    #     m_label_19.config(font=('Arial',12))
-                                    #     m_label_20.config(font=('Arial',12))
-                                    #     m_label_25.config(font=('Arial',12))
-                                    #     m_label_26.config(font=('Arial',12))
-                                    #     m_label_27.config(font=('Arial',12))
-                                    #     m_label_28.config(font=('Arial',12))
-                                    #     m_label_29.config(font=('Arial',12))
-                                    #     m_label_30.config(font=('Arial',12))
-                                    #     m_label_31.config(font=('Arial',12))
-                                    #     m_label_32.config(font=('Arial',12))
-                                    #     m_label_33.config(font=('Arial',12))
-                                    #     m_label_34.config(font=('Arial',12))
-                                    #     m_label_35.config(font=('Arial',12))
-                                    #     m_label_36.config(font=('Arial',12))
-                                    #     m_label_37.config(font=('Arial',12))
-                                    #     m_label_38.config(font=('Arial',12))
-                                    #     m_label_39.config(font=('Arial',12))
-                                    #     m_label_40.config(font=('Arial',12))
-                                    #     m_label_41.config(font=('Arial',12))
-                                    #     m_label_42.config(font=('Arial',12))
-                                    #     m_label_43.config(font=('Arial',12))
-                                    #     m_label_44.config(font=('Arial',12))
-                                    #     m_label_45.config(font=('Arial',12))
-                                    #     m_label_46.config(font=('Arial',12))
-                                    #     m_label_47.config(font=('Arial',12))
-                                    #     m_label_48.config(font=('Arial',12))
-                                    #     m_label_49.config(font=('Arial',12))
-                                    #     m_label_50.config(font=('Arial',12))
-                                    #     m_label_51.config(font=('Arial',12))
-                                    #     m_label_52.config(font=('Arial',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     print('wow')
-                                    #     f_label_1.config(font=('Arial bold',12))
-                                    #     f_label_2.config(font=('Arial',12))
-                                    #     f_label_3.config(font=('Arial',12))
-                                    #     f_label_4.config(font=('Arial',12))
-                                    #     f_label_5.config(font=('Arial',12))
-                                    #     f_label_6.config(font=('Arial',12))
-                                    #     f_label_24.config(font=('Arial bold',20))
-                                    #     f_label_7.config(font=('Arial bold',14))
-                                    #     f_label_8.config(font=('Arial',12))
-                                    #     f_label_9.config(font=('Arial bold',12))
-                                    #     f_label_10.config(font=('Arial',12))
-                                    #     f_label_11.config(font=('Arial bold',12))
-                                    #     f_label_12.config(font=('Arial',12))
-                                    #     f_label_13.config(font=('Arial bold',12))
-                                    #     f_label_14.config(font=('Arial',12))
-                                    #     f_label_15.config(font=('Arial bold',12))
-                                    #     f_label_16.config(font=('Arial',12))
-                                    #     f_label_17.config(font=('Arial bold',12))
-                                    #     f_label_18.config(font=('Arial bold',12))
-                                    #     f_label_19.config(font=('Arial bold',12))
-                                    #     f_label_20.config(font=('Arial bold',12))
-                                    #     f_label_21.config(font=('Arial bold',12))
-                                    #     f_label_22.config(font=('Arial bold',12))
-                                    #     f_label_23.config(font=('Arial',12))
-                                    #     f_label_25.config(font=('Arial',12))
-                                    #     f_label_26.config(font=('Arial',12))
-                                    #     f_label_27.config(font=('Arial',12))
-                                    #     f_label_28.config(font=('Arial',12))
-                                    #     f_label_29.config(font=('Arial',12))
-                                    #     f_label_30.config(font=('Arial',12))
-                                    #     f_label_31.config(font=('Arial',12))
-                                    #     f_label_32.config(font=('Arial',12))
-                                    #     f_label_33.config(font=('Arial',12))
-                                    #     f_label_34.config(font=('Arial',12))
-                                    #     f_label_35.config(font=('Arial',12))
-                                    #     f_label_36.config(font=('Arial',12))
-                                    #     f_label_37.config(font=('Arial',12))
-                                    #     f_label_38.config(font=('Arial',12))
-                                    #     f_label_39.config(font=('Arial',12))
-                                    #     f_label_40.config(font=('Arial',12))
-                                    #     f_label_41.config(font=('Arial',12))
-                                    #     f_label_42.config(font=('Arial',12))
-                                    #     f_label_43.config(font=('Arial',12))
-                                    #     f_label_44.config(font=('Arial',12))
-                                    #     f_label_45.config(font=('Arial',12))
-                                    #     f_label_46.config(font=('Arial',12))
-                                    #     f_label_47.config(font=('Arial',12))
-                                    #     f_label_48.config(font=('Arial',12))
-                                    #     f_label_49.config(font=('Arial',12))
-                                    #     f_label_50.config(font=('Arial',12))
-                                    #     f_label_51.config(font=('Arial',12))
-                                    #     f_label_52.config(font=('Arial',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     print('wow')
-                                    #     fr_label_1.config(font=('Arial bold',12))
-                                    #     fr_label_2.config(font=('Arial',12))
-                                    #     fr_label_3.config(font=('Arial',12))
-                                    #     fr_label_4.config(font=('Arial',12))
-                                    #     fr_label_5.config(font=('Arial',12))
-                                    #     fr_label_6.config(font=('Arial',12))
-                                    #     fr_label_7.config(font=('Arial bold',20))
-                                    #     fr_label_8.config(font=('Arial bold',14))
-                                    #     fr_label_9.config(font=('Arial',12))
-                                    #     fr_label_10.config(font=('Arial bold',12))
-                                    #     fr_label_11.config(font=('Arial',12))
-                                    #     fr_label_12.config(font=('Arial bold',12))
-                                    #     fr_label_13.config(font=('Arial',12))
-                                    #     fr_label_14.config(font=('Arial bold',12))
-                                    #     fr_label_15.config(font=('Arial',12))
-                                    #     fr_label_16.config(font=('Arial bold',12))
-                                    #     fr_label_17.config(font=('Arial',12))
-                                    #     fr_label_18.config(font=('Arial',12))
-                                    #     fr_label_19.config(font=('Arial',12))
-                                    #     fr_label_20.config(font=('Arial',12))
-                                    #     fr_label_21.config(font=('Arial',12))
-                                    #     fr_label_22.config(font=('Arial bold',12))
-                                    #     fr_label_23.config(font=('Arial bold',12))
-                                    #     fr_label_24.config(font=('Arial bold',12))
-                                    #     fr_label_25.config(font=('Arial',12))
-                                    #     fr_label_26.config(font=('Arial',12))
-                                    #     fr_label_27.config(font=('Arial',12))
-                                    #     fr_label_28.config(font=('Arial',12))
-                                    #     fr_label_29.config(font=('Arial',12))
-                                    #     fr_label_30.config(font=('Arial',12))
-                                    #     fr_label_31.config(font=('Arial',12))
-                                    #     fr_label_32.config(font=('Arial',12))
-                                    #     fr_label_33.config(font=('Arial',12))
-                                    #     fr_label_34.config(font=('Arial',12))
-                                    #     fr_label_35.config(font=('Arial',12))
-                                    #     fr_label_36.config(font=('Arial',12))
-                                    #     fr_label_37.config(font=('Arial',12))
-                                    #     fr_label_38.config(font=('Arial',12))
-                                    #     fr_label_39.config(font=('Arial',12))
-                                    #     fr_label_40.config(font=('Arial',12))
-                                    #     fr_label_41.config(font=('Arial',12))
-                                    #     fr_label_42.config(font=('Arial',12))
-                                    #     fr_label_43.config(font=('Arial',12))
-                                    #     fr_label_44.config(font=('Arial',12))
-                                    #     fr_label_45.config(font=('Arial',12))
-                                    #     fr_label_46.config(font=('Arial',12))
-                                    #     fr_label_47.config(font=('Arial',12))
-                                    #     fr_label_48.config(font=('Arial',12))
-                                    #     fr_label_49.config(font=('Arial',12))
-                                    #     fr_label_50.config(font=('Arial',12))
-                                    #     fr_label_51.config(font=('Arial',12))
-                                    #     fr_label_52.config(font=('Arial',12))
-                                    #     frr_label_25.config(font=('Arial bold',12))
-                                    #     frr_label_26.config(font=('Arial bold',12))
-                                    #     frr_label_27.config(font=('Arial',12))
-                                    # else:
-                                    #     pass
-                                
-
+                                    
                                 def Monospace():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "Monospace Monospace font")
 
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
-                                    #     print('wow')
+                                    
                                     c_label_1.config(font=('Helvetica bold',12))
                                     c_label_2.config(font=('Helvetica',12))
                                     c_label_3.config(font=('Helvetica',12))
@@ -5296,194 +2677,13 @@ def main_sign_in():
                                     c_label_50.config(font=('Helvetica',12))
                                     c_label_51.config(font=('Helvetica',12))
                                     c_label_52.config(font=('Helvetica',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     print('wow')
-                                    #     m_label_1.config(font=('Helvetica bold',12))
-                                    #     m_label_2.config(font=('Helvetica',12))
-                                    #     m_label_3.config(font=('Helvetica',12))
-                                    #     m_label_4.config(font=('Helvetica',12))
-                                    #     m_label_5.config(font=('Helvetica',12))
-                                    #     m_label_6.config(font=('Helvetica',12))
-                                    #     m_label_7.config(font=('Helvetica bold',20))
-                                    #     m_label_8.config(font=('Helvetica bold',14))
-                                    #     m_label_9.config(font=('Helvetica',12))
-                                    #     m_label_10.config(font=('Helvetica bold',12))
-                                    #     m_label_11.config(font=('Helvetica bold',12))
-                                    #     m_label_12.config(font=('Helvetica bold',12))
-                                    #     m_label_13.config(font=('Helvetica bold',12))
-                                    #     m_label_14.config(font=('Helvetica bold',12))
-                                    #     m_label_15.config(font=('Helvetica bold',12))
-                                    #     m_label_16.config(font=('Helvetica',12))
-                                    #     m_label_17.config(font=('Helvetica',12))
-                                    #     m_label_18.config(font=('Helvetica',12))
-                                    #     m_label_19.config(font=('Helvetica',12))
-                                    #     m_label_20.config(font=('Helvetica',12))
-                                    #     m_label_25.config(font=('Helvetica',12))
-                                    #     m_label_26.config(font=('Helvetica',12))
-                                    #     m_label_27.config(font=('Helvetica',12))
-                                    #     m_label_28.config(font=('Helvetica',12))
-                                    #     m_label_29.config(font=('Helvetica',12))
-                                    #     m_label_30.config(font=('Helvetica',12))
-                                    #     m_label_31.config(font=('Helvetica',12))
-                                    #     m_label_32.config(font=('Helvetica',12))
-                                    #     m_label_33.config(font=('Helvetica',12))
-                                    #     m_label_34.config(font=('Helvetica',12))
-                                    #     m_label_35.config(font=('Helvetica',12))
-                                    #     m_label_36.config(font=('Helvetica',12))
-                                    #     m_label_37.config(font=('Helvetica',12))
-                                    #     m_label_38.config(font=('Helvetica',12))
-                                    #     m_label_39.config(font=('Helvetica',12))
-                                    #     m_label_40.config(font=('Helvetica',12))
-                                    #     m_label_41.config(font=('Helvetica',12))
-                                    #     m_label_42.config(font=('Helvetica',12))
-                                    #     m_label_43.config(font=('Helvetica',12))
-                                    #     m_label_44.config(font=('Helvetica',12))
-                                    #     m_label_45.config(font=('Helvetica',12))
-                                    #     m_label_46.config(font=('Helvetica',12))
-                                    #     m_label_47.config(font=('Helvetica',12))
-                                    #     m_label_48.config(font=('Helvetica',12))
-                                    #     m_label_49.config(font=('Helvetica',12))
-                                    #     m_label_50.config(font=('Helvetica',12))
-                                    #     m_label_51.config(font=('Helvetica',12))
-                                    #     m_label_52.config(font=('Helvetica',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     print('wow')
-                                    #     f_label_1.config(font=('Helvetica bold',12))
-                                    #     f_label_2.config(font=('Helvetica',12))
-                                    #     f_label_3.config(font=('Helvetica',12))
-                                    #     f_label_4.config(font=('Helvetica',12))
-                                    #     f_label_5.config(font=('Helvetica',12))
-                                    #     f_label_6.config(font=('Helvetica',12))
-                                    #     f_label_24.config(font=('Helvetica bold',20))
-                                    #     f_label_7.config(font=('Helvetica bold',14))
-                                    #     f_label_8.config(font=('Helvetica',12))
-                                    #     f_label_9.config(font=('Helvetica bold',12))
-                                    #     f_label_10.config(font=('Helvetica',12))
-                                    #     f_label_11.config(font=('Helvetica bold',12))
-                                    #     f_label_12.config(font=('Helvetica',12))
-                                    #     f_label_13.config(font=('Helvetica bold',12))
-                                    #     f_label_14.config(font=('Helvetica',12))
-                                    #     f_label_15.config(font=('Helvetica bold',12))
-                                    #     f_label_16.config(font=('Helvetica',12))
-                                    #     f_label_17.config(font=('Helvetica bold',12))
-                                    #     f_label_18.config(font=('Helvetica bold',12))
-                                    #     f_label_19.config(font=('Helvetica bold',12))
-                                    #     f_label_20.config(font=('Helvetica bold',12))
-                                    #     f_label_21.config(font=('Helvetica bold',12))
-                                    #     f_label_22.config(font=('Helvetica bold',12))
-                                    #     f_label_23.config(font=('Helvetica',12))
-                                    #     f_label_25.config(font=('Helvetica',12))
-                                    #     f_label_26.config(font=('Helvetica',12))
-                                    #     f_label_27.config(font=('Helvetica',12))
-                                    #     f_label_28.config(font=('Helvetica',12))
-                                    #     f_label_29.config(font=('Helvetica',12))
-                                    #     f_label_30.config(font=('Helvetica',12))
-                                    #     f_label_31.config(font=('Helvetica',12))
-                                    #     f_label_32.config(font=('Helvetica',12))
-                                    #     f_label_33.config(font=('Helvetica',12))
-                                    #     f_label_34.config(font=('Helvetica',12))
-                                    #     f_label_35.config(font=('Helvetica',12))
-                                    #     f_label_36.config(font=('Helvetica',12))
-                                    #     f_label_37.config(font=('Helvetica',12))
-                                    #     f_label_38.config(font=('Helvetica',12))
-                                    #     f_label_39.config(font=('Helvetica',12))
-                                    #     f_label_40.config(font=('Helvetica',12))
-                                    #     f_label_41.config(font=('Helvetica',12))
-                                    #     f_label_42.config(font=('Helvetica',12))
-                                    #     f_label_43.config(font=('Helvetica',12))
-                                    #     f_label_44.config(font=('Helvetica',12))
-                                    #     f_label_45.config(font=('Helvetica',12))
-                                    #     f_label_46.config(font=('Helvetica',12))
-                                    #     f_label_47.config(font=('Helvetica',12))
-                                    #     f_label_48.config(font=('Helvetica',12))
-                                    #     f_label_49.config(font=('Helvetica',12))
-                                    #     f_label_50.config(font=('Helvetica',12))
-                                    #     f_label_51.config(font=('Helvetica',12))
-                                    #     f_label_52.config(font=('Helvetica',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     print('wow')
-                                    #     fr_label_1.config(font=('Helvetica bold',12))
-                                    #     fr_label_2.config(font=('Helvetica',12))
-                                    #     fr_label_3.config(font=('Helvetica',12))
-                                    #     fr_label_4.config(font=('Helvetica',12))
-                                    #     fr_label_5.config(font=('Helvetica',12))
-                                    #     fr_label_6.config(font=('Helvetica',12))
-                                    #     fr_label_7.config(font=('Helvetica bold',20))
-                                    #     fr_label_8.config(font=('Helvetica bold',14))
-                                    #     fr_label_9.config(font=('Helvetica',12))
-                                    #     fr_label_10.config(font=('Helvetica bold',12))
-                                    #     fr_label_11.config(font=('Helvetica',12))
-                                    #     fr_label_12.config(font=('Helvetica bold',12))
-                                    #     fr_label_13.config(font=('Helvetica',12))
-                                    #     fr_label_14.config(font=('Helvetica bold',12))
-                                    #     fr_label_15.config(font=('Helvetica',12))
-                                    #     fr_label_16.config(font=('Helvetica bold',12))
-                                    #     fr_label_17.config(font=('Helvetica',12))
-                                    #     fr_label_18.config(font=('Helvetica',12))
-                                    #     fr_label_19.config(font=('Helvetica',12))
-                                    #     fr_label_20.config(font=('Helvetica',12))
-                                    #     fr_label_21.config(font=('Helvetica',12))
-                                    #     fr_label_22.config(font=('Helvetica bold',12))
-                                    #     fr_label_23.config(font=('Helvetica bold',12))
-                                    #     fr_label_24.config(font=('Helvetica bold',12))
-                                    #     fr_label_25.config(font=('Helvetica',12))
-                                    #     fr_label_26.config(font=('Helvetica',12))
-                                    #     fr_label_27.config(font=('Helvetica',12))
-                                    #     fr_label_28.config(font=('Helvetica',12))
-                                    #     fr_label_29.config(font=('Helvetica',12))
-                                    #     fr_label_30.config(font=('Helvetica',12))
-                                    #     fr_label_31.config(font=('Helvetica',12))
-                                    #     fr_label_32.config(font=('Helvetica',12))
-                                    #     fr_label_33.config(font=('Helvetica',12))
-                                    #     fr_label_34.config(font=('Helvetica',12))
-                                    #     fr_label_35.config(font=('Helvetica',12))
-                                    #     fr_label_36.config(font=('Helvetica',12))
-                                    #     fr_label_37.config(font=('Helvetica',12))
-                                    #     fr_label_38.config(font=('Helvetica',12))
-                                    #     fr_label_39.config(font=('Helvetica',12))
-                                    #     fr_label_40.config(font=('Helvetica',12))
-                                    #     fr_label_41.config(font=('Helvetica',12))
-                                    #     fr_label_42.config(font=('Helvetica',12))
-                                    #     fr_label_43.config(font=('Helvetica',12))
-                                    #     fr_label_44.config(font=('Helvetica',12))
-                                    #     fr_label_45.config(font=('Helvetica',12))
-                                    #     fr_label_46.config(font=('Helvetica',12))
-                                    #     fr_label_47.config(font=('Helvetica',12))
-                                    #     fr_label_48.config(font=('Helvetica',12))
-                                    #     fr_label_49.config(font=('Helvetica',12))
-                                    #     fr_label_50.config(font=('Helvetica',12))
-                                    #     fr_label_51.config(font=('Helvetica',12))
-                                    #     fr_label_52.config(font=('Helvetica',12))
-                                    #     frr_label_25.config(font=('Helvetica bold',12))
-                                    #     frr_label_26.config(font=('Helvetica bold',12))
-                                    #     frr_label_27.config(font=('Helvetica',12))
-                                    # else:
-                                    #     pass
-                                
+                                    
 
                                 def System():
                                     ns_entry_5.delete(0,"end")
                                     ns_entry_5.insert(0, "System-ui System-ui font")
 
-                                    # #----------------------------------------Classic-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Classic":
-                                    #     print('wow')
+                                    
                                     c_label_1.config(font=('Roboto bold',12))
                                     c_label_2.config(font=('Roboto',12))
                                     c_label_3.config(font=('Roboto',12))
@@ -5536,185 +2736,7 @@ def main_sign_in():
                                     c_label_50.config(font=('Roboto',12))
                                     c_label_51.config(font=('Roboto',12))
                                     c_label_52.config(font=('Roboto',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Modern-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Modern":
-                                    #     print('wow')
-                                    #     m_label_1.config(font=('Roboto bold',12))
-                                    #     m_label_2.config(font=('Roboto',12))
-                                    #     m_label_3.config(font=('Roboto',12))
-                                    #     m_label_4.config(font=('Roboto',12))
-                                    #     m_label_5.config(font=('Roboto',12))
-                                    #     m_label_6.config(font=('Roboto',12))
-                                    #     m_label_7.config(font=('Roboto bold',20))
-                                    #     m_label_8.config(font=('Roboto bold',14))
-                                    #     m_label_9.config(font=('Roboto',12))
-                                    #     m_label_10.config(font=('Roboto bold',12))
-                                    #     m_label_11.config(font=('Roboto bold',12))
-                                    #     m_label_12.config(font=('Roboto bold',12))
-                                    #     m_label_13.config(font=('Roboto bold',12))
-                                    #     m_label_14.config(font=('Roboto bold',12))
-                                    #     m_label_15.config(font=('Roboto bold',12))
-                                    #     m_label_16.config(font=('Roboto',12))
-                                    #     m_label_17.config(font=('Roboto',12))
-                                    #     m_label_18.config(font=('Roboto',12))
-                                    #     m_label_19.config(font=('Roboto',12))
-                                    #     m_label_20.config(font=('Roboto',12))
-                                    #     m_label_25.config(font=('Roboto',12))
-                                    #     m_label_26.config(font=('Roboto',12))
-                                    #     m_label_27.config(font=('Roboto',12))
-                                    #     m_label_28.config(font=('Roboto',12))
-                                    #     m_label_29.config(font=('Roboto',12))
-                                    #     m_label_30.config(font=('Roboto',12))
-                                    #     m_label_31.config(font=('Roboto',12))
-                                    #     m_label_32.config(font=('Roboto',12))
-                                    #     m_label_33.config(font=('Roboto',12))
-                                    #     m_label_34.config(font=('Roboto',12))
-                                    #     m_label_35.config(font=('Roboto',12))
-                                    #     m_label_36.config(font=('Roboto',12))
-                                    #     m_label_37.config(font=('Roboto',12))
-                                    #     m_label_38.config(font=('Roboto',12))
-                                    #     m_label_39.config(font=('Roboto',12))
-                                    #     m_label_40.config(font=('Roboto',12))
-                                    #     m_label_41.config(font=('Roboto',12))
-                                    #     m_label_42.config(font=('Roboto',12))
-                                    #     m_label_43.config(font=('Roboto',12))
-                                    #     m_label_44.config(font=('Roboto',12))
-                                    #     m_label_45.config(font=('Roboto',12))
-                                    #     m_label_46.config(font=('Roboto',12))
-                                    #     m_label_47.config(font=('Roboto',12))
-                                    #     m_label_48.config(font=('Roboto',12))
-                                    #     m_label_49.config(font=('Roboto',12))
-                                    #     m_label_50.config(font=('Roboto',12))
-                                    #     m_label_51.config(font=('Roboto',12))
-                                    #     m_label_52.config(font=('Roboto',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Fresh-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Fresh":
-                                    #     print('wow')
-                                    #     f_label_1.config(font=('Roboto bold',12))
-                                    #     f_label_2.config(font=('Roboto',12))
-                                    #     f_label_3.config(font=('Roboto',12))
-                                    #     f_label_4.config(font=('Roboto',12))
-                                    #     f_label_5.config(font=('Roboto',12))
-                                    #     f_label_6.config(font=('Roboto',12))
-                                    #     f_label_24.config(font=('Roboto bold',20))
-                                    #     f_label_7.config(font=('Roboto bold',14))
-                                    #     f_label_8.config(font=('Roboto',12))
-                                    #     f_label_9.config(font=('Roboto bold',12))
-                                    #     f_label_10.config(font=('Roboto',12))
-                                    #     f_label_11.config(font=('Roboto bold',12))
-                                    #     f_label_12.config(font=('Roboto',12))
-                                    #     f_label_13.config(font=('Roboto bold',12))
-                                    #     f_label_14.config(font=('Roboto',12))
-                                    #     f_label_15.config(font=('Roboto bold',12))
-                                    #     f_label_16.config(font=('Roboto',12))
-                                    #     f_label_17.config(font=('Roboto bold',12))
-                                    #     f_label_18.config(font=('Roboto bold',12))
-                                    #     f_label_19.config(font=('Roboto bold',12))
-                                    #     f_label_20.config(font=('Roboto bold',12))
-                                    #     f_label_21.config(font=('Roboto bold',12))
-                                    #     f_label_22.config(font=('Roboto bold',12))
-                                    #     f_label_23.config(font=('Roboto',12))
-                                    #     f_label_25.config(font=('Roboto',12))
-                                    #     f_label_26.config(font=('Roboto',12))
-                                    #     f_label_27.config(font=('Roboto',12))
-                                    #     f_label_28.config(font=('Roboto',12))
-                                    #     f_label_29.config(font=('Roboto',12))
-                                    #     f_label_30.config(font=('Roboto',12))
-                                    #     f_label_31.config(font=('Roboto',12))
-                                    #     f_label_32.config(font=('Roboto',12))
-                                    #     f_label_33.config(font=('Roboto',12))
-                                    #     f_label_34.config(font=('Roboto',12))
-                                    #     f_label_35.config(font=('Roboto',12))
-                                    #     f_label_36.config(font=('Roboto',12))
-                                    #     f_label_37.config(font=('Roboto',12))
-                                    #     f_label_38.config(font=('Roboto',12))
-                                    #     f_label_39.config(font=('Roboto',12))
-                                    #     f_label_40.config(font=('Roboto',12))
-                                    #     f_label_41.config(font=('Roboto',12))
-                                    #     f_label_42.config(font=('Roboto',12))
-                                    #     f_label_43.config(font=('Roboto',12))
-                                    #     f_label_44.config(font=('Roboto',12))
-                                    #     f_label_45.config(font=('Roboto',12))
-                                    #     f_label_46.config(font=('Roboto',12))
-                                    #     f_label_47.config(font=('Roboto',12))
-                                    #     f_label_48.config(font=('Roboto',12))
-                                    #     f_label_49.config(font=('Roboto',12))
-                                    #     f_label_50.config(font=('Roboto',12))
-                                    #     f_label_51.config(font=('Roboto',12))
-                                    #     f_label_52.config(font=('Roboto',12))
-                                    # else:
-                                    #     pass
-
-                                    # #----------------------------------------Friendly-----------------------------------------
-
-                                    # if ns_entry_2.get()=="Friendly":
-                                    #     print('wow')
-                                    #     fr_label_1.config(font=('Roboto bold',12))
-                                    #     fr_label_2.config(font=('Roboto',12))
-                                    #     fr_label_3.config(font=('Roboto',12))
-                                    #     fr_label_4.config(font=('Roboto',12))
-                                    #     fr_label_5.config(font=('Roboto',12))
-                                    #     fr_label_6.config(font=('Roboto',12))
-                                    #     fr_label_7.config(font=('Roboto bold',20))
-                                    #     fr_label_8.config(font=('Roboto bold',14))
-                                    #     fr_label_9.config(font=('Roboto',12))
-                                    #     fr_label_10.config(font=('Roboto bold',12))
-                                    #     fr_label_11.config(font=('Roboto',12))
-                                    #     fr_label_12.config(font=('Roboto bold',12))
-                                    #     fr_label_13.config(font=('Roboto',12))
-                                    #     fr_label_14.config(font=('Roboto bold',12))
-                                    #     fr_label_15.config(font=('Roboto',12))
-                                    #     fr_label_16.config(font=('Roboto bold',12))
-                                    #     fr_label_17.config(font=('Roboto',12))
-                                    #     fr_label_18.config(font=('Roboto',12))
-                                    #     fr_label_19.config(font=('Roboto',12))
-                                    #     fr_label_20.config(font=('Roboto',12))
-                                    #     fr_label_21.config(font=('Roboto',12))
-                                    #     fr_label_22.config(font=('Roboto bold',12))
-                                    #     fr_label_23.config(font=('Roboto bold',12))
-                                    #     fr_label_24.config(font=('Roboto bold',12))
-                                    #     fr_label_25.config(font=('Roboto',12))
-                                    #     fr_label_26.config(font=('Roboto',12))
-                                    #     fr_label_27.config(font=('Roboto',12))
-                                    #     fr_label_28.config(font=('Roboto',12))
-                                    #     fr_label_29.config(font=('Roboto',12))
-                                    #     fr_label_30.config(font=('Roboto',12))
-                                    #     fr_label_31.config(font=('Roboto',12))
-                                    #     fr_label_32.config(font=('Roboto',12))
-                                    #     fr_label_33.config(font=('Roboto',12))
-                                    #     fr_label_34.config(font=('Roboto',12))
-                                    #     fr_label_35.config(font=('Roboto',12))
-                                    #     fr_label_36.config(font=('Roboto',12))
-                                    #     fr_label_37.config(font=('Roboto',12))
-                                    #     fr_label_38.config(font=('Roboto',12))
-                                    #     fr_label_39.config(font=('Roboto',12))
-                                    #     fr_label_40.config(font=('Roboto',12))
-                                    #     fr_label_41.config(font=('Roboto',12))
-                                    #     fr_label_42.config(font=('Roboto',12))
-                                    #     fr_label_43.config(font=('Roboto',12))
-                                    #     fr_label_44.config(font=('Roboto',12))
-                                    #     fr_label_45.config(font=('Roboto',12))
-                                    #     fr_label_46.config(font=('Roboto',12))
-                                    #     fr_label_47.config(font=('Roboto',12))
-                                    #     fr_label_48.config(font=('Roboto',12))
-                                    #     fr_label_49.config(font=('Roboto',12))
-                                    #     fr_label_50.config(font=('Roboto',12))
-                                    #     fr_label_51.config(font=('Roboto',12))
-                                    #     fr_label_52.config(font=('Roboto',12))
-                                    #     frr_label_25.config(font=('Roboto bold',12))
-                                    #     frr_label_26.config(font=('Roboto bold',12))
-                                    #     frr_label_27.config(font=('Roboto',12))
-                                    # else:
-                                    #     pass
-                                
+                                    
 
                                 ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                 window_ns_entry_5 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_5, tags=('nsentry5'))
@@ -5735,7 +2757,7 @@ def main_sign_in():
                                 ns_chkbtn2 = Checkbutton(cs_canvas_1, text = "Apply this theme", variable = ns_chk_str_1, font=("arial", 12),background="#1b3857",foreground="white",selectcolor="#2f516f")
                                 window_ns_chkbtn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_chkbtn2,tags=("nscheck1"))
 
-                                #----------------------------------------Classic-----------------------------------------
+                                #----------------------------------------Template 1-----------------------------------------
 
                                 sql_u = 'select * from auth_user where username=%s'
                                 val_u = (nm_ent.get(),)
@@ -5755,9 +2777,8 @@ def main_sign_in():
 
                                 cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"))
 
-                                cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,outline="black",fill="white",tags=("nspoly3_1"))
 
-                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                                c_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 14 bold'),background="white",fg="skyblue",anchor="w") 
                                 window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("naivlabel1"))
 
                                 c_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black",anchor="w") 
@@ -5769,16 +2790,15 @@ def main_sign_in():
                                 c_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black", anchor="w") 
                                 window_c_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_4, tags=("naivlabel4"))
 
-                                c_label_5 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black", anchor="w") 
+                                c_label_5 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black", anchor="w") 
                                 window_c_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_5, tags=("naivlabel5"))
 
                                 c_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black", anchor="w") 
                                 window_c_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_6, tags=("naivlabel6"))
 
-                                c_label_7 = Label(cs_canvas_1,width=20,height=1,text=""+ns_entry_6.get(), font=('arial 20 bold'),background="white",fg="black",anchor="w") 
+                                c_label_7 = Label(cs_canvas_1,width=20,height=1,text=""+ns_entry_6.get(), font=('arial 20 bold'),background="white",fg="skyblue",anchor="w") 
                                 window_c_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_7, tags=("naivlabel7"))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline1'))
 
                                 cs_image_1=Label(cs_canvas_1,  image = prof_pics,bg="#213b52",width=200,height=150,  anchor="center",font=('Calibri 14 bold'))
                                 win_cs_image_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=cs_image_1,tags=("nimage1"))
@@ -5789,14 +2809,8 @@ def main_sign_in():
                                 c_label_9 = Label(cs_canvas_1,width=20,height=8,text=cl_view[7], font=('arial 12'),background="white",fg="black",anchor="w") 
                                 window_c_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_9, tags=("naivlabel17"))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline2'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline3'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline4'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline5'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline6'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline7'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline8'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline9'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline1'))
+
 
                                 c_label_10 = Label(cs_canvas_1,width=11,height=1,text=""+ns_entry_7.get(), font=('arial 12 bold'),background="white",fg="black",anchor="w") 
                                 window_c_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_10, tags=("naivlabel9"))
@@ -5818,6 +2832,9 @@ def main_sign_in():
 
                                 c_label_16 = Label(cs_canvas_1,width=11,height=1,text=""+ns_entry_10.get(), font=('arial 12 bold'),background="white",fg="black",anchor="w") 
                                 window_c_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_16, tags=("naivlabel12"))
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline2'))
+                                
 
                                 c_label_17 = Label(cs_canvas_1,width=10,height=1,text=cl_view[4], font=('arial 12'),background="white",fg="black",anchor="w") 
                                 window_c_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_17, tags=("naivlabel21"))
@@ -5847,15 +2864,11 @@ def main_sign_in():
 
                                 window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree,tags=('naivtree1'))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline10'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline11'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline12'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline13'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline14'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline15'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline16'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline17'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('nline18'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline3'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline4'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline5'))
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('nline6'))
+                                
 
                                 c_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black", anchor="w") 
                                 window_c_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_25, tags=("naivtlabel1"))
@@ -5942,13 +2955,6 @@ def main_sign_in():
                                 c_label_52 = Label(cs_canvas_1,width=14,height=1,text=cl_view[38], font=('arial 12'),background="white",fg="black", anchor="w") 
                                 window_c_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_52, tags=("naivtlabel24"))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
 
                                 c_label_18 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black", anchor="w") 
                                 window_c_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_18, tags=("naivlabel13"))
@@ -5969,860 +2975,34 @@ def main_sign_in():
                                 c_label_23 = Label(cs_canvas_1,width=10,height=1,text=cl_view[17], font=('arial 12 bold'),background="white",fg="black", anchor="w") 
                                 window_c_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_23, tags=("naivlabels15"))
 
-                                cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'))
+                                c_label_53 = Label(cs_canvas_1,width=22,height=1,text="Terms and Conditions", font=('arial 12 bold'),background="white",fg="black", anchor="w") 
+                                window_c_label_53 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_53, tags=("naivlabels16"))
+
+                                c_label_54 = Label(cs_canvas_1,width=40,height=1,text="1. Goods once sold will not be taken back.", font=('arial 12'),background="white",fg="black", anchor="w") 
+                                window_c_label_54 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_54, tags=("naivlabels17"))
+
+                                c_label_55 = Label(cs_canvas_1,width=50,height=1,text="2. If cheque bounced, Rs 500/- will be taken as Charges.", font=('arial 12'),background="white",fg="black", anchor="w") 
+                                window_c_label_55 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_55, tags=("naivlabels18"))
+
+                                c_label_56 = Label(cs_canvas_1,width=55,height=1,text="3. Rs 100/- per day will charged for delayed payment after due date.", font=('arial 12'),background="white",fg="black", anchor="w") 
+                                window_c_label_56 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_56, tags=("naivlabels19"))
+
+                                cs_canvas_1.create_line(0, 0, 0, 0, fill='skyblue',width=2, tags=('naivline23'))
 
                                 c_label_24 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
                                 window_c_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_24, tags=("naivlabel16"))
 
+                                
                                 def cs_refresh():
-                                    c_label_7.config(text=""+ns_entry_6.get())
-                                    c_label_10.config(text=""+ns_entry_7.get())
-                                    c_label_12.config(text=""+ns_entry_8.get())
-                                    c_label_14.config(text=""+ns_entry_9.get())
-                                    c_label_16.config(text=""+ns_entry_10.get())
+                                        c_label_7.config(text=""+ns_entry_6.get())
+                                        c_label_10.config(text=""+ns_entry_7.get())
+                                        c_label_12.config(text=""+ns_entry_8.get())
+                                        c_label_14.config(text=""+ns_entry_9.get())
+                                        c_label_16.config(text=""+ns_entry_10.get())
 
                                 refreshbtn = Button(cs_canvas_1,text="Refresh",width=15,height=1,foreground="white",background="#1b3857",font='arial 12',command=cs_refresh)
                                 window_refreshbtn = cs_canvas_1.create_window(0, 0, anchor="nw", window=refreshbtn, tags=("nsbutton7"))
-                                # #----------------------------------------Classic-----------------------------------------
-
-                                # sql_u = 'select * from auth_user where username=%s'
-                                # val_u = (nm_ent.get(),)
-                                # fbcursor.execute(sql_u,val_u)
-                                # u_dtl = fbcursor.fetchone()
-
-                                # sql = "select * from app1_company where id_id=%s"
-                                # val = (u_dtl[0],)
-                                # fbcursor.execute(sql, val,)
-                                # cmp_dtl=fbcursor.fetchone()
                                 
-
-                                # sql = 'select * from app1_invoice where cid_id=%s'
-                                # val =  (cmp_dtl[0],)
-                                # fbcursor.execute(sql,val,)
-                                # cl_view = fbcursor.fetchone()
-
-                                # cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"),state=HIDDEN)
-
-                                # c_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("naivlabel1"),state=HIDDEN)
-
-                                # c_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                                # window_c_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_2, tags=("naivlabel2"),state=HIDDEN)
-
-                                # c_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                                # window_c_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_3, tags=("naivlabel3"),state=HIDDEN)
-
-                                # c_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_4, tags=("naivlabel4"),state=HIDDEN)
-
-                                # c_label_5 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_5, tags=("naivlabel5"),state=HIDDEN)
-
-                                # c_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_6, tags=("naivlabel6"),state=HIDDEN)
-
-                                # c_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                # window_c_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_7, tags=("naivlabel7"),state=HIDDEN)
-
-                                # c_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                # window_c_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_8, tags=("naivlabel8"),state=HIDDEN)
-
-                                # c_label_9 = Label(cs_canvas_1,width=20,height=8,text=cl_view[7], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_9, tags=("naivlabel17"),state=HIDDEN)
-
-                                # c_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_10, tags=("naivlabel9"),state=HIDDEN)
-
-                                # c_label_11 = Label(cs_canvas_1,width=11,height=1,text=cl_view[3], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_11, tags=("naivlabel18"),state=HIDDEN)
-
-                                # c_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_12, tags=("naivlabel10"),state=HIDDEN)
-
-                                # c_label_13 = Label(cs_canvas_1,width=10,height=1,text=cl_view[5], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_13, tags=("naivlabel19"),state=HIDDEN)
-
-                                # c_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_14, tags=("naivlabel11"),state=HIDDEN)
-
-                                # c_label_15 = Label(cs_canvas_1,width=10,height=1,text=cl_view[6], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_15, tags=("naivlabel20"),state=HIDDEN)
-
-                                # c_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_16, tags=("naivlabel12"),state=HIDDEN)
-
-                                # c_label_17 = Label(cs_canvas_1,width=15,height=1,text=cl_view[4], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_17, tags=("naivlabel21"),state=HIDDEN)
-
-                                # fgthvi_1 = ttk.Style()
-                                # fgthvi_1.theme_use("default")
-                                # fgthvi_1.configure('mystyle10.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                                # fgthvi_1.configure('mystyle10.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                                # nsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle10.Treeview')
-                                # nsview_tree.pack(side = 'top')
-                                # nsview_tree.heading(1)
-                                # nsview_tree.heading(2, text="PRODUCT/SERVICES")
-                                # nsview_tree.heading(3, text="HSN")
-                                # nsview_tree.heading(4, text="QTY")
-                                # nsview_tree.heading(5, text="PRICE")
-                                # nsview_tree.heading(6, text="TOTAL")
-                                # nsview_tree.heading(7, text="TAX(%)")
-                                
-                                # nsview_tree.column(1, width = 30)
-                                # nsview_tree.column(2, width = 200)
-                                # nsview_tree.column(3, width = 110)
-                                # nsview_tree.column(4, width = 90)
-                                # nsview_tree.column(5, width = 105)
-                                # nsview_tree.column(6, width = 110)
-                                # nsview_tree.column(7, width = 150)
-
-                                # window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree,tags=('naivtree1'),state=HIDDEN)
-
-
-                                # c_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_25, tags=("naivtlabel1"),state=HIDDEN)
-
-                                # c_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_26, tags=("naivtlabel2"),state=HIDDEN)
-
-                                # c_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_27, tags=("naivtlabel3"),state=HIDDEN)
-
-                                # c_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_28, tags=("naivtlabel4"),state=HIDDEN)
-
-                                # c_label_29 = Label(cs_canvas_1,width=8,height=1,text=cl_view[9], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_29, tags=("naivtlabel5"),state=HIDDEN)
-
-                                # c_label_30 = Label(cs_canvas_1,width=8,height=1,text=cl_view[18], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_30, tags=("naivtlabel6"),state=HIDDEN)
-
-                                # c_label_31 = Label(cs_canvas_1,width=8,height=1,text=cl_view[25], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_31, tags=("naivtlabel7"),state=HIDDEN)
-
-                                # c_label_32 = Label(cs_canvas_1,width=8,height=1,text=cl_view[32], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_32, tags=("naivtlabel8"),state=HIDDEN)
-
-                                # c_label_33 = Label(cs_canvas_1,width=8,height=1,text=cl_view[10], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_33, tags=("naivtlabel9"),state=HIDDEN)
-
-                                # c_label_34 = Label(cs_canvas_1,width=8,height=1,text=cl_view[19], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_34, tags=("naivtlabel10"),state=HIDDEN)
-
-                                # c_label_35 = Label(cs_canvas_1,width=8,height=1,text=cl_view[26], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_35, tags=("naivtlabel11"),state=HIDDEN)
-
-                                # c_label_36 = Label(cs_canvas_1,width=8,height=1,text=cl_view[33], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_36, tags=("naivtlabel12"),state=HIDDEN)
-
-                                # c_label_37 = Label(cs_canvas_1,width=2,height=1,text=cl_view[12], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_37, tags=("naivtlabel13"),state=HIDDEN)
-
-                                # c_label_38 = Label(cs_canvas_1,width=2,height=1,text=cl_view[21], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_38, tags=("naivtlabel14"),state=HIDDEN)
-
-                                # c_label_39 = Label(cs_canvas_1,width=2,height=1,text=cl_view[28], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_39, tags=("naivtlabel15"),state=HIDDEN)
-
-                                # c_label_40 = Label(cs_canvas_1,width=2,height=1,text=cl_view[35], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_40, tags=("naivtlabel16"),state=HIDDEN)
-
-                                # c_label_41 = Label(cs_canvas_1,width=16,height=1,text=cl_view[13], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_41, tags=("naivtlabel25"),state=HIDDEN)
-
-                                # c_label_42 = Label(cs_canvas_1,width=16,height=1,text=cl_view[22], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_42, tags=("naivtlabel26"),state=HIDDEN)
-
-                                # c_label_43 = Label(cs_canvas_1,width=16,height=1,text=cl_view[29], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_43, tags=("naivtlabel27"),state=HIDDEN)
-
-                                # c_label_44 = Label(cs_canvas_1,width=16,height=1,text=cl_view[36], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_44, tags=("naivtlabel28"),state=HIDDEN)
-
-
-                                # c_label_45 = Label(cs_canvas_1,width=5,height=1,text=cl_view[14], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_45, tags=("naivtlabel17"),state=HIDDEN)
-
-                                # c_label_46 = Label(cs_canvas_1,width=5,height=1,text=cl_view[23], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_46, tags=("naivtlabel18"),state=HIDDEN)
-
-                                # c_label_47 = Label(cs_canvas_1,width=5,height=1,text=cl_view[30], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_47, tags=("naivtlabel19"),state=HIDDEN)
-
-                                # c_label_48 = Label(cs_canvas_1,width=5,height=1,text=cl_view[37], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_48, tags=("naivtlabel20"),state=HIDDEN)
-
-                                # c_label_49 = Label(cs_canvas_1,width=14,height=1,text=cl_view[15], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_49, tags=("naivtlabel21"),state=HIDDEN)
-
-                                # c_label_50 = Label(cs_canvas_1,width=14,height=1,text=cl_view[24], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_50, tags=("naivtlabel22"),state=HIDDEN)
-
-                                # c_label_51 = Label(cs_canvas_1,width=14,height=1,text=cl_view[31], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_51, tags=("naivtlabel23"),state=HIDDEN)
-
-                                # c_label_52 = Label(cs_canvas_1,width=14,height=1,text=cl_view[38], font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_52, tags=("naivtlabel24"),state=HIDDEN)
-
-                                # c_label_18 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_18, tags=("naivlabel13"),state=HIDDEN)
-
-                                # c_label_19 = Label(cs_canvas_1,width=10,height=1,text=cl_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_19, tags=("naivlabels13"),state=HIDDEN)
-
-                                # c_label_20 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_20, tags=("naivlabel14"),state=HIDDEN)
-
-                                # c_label_21 = Label(cs_canvas_1,width=10,height=1,text=cl_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_21, tags=("naivlabels14"),state=HIDDEN)
-
-
-                                # c_label_22 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_22, tags=("naivlabel15"),state=HIDDEN)
-
-                                # c_label_23 = Label(cs_canvas_1,width=10,height=1,text=cl_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_c_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_23, tags=("naivlabels15"),state=HIDDEN)
-
-                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'),state=HIDDEN)
-
-                                # c_label_24 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                # window_c_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_24, tags=("naivlabel16"),state=HIDDEN)
-
-                                
-
-                                # #--------------------------------------Modern------------------------------------
-
-                                # sql_u = 'select * from auth_user where username=%s'
-                                # val_u = (nm_ent.get(),)
-                                # fbcursor.execute(sql_u,val_u)
-                                # u_dtl = fbcursor.fetchone()
-
-                                # sql = "select * from app1_company where id_id=%s"
-                                # val = (u_dtl[0],)
-                                # fbcursor.execute(sql, val,)
-                                # cmp_dtl=fbcursor.fetchone()
-                                
-
-                                # sql = 'select * from app1_invoice where cid_id=%s'
-                                # val =  (cmp_dtl[0],)
-                                # fbcursor.execute(sql,val,)
-                                # m_view = fbcursor.fetchone()
-
-                                # cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly4"),state=HIDDEN)
-
-                                # m_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_1, tags=("nsivlabel1"),state=HIDDEN)
-
-                                # m_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                                # window_m_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_2, tags=("nsivlabel2"),state=HIDDEN)
-
-                                # m_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                                # window_m_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_3, tags=("nsivlabel3"),state=HIDDEN)
-
-                                # m_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_4, tags=("nsivlabel4"),state=HIDDEN)
-
-                                # m_label_5 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_5, tags=("nsivlabel5"),state=HIDDEN)
-
-                                # m_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_6, tags=("nsivlabel6"),state=HIDDEN)
-
-                                # m_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                # window_m_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_7, tags=("nsivlabel7"),state=HIDDEN)
-
-                                # m_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To:", font=('arial 14 bold'),background="skyblue",fg="black") 
-                                # window_m_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_8, tags=("nsivlabel8"),state=HIDDEN)
-
-                                # m_label_9 = Label(cs_canvas_1,width=20,height=8,text=m_view[7], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_9, tags=("nsivlabel17"),state=HIDDEN)
-
-                                # fgthvi = ttk.Style()
-                                # fgthvi.configure('mystyle11.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                                # fgthvi.configure('mystyle11.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                                # nsview_tree_1 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5), height = 0, show = "headings",style='mystyle11.Treeview')
-                                # nsview_tree_1.pack(side = 'top')
-                                # nsview_tree_1.heading(1)
-                                # nsview_tree_1.heading(2, text="INVOICE NO")
-                                # nsview_tree_1.heading(3, text="INVOICE DATE")
-                                # nsview_tree_1.heading(4, text="DUE DATE")
-                                # nsview_tree_1.heading(5, text="TERMS")
-                                
-                                # nsview_tree_1.column(1, width = 30)
-                                # nsview_tree_1.column(2, width = 200)
-                                # nsview_tree_1.column(3, width = 190)
-                                # nsview_tree_1.column(4, width = 190)
-                                # nsview_tree_1.column(5, width = 185)
-                                
-                                # window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_1,tags=('nsivtree1'),state=HIDDEN)
-
-                                # m_label_17 = Label(cs_canvas_1,width=11,height=1,text=m_view[3], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_17, tags=("nsivlabel18"),state=HIDDEN)
-
-                                # m_label_18 = Label(cs_canvas_1,width=10,height=1,text=m_view[5], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_18, tags=("nsivlabel19"),state=HIDDEN)
-
-                                # m_label_19 = Label(cs_canvas_1,width=10,height=1,text=m_view[6], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_19, tags=("nsivlabel20"),state=HIDDEN)
-
-                                # m_label_20 = Label(cs_canvas_1,width=15,height=1,text=m_view[4], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_20, tags=("nsivlabel21"),state=HIDDEN)
-
-                                # fgthvi_1 = ttk.Style()
-                                # fgthvi_1.theme_use("default")
-                                # fgthvi_1.configure('mystyle12.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                                # fgthvi_1.configure('mystyle12.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black',)
-
-                                # nsview_tree_2 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle12.Treeview')
-                                # nsview_tree_2.pack(side = 'top')
-                                # nsview_tree_2.heading(1)
-                                # nsview_tree_2.heading(2, text="PRODUCT/SERVICES")
-                                # nsview_tree_2.heading(3, text="HSN")
-                                # nsview_tree_2.heading(4, text="QTY")
-                                # nsview_tree_2.heading(5, text="PRICE")
-                                # nsview_tree_2.heading(6, text="TOTAL")
-                                # nsview_tree_2.heading(7, text="TAX(%)")
-                                
-                                # nsview_tree_2.column(1, width = 30)
-                                # nsview_tree_2.column(2, width = 200)
-                                # nsview_tree_2.column(3, width = 110)
-                                # nsview_tree_2.column(4, width = 90)
-                                # nsview_tree_2.column(5, width = 105)
-                                # nsview_tree_2.column(6, width = 110)
-                                # nsview_tree_2.column(7, width = 150)
-
-                                # window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_2,tags=('nsivtree2'),state=HIDDEN)
-
-                                # m_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_25, tags=("nsivtlabel1"),state=HIDDEN)
-
-                                # m_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_26, tags=("nsivtlabel2"),state=HIDDEN)
-
-                                # m_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_27, tags=("nsivtlabel3"),state=HIDDEN)
-
-                                # m_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_28, tags=("nsivtlabel4"),state=HIDDEN)
-
-                                # m_label_29 = Label(cs_canvas_1,width=8,height=1,text=m_view[9], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_29, tags=("nsivtlabel5"),state=HIDDEN)
-
-                                # m_label_30 = Label(cs_canvas_1,width=8,height=1,text=m_view[18], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_30, tags=("nsivtlabel6"),state=HIDDEN)
-
-                                # m_label_31 = Label(cs_canvas_1,width=8,height=1,text=m_view[25], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_31, tags=("nsivtlabel7"),state=HIDDEN)
-
-                                # m_label_32 = Label(cs_canvas_1,width=8,height=1,text=m_view[32], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_32, tags=("nsivtlabel8"),state=HIDDEN)
-
-                                # m_label_33 = Label(cs_canvas_1,width=8,height=1,text=m_view[10], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_33, tags=("nsivtlabel9"),state=HIDDEN)
-
-                                # m_label_34 = Label(cs_canvas_1,width=8,height=1,text=m_view[19], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_34, tags=("nsivtlabel10"),state=HIDDEN)
-
-                                # m_label_35 = Label(cs_canvas_1,width=8,height=1,text=m_view[26], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_35, tags=("nsivtlabel11"),state=HIDDEN)
-
-                                # m_label_36 = Label(cs_canvas_1,width=8,height=1,text=m_view[33], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_36, tags=("nsivtlabel12"),state=HIDDEN)
-
-                                # m_label_37 = Label(cs_canvas_1,width=2,height=1,text=m_view[12], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_37, tags=("nsivtlabel13"),state=HIDDEN)
-
-                                # m_label_38 = Label(cs_canvas_1,width=2,height=1,text=m_view[21], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_38, tags=("nsivtlabel14"),state=HIDDEN)
-
-                                # m_label_39 = Label(cs_canvas_1,width=2,height=1,text=m_view[28], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_39, tags=("nsivtlabel15"),state=HIDDEN)
-
-                                # m_label_40 = Label(cs_canvas_1,width=2,height=1,text=m_view[35], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_40, tags=("nsivtlabel16"),state=HIDDEN)
-
-                                # m_label_41 = Label(cs_canvas_1,width=16,height=1,text=m_view[13], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_41, tags=("nsivtlabel25"),state=HIDDEN)
-
-                                # m_label_42 = Label(cs_canvas_1,width=16,height=1,text=m_view[22], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_42, tags=("nsivtlabel26"),state=HIDDEN)
-
-                                # m_label_43 = Label(cs_canvas_1,width=16,height=1,text=m_view[29], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_43, tags=("nsivtlabel27"),state=HIDDEN)
-
-                                # m_label_44 = Label(cs_canvas_1,width=16,height=1,text=m_view[36], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_44, tags=("nsivtlabel28"),state=HIDDEN)
-
-                                # m_label_45 = Label(cs_canvas_1,width=5,height=1,text=m_view[14], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_45, tags=("nsivtlabel17"),state=HIDDEN)
-
-                                # m_label_46 = Label(cs_canvas_1,width=5,height=1,text=m_view[23], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_46, tags=("nsivtlabel18"),state=HIDDEN)
-
-                                # m_label_47 = Label(cs_canvas_1,width=5,height=1,text=m_view[30], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_47, tags=("nsivtlabel19"),state=HIDDEN)
-
-                                # m_label_48 = Label(cs_canvas_1,width=5,height=1,text=m_view[37], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_48, tags=("nsivtlabel20"),state=HIDDEN)
-
-                                # m_label_49 = Label(cs_canvas_1,width=14,height=1,text=m_view[15], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_49, tags=("nsivtlabel21"),state=HIDDEN)
-
-                                # m_label_50 = Label(cs_canvas_1,width=14,height=1,text=m_view[24], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_50, tags=("nsivtlabel22"),state=HIDDEN)
-
-                                # m_label_51 = Label(cs_canvas_1,width=14,height=1,text=m_view[31], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_51, tags=("nsivtlabel23"),state=HIDDEN)
-
-                                # m_label_52 = Label(cs_canvas_1,width=14,height=1,text=m_view[38], font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_52, tags=("nsivtlabel24"),state=HIDDEN)
-
-                                # m_label_10 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_10, tags=("nsivlabel13"),state=HIDDEN)
-
-                                # m_label_11 = Label(cs_canvas_1,width=10,height=1,text=m_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_11, tags=("nsivlabels13"),state=HIDDEN)
-
-                                # m_label_12 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_12, tags=("nsivlabel14"),state=HIDDEN)
-
-                                # m_label_13 = Label(cs_canvas_1,width=10,height=1,text=m_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_13, tags=("nsivlabels14"),state=HIDDEN)
-
-
-                                # m_label_14 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_14, tags=("nsivlabel15"),state=HIDDEN)
-
-                                # m_label_15 = Label(cs_canvas_1,width=10,height=1,text=m_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_m_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_15, tags=("nsivlabels15"),state=HIDDEN)
-
-                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('nsivline23'),state=HIDDEN)
-
-                                # m_label_16 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                # window_m_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_16, tags=("nsivlabel16"),state=HIDDEN)
-
-                                # #----------------------------------------Fresh-----------------------------------------
-                                # sql_u = 'select * from auth_user where username=%s'
-                                # val_u = (nm_ent.get(),)
-                                # fbcursor.execute(sql_u,val_u)
-                                # u_dtl = fbcursor.fetchone()
-
-                                # sql = "select * from app1_company where id_id=%s"
-                                # val = (u_dtl[0],)
-                                # fbcursor.execute(sql, val,)
-                                # cmp_dtl=fbcursor.fetchone()
-                                
-
-                                # sql = 'select * from app1_invoice where cid_id=%s'
-                                # val =  (cmp_dtl[0],)
-                                # fbcursor.execute(sql,val,)
-                                # f_view = fbcursor.fetchone()
-
-
-                                # cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("fnspoly3"),state=HIDDEN)
-
-                                # f_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_1, tags=("fnaivlabel1"),state=HIDDEN)
-
-                                # f_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                                # window_f_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_2, tags=("fnaivlabel2"),state=HIDDEN)
-
-                                # f_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                                # window_f_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_3, tags=("fnaivlabel3"),state=HIDDEN)
-
-                                # f_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_4, tags=("fnaivlabel4"),state=HIDDEN)
-
-                                # f_label_5 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_5, tags=("fnaivlabel5"),state=HIDDEN)
-
-                                # f_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_6, tags=("fnaivlabel6"),state=HIDDEN)
-
-                                # f_label_24 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                # window_f_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_24, tags=("fnaivlabel7"),state=HIDDEN)
-
-
-                                # f_label_7 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                # window_f_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_7, tags=("fnaivlabel8"),state=HIDDEN)
-
-                                # f_label_8 = Label(cs_canvas_1,width=20,height=8,text=f_view[7], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_8, tags=("fnaivlabel17"),state=HIDDEN)
-
-                                # f_label_9 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                # window_f_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_9, tags=("fnaivlabel9"),state=HIDDEN)
-
-                                # f_label_10 = Label(cs_canvas_1,width=10,height=1,text=f_view[3], font=('arial 12'),background="skyblue",fg="black") 
-                                # window_f_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_10, tags=("fnaivlabel18"),state=HIDDEN)
-
-                                # f_label_11 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                # window_f_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_11, tags=("fnaivlabel10"),state=HIDDEN)
-
-                                # f_label_12 = Label(cs_canvas_1,width=10,height=1,text=f_view[5], font=('arial 12'),background="skyblue",fg="black") 
-                                # window_f_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_12, tags=("fnaivlabel19"),state=HIDDEN)
-
-                                # f_label_13 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                # window_f_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_13, tags=("fnaivlabel11"),state=HIDDEN)
-
-                                # f_label_14 = Label(cs_canvas_1,width=10,height=1,text=f_view[6], font=('arial 12'),background="skyblue",fg="black") 
-                                # window_f_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_14, tags=("fnaivlabel20"),state=HIDDEN)
-
-                                # f_label_15 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="skyblue",fg="black") 
-                                # window_f_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_15, tags=("fnaivlabel12"),state=HIDDEN)
-
-                                # f_label_16 = Label(cs_canvas_1,width=10,height=1,text=f_view[4], font=('arial 12'),background="skyblue",fg="black") 
-                                # window_f_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_16, tags=("fnaivlabel21"),state=HIDDEN)
-
-                                # fgthvi_1 = ttk.Style()
-                                # fgthvi_1.theme_use("default")
-                                # fgthvi_1.configure('mystyle13.Treeview', background='skyblue',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                                # fgthvi_1.configure('mystyle13.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                                # fnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle13.Treeview')
-                                # fnsview_tree.pack(side = 'top')
-                                # fnsview_tree.heading(1)
-                                # fnsview_tree.heading(2, text="PRODUCT/SERVICES")
-                                # fnsview_tree.heading(3, text="HSN")
-                                # fnsview_tree.heading(4, text="QTY")
-                                # fnsview_tree.heading(5, text="PRICE")
-                                # fnsview_tree.heading(6, text="TOTAL")
-                                # fnsview_tree.heading(7, text="TAX(%)")
-                                
-                                # fnsview_tree.column(1, width = 30)
-                                # fnsview_tree.column(2, width = 200)
-                                # fnsview_tree.column(3, width = 110)
-                                # fnsview_tree.column(4, width = 90)
-                                # fnsview_tree.column(5, width = 105)
-                                # fnsview_tree.column(6, width = 110)
-                                # fnsview_tree.column(7, width = 150)
-
-                                # window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=fnsview_tree,tags=('fnaivtree1'),state=HIDDEN)
-
-                                # f_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_25, tags=("fnaivtlabel1"),state=HIDDEN)
-
-                                # f_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_26, tags=("fnaivtlabel2"),state=HIDDEN)
-
-                                # f_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_27, tags=("fnaivtlabel3"),state=HIDDEN)
-
-                                # f_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_28, tags=("fnaivtlabel4"),state=HIDDEN)
-
-                                # f_label_29 = Label(cs_canvas_1,width=8,height=1,text=f_view[9], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_29, tags=("fnaivtlabel5"),state=HIDDEN)
-
-                                # f_label_30 = Label(cs_canvas_1,width=8,height=1,text=f_view[18], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_30, tags=("fnaivtlabel6"),state=HIDDEN)
-
-                                # f_label_31 = Label(cs_canvas_1,width=8,height=1,text=f_view[25], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_31, tags=("fnaivtlabel7"),state=HIDDEN)
-
-                                # f_label_32 = Label(cs_canvas_1,width=8,height=1,text=f_view[32], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_32, tags=("fnaivtlabel8"),state=HIDDEN)
-
-                                # f_label_33 = Label(cs_canvas_1,width=8,height=1,text=f_view[10], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_33, tags=("fnaivtlabel9"),state=HIDDEN)
-
-                                # f_label_34 = Label(cs_canvas_1,width=8,height=1,text=f_view[19], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_34, tags=("fnaivtlabel10"),state=HIDDEN)
-
-                                # f_label_35 = Label(cs_canvas_1,width=8,height=1,text=f_view[26], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_35, tags=("fnaivtlabel11"),state=HIDDEN)
-
-                                # f_label_36 = Label(cs_canvas_1,width=8,height=1,text=f_view[33], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_36, tags=("fnaivtlabel12"),state=HIDDEN)
-
-                                # f_label_37 = Label(cs_canvas_1,width=2,height=1,text=f_view[12], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_37, tags=("fnaivtlabel13"),state=HIDDEN)
-
-                                # f_label_38 = Label(cs_canvas_1,width=2,height=1,text=f_view[21], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_38, tags=("fnaivtlabel14"),state=HIDDEN)
-
-                                # f_label_39 = Label(cs_canvas_1,width=2,height=1,text=f_view[28], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_39, tags=("fnaivtlabel15"),state=HIDDEN)
-
-                                # f_label_40 = Label(cs_canvas_1,width=2,height=1,text=f_view[35], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_40, tags=("fnaivtlabel16"),state=HIDDEN)
-
-                                # f_label_41 = Label(cs_canvas_1,width=16,height=1,text=f_view[13], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_41, tags=("fnaivtlabel25"),state=HIDDEN)
-
-                                # f_label_42 = Label(cs_canvas_1,width=16,height=1,text=f_view[22], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_42, tags=("fnaivtlabel26"),state=HIDDEN)
-
-                                # f_label_43 = Label(cs_canvas_1,width=16,height=1,text=f_view[29], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_43, tags=("fnaivtlabel27"),state=HIDDEN)
-
-                                # f_label_44 = Label(cs_canvas_1,width=16,height=1,text=f_view[36], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_44, tags=("fnaivtlabel28"),state=HIDDEN)
-
-                                # f_label_45 = Label(cs_canvas_1,width=5,height=1,text=f_view[14], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_45, tags=("fnaivtlabel17"),state=HIDDEN)
-
-                                # f_label_46 = Label(cs_canvas_1,width=5,height=1,text=f_view[23], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_46, tags=("fnaivtlabel18"),state=HIDDEN)
-
-                                # f_label_47 = Label(cs_canvas_1,width=5,height=1,text=f_view[30], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_47, tags=("fnaivtlabel19"),state=HIDDEN)
-
-                                # f_label_48 = Label(cs_canvas_1,width=5,height=1,text=f_view[37], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_48, tags=("fnaivtlabel20"),state=HIDDEN)
-
-                                # f_label_49 = Label(cs_canvas_1,width=14,height=1,text=f_view[15], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_49, tags=("fnaivtlabel21"),state=HIDDEN)
-
-                                # f_label_50 = Label(cs_canvas_1,width=14,height=1,text=f_view[24], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_50, tags=("fnaivtlabel22"),state=HIDDEN)
-
-                                # f_label_51 = Label(cs_canvas_1,width=14,height=1,text=f_view[31], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_51, tags=("fnaivtlabel23"),state=HIDDEN)
-
-                                # f_label_52 = Label(cs_canvas_1,width=14,height=1,text=f_view[38], font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_52, tags=("fnaivtlabel24"),state=HIDDEN)                      
-
-                                # f_label_17 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_17, tags=("fnaivlabel13"),state=HIDDEN)
-
-                                # f_label_18 = Label(cs_canvas_1,width=10,height=1,text=f_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_18, tags=("fnaivlabels13"),state=HIDDEN)
-
-                                # f_label_19 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_19, tags=("fnaivlabel14"),state=HIDDEN)
-
-                                # f_label_20 = Label(cs_canvas_1,width=10,height=1,text=f_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_20, tags=("fnaivlabels14"),state=HIDDEN)
-
-
-                                # f_label_21 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_21, tags=("fnaivlabel15"),state=HIDDEN)
-
-                                # f_label_22 = Label(cs_canvas_1,width=10,height=1,text=f_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_f_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_22, tags=("fnaivlabels15"),state=HIDDEN)
-
-                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('fnaivline23'),state=HIDDEN)
-
-                                # f_label_23 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                # window_f_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_23, tags=("fnaivlabel16"),state=HIDDEN)
-
-                                # #----------------------------------------Friendly-----------------------------------------
-
-                                # sql_u = 'select * from auth_user where username=%s'
-                                # val_u = (nm_ent.get(),)
-                                # fbcursor.execute(sql_u,val_u)
-                                # u_dtl = fbcursor.fetchone()
-
-                                # sql = "select * from app1_company where id_id=%s"
-                                # val = (u_dtl[0],)
-                                # fbcursor.execute(sql, val,)
-                                # cmp_dtl=fbcursor.fetchone()
-                                
-
-                                # sql = 'select * from app1_invoice where cid_id=%s'
-                                # val =  (cmp_dtl[0],)
-                                # fbcursor.execute(sql,val,)
-                                # fr_view = fbcursor.fetchone()
-
-                                # cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("frnspoly3"),state=HIDDEN)
-
-                                # fr_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_1, tags=("frnaivlabel1"),state=HIDDEN)
-
-                                # fr_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                                # window_fr_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_2, tags=("frnaivlabel2"),state=HIDDEN)
-
-                                # fr_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                                # window_fr_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_3, tags=("frnaivlabel3"),state=HIDDEN)
-
-                                # fr_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_4, tags=("frnaivlabel4"),state=HIDDEN)
-
-                                # fr_label_5 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_5, tags=("frnaivlabel5"),state=HIDDEN)
-
-                                # fr_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_6, tags=("frnaivlabel6"),state=HIDDEN)
-
-                                # fr_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                                # window_fr_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_7, tags=("frnaivlabel7"),state=HIDDEN)
-
-                                # fr_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                                # window_fr_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_8, tags=("frnaivlabel8"),state=HIDDEN)
-
-                                # fr_label_9 = Label(cs_canvas_1,width=20,height=8,text=fr_view[7], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_9, tags=("frnaivlabel17"),state=HIDDEN)
-
-                                # fr_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_10, tags=("frnaivlabel9"),state=HIDDEN)
-
-                                # fr_label_11 = Label(cs_canvas_1,width=10,height=1,text=fr_view[3], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_11, tags=("frnaivlabel18"),state=HIDDEN)
-
-                                # fr_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_12, tags=("frnaivlabel10"),state=HIDDEN)
-
-                                # fr_label_13 = Label(cs_canvas_1,width=10,height=1,text=fr_view[5], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_13, tags=("frnaivlabel19"),state=HIDDEN)
-
-                                # fr_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_14, tags=("frnaivlabel11"),state=HIDDEN)
-
-                                # fr_label_15 = Label(cs_canvas_1,width=10,height=1,text=fr_view[6], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_15, tags=("frnaivlabel20"),state=HIDDEN)
-
-                                # fr_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_16, tags=("frnaivlabel12"),state=HIDDEN)
-
-                                # fr_label_17 = Label(cs_canvas_1,width=10,height=1,text=fr_view[4], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_17, tags=("frnaivlabel21"),state=HIDDEN)
-
-                                # fr_label_18 = Label(cs_canvas_1,width=13,height=8,text='Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                                # window_fr_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_18, tags=("frnaivlabels19"),state=HIDDEN)
-
-                                # fr_label_19 = Label(cs_canvas_1,width=13,height=8,text='Please Pay', font=('arial 12'),background="skyblue",fg="black") 
-                                # window_fr_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_19, tags=("frnaivlabels20"),state=HIDDEN)
-
-                                # fr_label_20 = Label(cs_canvas_1,width=13,height=8,text='Due Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                                # window_fr_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_20, tags=("frnaivlabels21"),state=HIDDEN)
-
-
-                                # fgthvi_1 = ttk.Style()
-                                # fgthvi_1.theme_use("default")
-                                # fgthvi_1.configure('mystyle14.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                                # fgthvi_1.configure('mystyle14.Treeview.Heading', background='white',State='DISABLE',foreground='black')
-
-                                # frnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle14.Treeview')
-                                # frnsview_tree.pack(side = 'top')
-                                # frnsview_tree.heading(1)
-                                # frnsview_tree.heading(2, text="PRODUCT/SERVICES")
-                                # frnsview_tree.heading(3, text="HSN")
-                                # frnsview_tree.heading(4, text="QTY")
-                                # frnsview_tree.heading(5, text="PRICE")
-                                # frnsview_tree.heading(6, text="TOTAL")
-                                # frnsview_tree.heading(7, text="TAX(%)")
-                                
-                                # frnsview_tree.column(1, width = 30)
-                                # frnsview_tree.column(2, width = 200)
-                                # frnsview_tree.column(3, width = 110)
-                                # frnsview_tree.column(4, width = 90)
-                                # frnsview_tree.column(5, width = 105)
-                                # frnsview_tree.column(6, width = 110)
-                                # frnsview_tree.column(7, width = 150)
-
-                                # window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=frnsview_tree,tags=('frnaivtree1'),state=HIDDEN)
-
-                                # fr_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_25, tags=("frnaivtlabel1"),state=HIDDEN)
-
-                                # fr_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_26, tags=("frnaivtlabel2"),state=HIDDEN)
-
-                                # fr_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_27, tags=("frnaivtlabel3"),state=HIDDEN)
-
-                                # fr_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_28, tags=("frnaivtlabel4"),state=HIDDEN)
-
-                                # fr_label_29 = Label(cs_canvas_1,width=8,height=1,text=fr_view[9], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_29, tags=("frnaivtlabel5"),state=HIDDEN)
-
-                                # fr_label_30 = Label(cs_canvas_1,width=8,height=1,text=fr_view[18], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_30, tags=("frnaivtlabel6"),state=HIDDEN)
-
-                                # fr_label_31 = Label(cs_canvas_1,width=8,height=1,text=fr_view[25], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_31, tags=("frnaivtlabel7"),state=HIDDEN)
-
-                                # fr_label_32 = Label(cs_canvas_1,width=8,height=1,text=fr_view[32], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_32, tags=("frnaivtlabel8"),state=HIDDEN)
-
-                                # fr_label_33 = Label(cs_canvas_1,width=8,height=1,text=fr_view[10], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_33, tags=("frnaivtlabel9"),state=HIDDEN)
-
-                                # fr_label_34 = Label(cs_canvas_1,width=8,height=1,text=fr_view[19], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_34, tags=("frnaivtlabel10"),state=HIDDEN)
-
-                                # fr_label_35 = Label(cs_canvas_1,width=8,height=1,text=fr_view[26], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_35, tags=("frnaivtlabel11"),state=HIDDEN)
-
-                                # fr_label_36 = Label(cs_canvas_1,width=8,height=1,text=fr_view[33], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_36, tags=("frnaivtlabel12"),state=HIDDEN)
-
-                                # fr_label_37 = Label(cs_canvas_1,width=2,height=1,text=fr_view[12], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_37, tags=("frnaivtlabel13"),state=HIDDEN)
-
-                                # fr_label_38 = Label(cs_canvas_1,width=2,height=1,text=fr_view[21], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_38, tags=("frnaivtlabel14"),state=HIDDEN)
-
-                                # fr_label_39 = Label(cs_canvas_1,width=2,height=1,text=fr_view[28], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_39, tags=("frnaivtlabel15"),state=HIDDEN)
-
-                                # fr_label_40 = Label(cs_canvas_1,width=2,height=1,text=fr_view[35], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_40, tags=("frnaivtlabel16"),state=HIDDEN)
-
-                                # fr_label_41 = Label(cs_canvas_1,width=16,height=1,text=fr_view[13], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_41, tags=("frnaivtlabel25"),state=HIDDEN)
-
-                                # fr_label_42 = Label(cs_canvas_1,width=16,height=1,text=fr_view[22], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_42, tags=("frnaivtlabel26"),state=HIDDEN)
-
-                                # fr_label_43 = Label(cs_canvas_1,width=16,height=1,text=fr_view[29], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_43, tags=("frnaivtlabel27"),state=HIDDEN)
-
-                                # fr_label_44 = Label(cs_canvas_1,width=16,height=1,text=fr_view[36], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_44, tags=("frnaivtlabel28"),state=HIDDEN)
-
-                                # fr_label_45 = Label(cs_canvas_1,width=5,height=1,text=fr_view[14], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_45, tags=("frnaivtlabel17"),state=HIDDEN)
-
-                                # fr_label_46 = Label(cs_canvas_1,width=5,height=1,text=fr_view[23], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_46, tags=("frnaivtlabel18"),state=HIDDEN)
-
-                                # fr_label_47 = Label(cs_canvas_1,width=5,height=1,text=fr_view[30], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_47, tags=("frnaivtlabel19"),state=HIDDEN)
-
-                                # fr_label_48 = Label(cs_canvas_1,width=5,height=1,text=fr_view[37], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_48, tags=("frnaivtlabel20"),state=HIDDEN)
-
-                                # fr_label_49 = Label(cs_canvas_1,width=14,height=1,text=fr_view[15], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_49, tags=("frnaivtlabel21"),state=HIDDEN)
-
-                                # fr_label_50 = Label(cs_canvas_1,width=14,height=1,text=fr_view[24], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_50, tags=("frnaivtlabel22"),state=HIDDEN)
-
-                                # fr_label_51 = Label(cs_canvas_1,width=14,height=1,text=fr_view[31], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_51, tags=("frnaivtlabel23"),state=HIDDEN)
-
-                                # fr_label_52 = Label(cs_canvas_1,width=14,height=1,text=fr_view[38], font=('arial 12'),background="white",fg="black") 
-                                # window_fr_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_52, tags=("frnaivtlabel24"),state=HIDDEN)
-            
-                                # fr_label_21 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_21, tags=("frnaivlabel13"),state=HIDDEN)
-
-                                # fr_label_22 = Label(cs_canvas_1,width=10,height=1,text=fr_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_22, tags=("frnaivlabels13"),state=HIDDEN)
-
-                                # fr_label_23 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_23, tags=("frnaivlabel14"),state=HIDDEN)
-
-                                # fr_label_24 = Label(cs_canvas_1,width=10,height=1,text=fr_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_fr_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_24, tags=("frnaivlabels14"),state=HIDDEN)
-
-
-                                # frr_label_25 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                                # window_frr_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_25, tags=("frnaivlabel15"),state=HIDDEN)
-
-                                # frr_label_26 = Label(cs_canvas_1,width=10,height=1,text=fr_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                                # window_frr_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_26, tags=("frnaivlabels15"),state=HIDDEN)
-
-                                # cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('frnaivline23'),state=HIDDEN)
-
-                                # frr_label_27 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                                # window_frr_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_27, tags=("frnaivlabel16"),state=HIDDEN)
-
-
                                 ns_sub_btn1=Button(cs_canvas_1,text='Submit', width=15,height=2,bd=0, foreground="white",background="#2f516f",font='arial 12',activebackground="#2f516f",command=insert_data)
                                 window_ns_sub_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_sub_btn1,tags=('nsbutton1'))
 
@@ -6831,7 +3011,7 @@ def main_sign_in():
                                     cs_frame.grid(row=0,column=0,sticky='nsew')
 
                                 ns_bck_btn1=Button(cs_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=ns_back_1_)
-                                window_ns_bck_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_bck_btn1,tags=('nsbutton3'))
+                                
 
                             cs_btn1=Button(cs_canvas,text='New Style', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=add_newstyle)
                             window_cs_btn1 = cs_canvas.create_window(0, 0, anchor="nw", window=cs_btn1, tags=("csbutton2"))
@@ -7347,173 +3527,6 @@ def main_sign_in():
                                     #         cs_canvas_1.itemconfig('naivtlabel27',state='normal')
                                     #         cs_canvas_1.itemconfig('naivtlabel28',state='normal')
 
-                                    #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
                                             
                                     #     else:
                                     #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
@@ -7573,875 +3586,7 @@ def main_sign_in():
                                     #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
                                     
                                         
-                                    # def Modern():
-                                    #     ns_entry_2.delete(0,"end")
-                                    #     ns_entry_2.insert(0, "Modern")
-                                    #     #----------------------------------------Modern-----------------------------------------
-
-                                    #     if ns_entry_2.get()=="Modern":
-                                    #         print('hello')
-                                    #         cs_canvas_1.itemconfig('nspoly4',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtree1',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtree2',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel9',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel10',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel11',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel12',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel16',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel22',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel23',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel24',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel25',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel26',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel27',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel28',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabels13',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabels14',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabels15',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivline23',state='normal')
-                                    #         cs_canvas_1.itemconfig('nsivlabel16',state='normal')
-
-
-                                    #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-                                            
-                                    #     else:
-                                    #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                    # def Fresh():
-                                    #     ns_entry_2.delete(0,"end")
-                                    #     ns_entry_2.insert(0, "Fresh")
-                                    #     #----------------------------------------Fresh-----------------------------------------
-
-                                    #     if ns_entry_2.get()=="Fresh":
-                                    #         print('helloo')
-
-                                    #         cs_canvas_1.itemconfig('fnspoly3',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel9',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel10',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel11',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel12',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtree1',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel9',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel10',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel11',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel12',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel16',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel22',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel23',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel24',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel25',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel26',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel27',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel28',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels13',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels14',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels15',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivline23',state='normal')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel16',state='normal')
-
-                                    #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-
-                                        
-                                    #     else:
-                                            
-                                    #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                        
-
-                                    # def Friendly():
-                                    #     ns_entry_2.delete(0,"end")
-                                    #     ns_entry_2.insert(0, "Friendly")
-
-                                    #     #----------------------------------------Friendly-----------------------------------------
-
-                                    #     if ns_entry_2.get()=="Friendly":
-                                    #         print('hai')
-                                    #         cs_canvas_1.itemconfig('frnspoly3',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel9',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel10',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel11',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel12',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtree1',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel1',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel2',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel3',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel4',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel5',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel6',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel7',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel8',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel9',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel10',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel11',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel12',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel16',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel17',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel18',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel19',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel20',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel21',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel22',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel23',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel24',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel25',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel26',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel27',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel28',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel13',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels13',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel14',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels14',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel15',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels15',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivline23',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel16',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels19',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels20',state='normal')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels21',state='normal')
-
-                                    #         cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                                    #         cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                        
-                                    #     else:
-                                    #         cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel1',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel2',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel3',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel4',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel5',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel6',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel7',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel8',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel9',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel10',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel11',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel12',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel17',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel18',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel21',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel22',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel24',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel25',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel26',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel27',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivtlabel28',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                                    #         cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
+                                    
 
                                     # ns_entry_2=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                     # window_ns_entry_2 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_2, tags=('nsentry2'))
@@ -8475,27 +3620,6 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#E9967A")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#E9967A")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#E9967A")
-                                        #     fr_label_19.config(background="#E9967A")
-                                        # else:
-                                        #     pass
                                     
                                     def color_1_2():
                                         ns_entry_3.delete(0,"end")
@@ -8504,27 +3628,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#8FBC8F")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#8FBC8F")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#8FBC8F")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#8FBC8F")
-                                        #     fr_label_19.config(background="#8FBC8F")
                                         # else:
                                         #     pass
                                     
@@ -8537,27 +3640,6 @@ def main_sign_in():
                                         c_label_7.config(fg="#B0C4DE")
                                         # else:
                                         #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#B0C4DE")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#B0C4DE")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#B0C4DE")
-                                        #     fr_label_19.config(background="#B0C4DE")
-                                        # else:
-                                        #     pass
 
                                     def color_1_4():
                                         ns_entry_3.delete(0,"end")
@@ -8566,27 +3648,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#87CEFA")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#87CEFA")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#87CEFA")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#87CEFA")
-                                        #     fr_label_19.config(background="#87CEFA")
                                         # else:
                                         #     pass
 
@@ -8599,27 +3660,6 @@ def main_sign_in():
                                         c_label_7.config(fg="#F0E68C")
                                         # else:
                                         #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#F0E68C")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#F0E68C")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#F0E68C")
-                                        #     fr_label_19.config(background="#F0E68C")
-                                        # else:
-                                        #     pass
                                     
                                     def color_1_6():
                                         ns_entry_3.delete(0,"end")
@@ -8628,27 +3668,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#DDA0DD")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#DDA0DD")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#DDA0DD")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#DDA0DD")
-                                        #     fr_label_19.config(background="#DDA0DD")
                                         # else:
                                         #     pass
 
@@ -8661,27 +3680,6 @@ def main_sign_in():
                                         c_label_7.config(fg="#2F4F4F")
                                         # else:
                                         #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#2F4F4F")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#2F4F4F")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#2F4F4F")
-                                        #     fr_label_19.config(background="#2F4F4F")
-                                        # else:
-                                        #     pass
 
                                     def color_1_8():
                                         ns_entry_3.delete(0,"end")
@@ -8690,27 +3688,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#98FB98")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#98FB98")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#98FB98")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#98FB98")
-                                        #     fr_label_19.config(background="#98FB98")
                                         # else:
                                         #     pass
                                     
@@ -8723,27 +3700,6 @@ def main_sign_in():
                                         c_label_7.config(fg="#DB7093")
                                         # else:
                                         #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#DB7093")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#DB7093")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#DB7093")
-                                        #     fr_label_19.config(background="#DB7093")
-                                        # else:
-                                        #     pass
 
                                     def color_1_10():
                                         ns_entry_3.delete(0,"end")
@@ -8752,27 +3708,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#D2B48C")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#D2B48C")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#D2B48C")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#D2B48C")
-                                        #     fr_label_19.config(background="#D2B48C")
                                         # else:
                                         #     pass
                                     
@@ -8785,27 +3720,6 @@ def main_sign_in():
                                         c_label_7.config(fg="#D3D3D3")
                                         # else:
                                         #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#D3D3D3")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#D3D3D3")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#D3D3D3")
-                                        #     fr_label_19.config(background="#D3D3D3")
-                                        # else:
-                                        #     pass
                                     
                                     def color_1_12():
                                         ns_entry_3.delete(0,"end")
@@ -8814,27 +3728,6 @@ def main_sign_in():
 
                                         # if ns_entry_2.get()=="Classic":
                                         c_label_7.config(fg="#F5F5F5")
-                                        # else:
-                                        #     pass
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_7.config(fg="#F5F5F5")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_24.config(fg="#F5F5F5")
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_7.config(fg="#F5F5F5")
-                                        #     fr_label_19.config(background="#F5F5F5")
                                         # else:
                                         #     pass
 
@@ -8894,38 +3787,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#E9967A")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#E9967A',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#E9967A")
-                                        #     f_label_10.config(background="#E9967A")
-                                        #     f_label_11.config(background="#E9967A")
-                                        #     f_label_12.config(background="#E9967A")
-                                        #     f_label_13.config(background="#E9967A")
-                                        #     f_label_14.config(background="#E9967A")
-                                        #     f_label_15.config(background="#E9967A")
-                                        #     f_label_16.config(background="#E9967A")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#E9967A")
-                                        #     fr_label_20.config(background="#E9967A")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
                                     
                                     def color_2_2():
                                         ns_entry_4.delete(0,"end")
@@ -8937,39 +3799,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#8FBC8F")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#8FBC8F',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#8FBC8F")
-                                        #     f_label_10.config(background="#8FBC8F")
-                                        #     f_label_11.config(background="#8FBC8F")
-                                        #     f_label_12.config(background="#8FBC8F")
-                                        #     f_label_13.config(background="#8FBC8F")
-                                        #     f_label_14.config(background="#8FBC8F")
-                                        #     f_label_15.config(background="#8FBC8F")
-                                        #     f_label_16.config(background="#8FBC8F")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#8FBC8F")
-                                        #     fr_label_20.config(background="#8FBC8F")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-                                    
+                                       
                                     def color_2_3():
                                         ns_entry_4.delete(0,"end")
                                         ns_entry_4.insert(0, "#B0C4DE")
@@ -8980,38 +3810,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#B0C4DE")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#B0C4DE',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#B0C4DE")
-                                        #     f_label_10.config(background="#B0C4DE")
-                                        #     f_label_11.config(background="#B0C4DE")
-                                        #     f_label_12.config(background="#B0C4DE")
-                                        #     f_label_13.config(background="#B0C4DE")
-                                        #     f_label_14.config(background="#B0C4DE")
-                                        #     f_label_15.config(background="#B0C4DE")
-                                        #     f_label_16.config(background="#B0C4DE")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#B0C4DE")
-                                        #     fr_label_20.config(background="#B0C4DE")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
 
                                     def color_2_4():
                                         ns_entry_4.delete(0,"end")
@@ -9023,38 +3822,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#87CEFA")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#87CEFA',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#87CEFA")
-                                        #     f_label_10.config(background="#87CEFA")
-                                        #     f_label_11.config(background="#87CEFA")
-                                        #     f_label_12.config(background="#87CEFA")
-                                        #     f_label_13.config(background="#87CEFA")
-                                        #     f_label_14.config(background="#87CEFA")
-                                        #     f_label_15.config(background="#87CEFA")
-                                        #     f_label_16.config(background="#87CEFA")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#87CEFA")
-                                        #     fr_label_20.config(background="#87CEFA")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
 
                                     def color_2_5():
                                         ns_entry_4.delete(0,"end")
@@ -9066,38 +3834,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#F0E68C")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#F0E68C',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#F0E68C")
-                                        #     f_label_10.config(background="#F0E68C")
-                                        #     f_label_11.config(background="#F0E68C")
-                                        #     f_label_12.config(background="#F0E68C")
-                                        #     f_label_13.config(background="#F0E68C")
-                                        #     f_label_14.config(background="#F0E68C")
-                                        #     f_label_15.config(background="#F0E68C")
-                                        #     f_label_16.config(background="#F0E68C")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#F0E68C")
-                                        #     fr_label_20.config(background="#F0E68C")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
                                     
                                     def color_2_6():
                                         ns_entry_4.delete(0,"end")
@@ -9109,38 +3846,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#DDA0DD")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#DDA0DD',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#DDA0DD")
-                                        #     f_label_10.config(background="#DDA0DD")
-                                        #     f_label_11.config(background="#DDA0DD")
-                                        #     f_label_12.config(background="#DDA0DD")
-                                        #     f_label_13.config(background="#DDA0DD")
-                                        #     f_label_14.config(background="#DDA0DD")
-                                        #     f_label_15.config(background="#DDA0DD")
-                                        #     f_label_16.config(background="#DDA0DD")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#DDA0DD")
-                                        #     fr_label_20.config(background="#DDA0DD")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
 
                                     def color_2_7():
                                         ns_entry_4.delete(0,"end")
@@ -9152,38 +3858,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#2F4F4F")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#2F4F4F',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#2F4F4F")
-                                        #     f_label_10.config(background="#2F4F4F")
-                                        #     f_label_11.config(background="#2F4F4F")
-                                        #     f_label_12.config(background="#2F4F4F")
-                                        #     f_label_13.config(background="#2F4F4F")
-                                        #     f_label_14.config(background="#2F4F4F")
-                                        #     f_label_15.config(background="#2F4F4F")
-                                        #     f_label_16.config(background="#2F4F4F")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#2F4F4F")
-                                        #     fr_label_20.config(background="#2F4F4F")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
 
                                     def color_2_8():
                                         ns_entry_4.delete(0,"end")
@@ -9195,38 +3870,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#98FB98")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#98FB98',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#98FB98")
-                                        #     f_label_10.config(background="#98FB98")
-                                        #     f_label_11.config(background="#98FB98")
-                                        #     f_label_12.config(background="#98FB98")
-                                        #     f_label_13.config(background="#98FB98")
-                                        #     f_label_14.config(background="#98FB98")
-                                        #     f_label_15.config(background="#98FB98")
-                                        #     f_label_16.config(background="#98FB98")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#98FB98")
-                                        #     fr_label_20.config(background="#98FB98")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
                                     
                                     def color_2_9():
                                         ns_entry_4.delete(0,"end")
@@ -9238,38 +3882,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#DB7093")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#DB7093',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#DB7093")
-                                        #     f_label_10.config(background="#DB7093")
-                                        #     f_label_11.config(background="#DB7093")
-                                        #     f_label_12.config(background="#DB7093")
-                                        #     f_label_13.config(background="#DB7093")
-                                        #     f_label_14.config(background="#DB7093")
-                                        #     f_label_15.config(background="#DB7093")
-                                        #     f_label_16.config(background="#DB7093")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#DB7093")
-                                        #     fr_label_20.config(background="#DB7093")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
 
                                     def color_2_10():
                                         ns_entry_4.delete(0,"end")
@@ -9281,38 +3894,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#D2B48C")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#D2B48C',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#D2B48C")
-                                        #     f_label_10.config(background="#D2B48C")
-                                        #     f_label_11.config(background="#D2B48C")
-                                        #     f_label_12.config(background="#D2B48C")
-                                        #     f_label_13.config(background="#D2B48C")
-                                        #     f_label_14.config(background="#D2B48C")
-                                        #     f_label_15.config(background="#D2B48C")
-                                        #     f_label_16.config(background="#D2B48C")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#D2B48C")
-                                        #     fr_label_20.config(background="#D2B48C")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
+                                        
                                     
                                     def color_2_11():
                                         ns_entry_4.delete(0,"end")
@@ -9324,39 +3906,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#D3D3D3")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#D3D3D3',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#D3D3D3")
-                                        #     f_label_10.config(background="#D3D3D3")
-                                        #     f_label_11.config(background="#D3D3D3")
-                                        #     f_label_12.config(background="#D3D3D3")
-                                        #     f_label_13.config(background="#D3D3D3")
-                                        #     f_label_14.config(background="#D3D3D3")
-                                        #     f_label_15.config(background="#D3D3D3")
-                                        #     f_label_16.config(background="#D3D3D3")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#D3D3D3")
-                                        #     fr_label_20.config(background="#D3D3D3")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-                                    
+                                        
                                     def color_2_12():
                                         ns_entry_4.delete(0,"end")
                                         ns_entry_4.insert(0, "#F5F5F5")
@@ -9367,39 +3917,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     m_label_8.config(background="#F5F5F5")
-                                        #     fgthvi.configure('mystyle11.Treeview.Heading', background='#F5F5F5',State='DISABLE')
-                                        #     fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     f_label_9.config(background="#F5F5F5")
-                                        #     f_label_10.config(background="#F5F5F5")
-                                        #     f_label_11.config(background="#F5F5F5")
-                                        #     f_label_12.config(background="#F5F5F5")
-                                        #     f_label_13.config(background="#F5F5F5")
-                                        #     f_label_14.config(background="#F5F5F5")
-                                        #     f_label_15.config(background="#F5F5F5")
-                                        #     f_label_16.config(background="#F5F5F5")
-                                        #     fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     fr_label_18.config(background="#F5F5F5")
-                                        #     fr_label_20.config(background="#F5F5F5")
-                                        #     fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                                        # else:
-                                        #     pass
-
+                                        
                                     ns_entry_4=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
                                     window_ns_entry_4 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_4, tags=('nsentry4'))
                                     ns_entry_4.delete(0,"end")
@@ -9507,181 +4025,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     print('wow')
-                                        #     m_label_1.config(font=('Garamond bold',12))
-                                        #     m_label_2.config(font=('Garamond',12))
-                                        #     m_label_3.config(font=('Garamond',12))
-                                        #     m_label_4.config(font=('Garamond',12))
-                                        #     m_label_5.config(font=('Garamond',12))
-                                        #     m_label_6.config(font=('Garamond',12))
-                                        #     m_label_7.config(font=('Garamond bold',20))
-                                        #     m_label_8.config(font=('Garamond bold',14))
-                                        #     m_label_9.config(font=('Garamond',12))
-                                        #     m_label_10.config(font=('Garamond bold',12))
-                                        #     m_label_11.config(font=('Garamond bold',12))
-                                        #     m_label_12.config(font=('Garamond bold',12))
-                                        #     m_label_13.config(font=('Garamond bold',12))
-                                        #     m_label_14.config(font=('Garamond bold',12))
-                                        #     m_label_15.config(font=('Garamond bold',12))
-                                        #     m_label_16.config(font=('Garamond',12))
-                                        #     m_label_17.config(font=('Garamond',12))
-                                        #     m_label_18.config(font=('Garamond',12))
-                                        #     m_label_19.config(font=('Garamond',12))
-                                        #     m_label_20.config(font=('Garamond',12))
-                                        #     m_label_25.config(font=('Garamond',12))
-                                        #     m_label_26.config(font=('Garamond',12))
-                                        #     m_label_27.config(font=('Garamond',12))
-                                        #     m_label_28.config(font=('Garamond',12))
-                                        #     m_label_29.config(font=('Garamond',12))
-                                        #     m_label_30.config(font=('Garamond',12))
-                                        #     m_label_31.config(font=('Garamond',12))
-                                        #     m_label_32.config(font=('Garamond',12))
-                                        #     m_label_33.config(font=('Garamond',12))
-                                        #     m_label_34.config(font=('Garamond',12))
-                                        #     m_label_35.config(font=('Garamond',12))
-                                        #     m_label_36.config(font=('Garamond',12))
-                                        #     m_label_37.config(font=('Garamond',12))
-                                        #     m_label_38.config(font=('Garamond',12))
-                                        #     m_label_39.config(font=('Garamond',12))
-                                        #     m_label_40.config(font=('Garamond',12))
-                                        #     m_label_41.config(font=('Garamond',12))
-                                        #     m_label_42.config(font=('Garamond',12))
-                                        #     m_label_43.config(font=('Garamond',12))
-                                        #     m_label_44.config(font=('Garamond',12))
-                                        #     m_label_45.config(font=('Garamond',12))
-                                        #     m_label_46.config(font=('Garamond',12))
-                                        #     m_label_47.config(font=('Garamond',12))
-                                        #     m_label_48.config(font=('Garamond',12))
-                                        #     m_label_49.config(font=('Garamond',12))
-                                        #     m_label_50.config(font=('Garamond',12))
-                                        #     m_label_51.config(font=('Garamond',12))
-                                        #     m_label_52.config(font=('Garamond',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     print('wow')
-                                        #     f_label_1.config(font=('Garamond bold',12))
-                                        #     f_label_2.config(font=('Garamond',12))
-                                        #     f_label_3.config(font=('Garamond',12))
-                                        #     f_label_4.config(font=('Garamond',12))
-                                        #     f_label_5.config(font=('Garamond',12))
-                                        #     f_label_6.config(font=('Garamond',12))
-                                        #     f_label_24.config(font=('Garamond bold',20))
-                                        #     f_label_7.config(font=('Garamond bold',14))
-                                        #     f_label_8.config(font=('Garamond',12))
-                                        #     f_label_9.config(font=('Garamond bold',12))
-                                        #     f_label_10.config(font=('Garamond',12))
-                                        #     f_label_11.config(font=('Garamond bold',12))
-                                        #     f_label_12.config(font=('Garamond',12))
-                                        #     f_label_13.config(font=('Garamond bold',12))
-                                        #     f_label_14.config(font=('Garamond',12))
-                                        #     f_label_15.config(font=('Garamond bold',12))
-                                        #     f_label_16.config(font=('Garamond',12))
-                                        #     f_label_17.config(font=('Garamond bold',12))
-                                        #     f_label_18.config(font=('Garamond bold',12))
-                                        #     f_label_19.config(font=('Garamond bold',12))
-                                        #     f_label_20.config(font=('Garamond bold',12))
-                                        #     f_label_21.config(font=('Garamond bold',12))
-                                        #     f_label_22.config(font=('Garamond bold',12))
-                                        #     f_label_23.config(font=('Garamond',12))
-                                        #     f_label_25.config(font=('Garamond',12))
-                                        #     f_label_26.config(font=('Garamond',12))
-                                        #     f_label_27.config(font=('Garamond',12))
-                                        #     f_label_28.config(font=('Garamond',12))
-                                        #     f_label_29.config(font=('Garamond',12))
-                                        #     f_label_30.config(font=('Garamond',12))
-                                        #     f_label_31.config(font=('Garamond',12))
-                                        #     f_label_32.config(font=('Garamond',12))
-                                        #     f_label_33.config(font=('Garamond',12))
-                                        #     f_label_34.config(font=('Garamond',12))
-                                        #     f_label_35.config(font=('Garamond',12))
-                                        #     f_label_36.config(font=('Garamond',12))
-                                        #     f_label_37.config(font=('Garamond',12))
-                                        #     f_label_38.config(font=('Garamond',12))
-                                        #     f_label_39.config(font=('Garamond',12))
-                                        #     f_label_40.config(font=('Garamond',12))
-                                        #     f_label_41.config(font=('Garamond',12))
-                                        #     f_label_42.config(font=('Garamond',12))
-                                        #     f_label_43.config(font=('Garamond',12))
-                                        #     f_label_44.config(font=('Garamond',12))
-                                        #     f_label_45.config(font=('Garamond',12))
-                                        #     f_label_46.config(font=('Garamond',12))
-                                        #     f_label_47.config(font=('Garamond',12))
-                                        #     f_label_48.config(font=('Garamond',12))
-                                        #     f_label_49.config(font=('Garamond',12))
-                                        #     f_label_50.config(font=('Garamond',12))
-                                        #     f_label_51.config(font=('Garamond',12))
-                                        #     f_label_52.config(font=('Garamond',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     print('wow')
-                                        #     fr_label_1.config(font=('Garamond bold',12))
-                                        #     fr_label_2.config(font=('Garamond',12))
-                                        #     fr_label_3.config(font=('Garamond',12))
-                                        #     fr_label_4.config(font=('Garamond',12))
-                                        #     fr_label_5.config(font=('Garamond',12))
-                                        #     fr_label_6.config(font=('Garamond',12))
-                                        #     fr_label_7.config(font=('Garamond bold',20))
-                                        #     fr_label_8.config(font=('Garamond bold',14))
-                                        #     fr_label_9.config(font=('Garamond',12))
-                                        #     fr_label_10.config(font=('Garamond bold',12))
-                                        #     fr_label_11.config(font=('Garamond',12))
-                                        #     fr_label_12.config(font=('Garamond bold',12))
-                                        #     fr_label_13.config(font=('Garamond',12))
-                                        #     fr_label_14.config(font=('Garamond bold',12))
-                                        #     fr_label_15.config(font=('Garamond',12))
-                                        #     fr_label_16.config(font=('Garamond bold',12))
-                                        #     fr_label_17.config(font=('Garamond',12))
-                                        #     fr_label_18.config(font=('Garamond',12))
-                                        #     fr_label_19.config(font=('Garamond',12))
-                                        #     fr_label_20.config(font=('Garamond',12))
-                                        #     fr_label_21.config(font=('Garamond',12))
-                                        #     fr_label_22.config(font=('Garamond bold',12))
-                                        #     fr_label_23.config(font=('Garamond bold',12))
-                                        #     fr_label_24.config(font=('Garamond bold',12))
-                                        #     fr_label_25.config(font=('Garamond',12))
-                                        #     fr_label_26.config(font=('Garamond',12))
-                                        #     fr_label_27.config(font=('Garamond',12))
-                                        #     fr_label_28.config(font=('Garamond',12))
-                                        #     fr_label_29.config(font=('Garamond',12))
-                                        #     fr_label_30.config(font=('Garamond',12))
-                                        #     fr_label_31.config(font=('Garamond',12))
-                                        #     fr_label_32.config(font=('Garamond',12))
-                                        #     fr_label_33.config(font=('Garamond',12))
-                                        #     fr_label_34.config(font=('Garamond',12))
-                                        #     fr_label_35.config(font=('Garamond',12))
-                                        #     fr_label_36.config(font=('Garamond',12))
-                                        #     fr_label_37.config(font=('Garamond',12))
-                                        #     fr_label_38.config(font=('Garamond',12))
-                                        #     fr_label_39.config(font=('Garamond',12))
-                                        #     fr_label_40.config(font=('Garamond',12))
-                                        #     fr_label_41.config(font=('Garamond',12))
-                                        #     fr_label_42.config(font=('Garamond',12))
-                                        #     fr_label_43.config(font=('Garamond',12))
-                                        #     fr_label_44.config(font=('Garamond',12))
-                                        #     fr_label_45.config(font=('Garamond',12))
-                                        #     fr_label_46.config(font=('Garamond',12))
-                                        #     fr_label_47.config(font=('Garamond',12))
-                                        #     fr_label_48.config(font=('Garamond',12))
-                                        #     fr_label_49.config(font=('Garamond',12))
-                                        #     fr_label_50.config(font=('Garamond',12))
-                                        #     fr_label_51.config(font=('Garamond',12))
-                                        #     fr_label_52.config(font=('Garamond',12))
-                                        #     frr_label_25.config(font=('Garamond bold',12))
-                                        #     frr_label_26.config(font=('Garamond bold',12))
-                                        #     frr_label_27.config(font=('Garamond',12))
-                                        # else:
-                                        #     pass
+                                        
                                     
 
                                     def Sans():
@@ -9747,181 +4091,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     print('wow')
-                                        #     m_label_1.config(font=('Arial bold',12))
-                                        #     m_label_2.config(font=('Arial',12))
-                                        #     m_label_3.config(font=('Arial',12))
-                                        #     m_label_4.config(font=('Arial',12))
-                                        #     m_label_5.config(font=('Arial',12))
-                                        #     m_label_6.config(font=('Arial',12))
-                                        #     m_label_7.config(font=('Arial bold',20))
-                                        #     m_label_8.config(font=('Arial bold',14))
-                                        #     m_label_9.config(font=('Arial',12))
-                                        #     m_label_10.config(font=('Arial bold',12))
-                                        #     m_label_11.config(font=('Arial bold',12))
-                                        #     m_label_12.config(font=('Arial bold',12))
-                                        #     m_label_13.config(font=('Arial bold',12))
-                                        #     m_label_14.config(font=('Arial bold',12))
-                                        #     m_label_15.config(font=('Arial bold',12))
-                                        #     m_label_16.config(font=('Arial',12))
-                                        #     m_label_17.config(font=('Arial',12))
-                                        #     m_label_18.config(font=('Arial',12))
-                                        #     m_label_19.config(font=('Arial',12))
-                                        #     m_label_20.config(font=('Arial',12))
-                                        #     m_label_25.config(font=('Arial',12))
-                                        #     m_label_26.config(font=('Arial',12))
-                                        #     m_label_27.config(font=('Arial',12))
-                                        #     m_label_28.config(font=('Arial',12))
-                                        #     m_label_29.config(font=('Arial',12))
-                                        #     m_label_30.config(font=('Arial',12))
-                                        #     m_label_31.config(font=('Arial',12))
-                                        #     m_label_32.config(font=('Arial',12))
-                                        #     m_label_33.config(font=('Arial',12))
-                                        #     m_label_34.config(font=('Arial',12))
-                                        #     m_label_35.config(font=('Arial',12))
-                                        #     m_label_36.config(font=('Arial',12))
-                                        #     m_label_37.config(font=('Arial',12))
-                                        #     m_label_38.config(font=('Arial',12))
-                                        #     m_label_39.config(font=('Arial',12))
-                                        #     m_label_40.config(font=('Arial',12))
-                                        #     m_label_41.config(font=('Arial',12))
-                                        #     m_label_42.config(font=('Arial',12))
-                                        #     m_label_43.config(font=('Arial',12))
-                                        #     m_label_44.config(font=('Arial',12))
-                                        #     m_label_45.config(font=('Arial',12))
-                                        #     m_label_46.config(font=('Arial',12))
-                                        #     m_label_47.config(font=('Arial',12))
-                                        #     m_label_48.config(font=('Arial',12))
-                                        #     m_label_49.config(font=('Arial',12))
-                                        #     m_label_50.config(font=('Arial',12))
-                                        #     m_label_51.config(font=('Arial',12))
-                                        #     m_label_52.config(font=('Arial',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     print('wow')
-                                        #     f_label_1.config(font=('Arial bold',12))
-                                        #     f_label_2.config(font=('Arial',12))
-                                        #     f_label_3.config(font=('Arial',12))
-                                        #     f_label_4.config(font=('Arial',12))
-                                        #     f_label_5.config(font=('Arial',12))
-                                        #     f_label_6.config(font=('Arial',12))
-                                        #     f_label_24.config(font=('Arial bold',20))
-                                        #     f_label_7.config(font=('Arial bold',14))
-                                        #     f_label_8.config(font=('Arial',12))
-                                        #     f_label_9.config(font=('Arial bold',12))
-                                        #     f_label_10.config(font=('Arial',12))
-                                        #     f_label_11.config(font=('Arial bold',12))
-                                        #     f_label_12.config(font=('Arial',12))
-                                        #     f_label_13.config(font=('Arial bold',12))
-                                        #     f_label_14.config(font=('Arial',12))
-                                        #     f_label_15.config(font=('Arial bold',12))
-                                        #     f_label_16.config(font=('Arial',12))
-                                        #     f_label_17.config(font=('Arial bold',12))
-                                        #     f_label_18.config(font=('Arial bold',12))
-                                        #     f_label_19.config(font=('Arial bold',12))
-                                        #     f_label_20.config(font=('Arial bold',12))
-                                        #     f_label_21.config(font=('Arial bold',12))
-                                        #     f_label_22.config(font=('Arial bold',12))
-                                        #     f_label_23.config(font=('Arial',12))
-                                        #     f_label_25.config(font=('Arial',12))
-                                        #     f_label_26.config(font=('Arial',12))
-                                        #     f_label_27.config(font=('Arial',12))
-                                        #     f_label_28.config(font=('Arial',12))
-                                        #     f_label_29.config(font=('Arial',12))
-                                        #     f_label_30.config(font=('Arial',12))
-                                        #     f_label_31.config(font=('Arial',12))
-                                        #     f_label_32.config(font=('Arial',12))
-                                        #     f_label_33.config(font=('Arial',12))
-                                        #     f_label_34.config(font=('Arial',12))
-                                        #     f_label_35.config(font=('Arial',12))
-                                        #     f_label_36.config(font=('Arial',12))
-                                        #     f_label_37.config(font=('Arial',12))
-                                        #     f_label_38.config(font=('Arial',12))
-                                        #     f_label_39.config(font=('Arial',12))
-                                        #     f_label_40.config(font=('Arial',12))
-                                        #     f_label_41.config(font=('Arial',12))
-                                        #     f_label_42.config(font=('Arial',12))
-                                        #     f_label_43.config(font=('Arial',12))
-                                        #     f_label_44.config(font=('Arial',12))
-                                        #     f_label_45.config(font=('Arial',12))
-                                        #     f_label_46.config(font=('Arial',12))
-                                        #     f_label_47.config(font=('Arial',12))
-                                        #     f_label_48.config(font=('Arial',12))
-                                        #     f_label_49.config(font=('Arial',12))
-                                        #     f_label_50.config(font=('Arial',12))
-                                        #     f_label_51.config(font=('Arial',12))
-                                        #     f_label_52.config(font=('Arial',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     print('wow')
-                                        #     fr_label_1.config(font=('Arial bold',12))
-                                        #     fr_label_2.config(font=('Arial',12))
-                                        #     fr_label_3.config(font=('Arial',12))
-                                        #     fr_label_4.config(font=('Arial',12))
-                                        #     fr_label_5.config(font=('Arial',12))
-                                        #     fr_label_6.config(font=('Arial',12))
-                                        #     fr_label_7.config(font=('Arial bold',20))
-                                        #     fr_label_8.config(font=('Arial bold',14))
-                                        #     fr_label_9.config(font=('Arial',12))
-                                        #     fr_label_10.config(font=('Arial bold',12))
-                                        #     fr_label_11.config(font=('Arial',12))
-                                        #     fr_label_12.config(font=('Arial bold',12))
-                                        #     fr_label_13.config(font=('Arial',12))
-                                        #     fr_label_14.config(font=('Arial bold',12))
-                                        #     fr_label_15.config(font=('Arial',12))
-                                        #     fr_label_16.config(font=('Arial bold',12))
-                                        #     fr_label_17.config(font=('Arial',12))
-                                        #     fr_label_18.config(font=('Arial',12))
-                                        #     fr_label_19.config(font=('Arial',12))
-                                        #     fr_label_20.config(font=('Arial',12))
-                                        #     fr_label_21.config(font=('Arial',12))
-                                        #     fr_label_22.config(font=('Arial bold',12))
-                                        #     fr_label_23.config(font=('Arial bold',12))
-                                        #     fr_label_24.config(font=('Arial bold',12))
-                                        #     fr_label_25.config(font=('Arial',12))
-                                        #     fr_label_26.config(font=('Arial',12))
-                                        #     fr_label_27.config(font=('Arial',12))
-                                        #     fr_label_28.config(font=('Arial',12))
-                                        #     fr_label_29.config(font=('Arial',12))
-                                        #     fr_label_30.config(font=('Arial',12))
-                                        #     fr_label_31.config(font=('Arial',12))
-                                        #     fr_label_32.config(font=('Arial',12))
-                                        #     fr_label_33.config(font=('Arial',12))
-                                        #     fr_label_34.config(font=('Arial',12))
-                                        #     fr_label_35.config(font=('Arial',12))
-                                        #     fr_label_36.config(font=('Arial',12))
-                                        #     fr_label_37.config(font=('Arial',12))
-                                        #     fr_label_38.config(font=('Arial',12))
-                                        #     fr_label_39.config(font=('Arial',12))
-                                        #     fr_label_40.config(font=('Arial',12))
-                                        #     fr_label_41.config(font=('Arial',12))
-                                        #     fr_label_42.config(font=('Arial',12))
-                                        #     fr_label_43.config(font=('Arial',12))
-                                        #     fr_label_44.config(font=('Arial',12))
-                                        #     fr_label_45.config(font=('Arial',12))
-                                        #     fr_label_46.config(font=('Arial',12))
-                                        #     fr_label_47.config(font=('Arial',12))
-                                        #     fr_label_48.config(font=('Arial',12))
-                                        #     fr_label_49.config(font=('Arial',12))
-                                        #     fr_label_50.config(font=('Arial',12))
-                                        #     fr_label_51.config(font=('Arial',12))
-                                        #     fr_label_52.config(font=('Arial',12))
-                                        #     frr_label_25.config(font=('Arial bold',12))
-                                        #     frr_label_26.config(font=('Arial bold',12))
-                                        #     frr_label_27.config(font=('Arial',12))
-                                        # else:
-                                        #     pass
+                                        
                                     
 
                                     def Monospace():
@@ -9987,181 +4157,7 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     print('wow')
-                                        #     m_label_1.config(font=('Helvetica bold',12))
-                                        #     m_label_2.config(font=('Helvetica',12))
-                                        #     m_label_3.config(font=('Helvetica',12))
-                                        #     m_label_4.config(font=('Helvetica',12))
-                                        #     m_label_5.config(font=('Helvetica',12))
-                                        #     m_label_6.config(font=('Helvetica',12))
-                                        #     m_label_7.config(font=('Helvetica bold',20))
-                                        #     m_label_8.config(font=('Helvetica bold',14))
-                                        #     m_label_9.config(font=('Helvetica',12))
-                                        #     m_label_10.config(font=('Helvetica bold',12))
-                                        #     m_label_11.config(font=('Helvetica bold',12))
-                                        #     m_label_12.config(font=('Helvetica bold',12))
-                                        #     m_label_13.config(font=('Helvetica bold',12))
-                                        #     m_label_14.config(font=('Helvetica bold',12))
-                                        #     m_label_15.config(font=('Helvetica bold',12))
-                                        #     m_label_16.config(font=('Helvetica',12))
-                                        #     m_label_17.config(font=('Helvetica',12))
-                                        #     m_label_18.config(font=('Helvetica',12))
-                                        #     m_label_19.config(font=('Helvetica',12))
-                                        #     m_label_20.config(font=('Helvetica',12))
-                                        #     m_label_25.config(font=('Helvetica',12))
-                                        #     m_label_26.config(font=('Helvetica',12))
-                                        #     m_label_27.config(font=('Helvetica',12))
-                                        #     m_label_28.config(font=('Helvetica',12))
-                                        #     m_label_29.config(font=('Helvetica',12))
-                                        #     m_label_30.config(font=('Helvetica',12))
-                                        #     m_label_31.config(font=('Helvetica',12))
-                                        #     m_label_32.config(font=('Helvetica',12))
-                                        #     m_label_33.config(font=('Helvetica',12))
-                                        #     m_label_34.config(font=('Helvetica',12))
-                                        #     m_label_35.config(font=('Helvetica',12))
-                                        #     m_label_36.config(font=('Helvetica',12))
-                                        #     m_label_37.config(font=('Helvetica',12))
-                                        #     m_label_38.config(font=('Helvetica',12))
-                                        #     m_label_39.config(font=('Helvetica',12))
-                                        #     m_label_40.config(font=('Helvetica',12))
-                                        #     m_label_41.config(font=('Helvetica',12))
-                                        #     m_label_42.config(font=('Helvetica',12))
-                                        #     m_label_43.config(font=('Helvetica',12))
-                                        #     m_label_44.config(font=('Helvetica',12))
-                                        #     m_label_45.config(font=('Helvetica',12))
-                                        #     m_label_46.config(font=('Helvetica',12))
-                                        #     m_label_47.config(font=('Helvetica',12))
-                                        #     m_label_48.config(font=('Helvetica',12))
-                                        #     m_label_49.config(font=('Helvetica',12))
-                                        #     m_label_50.config(font=('Helvetica',12))
-                                        #     m_label_51.config(font=('Helvetica',12))
-                                        #     m_label_52.config(font=('Helvetica',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     print('wow')
-                                        #     f_label_1.config(font=('Helvetica bold',12))
-                                        #     f_label_2.config(font=('Helvetica',12))
-                                        #     f_label_3.config(font=('Helvetica',12))
-                                        #     f_label_4.config(font=('Helvetica',12))
-                                        #     f_label_5.config(font=('Helvetica',12))
-                                        #     f_label_6.config(font=('Helvetica',12))
-                                        #     f_label_24.config(font=('Helvetica bold',20))
-                                        #     f_label_7.config(font=('Helvetica bold',14))
-                                        #     f_label_8.config(font=('Helvetica',12))
-                                        #     f_label_9.config(font=('Helvetica bold',12))
-                                        #     f_label_10.config(font=('Helvetica',12))
-                                        #     f_label_11.config(font=('Helvetica bold',12))
-                                        #     f_label_12.config(font=('Helvetica',12))
-                                        #     f_label_13.config(font=('Helvetica bold',12))
-                                        #     f_label_14.config(font=('Helvetica',12))
-                                        #     f_label_15.config(font=('Helvetica bold',12))
-                                        #     f_label_16.config(font=('Helvetica',12))
-                                        #     f_label_17.config(font=('Helvetica bold',12))
-                                        #     f_label_18.config(font=('Helvetica bold',12))
-                                        #     f_label_19.config(font=('Helvetica bold',12))
-                                        #     f_label_20.config(font=('Helvetica bold',12))
-                                        #     f_label_21.config(font=('Helvetica bold',12))
-                                        #     f_label_22.config(font=('Helvetica bold',12))
-                                        #     f_label_23.config(font=('Helvetica',12))
-                                        #     f_label_25.config(font=('Helvetica',12))
-                                        #     f_label_26.config(font=('Helvetica',12))
-                                        #     f_label_27.config(font=('Helvetica',12))
-                                        #     f_label_28.config(font=('Helvetica',12))
-                                        #     f_label_29.config(font=('Helvetica',12))
-                                        #     f_label_30.config(font=('Helvetica',12))
-                                        #     f_label_31.config(font=('Helvetica',12))
-                                        #     f_label_32.config(font=('Helvetica',12))
-                                        #     f_label_33.config(font=('Helvetica',12))
-                                        #     f_label_34.config(font=('Helvetica',12))
-                                        #     f_label_35.config(font=('Helvetica',12))
-                                        #     f_label_36.config(font=('Helvetica',12))
-                                        #     f_label_37.config(font=('Helvetica',12))
-                                        #     f_label_38.config(font=('Helvetica',12))
-                                        #     f_label_39.config(font=('Helvetica',12))
-                                        #     f_label_40.config(font=('Helvetica',12))
-                                        #     f_label_41.config(font=('Helvetica',12))
-                                        #     f_label_42.config(font=('Helvetica',12))
-                                        #     f_label_43.config(font=('Helvetica',12))
-                                        #     f_label_44.config(font=('Helvetica',12))
-                                        #     f_label_45.config(font=('Helvetica',12))
-                                        #     f_label_46.config(font=('Helvetica',12))
-                                        #     f_label_47.config(font=('Helvetica',12))
-                                        #     f_label_48.config(font=('Helvetica',12))
-                                        #     f_label_49.config(font=('Helvetica',12))
-                                        #     f_label_50.config(font=('Helvetica',12))
-                                        #     f_label_51.config(font=('Helvetica',12))
-                                        #     f_label_52.config(font=('Helvetica',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     print('wow')
-                                        #     fr_label_1.config(font=('Helvetica bold',12))
-                                        #     fr_label_2.config(font=('Helvetica',12))
-                                        #     fr_label_3.config(font=('Helvetica',12))
-                                        #     fr_label_4.config(font=('Helvetica',12))
-                                        #     fr_label_5.config(font=('Helvetica',12))
-                                        #     fr_label_6.config(font=('Helvetica',12))
-                                        #     fr_label_7.config(font=('Helvetica bold',20))
-                                        #     fr_label_8.config(font=('Helvetica bold',14))
-                                        #     fr_label_9.config(font=('Helvetica',12))
-                                        #     fr_label_10.config(font=('Helvetica bold',12))
-                                        #     fr_label_11.config(font=('Helvetica',12))
-                                        #     fr_label_12.config(font=('Helvetica bold',12))
-                                        #     fr_label_13.config(font=('Helvetica',12))
-                                        #     fr_label_14.config(font=('Helvetica bold',12))
-                                        #     fr_label_15.config(font=('Helvetica',12))
-                                        #     fr_label_16.config(font=('Helvetica bold',12))
-                                        #     fr_label_17.config(font=('Helvetica',12))
-                                        #     fr_label_18.config(font=('Helvetica',12))
-                                        #     fr_label_19.config(font=('Helvetica',12))
-                                        #     fr_label_20.config(font=('Helvetica',12))
-                                        #     fr_label_21.config(font=('Helvetica',12))
-                                        #     fr_label_22.config(font=('Helvetica bold',12))
-                                        #     fr_label_23.config(font=('Helvetica bold',12))
-                                        #     fr_label_24.config(font=('Helvetica bold',12))
-                                        #     fr_label_25.config(font=('Helvetica',12))
-                                        #     fr_label_26.config(font=('Helvetica',12))
-                                        #     fr_label_27.config(font=('Helvetica',12))
-                                        #     fr_label_28.config(font=('Helvetica',12))
-                                        #     fr_label_29.config(font=('Helvetica',12))
-                                        #     fr_label_30.config(font=('Helvetica',12))
-                                        #     fr_label_31.config(font=('Helvetica',12))
-                                        #     fr_label_32.config(font=('Helvetica',12))
-                                        #     fr_label_33.config(font=('Helvetica',12))
-                                        #     fr_label_34.config(font=('Helvetica',12))
-                                        #     fr_label_35.config(font=('Helvetica',12))
-                                        #     fr_label_36.config(font=('Helvetica',12))
-                                        #     fr_label_37.config(font=('Helvetica',12))
-                                        #     fr_label_38.config(font=('Helvetica',12))
-                                        #     fr_label_39.config(font=('Helvetica',12))
-                                        #     fr_label_40.config(font=('Helvetica',12))
-                                        #     fr_label_41.config(font=('Helvetica',12))
-                                        #     fr_label_42.config(font=('Helvetica',12))
-                                        #     fr_label_43.config(font=('Helvetica',12))
-                                        #     fr_label_44.config(font=('Helvetica',12))
-                                        #     fr_label_45.config(font=('Helvetica',12))
-                                        #     fr_label_46.config(font=('Helvetica',12))
-                                        #     fr_label_47.config(font=('Helvetica',12))
-                                        #     fr_label_48.config(font=('Helvetica',12))
-                                        #     fr_label_49.config(font=('Helvetica',12))
-                                        #     fr_label_50.config(font=('Helvetica',12))
-                                        #     fr_label_51.config(font=('Helvetica',12))
-                                        #     fr_label_52.config(font=('Helvetica',12))
-                                        #     frr_label_25.config(font=('Helvetica bold',12))
-                                        #     frr_label_26.config(font=('Helvetica bold',12))
-                                        #     frr_label_27.config(font=('Helvetica',12))
-                                        # else:
-                                        #     pass
+                                        
                                     
 
                                     def System():
@@ -10227,181 +4223,6 @@ def main_sign_in():
                                         # else:
                                         #     pass
 
-                                        # #----------------------------------------Modern-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Modern":
-                                        #     print('wow')
-                                        #     m_label_1.config(font=('Roboto bold',12))
-                                        #     m_label_2.config(font=('Roboto',12))
-                                        #     m_label_3.config(font=('Roboto',12))
-                                        #     m_label_4.config(font=('Roboto',12))
-                                        #     m_label_5.config(font=('Roboto',12))
-                                        #     m_label_6.config(font=('Roboto',12))
-                                        #     m_label_7.config(font=('Roboto bold',20))
-                                        #     m_label_8.config(font=('Roboto bold',14))
-                                        #     m_label_9.config(font=('Roboto',12))
-                                        #     m_label_10.config(font=('Roboto bold',12))
-                                        #     m_label_11.config(font=('Roboto bold',12))
-                                        #     m_label_12.config(font=('Roboto bold',12))
-                                        #     m_label_13.config(font=('Roboto bold',12))
-                                        #     m_label_14.config(font=('Roboto bold',12))
-                                        #     m_label_15.config(font=('Roboto bold',12))
-                                        #     m_label_16.config(font=('Roboto',12))
-                                        #     m_label_17.config(font=('Roboto',12))
-                                        #     m_label_18.config(font=('Roboto',12))
-                                        #     m_label_19.config(font=('Roboto',12))
-                                        #     m_label_20.config(font=('Roboto',12))
-                                        #     m_label_25.config(font=('Roboto',12))
-                                        #     m_label_26.config(font=('Roboto',12))
-                                        #     m_label_27.config(font=('Roboto',12))
-                                        #     m_label_28.config(font=('Roboto',12))
-                                        #     m_label_29.config(font=('Roboto',12))
-                                        #     m_label_30.config(font=('Roboto',12))
-                                        #     m_label_31.config(font=('Roboto',12))
-                                        #     m_label_32.config(font=('Roboto',12))
-                                        #     m_label_33.config(font=('Roboto',12))
-                                        #     m_label_34.config(font=('Roboto',12))
-                                        #     m_label_35.config(font=('Roboto',12))
-                                        #     m_label_36.config(font=('Roboto',12))
-                                        #     m_label_37.config(font=('Roboto',12))
-                                        #     m_label_38.config(font=('Roboto',12))
-                                        #     m_label_39.config(font=('Roboto',12))
-                                        #     m_label_40.config(font=('Roboto',12))
-                                        #     m_label_41.config(font=('Roboto',12))
-                                        #     m_label_42.config(font=('Roboto',12))
-                                        #     m_label_43.config(font=('Roboto',12))
-                                        #     m_label_44.config(font=('Roboto',12))
-                                        #     m_label_45.config(font=('Roboto',12))
-                                        #     m_label_46.config(font=('Roboto',12))
-                                        #     m_label_47.config(font=('Roboto',12))
-                                        #     m_label_48.config(font=('Roboto',12))
-                                        #     m_label_49.config(font=('Roboto',12))
-                                        #     m_label_50.config(font=('Roboto',12))
-                                        #     m_label_51.config(font=('Roboto',12))
-                                        #     m_label_52.config(font=('Roboto',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Fresh-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Fresh":
-                                        #     print('wow')
-                                        #     f_label_1.config(font=('Roboto bold',12))
-                                        #     f_label_2.config(font=('Roboto',12))
-                                        #     f_label_3.config(font=('Roboto',12))
-                                        #     f_label_4.config(font=('Roboto',12))
-                                        #     f_label_5.config(font=('Roboto',12))
-                                        #     f_label_6.config(font=('Roboto',12))
-                                        #     f_label_24.config(font=('Roboto bold',20))
-                                        #     f_label_7.config(font=('Roboto bold',14))
-                                        #     f_label_8.config(font=('Roboto',12))
-                                        #     f_label_9.config(font=('Roboto bold',12))
-                                        #     f_label_10.config(font=('Roboto',12))
-                                        #     f_label_11.config(font=('Roboto bold',12))
-                                        #     f_label_12.config(font=('Roboto',12))
-                                        #     f_label_13.config(font=('Roboto bold',12))
-                                        #     f_label_14.config(font=('Roboto',12))
-                                        #     f_label_15.config(font=('Roboto bold',12))
-                                        #     f_label_16.config(font=('Roboto',12))
-                                        #     f_label_17.config(font=('Roboto bold',12))
-                                        #     f_label_18.config(font=('Roboto bold',12))
-                                        #     f_label_19.config(font=('Roboto bold',12))
-                                        #     f_label_20.config(font=('Roboto bold',12))
-                                        #     f_label_21.config(font=('Roboto bold',12))
-                                        #     f_label_22.config(font=('Roboto bold',12))
-                                        #     f_label_23.config(font=('Roboto',12))
-                                        #     f_label_25.config(font=('Roboto',12))
-                                        #     f_label_26.config(font=('Roboto',12))
-                                        #     f_label_27.config(font=('Roboto',12))
-                                        #     f_label_28.config(font=('Roboto',12))
-                                        #     f_label_29.config(font=('Roboto',12))
-                                        #     f_label_30.config(font=('Roboto',12))
-                                        #     f_label_31.config(font=('Roboto',12))
-                                        #     f_label_32.config(font=('Roboto',12))
-                                        #     f_label_33.config(font=('Roboto',12))
-                                        #     f_label_34.config(font=('Roboto',12))
-                                        #     f_label_35.config(font=('Roboto',12))
-                                        #     f_label_36.config(font=('Roboto',12))
-                                        #     f_label_37.config(font=('Roboto',12))
-                                        #     f_label_38.config(font=('Roboto',12))
-                                        #     f_label_39.config(font=('Roboto',12))
-                                        #     f_label_40.config(font=('Roboto',12))
-                                        #     f_label_41.config(font=('Roboto',12))
-                                        #     f_label_42.config(font=('Roboto',12))
-                                        #     f_label_43.config(font=('Roboto',12))
-                                        #     f_label_44.config(font=('Roboto',12))
-                                        #     f_label_45.config(font=('Roboto',12))
-                                        #     f_label_46.config(font=('Roboto',12))
-                                        #     f_label_47.config(font=('Roboto',12))
-                                        #     f_label_48.config(font=('Roboto',12))
-                                        #     f_label_49.config(font=('Roboto',12))
-                                        #     f_label_50.config(font=('Roboto',12))
-                                        #     f_label_51.config(font=('Roboto',12))
-                                        #     f_label_52.config(font=('Roboto',12))
-                                        # else:
-                                        #     pass
-
-                                        # #----------------------------------------Friendly-----------------------------------------
-
-                                        # if ns_entry_2.get()=="Friendly":
-                                        #     print('wow')
-                                        #     fr_label_1.config(font=('Roboto bold',12))
-                                        #     fr_label_2.config(font=('Roboto',12))
-                                        #     fr_label_3.config(font=('Roboto',12))
-                                        #     fr_label_4.config(font=('Roboto',12))
-                                        #     fr_label_5.config(font=('Roboto',12))
-                                        #     fr_label_6.config(font=('Roboto',12))
-                                        #     fr_label_7.config(font=('Roboto bold',20))
-                                        #     fr_label_8.config(font=('Roboto bold',14))
-                                        #     fr_label_9.config(font=('Roboto',12))
-                                        #     fr_label_10.config(font=('Roboto bold',12))
-                                        #     fr_label_11.config(font=('Roboto',12))
-                                        #     fr_label_12.config(font=('Roboto bold',12))
-                                        #     fr_label_13.config(font=('Roboto',12))
-                                        #     fr_label_14.config(font=('Roboto bold',12))
-                                        #     fr_label_15.config(font=('Roboto',12))
-                                        #     fr_label_16.config(font=('Roboto bold',12))
-                                        #     fr_label_17.config(font=('Roboto',12))
-                                        #     fr_label_18.config(font=('Roboto',12))
-                                        #     fr_label_19.config(font=('Roboto',12))
-                                        #     fr_label_20.config(font=('Roboto',12))
-                                        #     fr_label_21.config(font=('Roboto',12))
-                                        #     fr_label_22.config(font=('Roboto bold',12))
-                                        #     fr_label_23.config(font=('Roboto bold',12))
-                                        #     fr_label_24.config(font=('Roboto bold',12))
-                                        #     fr_label_25.config(font=('Roboto',12))
-                                        #     fr_label_26.config(font=('Roboto',12))
-                                        #     fr_label_27.config(font=('Roboto',12))
-                                        #     fr_label_28.config(font=('Roboto',12))
-                                        #     fr_label_29.config(font=('Roboto',12))
-                                        #     fr_label_30.config(font=('Roboto',12))
-                                        #     fr_label_31.config(font=('Roboto',12))
-                                        #     fr_label_32.config(font=('Roboto',12))
-                                        #     fr_label_33.config(font=('Roboto',12))
-                                        #     fr_label_34.config(font=('Roboto',12))
-                                        #     fr_label_35.config(font=('Roboto',12))
-                                        #     fr_label_36.config(font=('Roboto',12))
-                                        #     fr_label_37.config(font=('Roboto',12))
-                                        #     fr_label_38.config(font=('Roboto',12))
-                                        #     fr_label_39.config(font=('Roboto',12))
-                                        #     fr_label_40.config(font=('Roboto',12))
-                                        #     fr_label_41.config(font=('Roboto',12))
-                                        #     fr_label_42.config(font=('Roboto',12))
-                                        #     fr_label_43.config(font=('Roboto',12))
-                                        #     fr_label_44.config(font=('Roboto',12))
-                                        #     fr_label_45.config(font=('Roboto',12))
-                                        #     fr_label_46.config(font=('Roboto',12))
-                                        #     fr_label_47.config(font=('Roboto',12))
-                                        #     fr_label_48.config(font=('Roboto',12))
-                                        #     fr_label_49.config(font=('Roboto',12))
-                                        #     fr_label_50.config(font=('Roboto',12))
-                                        #     fr_label_51.config(font=('Roboto',12))
-                                        #     fr_label_52.config(font=('Roboto',12))
-                                        #     frr_label_25.config(font=('Roboto bold',12))
-                                        #     frr_label_26.config(font=('Roboto bold',12))
-                                        #     frr_label_27.config(font=('Roboto',12))
-                                        # else:
-                                        #     pass
                                     
 
                                     ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
@@ -10684,3959 +4505,6 @@ def main_sign_in():
                                     ns_bck_btn1=Button(cs_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=ns_back_1_)
                                     window_ns_bck_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_bck_btn1,tags=('nsbutton3'))
 
-                            
-                            #         cs_frame.grid_forget()
-                            #         ecs_frame_1 = Frame(tab1)
-                            #         ecs_frame_1.grid(row=0,column=0,sticky='nsew')
-
-                            #         def cs_responsive_widgets_1(event):
-                            #             dwidth = event.width
-                            #             dheight = event.height
-                            #             dcanvas = event.widget
-                                        
-                            #             r1 = 25
-                            #             x1 = dwidth/63
-                            #             x2 = dwidth/1.021
-                            #             y1 = dheight/14 
-                            #             y2 = dheight/3.505
-
-                            #             dcanvas.coords("nspoly1",x1 + r1,y1,
-                            #             x1 + r1,y1,
-                            #             x2 - r1,y1,
-                            #             x2 - r1,y1,     
-                            #             x2,y1,     
-                            #             #--------------------
-                            #             x2,y1 + r1,     
-                            #             x2,y1 + r1,     
-                            #             x2,y2 - r1,     
-                            #             x2,y2 - r1,     
-                            #             x2,y2,
-                            #             #--------------------
-                            #             x2 - r1,y2,     
-                            #             x2 - r1,y2,     
-                            #             x1 + r1,y2,
-                            #             x1 + r1,y2,
-                            #             x1,y2,
-                            #             #--------------------
-                            #             x1,y2 - r1,
-                            #             x1,y2 - r1,
-                            #             x1,y1 + r1,
-                            #             x1,y1 + r1,
-                            #             x1,y1,
-                            #             )
-
-                            #             dcanvas.coords("nslabel1",dwidth/2.5,dheight/8.24)
-                            #             dcanvas.coords("nshline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
-
-                            #             r2 = 25
-                            #             x11 = dwidth/63
-                            #             x21 = dwidth/1.021
-                            #             y11 = dheight/2.8
-                            #             y21 = dheight/0.32
-
-
-                            #             dcanvas.coords("nspoly2",x11 + r2,y11,
-                            #             x11 + r2,y11,
-                            #             x21 - r2,y11,
-                            #             x21 - r2,y11,     
-                            #             x21,y11,     
-                            #             #--------------------
-                            #             x21,y11 + r2,     
-                            #             x21,y11 + r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21,
-                            #             #--------------------
-                            #             x21 - r2,y21,     
-                            #             x21 - r2,y21,     
-                            #             x11 + r2,y21,
-                            #             x11 + r2,y21,
-                            #             x11,y21,
-                            #             #--------------------
-                            #             x11,y21 - r2,
-                            #             x11,y21 - r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11,
-                            #             )
-                            #             dcanvas.coords("nsbutton3",dwidth/23,dheight/3.415)
-                            #             dcanvas.coords("nslabel2",dwidth/21,dheight/2.3)
-                            #             dcanvas.coords("nsentry1",dwidth/20,dheight/2.05)
-                            #             dcanvas.coords("nslabel3",dwidth/22.2,dheight/1.64)
-                            #             dcanvas.coords("nsentry2",dwidth/20,dheight/1.5)
-                            #             dcanvas.coords("nsbutton4",dwidth/20,dheight/1.25)
-                            #             dcanvas.coords("nsbutton5",dwidth/5.8,dheight/1.25)
-                            #             dcanvas.coords("nsbutton6",dwidth/20,dheight/1)
-                            #             dcanvas.coords("nsbutton7",dwidth/5.8,dheight/1)
-                            #             dcanvas.coords("nslabel4",dwidth/22.8,dheight/0.83)
-                            #             dcanvas.coords("nsentry3",dwidth/20,dheight/0.798)
-                            #             dcanvas.coords("nsbutton8",dwidth/20,dheight/0.75)
-                            #             dcanvas.coords("nsbutton9",dwidth/9,dheight/0.75)
-                            #             dcanvas.coords("nsbutton10",dwidth/5.72,dheight/0.75)
-                            #             dcanvas.coords("nsbutton11",dwidth/4.2,dheight/0.75)
-                            #             dcanvas.coords("nsbutton12",dwidth/20,dheight/0.695)
-                            #             dcanvas.coords("nsbutton13",dwidth/9,dheight/0.695)
-                            #             dcanvas.coords("nsbutton14",dwidth/5.72,dheight/0.695)
-                            #             dcanvas.coords("nsbutton15",dwidth/4.2,dheight/0.695)
-                            #             dcanvas.coords("nsbutton16",dwidth/20,dheight/0.65)
-                            #             dcanvas.coords("nsbutton17",dwidth/9,dheight/0.65)
-                            #             dcanvas.coords("nsbutton18",dwidth/5.72,dheight/0.65)
-                            #             dcanvas.coords("nsbutton19",dwidth/4.2,dheight/0.65)
-                            #             dcanvas.coords("nslabel5",dwidth/22.8,dheight/0.595)
-                            #             dcanvas.coords("nsentry4",dwidth/20,dheight/0.58)
-                            #             dcanvas.coords("nsbutton20",dwidth/20,dheight/0.55)
-                            #             dcanvas.coords("nsbutton21",dwidth/9,dheight/0.55)
-                            #             dcanvas.coords("nsbutton22",dwidth/5.72,dheight/0.55)
-                            #             dcanvas.coords("nsbutton23",dwidth/4.2,dheight/0.55)
-                            #             dcanvas.coords("nsbutton24",dwidth/20,dheight/0.52)
-                            #             dcanvas.coords("nsbutton25",dwidth/9,dheight/0.52)
-                            #             dcanvas.coords("nsbutton26",dwidth/5.72,dheight/0.52)
-                            #             dcanvas.coords("nsbutton27",dwidth/4.2,dheight/0.52)
-                            #             dcanvas.coords("nsbutton28",dwidth/20,dheight/0.493)
-                            #             dcanvas.coords("nsbutton29",dwidth/9,dheight/0.493)
-                            #             dcanvas.coords("nsbutton30",dwidth/5.72,dheight/0.493)
-                            #             dcanvas.coords("nsbutton31",dwidth/4.2,dheight/0.493) 
-                            #             dcanvas.coords("nslabel6",dwidth/22.5,dheight/0.464)
-                            #             dcanvas.coords("nsentry5",dwidth/20,dheight/0.45)
-                            #             dcanvas.coords("nsbutton32",dwidth/20,dheight/0.43)
-                            #             dcanvas.coords("nsbutton33",dwidth/5.8,dheight/0.43)
-                            #             dcanvas.coords("nsbutton34",dwidth/20,dheight/0.4)
-                            #             dcanvas.coords("nsbutton35",dwidth/5.8,dheight/0.4)
-                            #             dcanvas.coords("nscheck1",dwidth/8.5,dheight/0.37)
-                            #             dcanvas.coords("nsbutton1",dwidth/8.5,dheight/0.355)
-
-                            #             #--------------------------Classic------------------------------
-
-                            #             r2 = 25
-                            #             x11 = dwidth/3
-                            #             x21 = dwidth/1.05
-                            #             y11 = dheight/2.3
-                            #             y21 = dheight/0.38
-
-
-                            #             dcanvas.coords("nspoly3",x11 + r2,y11,
-                            #             x11 + r2,y11,
-                            #             x21 - r2,y11,
-                            #             x21 - r2,y11,     
-                            #             x21,y11,     
-                            #             #--------------------
-                            #             x21,y11 + r2,     
-                            #             x21,y11 + r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21,
-                            #             #--------------------
-                            #             x21 - r2,y21,     
-                            #             x21 - r2,y21,     
-                            #             x11 + r2,y21,
-                            #             x11 + r2,y21,
-                            #             x11,y21,
-                            #             #--------------------
-                            #             x11,y21 - r2,
-                            #             x11,y21 - r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11,
-                            #             )
-
-                            #             dcanvas.coords("naivlabel1",dwidth/2.65,dheight/1.85)
-                            #             dcanvas.coords("naivlabel2",dwidth/2.65,dheight/1.70)
-                            #             dcanvas.coords("naivlabel3",dwidth/2.65,dheight/1.55)
-                            #             dcanvas.coords("naivlabel4",dwidth/2.65,dheight/1.42)
-                            #             dcanvas.coords("naivlabel5",dwidth/2.65,dheight/1.32)
-                            #             dcanvas.coords("naivlabel6",dwidth/2.60,dheight/1.22)
-                            #             dcanvas.coords("naivlabel7",dwidth/2.70,dheight/1.14)
-                            #             dcanvas.coords("naivlabel8",dwidth/2.85,dheight/1.0)
-                            #             dcanvas.coords("naivlabel9",dwidth/1.36,dheight/1.0)
-                            #             dcanvas.coords("naivlabel10",dwidth/1.35,dheight/0.95)
-                            #             dcanvas.coords("naivlabel11",dwidth/1.36,dheight/0.90)
-                            #             dcanvas.coords("naivlabel12",dwidth/1.38,dheight/0.85)
-
-                            #             dcanvas.coords("naivtree1",dwidth/2.9,dheight/0.75)
-                            #             dcanvas.coords("naivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
-                            #             dcanvas.coords("naivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
-                            #             dcanvas.coords("naivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
-                            #             dcanvas.coords("naivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
-
-                            #             dcanvas.coords("naivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
-                            #             dcanvas.coords("naivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
-                            #             dcanvas.coords("naivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
-                            #             dcanvas.coords("naivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
-                            #             dcanvas.coords("naivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
-                            #             dcanvas.coords("naivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
-                            #             dcanvas.coords("naivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
-                            #             dcanvas.coords("naivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
-
-                            #             dcanvas.coords("naivtlabel1",dwidth/2.88,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel2",dwidth/2.88,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel3",dwidth/2.88,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel4",dwidth/2.88,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel5",dwidth/2.67,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel6",dwidth/2.67,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel7",dwidth/2.67,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel8",dwidth/2.67,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel9",dwidth/1.9,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel10",dwidth/1.9,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel11",dwidth/1.9,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel12",dwidth/1.9,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel13",dwidth/1.65,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel14",dwidth/1.65,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel15",dwidth/1.65,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel16",dwidth/1.65,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel17",dwidth/1.5,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel18",dwidth/1.5,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel19",dwidth/1.5,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel20",dwidth/1.5,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel21",dwidth/1.2,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel22",dwidth/1.2,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel23",dwidth/1.2,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel24",dwidth/1.2,dheight/0.63)
-
-                            #             dcanvas.coords("naivtlabel25",dwidth/1.4,dheight/0.729)
-                            #             dcanvas.coords("naivtlabel26",dwidth/1.4,dheight/0.69)
-                            #             dcanvas.coords("naivtlabel27",dwidth/1.4,dheight/0.66)
-                            #             dcanvas.coords("naivtlabel28",dwidth/1.4,dheight/0.63)
-
-                            #             dcanvas.coords("naivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
-                            #             dcanvas.coords("naivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
-                            #             dcanvas.coords("naivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("naivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
-                            #             dcanvas.coords("naivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("naivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
-                            #             dcanvas.coords("naivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
-
-                            #             dcanvas.coords("naivlabel13",dwidth/1.5,dheight/0.59)
-
-                            #             dcanvas.coords("naivlabels13",dwidth/1.21,dheight/0.59)
-                            #             dcanvas.coords("naivlabel14",dwidth/1.475,dheight/0.565)
-                            #             dcanvas.coords("naivlabels14",dwidth/1.21,dheight/0.565)
-                            #             dcanvas.coords("naivlabel15",dwidth/1.47,dheight/0.54)
-                            #             dcanvas.coords("naivlabels15",dwidth/1.21,dheight/0.54)
-
-                            #             dcanvas.coords("naivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-
-                            #             dcanvas.coords("naivlabel16",dwidth/2.52,dheight/0.395)
-
-                            #             dcanvas.coords("naivbutton3",dwidth/23,dheight/3.415)
-
-                            #             dcanvas.coords("naivlabel17",dwidth/2.80,dheight/0.95)
-                            #             dcanvas.coords("naivlabel18",dwidth/1.16,dheight/1.0)
-                            #             dcanvas.coords("naivlabel19",dwidth/1.16,dheight/0.95)
-                            #             dcanvas.coords("naivlabel20",dwidth/1.16,dheight/0.90)
-                            #             dcanvas.coords("naivlabel21",dwidth/1.18,dheight/0.85)
-
-                                        
-                            #             #-----------------------------Modern------------------------------------
-
-                            #             r2 = 25
-                            #             x11 = dwidth/3
-                            #             x21 = dwidth/1.05
-                            #             y11 = dheight/2.3
-                            #             y21 = dheight/0.38
-
-
-                            #             dcanvas.coords("nspoly4",x11 + r2,y11,
-                            #             x11 + r2,y11,
-                            #             x21 - r2,y11,
-                            #             x21 - r2,y11,     
-                            #             x21,y11,     
-                            #             #--------------------
-                            #             x21,y11 + r2,     
-                            #             x21,y11 + r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21,
-                            #             #--------------------
-                            #             x21 - r2,y21,     
-                            #             x21 - r2,y21,     
-                            #             x11 + r2,y21,
-                            #             x11 + r2,y21,
-                            #             x11,y21,
-                            #             #--------------------
-                            #             x11,y21 - r2,
-                            #             x11,y21 - r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11,
-                            #             )
-
-                            #             dcanvas.coords("nsivlabel1",dwidth/2.58,dheight/1.85)
-                            #             dcanvas.coords("nsivlabel2",dwidth/2.65,dheight/1.70)
-                            #             dcanvas.coords("nsivlabel3",dwidth/2.65,dheight/1.55)
-                            #             dcanvas.coords("nsivlabel4",dwidth/2.65,dheight/1.42)
-                            #             dcanvas.coords("nsivlabel5",dwidth/2.65,dheight/1.32)
-                            #             dcanvas.coords("nsivlabel6",dwidth/2.60,dheight/1.22)
-                            #             dcanvas.coords("nsivlabel7",dwidth/1.35,dheight/1.85)
-                            #             dcanvas.coords("nsivlabel8",dwidth/1.85,dheight/1.0)
-                            #             dcanvas.coords("nsivlabel17",dwidth/1.85,dheight/0.95)
-                            #             dcanvas.coords("nsivtree1",dwidth/2.9,dheight/0.75)
-                            #             dcanvas.coords("nsivlabel18",dwidth/2.55,dheight/0.73)
-                            #             dcanvas.coords("nsivlabel19",dwidth/1.8,dheight/0.73)
-                            #             dcanvas.coords("nsivlabel20",dwidth/1.45,dheight/0.73)
-                            #             dcanvas.coords("nsivlabel21",dwidth/1.22,dheight/0.73)
-                            #             dcanvas.coords("nsivtree2",dwidth/2.9,dheight/0.65)
-
-                            #             dcanvas.coords("nsivtlabel1",dwidth/2.88,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel2",dwidth/2.88,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel3",dwidth/2.88,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel4",dwidth/2.88,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel5",dwidth/2.67,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel6",dwidth/2.67,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel7",dwidth/2.67,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel8",dwidth/2.67,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel9",dwidth/1.9,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel10",dwidth/1.9,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel11",dwidth/1.9,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel12",dwidth/1.9,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel13",dwidth/1.65,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel14",dwidth/1.65,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel15",dwidth/1.65,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel16",dwidth/1.65,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel17",dwidth/1.5,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel18",dwidth/1.5,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel19",dwidth/1.5,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel20",dwidth/1.5,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel21",dwidth/1.2,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel22",dwidth/1.2,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel23",dwidth/1.2,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel24",dwidth/1.2,dheight/0.53)
-
-                            #             dcanvas.coords("nsivtlabel25",dwidth/1.4,dheight/0.629)
-                            #             dcanvas.coords("nsivtlabel26",dwidth/1.4,dheight/0.59)
-                            #             dcanvas.coords("nsivtlabel27",dwidth/1.4,dheight/0.56)
-                            #             dcanvas.coords("nsivtlabel28",dwidth/1.4,dheight/0.53)
-
-                            #             dcanvas.coords("nsivlabel13",dwidth/1.5,dheight/0.5)
-                            #             dcanvas.coords("nsivlabels13",dwidth/1.21,dheight/0.5)
-                            #             dcanvas.coords("nsivlabel14",dwidth/1.475,dheight/0.49)
-                            #             dcanvas.coords("nsivlabels14",dwidth/1.21,dheight/0.49)
-                            #             dcanvas.coords("nsivlabel15",dwidth/1.47,dheight/0.48)
-                            #             dcanvas.coords("nsivlabels15",dwidth/1.21,dheight/0.48)
-                            #             dcanvas.coords("nsivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-                            #             dcanvas.coords("nsivlabel16",dwidth/2.52,dheight/0.395)
-
-                            #         #--------------------------Fresh------------------------------
-
-                            #             r2 = 25
-                            #             x11 = dwidth/3
-                            #             x21 = dwidth/1.05
-                            #             y11 = dheight/2.3
-                            #             y21 = dheight/0.38
-
-
-                            #             dcanvas.coords("fnspoly3",x11 + r2,y11,
-                            #             x11 + r2,y11,
-                            #             x21 - r2,y11,
-                            #             x21 - r2,y11,     
-                            #             x21,y11,     
-                            #             #--------------------
-                            #             x21,y11 + r2,     
-                            #             x21,y11 + r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21,
-                            #             #--------------------
-                            #             x21 - r2,y21,     
-                            #             x21 - r2,y21,     
-                            #             x11 + r2,y21,
-                            #             x11 + r2,y21,
-                            #             x11,y21,
-                            #             #--------------------
-                            #             x11,y21 - r2,
-                            #             x11,y21 - r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11,
-                            #             )
-
-                            #             dcanvas.coords("fnaivlabel1",dwidth/2.58,dheight/1.85)
-                            #             dcanvas.coords("fnaivlabel2",dwidth/2.65,dheight/1.70)
-                            #             dcanvas.coords("fnaivlabel3",dwidth/2.65,dheight/1.55)
-                            #             dcanvas.coords("fnaivlabel4",dwidth/2.65,dheight/1.42)
-                            #             dcanvas.coords("fnaivlabel5",dwidth/2.65,dheight/1.32)
-                            #             dcanvas.coords("fnaivlabel6",dwidth/2.60,dheight/1.22)
-                            #             dcanvas.coords("fnaivlabel7",dwidth/2.70,dheight/1.14)
-                            #             dcanvas.coords("fnaivlabel8",dwidth/2.85,dheight/1.0)
-                            #             dcanvas.coords("fnaivlabel9",dwidth/1.38,dheight/1.0)
-                            #             dcanvas.coords("fnaivlabel10",dwidth/1.38,dheight/0.95)
-                            #             dcanvas.coords("fnaivlabel11",dwidth/1.38,dheight/0.90)
-                            #             dcanvas.coords("fnaivlabel12",dwidth/1.38,dheight/0.85)
-
-                            #             dcanvas.coords("fnaivtree1",dwidth/2.9,dheight/0.75)
-                            #             dcanvas.coords("fnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
-                            #             dcanvas.coords("fnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
-                            #             dcanvas.coords("fnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
-                            #             dcanvas.coords("fnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
-
-                            #             dcanvas.coords("fnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
-                            #             dcanvas.coords("fnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
-
-                            #             dcanvas.coords("fnaivtlabel1",dwidth/7.2,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel2",dwidth/7.2,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel3",dwidth/7.2,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel4",dwidth/7.2,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel5",dwidth/5,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel6",dwidth/5,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel7",dwidth/5,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel8",dwidth/5,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel9",dwidth/2.9,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel10",dwidth/2.9,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel11",dwidth/2.9,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel12",dwidth/2.9,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel13",dwidth/2.1,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel14",dwidth/2.1,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel15",dwidth/2.1,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel16",dwidth/2.1,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel17",dwidth/1.5,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel18",dwidth/1.5,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel19",dwidth/1.5,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel20",dwidth/1.5,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel21",dwidth/1.33,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel22",dwidth/1.33,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel23",dwidth/1.33,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel24",dwidth/1.33,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivtlabel25",dwidth/1.9,dheight/0.729)
-                            #             dcanvas.coords("fnaivtlabel26",dwidth/1.9,dheight/0.69)
-                            #             dcanvas.coords("fnaivtlabel27",dwidth/1.9,dheight/0.66)
-                            #             dcanvas.coords("fnaivtlabel28",dwidth/1.9,dheight/0.63)
-
-                            #             dcanvas.coords("fnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
-                            #             dcanvas.coords("fnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
-                            #             dcanvas.coords("fnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("fnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
-                            #             dcanvas.coords("fnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("fnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
-                            #             dcanvas.coords("fnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
-
-                            #             dcanvas.coords("fnaivlabel13",dwidth/1.5,dheight/0.59)
-
-                            #             dcanvas.coords("fnaivlabels13",dwidth/1.21,dheight/0.59)
-                            #             dcanvas.coords("fnaivlabel14",dwidth/1.475,dheight/0.565)
-                            #             dcanvas.coords("fnaivlabels14",dwidth/1.21,dheight/0.565)
-                            #             dcanvas.coords("fnaivlabel15",dwidth/1.47,dheight/0.54)
-                            #             dcanvas.coords("fnaivlabels15",dwidth/1.21,dheight/0.54)
-
-                            #             dcanvas.coords("fnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-
-                            #             dcanvas.coords("fnaivlabel16",dwidth/2.52,dheight/0.395)
-
-                            #             dcanvas.coords("fnaivbutton3",dwidth/23,dheight/3.415)
-
-                            #             dcanvas.coords("fnaivlabel17",dwidth/2.80,dheight/0.95)
-                            #             dcanvas.coords("fnaivlabel18",dwidth/1.16,dheight/1.0)
-                            #             dcanvas.coords("fnaivlabel19",dwidth/1.16,dheight/0.95)
-                            #             dcanvas.coords("fnaivlabel20",dwidth/1.16,dheight/0.90)
-                            #             dcanvas.coords("fnaivlabel21",dwidth/1.16,dheight/0.85)
-                                    
-                            #         #-----------------------------Friendly---------------------------
-
-                            #             r2 = 25
-                            #             x11 = dwidth/3
-                            #             x21 = dwidth/1.05
-                            #             y11 = dheight/2.3
-                            #             y21 = dheight/0.38
-
-
-                            #             dcanvas.coords("frnspoly3",x11 + r2,y11,
-                            #             x11 + r2,y11,
-                            #             x21 - r2,y11,
-                            #             x21 - r2,y11,     
-                            #             x21,y11,     
-                            #             #--------------------
-                            #             x21,y11 + r2,     
-                            #             x21,y11 + r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21 - r2,     
-                            #             x21,y21,
-                            #             #--------------------
-                            #             x21 - r2,y21,     
-                            #             x21 - r2,y21,     
-                            #             x11 + r2,y21,
-                            #             x11 + r2,y21,
-                            #             x11,y21,
-                            #             #--------------------
-                            #             x11,y21 - r2,
-                            #             x11,y21 - r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11 + r2,
-                            #             x11,y11,
-                            #             )
-
-                            #             dcanvas.coords("frnaivlabel1",dwidth/2.58,dheight/1.85)
-                            #             dcanvas.coords("frnaivlabel2",dwidth/2.65,dheight/1.70)
-                            #             dcanvas.coords("frnaivlabel3",dwidth/2.65,dheight/1.55)
-                            #             dcanvas.coords("frnaivlabel4",dwidth/2.65,dheight/1.42)
-                            #             dcanvas.coords("frnaivlabel5",dwidth/2.65,dheight/1.32)
-                            #             dcanvas.coords("frnaivlabel6",dwidth/2.60,dheight/1.22)
-                            #             dcanvas.coords("frnaivlabel7",dwidth/1.35,dheight/1.85)
-                            #             dcanvas.coords("frnaivlabel8",dwidth/2.85,dheight/1.0)
-                            #             dcanvas.coords("frnaivlabel9",dwidth/2.06,dheight/1.0)
-                            #             dcanvas.coords("frnaivlabel10",dwidth/2.05,dheight/0.95)
-                            #             dcanvas.coords("frnaivlabel11",dwidth/2.06,dheight/0.90)
-                            #             dcanvas.coords("frnaivlabel12",dwidth/2.08,dheight/0.85)
-
-                            #             dcanvas.coords("frnaivtree1",dwidth/2.9,dheight/0.75)
-                            #             dcanvas.coords("frnaivtline1",dwidth/7.5,dheight/0.70,dwidth/1.17,dheight/0.70)
-                            #             dcanvas.coords("frnaivtline2",dwidth/7.5,dheight/0.67,dwidth/1.17,dheight/0.67)
-                            #             dcanvas.coords("frnaivtline3",dwidth/7.5,dheight/0.64,dwidth/1.17,dheight/0.64)
-                            #             dcanvas.coords("frnaivtline4",dwidth/7.5,dheight/0.61,dwidth/1.17,dheight/0.61)
-
-                            #             dcanvas.coords("frnaivtline5",dwidth/7.5,dheight/0.75,dwidth/7.5,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline6",dwidth/1.17,dheight/0.75,dwidth/1.17,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline7",dwidth/6.4,dheight/0.75,dwidth/6.4,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline8",dwidth/3.374,dheight/0.75,dwidth/3.374,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline9",dwidth/2.24,dheight/0.75,dwidth/2.24,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline10",dwidth/1.92,dheight/0.75,dwidth/1.92,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline11",dwidth/1.54,dheight/0.75,dwidth/1.54,dheight/0.61)
-                            #             dcanvas.coords("frnaivtline12",dwidth/1.342,dheight/0.75,dwidth/1.342,dheight/0.61)
-
-                            #             dcanvas.coords("frnaivtlabel1",dwidth/7.2,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel2",dwidth/7.2,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel3",dwidth/7.2,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel4",dwidth/7.2,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivtlabel5",dwidth/5,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel6",dwidth/5,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel7",dwidth/5,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel8",dwidth/5,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivtlabel9",dwidth/2.9,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel10",dwidth/2.9,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel11",dwidth/2.9,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel12",dwidth/2.9,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivtlabel13",dwidth/2.1,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel14",dwidth/2.1,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel15",dwidth/2.1,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel16",dwidth/2.1,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivtlabel17",dwidth/1.5,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel18",dwidth/1.5,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel19",dwidth/1.5,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel20",dwidth/1.5,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivtlabel21",dwidth/1.33,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel22",dwidth/1.33,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel23",dwidth/1.33,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel24",dwidth/1.33,dheight/0.63)
-
-                            #             dcanvas.coords("frnnaivtlabel25",dwidth/1.9,dheight/0.729)
-                            #             dcanvas.coords("frnaivtlabel26",dwidth/1.9,dheight/0.69)
-                            #             dcanvas.coords("frnaivtlabel27",dwidth/1.9,dheight/0.66)
-                            #             dcanvas.coords("frnaivtlabel28",dwidth/1.9,dheight/0.63)
-
-                            #             dcanvas.coords("frnaivline16",dwidth/1.56,dheight/0.6,dwidth/1.56,dheight/0.52)
-                            #             dcanvas.coords("frnaivline17",dwidth/1.346,dheight/0.6,dwidth/1.346,dheight/0.52)
-                            #             dcanvas.coords("frnaivline18",dwidth/1.182,dheight/0.6,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("frnaivline19",dwidth/1.56,dheight/0.6,dwidth/1.182,dheight/0.6)
-                            #             dcanvas.coords("frnaivline20",dwidth/1.56,dheight/0.52,dwidth/1.182,dheight/0.52)
-                            #             dcanvas.coords("frnaivline21",dwidth/1.56,dheight/0.572,dwidth/1.182,dheight/0.572)
-                            #             dcanvas.coords("frnaivline22",dwidth/1.56,dheight/0.545,dwidth/1.182,dheight/0.545)
-
-                            #             dcanvas.coords("frnaivlabel13",dwidth/1.5,dheight/0.59)
-
-                            #             dcanvas.coords("frnaivlabels13",dwidth/1.21,dheight/0.59)
-                            #             dcanvas.coords("frnaivlabel14",dwidth/1.475,dheight/0.565)
-                            #             dcanvas.coords("frnaivlabels14",dwidth/1.21,dheight/0.565)
-                            #             dcanvas.coords("frnaivlabel15",dwidth/1.47,dheight/0.54)
-                            #             dcanvas.coords("frnaivlabels15",dwidth/1.21,dheight/0.54)
-
-                            #             dcanvas.coords("frnaivline23",dwidth/2.6,dheight/0.4,dwidth/1.11,dheight/0.4)
-
-                            #             dcanvas.coords("frnaivlabel16",dwidth/2.52,dheight/0.395)
-
-                            #             dcanvas.coords("frnaivbutton3",dwidth/23,dheight/3.415)
-
-                            #             dcanvas.coords("frnaivlabel17",dwidth/2.80,dheight/0.95)
-                            #             dcanvas.coords("frnaivlabel18",dwidth/1.74,dheight/1.0)
-                            #             dcanvas.coords("frnaivlabel19",dwidth/1.74,dheight/0.95)
-                            #             dcanvas.coords("frnaivlabel20",dwidth/1.74,dheight/0.90)
-                            #             dcanvas.coords("frnaivlabel21",dwidth/1.74,dheight/0.85)
-                            #             dcanvas.coords("frnaivlabels19",dwidth/1.53,dheight/1.0)
-                            #             dcanvas.coords("frnaivlabels20",dwidth/1.33,dheight/1.0)
-                            #             dcanvas.coords("frnaivlabels21",dwidth/1.18,dheight/1.0)
-
-
-                            #         cs_canvas_1=Canvas(ecs_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,2000))
-
-                            #         ecs_frame_1.grid_columnconfigure(0,weight=1)
-                            #         ecs_frame_1.grid_rowconfigure(0,weight=1)
-
-                                    
-                            #         vertibar=Scrollbar(ecs_frame_1, orient=VERTICAL)
-                            #         vertibar.grid(row=0,column=1,sticky='ns')
-                            #         vertibar.config(command=cs_canvas_1.yview)
-
-                            #         cs_canvas_1.bind("<Configure>", cs_responsive_widgets_1)
-                            #         cs_canvas_1.config(yscrollcommand=vertibar.set)
-                            #         cs_canvas_1.grid(row=0,column=0,sticky='nsew')
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("nspoly1"))
-
-                            #         label_1 = Label(cs_canvas_1,width=20,height=1,text="EDIT FORM STYLES", font=('arial 20'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel1"))
-
-                            #         cs_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("nshline"))
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("nspoly2"))
-
-                            #         label_1 = Label(cs_canvas_1,width=10,height=1,text="Form Name", font=('arial 12'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel2"))
-
-                            #         ns_entry_1=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                            #         window_ns_entry_1 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_1, tags=('nsentry1'))
-
-                            #         label_1 = Label(cs_canvas_1,width=16,height=1,text="Change Template", font=('arial 12'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel3"))
-
-
-                            #         def Classic():
-                            #             ns_entry_2.delete(0,"end")
-                            #             ns_entry_2.insert(0, "Classic")
-
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 print('hai')
-                            #                 cs_canvas_1.itemconfig('nspoly3',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel9',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel10',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel11',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel12',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtree1',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabels13',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabels14',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabels15',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivline23',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivlabel16',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel9',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel10',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel11',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel12',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel16',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel22',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel23',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel24',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel25',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel26',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel27',state='normal')
-                            #                 cs_canvas_1.itemconfig('naivtlabel28',state='normal')
-
-                            #                 cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-                                            
-                            #             else:
-                            #                 cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-                                    
-                                        
-                            #         def Modern():
-                            #             ns_entry_2.delete(0,"end")
-                            #             ns_entry_2.insert(0, "Modern")
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 print('hello')
-                            #                 cs_canvas_1.itemconfig('nspoly4',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtree1',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtree2',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel9',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel10',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel11',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel12',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel16',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel22',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel23',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel24',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel25',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel26',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel27',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel28',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabels13',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabels14',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabels15',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivline23',state='normal')
-                            #                 cs_canvas_1.itemconfig('nsivlabel16',state='normal')
-
-
-                            #                 cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-                                            
-                            #             else:
-                            #                 cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                            #         def Fresh():
-                            #             ns_entry_2.delete(0,"end")
-                            #             ns_entry_2.insert(0, "Fresh")
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 print('helloo')
-
-                            #                 cs_canvas_1.itemconfig('fnspoly3',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel9',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel10',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel11',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel12',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivtree1',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels13',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels14',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels15',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivline23',state='normal')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel16',state='normal')
-
-                            #                 cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-
-                                        
-                            #             else:
-                                            
-                            #                 cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                        
-
-                            #         def Friendly():
-                            #             ns_entry_2.delete(0,"end")
-                            #             ns_entry_2.insert(0, "Friendly")
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 print('hai')
-                            #                 cs_canvas_1.itemconfig('frnspoly3',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel1',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel2',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel3',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel4',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel5',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel6',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel7',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel8',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel17',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel9',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel18',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel10',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel19',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel11',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel20',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel12',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel21',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivtree1',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel13',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels13',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel14',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels14',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel15',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels15',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivline23',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel16',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels19',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels20',state='normal')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels21',state='normal')
-
-                            #                 cs_canvas_1.itemconfig('nspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('naivtlabel28',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('nspoly4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtree2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel22',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel24',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel25',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel26',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel27',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivtlabel28',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('nsivlabel16',state='hidden')
-
-                            #                 cs_canvas_1.itemconfig('fnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('fnaivlabel16',state='hidden')
-                                        
-                            #             else:
-                            #                 cs_canvas_1.itemconfig('frnspoly3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel2',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel3',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel4',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel5',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel6',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel7',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel8',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel17',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel9',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel18',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel10',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel11',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel12',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel21',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivtree1',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels13',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels14',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels15',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivline23',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabel16',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels19',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels20',state='hidden')
-                            #                 cs_canvas_1.itemconfig('frnaivlabels21',state='hidden')
-
-                            #         ns_entry_2=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                            #         window_ns_entry_2 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_2, tags=('nsentry2'))
-
-                            #         ns_btn1=Button(cs_canvas_1,text='Classic', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Classic)
-                            #         window_ns_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn1, tags=("nsbutton4"))
-                            #         #ns_btn1.bind("<Button-1>",Classic)
-
-                            #         ns_btn2=Button(cs_canvas_1,text='Modern', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Modern)
-                            #         window_ns_btn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn2, tags=("nsbutton5"))
-                            #         #ns_btn2.bind("<Button-1>",Modern)
-
-                            #         ns_btn3=Button(cs_canvas_1,text='Fresh', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Fresh)
-                            #         window_ns_btn3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn3, tags=("nsbutton6"))
-                            #         #ns_btn3.bind("<Button-1>",Fresh)
-
-                            #         ns_btn4=Button(cs_canvas_1,text='Friendly', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Friendly)
-                            #         window_ns_btn4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn4, tags=("nsbutton7"))
-                            #         #ns_btn4.bind("<Button-1>",Friendly)
-
-                            #         label_1 = Label(cs_canvas_1,width=16,height=1,text="Primary Colours", font=('arial 12'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel4"))
-
-                            #         def color_1_1():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#E9967A")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#E9967A")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#E9967A")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#E9967A")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#E9967A")
-                            #                 fr_label_19.config(background="#E9967A")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_2():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#8FBC8F")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#8FBC8F")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#8FBC8F")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#8FBC8F")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#8FBC8F")
-                            #                 fr_label_19.config(background="#8FBC8F")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_3():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#B0C4DE")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#B0C4DE")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#B0C4DE")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#B0C4DE")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#B0C4DE")
-                            #                 fr_label_19.config(background="#B0C4DE")
-                            #             else:
-                            #                 pass
-
-                            #         def color_1_4():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#87CEFA")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#87CEFA")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#87CEFA")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#87CEFA")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#87CEFA")
-                            #                 fr_label_19.config(background="#87CEFA")
-                            #             else:
-                            #                 pass
-
-                            #         def color_1_5():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#F0E68C")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#F0E68C")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#F0E68C")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#F0E68C")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#F0E68C")
-                            #                 fr_label_19.config(background="#F0E68C")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_6():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#DDA0DD")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#DDA0DD")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#DDA0DD")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#DDA0DD")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#DDA0DD")
-                            #                 fr_label_19.config(background="#DDA0DD")
-                            #             else:
-                            #                 pass
-
-                            #         def color_1_7():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#2F4F4F")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#2F4F4F")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#2F4F4F")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#2F4F4F")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#2F4F4F")
-                            #                 fr_label_19.config(background="#2F4F4F")
-                            #             else:
-                            #                 pass
-
-                            #         def color_1_8():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#98FB98")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#98FB98")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#98FB98")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#98FB98")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#98FB98")
-                            #                 fr_label_19.config(background="#98FB98")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_9():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#DB7093")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#DB7093")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#DB7093")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#DB7093")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#DB7093")
-                            #                 fr_label_19.config(background="#DB7093")
-                            #             else:
-                            #                 pass
-
-                            #         def color_1_10():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#D2B48C")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#D2B48C")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#D2B48C")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#D2B48C")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#D2B48C")
-                            #                 fr_label_19.config(background="#D2B48C")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_11():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#D3D3D3")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#D3D3D3")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#D3D3D3")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#D3D3D3")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#D3D3D3")
-                            #                 fr_label_19.config(background="#D3D3D3")
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_1_12():
-                            #             ns_entry_3.delete(0,"end")
-                            #             ns_entry_3.insert(0, "#F5F5F5")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 c_label_7.config(fg="#F5F5F5")
-                            #             else:
-                            #                 pass
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_7.config(fg="#F5F5F5")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_24.config(fg="#F5F5F5")
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_7.config(fg="#F5F5F5")
-                            #                 fr_label_19.config(background="#F5F5F5")
-                            #             else:
-                            #                 pass
-
-
-                            #         ns_entry_3=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                            #         window_ns_entry_3 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_3, tags=('nsentry3'))
-
-                            #         ns_btn5=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12',command=color_1_1)
-                            #         window_ns_btn5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn5, tags=("nsbutton8"))
-
-                            #         ns_btn6=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12',command=color_1_2)
-                            #         window_ns_btn6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn6, tags=("nsbutton9"))
-
-                            #         ns_btn7=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12',command=color_1_3)
-                            #         window_ns_btn7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn7, tags=("nsbutton10"))
-
-                            #         ns_btn8=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12',command=color_1_4)
-                            #         window_ns_btn8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn8, tags=("nsbutton11"))
-
-                            #         ns_btn9=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12',command=color_1_5)
-                            #         window_ns_btn9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn9, tags=("nsbutton12"))
-
-                            #         ns_btn10=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12',command=color_1_6)
-                            #         window_ns_btn10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn10, tags=("nsbutton13"))
-
-                            #         ns_btn11=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12',command=color_1_7)
-                            #         window_ns_btn11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn11, tags=("nsbutton14"))
-
-                            #         ns_btn12=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12',command=color_1_8)
-                            #         window_ns_btn12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn12, tags=("nsbutton15"))
-
-                            #         ns_btn13=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12',command=color_1_9)
-                            #         window_ns_btn13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn13, tags=("nsbutton16"))
-
-                            #         ns_btn14=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12',command=color_1_10)
-                            #         window_ns_btn14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn14, tags=("nsbutton17"))
-
-                            #         ns_btn15=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12',command=color_1_11)
-                            #         window_ns_btn15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn15, tags=("nsbutton18"))
-
-                            #         ns_btn16=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12',command=color_1_12)
-                            #         window_ns_btn16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn16, tags=("nsbutton19"))
-
-                            #         label_1 = Label(cs_canvas_1,width=18,height=1,text="Secondary Colours", font=('arial 12'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel5"))
-
-                            #         def color_2_1():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#E9967A")
-                                    
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#E9967A")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#E9967A',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#E9967A")
-                            #                 f_label_10.config(background="#E9967A")
-                            #                 f_label_11.config(background="#E9967A")
-                            #                 f_label_12.config(background="#E9967A")
-                            #                 f_label_13.config(background="#E9967A")
-                            #                 f_label_14.config(background="#E9967A")
-                            #                 f_label_15.config(background="#E9967A")
-                            #                 f_label_16.config(background="#E9967A")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#E9967A")
-                            #                 fr_label_20.config(background="#E9967A")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#E9967A',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_2():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#8FBC8F")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#8FBC8F")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#8FBC8F',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#8FBC8F")
-                            #                 f_label_10.config(background="#8FBC8F")
-                            #                 f_label_11.config(background="#8FBC8F")
-                            #                 f_label_12.config(background="#8FBC8F")
-                            #                 f_label_13.config(background="#8FBC8F")
-                            #                 f_label_14.config(background="#8FBC8F")
-                            #                 f_label_15.config(background="#8FBC8F")
-                            #                 f_label_16.config(background="#8FBC8F")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#8FBC8F")
-                            #                 fr_label_20.config(background="#8FBC8F")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#8FBC8F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_3():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#B0C4DE")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#B0C4DE")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#B0C4DE',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#B0C4DE")
-                            #                 f_label_10.config(background="#B0C4DE")
-                            #                 f_label_11.config(background="#B0C4DE")
-                            #                 f_label_12.config(background="#B0C4DE")
-                            #                 f_label_13.config(background="#B0C4DE")
-                            #                 f_label_14.config(background="#B0C4DE")
-                            #                 f_label_15.config(background="#B0C4DE")
-                            #                 f_label_16.config(background="#B0C4DE")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#B0C4DE")
-                            #                 fr_label_20.config(background="#B0C4DE")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#B0C4DE',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         def color_2_4():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#87CEFA")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#87CEFA")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#87CEFA',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#87CEFA")
-                            #                 f_label_10.config(background="#87CEFA")
-                            #                 f_label_11.config(background="#87CEFA")
-                            #                 f_label_12.config(background="#87CEFA")
-                            #                 f_label_13.config(background="#87CEFA")
-                            #                 f_label_14.config(background="#87CEFA")
-                            #                 f_label_15.config(background="#87CEFA")
-                            #                 f_label_16.config(background="#87CEFA")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#87CEFA")
-                            #                 fr_label_20.config(background="#87CEFA")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#87CEFA',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         def color_2_5():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#F0E68C")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#F0E68C")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#F0E68C',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#F0E68C")
-                            #                 f_label_10.config(background="#F0E68C")
-                            #                 f_label_11.config(background="#F0E68C")
-                            #                 f_label_12.config(background="#F0E68C")
-                            #                 f_label_13.config(background="#F0E68C")
-                            #                 f_label_14.config(background="#F0E68C")
-                            #                 f_label_15.config(background="#F0E68C")
-                            #                 f_label_16.config(background="#F0E68C")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#F0E68C")
-                            #                 fr_label_20.config(background="#F0E68C")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F0E68C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_6():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#DDA0DD")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#DDA0DD")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#DDA0DD',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#DDA0DD")
-                            #                 f_label_10.config(background="#DDA0DD")
-                            #                 f_label_11.config(background="#DDA0DD")
-                            #                 f_label_12.config(background="#DDA0DD")
-                            #                 f_label_13.config(background="#DDA0DD")
-                            #                 f_label_14.config(background="#DDA0DD")
-                            #                 f_label_15.config(background="#DDA0DD")
-                            #                 f_label_16.config(background="#DDA0DD")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#DDA0DD")
-                            #                 fr_label_20.config(background="#DDA0DD")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DDA0DD',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         def color_2_7():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#2F4F4F")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#2F4F4F")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#2F4F4F',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#2F4F4F")
-                            #                 f_label_10.config(background="#2F4F4F")
-                            #                 f_label_11.config(background="#2F4F4F")
-                            #                 f_label_12.config(background="#2F4F4F")
-                            #                 f_label_13.config(background="#2F4F4F")
-                            #                 f_label_14.config(background="#2F4F4F")
-                            #                 f_label_15.config(background="#2F4F4F")
-                            #                 f_label_16.config(background="#2F4F4F")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#2F4F4F")
-                            #                 fr_label_20.config(background="#2F4F4F")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#2F4F4F',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         def color_2_8():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#98FB98")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#98FB98")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#98FB98',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#98FB98")
-                            #                 f_label_10.config(background="#98FB98")
-                            #                 f_label_11.config(background="#98FB98")
-                            #                 f_label_12.config(background="#98FB98")
-                            #                 f_label_13.config(background="#98FB98")
-                            #                 f_label_14.config(background="#98FB98")
-                            #                 f_label_15.config(background="#98FB98")
-                            #                 f_label_16.config(background="#98FB98")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#98FB98")
-                            #                 fr_label_20.config(background="#98FB98")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#98FB98',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_9():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#DB7093")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#DB7093")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#DB7093',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#DB7093")
-                            #                 f_label_10.config(background="#DB7093")
-                            #                 f_label_11.config(background="#DB7093")
-                            #                 f_label_12.config(background="#DB7093")
-                            #                 f_label_13.config(background="#DB7093")
-                            #                 f_label_14.config(background="#DB7093")
-                            #                 f_label_15.config(background="#DB7093")
-                            #                 f_label_16.config(background="#DB7093")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#DB7093")
-                            #                 fr_label_20.config(background="#DB7093")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#DB7093',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         def color_2_10():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#D2B48C")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#D2B48C")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#D2B48C',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#D2B48C")
-                            #                 f_label_10.config(background="#D2B48C")
-                            #                 f_label_11.config(background="#D2B48C")
-                            #                 f_label_12.config(background="#D2B48C")
-                            #                 f_label_13.config(background="#D2B48C")
-                            #                 f_label_14.config(background="#D2B48C")
-                            #                 f_label_15.config(background="#D2B48C")
-                            #                 f_label_16.config(background="#D2B48C")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#D2B48C")
-                            #                 fr_label_20.config(background="#D2B48C")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D2B48C',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_11():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#D3D3D3")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#D3D3D3")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#D3D3D3',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#D3D3D3")
-                            #                 f_label_10.config(background="#D3D3D3")
-                            #                 f_label_11.config(background="#D3D3D3")
-                            #                 f_label_12.config(background="#D3D3D3")
-                            #                 f_label_13.config(background="#D3D3D3")
-                            #                 f_label_14.config(background="#D3D3D3")
-                            #                 f_label_15.config(background="#D3D3D3")
-                            #                 f_label_16.config(background="#D3D3D3")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#D3D3D3")
-                            #                 fr_label_20.config(background="#D3D3D3")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#D3D3D3',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-                                    
-                            #         def color_2_12():
-                            #             ns_entry_4.delete(0,"end")
-                            #             ns_entry_4.insert(0, "#F5F5F5")
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 fgthvi_1.configure('mystyle10.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 m_label_8.config(background="#F5F5F5")
-                            #                 fgthvi.configure('mystyle11.Treeview.Heading', background='#F5F5F5',State='DISABLE')
-                            #                 fgthvi_1.configure('mystyle12.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 f_label_9.config(background="#F5F5F5")
-                            #                 f_label_10.config(background="#F5F5F5")
-                            #                 f_label_11.config(background="#F5F5F5")
-                            #                 f_label_12.config(background="#F5F5F5")
-                            #                 f_label_13.config(background="#F5F5F5")
-                            #                 f_label_14.config(background="#F5F5F5")
-                            #                 f_label_15.config(background="#F5F5F5")
-                            #                 f_label_16.config(background="#F5F5F5")
-                            #                 fgthvi_1.configure('mystyle13.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 fr_label_18.config(background="#F5F5F5")
-                            #                 fr_label_20.config(background="#F5F5F5")
-                            #                 fgthvi_1.configure('mystyle14.Treeview.Heading', background='#F5F5F5',State='DISABLE',foreground='black')
-                            #             else:
-                            #                 pass
-
-                            #         ns_entry_4=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                            #         window_ns_entry_4 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_4, tags=('nsentry4'))
-
-                            #         ns_btn17=Button(cs_canvas_1, width=5,height=2, activebackground="#E9967A",background="#E9967A",font='arial 12',command=color_2_1)
-                            #         window_ns_btn17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn17, tags=("nsbutton20"))
-
-                            #         ns_btn18=Button(cs_canvas_1, width=5,height=2, activebackground="#8FBC8F",background="#8FBC8F",font='arial 12',command=color_2_2)
-                            #         window_ns_btn18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn18, tags=("nsbutton21"))
-
-                            #         ns_btn19=Button(cs_canvas_1, width=5,height=2, activebackground="#B0C4DE",background="#B0C4DE",font='arial 12',command=color_2_3)
-                            #         window_ns_btn19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn19, tags=("nsbutton22"))
-
-                            #         ns_btn20=Button(cs_canvas_1, width=5,height=2, activebackground="#87CEFA",background="#87CEFA",font='arial 12',command=color_2_4)
-                            #         window_ns_btn20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn20, tags=("nsbutton23"))
-
-                            #         ns_btn21=Button(cs_canvas_1, width=5,height=2, activebackground="#F0E68C",background="#F0E68C",font='arial 12',command=color_2_5)
-                            #         window_ns_btn21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn21, tags=("nsbutton24"))
-
-                            #         ns_btn22=Button(cs_canvas_1, width=5,height=2, activebackground="#DDA0DD",background="#DDA0DD",font='arial 12',command=color_2_6)
-                            #         window_ns_btn22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn22, tags=("nsbutton25"))
-
-                            #         ns_btn23=Button(cs_canvas_1, width=5,height=2, activebackground="#2F4F4F",background="#2F4F4F",font='arial 12',command=color_2_7)
-                            #         window_ns_btn23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn23, tags=("nsbutton26"))
-
-                            #         ns_btn24=Button(cs_canvas_1, width=5,height=2, activebackground="#98FB98",background="#98FB98",font='arial 12',command=color_2_8)
-                            #         window_ns_btn24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn24, tags=("nsbutton27"))
-
-                            #         ns_btn25=Button(cs_canvas_1, width=5,height=2, activebackground="#DB7093",background="#DB7093",font='arial 12',command=color_2_9)
-                            #         window_ns_btn25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn25, tags=("nsbutton28"))
-
-                            #         ns_btn26=Button(cs_canvas_1, width=5,height=2, activebackground="#D2B48C",background="#D2B48C",font='arial 12',command=color_2_10)
-                            #         window_ns_btn26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn26, tags=("nsbutton29"))
-
-                            #         ns_btn27=Button(cs_canvas_1, width=5,height=2, activebackground="#D3D3D3",background="#D3D3D3",font='arial 12',command=color_2_11)
-                            #         window_ns_btn27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn27, tags=("nsbutton30"))
-
-                            #         ns_btn28=Button(cs_canvas_1, width=5,height=2, activebackground="#F5F5F5",background="#F5F5F5",font='arial 12',command=color_2_12)
-                            #         window_ns_btn28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn28, tags=("nsbutton31"))
-
-                            #         label_1 = Label(cs_canvas_1,width=14,height=1,text="Try New Fonts", font=('arial 12'),background="#1b3857",fg="white") 
-                            #         window_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("nslabel6"))
-
-                            #         def Serif():
-                            #             ns_entry_5.delete(0,"end")
-                            #             ns_entry_5.insert(0, "Serif Serif font")
-
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 print('wow')
-                            #                 c_label_1.config(font=('Garamond bold',12))
-                            #                 c_label_2.config(font=('Garamond',12))
-                            #                 c_label_3.config(font=('Garamond',12))
-                            #                 c_label_4.config(font=('Garamond',12))
-                            #                 c_label_5.config(font=('Garamond',12))
-                            #                 c_label_6.config(font=('Garamond',12))
-                            #                 c_label_7.config(font=('Garamond bold',20))
-                            #                 c_label_8.config(font=('Garamond bold',14))
-                            #                 c_label_9.config(font=('Garamond',12))
-                            #                 c_label_10.config(font=('Garamond bold',12))
-                            #                 c_label_11.config(font=('Garamond',12))
-                            #                 c_label_12.config(font=('Garamond bold',12))
-                            #                 c_label_13.config(font=('Garamond',12))
-                            #                 c_label_14.config(font=('Garamond bold',12))
-                            #                 c_label_15.config(font=('Garamond',12))
-                            #                 c_label_16.config(font=('Garamond bold',12))
-                            #                 c_label_17.config(font=('Garamond',12))
-                            #                 c_label_18.config(font=('Garamond bold',12))
-                            #                 c_label_19.config(font=('Garamond bold',12))
-                            #                 c_label_20.config(font=('Garamond bold',12))
-                            #                 c_label_21.config(font=('Garamond bold',12))
-                            #                 c_label_22.config(font=('Garamond bold',12))
-                            #                 c_label_23.config(font=('Garamond bold',12))
-                            #                 c_label_24.config(font=('Garamond',12))
-                            #                 c_label_25.config(font=('Garamond',12))
-                            #                 c_label_26.config(font=('Garamond',12))
-                            #                 c_label_27.config(font=('Garamond',12))
-                            #                 c_label_28.config(font=('Garamond',12))
-                            #                 c_label_29.config(font=('Garamond',12))
-                            #                 c_label_30.config(font=('Garamond',12))
-                            #                 c_label_31.config(font=('Garamond',12))
-                            #                 c_label_32.config(font=('Garamond',12))
-                            #                 c_label_33.config(font=('Garamond',12))
-                            #                 c_label_34.config(font=('Garamond',12))
-                            #                 c_label_35.config(font=('Garamond',12))
-                            #                 c_label_36.config(font=('Garamond',12))
-                            #                 c_label_37.config(font=('Garamond',12))
-                            #                 c_label_38.config(font=('Garamond',12))
-                            #                 c_label_39.config(font=('Garamond',12))
-                            #                 c_label_40.config(font=('Garamond',12))
-                            #                 c_label_41.config(font=('Garamond',12))
-                            #                 c_label_42.config(font=('Garamond',12))
-                            #                 c_label_43.config(font=('Garamond',12))
-                            #                 c_label_44.config(font=('Garamond',12))
-                            #                 c_label_45.config(font=('Garamond',12))
-                            #                 c_label_46.config(font=('Garamond',12))
-                            #                 c_label_47.config(font=('Garamond',12))
-                            #                 c_label_48.config(font=('Garamond',12))
-                            #                 c_label_49.config(font=('Garamond',12))
-                            #                 c_label_50.config(font=('Garamond',12))
-                            #                 c_label_51.config(font=('Garamond',12))
-                            #                 c_label_52.config(font=('Garamond',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 print('wow')
-                            #                 m_label_1.config(font=('Garamond bold',12))
-                            #                 m_label_2.config(font=('Garamond',12))
-                            #                 m_label_3.config(font=('Garamond',12))
-                            #                 m_label_4.config(font=('Garamond',12))
-                            #                 m_label_5.config(font=('Garamond',12))
-                            #                 m_label_6.config(font=('Garamond',12))
-                            #                 m_label_7.config(font=('Garamond bold',20))
-                            #                 m_label_8.config(font=('Garamond bold',14))
-                            #                 m_label_9.config(font=('Garamond',12))
-                            #                 m_label_10.config(font=('Garamond bold',12))
-                            #                 m_label_11.config(font=('Garamond bold',12))
-                            #                 m_label_12.config(font=('Garamond bold',12))
-                            #                 m_label_13.config(font=('Garamond bold',12))
-                            #                 m_label_14.config(font=('Garamond bold',12))
-                            #                 m_label_15.config(font=('Garamond bold',12))
-                            #                 m_label_16.config(font=('Garamond',12))
-                            #                 m_label_17.config(font=('Garamond',12))
-                            #                 m_label_18.config(font=('Garamond',12))
-                            #                 m_label_19.config(font=('Garamond',12))
-                            #                 m_label_20.config(font=('Garamond',12))
-                            #                 m_label_25.config(font=('Garamond',12))
-                            #                 m_label_26.config(font=('Garamond',12))
-                            #                 m_label_27.config(font=('Garamond',12))
-                            #                 m_label_28.config(font=('Garamond',12))
-                            #                 m_label_29.config(font=('Garamond',12))
-                            #                 m_label_30.config(font=('Garamond',12))
-                            #                 m_label_31.config(font=('Garamond',12))
-                            #                 m_label_32.config(font=('Garamond',12))
-                            #                 m_label_33.config(font=('Garamond',12))
-                            #                 m_label_34.config(font=('Garamond',12))
-                            #                 m_label_35.config(font=('Garamond',12))
-                            #                 m_label_36.config(font=('Garamond',12))
-                            #                 m_label_37.config(font=('Garamond',12))
-                            #                 m_label_38.config(font=('Garamond',12))
-                            #                 m_label_39.config(font=('Garamond',12))
-                            #                 m_label_40.config(font=('Garamond',12))
-                            #                 m_label_41.config(font=('Garamond',12))
-                            #                 m_label_42.config(font=('Garamond',12))
-                            #                 m_label_43.config(font=('Garamond',12))
-                            #                 m_label_44.config(font=('Garamond',12))
-                            #                 m_label_45.config(font=('Garamond',12))
-                            #                 m_label_46.config(font=('Garamond',12))
-                            #                 m_label_47.config(font=('Garamond',12))
-                            #                 m_label_48.config(font=('Garamond',12))
-                            #                 m_label_49.config(font=('Garamond',12))
-                            #                 m_label_50.config(font=('Garamond',12))
-                            #                 m_label_51.config(font=('Garamond',12))
-                            #                 m_label_52.config(font=('Garamond',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 print('wow')
-                            #                 f_label_1.config(font=('Garamond bold',12))
-                            #                 f_label_2.config(font=('Garamond',12))
-                            #                 f_label_3.config(font=('Garamond',12))
-                            #                 f_label_4.config(font=('Garamond',12))
-                            #                 f_label_5.config(font=('Garamond',12))
-                            #                 f_label_6.config(font=('Garamond',12))
-                            #                 f_label_24.config(font=('Garamond bold',20))
-                            #                 f_label_7.config(font=('Garamond bold',14))
-                            #                 f_label_8.config(font=('Garamond',12))
-                            #                 f_label_9.config(font=('Garamond bold',12))
-                            #                 f_label_10.config(font=('Garamond',12))
-                            #                 f_label_11.config(font=('Garamond bold',12))
-                            #                 f_label_12.config(font=('Garamond',12))
-                            #                 f_label_13.config(font=('Garamond bold',12))
-                            #                 f_label_14.config(font=('Garamond',12))
-                            #                 f_label_15.config(font=('Garamond bold',12))
-                            #                 f_label_16.config(font=('Garamond',12))
-                            #                 f_label_17.config(font=('Garamond bold',12))
-                            #                 f_label_18.config(font=('Garamond bold',12))
-                            #                 f_label_19.config(font=('Garamond bold',12))
-                            #                 f_label_20.config(font=('Garamond bold',12))
-                            #                 f_label_21.config(font=('Garamond bold',12))
-                            #                 f_label_22.config(font=('Garamond bold',12))
-                            #                 f_label_23.config(font=('Garamond',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 print('wow')
-                            #                 fr_label_1.config(font=('Garamond bold',12))
-                            #                 fr_label_2.config(font=('Garamond',12))
-                            #                 fr_label_3.config(font=('Garamond',12))
-                            #                 fr_label_4.config(font=('Garamond',12))
-                            #                 fr_label_5.config(font=('Garamond',12))
-                            #                 fr_label_6.config(font=('Garamond',12))
-                            #                 fr_label_7.config(font=('Garamond bold',20))
-                            #                 fr_label_8.config(font=('Garamond bold',14))
-                            #                 fr_label_9.config(font=('Garamond',12))
-                            #                 fr_label_10.config(font=('Garamond bold',12))
-                            #                 fr_label_11.config(font=('Garamond',12))
-                            #                 fr_label_12.config(font=('Garamond bold',12))
-                            #                 fr_label_13.config(font=('Garamond',12))
-                            #                 fr_label_14.config(font=('Garamond bold',12))
-                            #                 fr_label_15.config(font=('Garamond',12))
-                            #                 fr_label_16.config(font=('Garamond bold',12))
-                            #                 fr_label_17.config(font=('Garamond',12))
-                            #                 fr_label_18.config(font=('Garamond',12))
-                            #                 fr_label_19.config(font=('Garamond',12))
-                            #                 fr_label_20.config(font=('Garamond',12))
-                            #                 fr_label_21.config(font=('Garamond',12))
-                            #                 fr_label_22.config(font=('Garamond bold',12))
-                            #                 fr_label_23.config(font=('Garamond bold',12))
-                            #                 fr_label_24.config(font=('Garamond bold',12))
-                            #                 frr_label_25.config(font=('Garamond bold',12))
-                            #                 frr_label_26.config(font=('Garamond bold',12))
-                            #                 frr_label_27.config(font=('Garamond',12))
-                            #             else:
-                            #                 pass
-                                    
-
-                            #         def Sans():
-                            #             ns_entry_5.delete(0,"end")
-                            #             ns_entry_5.insert(0, "Sans-serif Sans-serif font")
-
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 print('wow')
-                            #                 c_label_1.config(font=('Arial bold',12))
-                            #                 c_label_2.config(font=('Arial',12))
-                            #                 c_label_3.config(font=('Arial',12))
-                            #                 c_label_4.config(font=('Arial',12))
-                            #                 c_label_5.config(font=('Arial',12))
-                            #                 c_label_6.config(font=('Arial',12))
-                            #                 c_label_7.config(font=('Arial bold',20))
-                            #                 c_label_8.config(font=('Arial bold',14))
-                            #                 c_label_9.config(font=('Arial',12))
-                            #                 c_label_10.config(font=('Arial bold',12))
-                            #                 c_label_11.config(font=('Arial',12))
-                            #                 c_label_12.config(font=('Arial bold',12))
-                            #                 c_label_13.config(font=('Arial',12))
-                            #                 c_label_14.config(font=('Arial bold',12))
-                            #                 c_label_15.config(font=('Arial',12))
-                            #                 c_label_16.config(font=('Arial bold',12))
-                            #                 c_label_17.config(font=('Arial',12))
-                            #                 c_label_18.config(font=('Arial bold',12))
-                            #                 c_label_19.config(font=('Arial bold',12))
-                            #                 c_label_20.config(font=('Arial bold',12))
-                            #                 c_label_21.config(font=('Arial bold',12))
-                            #                 c_label_22.config(font=('Arial bold',12))
-                            #                 c_label_23.config(font=('Arial bold',12))
-                            #                 c_label_24.config(font=('Arial',12))
-                            #                 c_label_25.config(font=('Arial',12))
-                            #                 c_label_26.config(font=('Arial',12))
-                            #                 c_label_27.config(font=('Arial',12))
-                            #                 c_label_28.config(font=('Arial',12))
-                            #                 c_label_29.config(font=('Arial',12))
-                            #                 c_label_30.config(font=('Arial',12))
-                            #                 c_label_31.config(font=('Arial',12))
-                            #                 c_label_32.config(font=('Arial',12))
-                            #                 c_label_33.config(font=('Arial',12))
-                            #                 c_label_34.config(font=('Arial',12))
-                            #                 c_label_35.config(font=('Arial',12))
-                            #                 c_label_36.config(font=('Arial',12))
-                            #                 c_label_37.config(font=('Arial',12))
-                            #                 c_label_38.config(font=('Arial',12))
-                            #                 c_label_39.config(font=('Arial',12))
-                            #                 c_label_40.config(font=('Arial',12))
-                            #                 c_label_41.config(font=('Arial',12))
-                            #                 c_label_42.config(font=('Arial',12))
-                            #                 c_label_43.config(font=('Arial',12))
-                            #                 c_label_44.config(font=('Arial',12))
-                            #                 c_label_45.config(font=('Arial',12))
-                            #                 c_label_46.config(font=('Arial',12))
-                            #                 c_label_47.config(font=('Arial',12))
-                            #                 c_label_48.config(font=('Arial',12))
-                            #                 c_label_49.config(font=('Arial',12))
-                            #                 c_label_50.config(font=('Arial',12))
-                            #                 c_label_51.config(font=('Arial',12))
-                            #                 c_label_52.config(font=('Arial',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 print('wow')
-                            #                 m_label_1.config(font=('Arial bold',12))
-                            #                 m_label_2.config(font=('Arial',12))
-                            #                 m_label_3.config(font=('Arial',12))
-                            #                 m_label_4.config(font=('Arial',12))
-                            #                 m_label_5.config(font=('Arial',12))
-                            #                 m_label_6.config(font=('Arial',12))
-                            #                 m_label_7.config(font=('Arial bold',20))
-                            #                 m_label_8.config(font=('Arial bold',14))
-                            #                 m_label_9.config(font=('Arial',12))
-                            #                 m_label_10.config(font=('Arial bold',12))
-                            #                 m_label_11.config(font=('Arial bold',12))
-                            #                 m_label_12.config(font=('Arial bold',12))
-                            #                 m_label_13.config(font=('Arial bold',12))
-                            #                 m_label_14.config(font=('Arial bold',12))
-                            #                 m_label_15.config(font=('Arial bold',12))
-                            #                 m_label_16.config(font=('Arial',12))
-                            #                 m_label_17.config(font=('Arial',12))
-                            #                 m_label_18.config(font=('Arial',12))
-                            #                 m_label_19.config(font=('Arial',12))
-                            #                 m_label_20.config(font=('Arial',12))
-                            #                 m_label_25.config(font=('Arial',12))
-                            #                 m_label_26.config(font=('Arial',12))
-                            #                 m_label_27.config(font=('Arial',12))
-                            #                 m_label_28.config(font=('Arial',12))
-                            #                 m_label_29.config(font=('Arial',12))
-                            #                 m_label_30.config(font=('Arial',12))
-                            #                 m_label_31.config(font=('Arial',12))
-                            #                 m_label_32.config(font=('Arial',12))
-                            #                 m_label_33.config(font=('Arial',12))
-                            #                 m_label_34.config(font=('Arial',12))
-                            #                 m_label_35.config(font=('Arial',12))
-                            #                 m_label_36.config(font=('Arial',12))
-                            #                 m_label_37.config(font=('Arial',12))
-                            #                 m_label_38.config(font=('Arial',12))
-                            #                 m_label_39.config(font=('Arial',12))
-                            #                 m_label_40.config(font=('Arial',12))
-                            #                 m_label_41.config(font=('Arial',12))
-                            #                 m_label_42.config(font=('Arial',12))
-                            #                 m_label_43.config(font=('Arial',12))
-                            #                 m_label_44.config(font=('Arial',12))
-                            #                 m_label_45.config(font=('Arial',12))
-                            #                 m_label_46.config(font=('Arial',12))
-                            #                 m_label_47.config(font=('Arial',12))
-                            #                 m_label_48.config(font=('Arial',12))
-                            #                 m_label_49.config(font=('Arial',12))
-                            #                 m_label_50.config(font=('Arial',12))
-                            #                 m_label_51.config(font=('Arial',12))
-                            #                 m_label_52.config(font=('Arial',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 print('wow')
-                            #                 f_label_1.config(font=('Arial bold',12))
-                            #                 f_label_2.config(font=('Arial',12))
-                            #                 f_label_3.config(font=('Arial',12))
-                            #                 f_label_4.config(font=('Arial',12))
-                            #                 f_label_5.config(font=('Arial',12))
-                            #                 f_label_6.config(font=('Arial',12))
-                            #                 f_label_24.config(font=('Arial bold',20))
-                            #                 f_label_7.config(font=('Arial bold',14))
-                            #                 f_label_8.config(font=('Arial',12))
-                            #                 f_label_9.config(font=('Arial bold',12))
-                            #                 f_label_10.config(font=('Arial',12))
-                            #                 f_label_11.config(font=('Arial bold',12))
-                            #                 f_label_12.config(font=('Arial',12))
-                            #                 f_label_13.config(font=('Arial bold',12))
-                            #                 f_label_14.config(font=('Arial',12))
-                            #                 f_label_15.config(font=('Arial bold',12))
-                            #                 f_label_16.config(font=('Arial',12))
-                            #                 f_label_17.config(font=('Arial bold',12))
-                            #                 f_label_18.config(font=('Arial bold',12))
-                            #                 f_label_19.config(font=('Arial bold',12))
-                            #                 f_label_20.config(font=('Arial bold',12))
-                            #                 f_label_21.config(font=('Arial bold',12))
-                            #                 f_label_22.config(font=('Arial bold',12))
-                            #                 f_label_23.config(font=('Arial',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 print('wow')
-                            #                 fr_label_1.config(font=('Arial bold',12))
-                            #                 fr_label_2.config(font=('Arial',12))
-                            #                 fr_label_3.config(font=('Arial',12))
-                            #                 fr_label_4.config(font=('Arial',12))
-                            #                 fr_label_5.config(font=('Arial',12))
-                            #                 fr_label_6.config(font=('Arial',12))
-                            #                 fr_label_7.config(font=('Arial bold',20))
-                            #                 fr_label_8.config(font=('Arial bold',14))
-                            #                 fr_label_9.config(font=('Arial',12))
-                            #                 fr_label_10.config(font=('Arial bold',12))
-                            #                 fr_label_11.config(font=('Arial',12))
-                            #                 fr_label_12.config(font=('Arial bold',12))
-                            #                 fr_label_13.config(font=('Arial',12))
-                            #                 fr_label_14.config(font=('Arial bold',12))
-                            #                 fr_label_15.config(font=('Arial',12))
-                            #                 fr_label_16.config(font=('Arial bold',12))
-                            #                 fr_label_17.config(font=('Arial',12))
-                            #                 fr_label_18.config(font=('Arial',12))
-                            #                 fr_label_19.config(font=('Arial',12))
-                            #                 fr_label_20.config(font=('Arial',12))
-                            #                 fr_label_21.config(font=('Arial',12))
-                            #                 fr_label_22.config(font=('Arial bold',12))
-                            #                 fr_label_23.config(font=('Arial bold',12))
-                            #                 fr_label_24.config(font=('Arial bold',12))
-                            #                 frr_label_25.config(font=('Arial bold',12))
-                            #                 frr_label_26.config(font=('Arial bold',12))
-                            #                 frr_label_27.config(font=('Arial',12))
-                            #             else:
-                            #                 pass
-                                    
-
-                            #         def Monospace():
-                            #             ns_entry_5.delete(0,"end")
-                            #             ns_entry_5.insert(0, "Monospace Monospace font")
-
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 print('wow')
-                            #                 c_label_1.config(font=('Helvetica bold',12))
-                            #                 c_label_2.config(font=('Helvetica',12))
-                            #                 c_label_3.config(font=('Helvetica',12))
-                            #                 c_label_4.config(font=('Helvetica',12))
-                            #                 c_label_5.config(font=('Helvetica',12))
-                            #                 c_label_6.config(font=('Helvetica',12))
-                            #                 c_label_7.config(font=('Helvetica bold',20))
-                            #                 c_label_8.config(font=('Helvetica bold',14))
-                            #                 c_label_9.config(font=('Helvetica',12))
-                            #                 c_label_10.config(font=('Helvetica bold',12))
-                            #                 c_label_11.config(font=('Helvetica',12))
-                            #                 c_label_12.config(font=('Helvetica bold',12))
-                            #                 c_label_13.config(font=('Helvetica',12))
-                            #                 c_label_14.config(font=('Helvetica bold',12))
-                            #                 c_label_15.config(font=('Helvetica',12))
-                            #                 c_label_16.config(font=('Helvetica bold',12))
-                            #                 c_label_17.config(font=('Helvetica',12))
-                            #                 c_label_18.config(font=('Helvetica bold',12))
-                            #                 c_label_19.config(font=('Helvetica bold',12))
-                            #                 c_label_20.config(font=('Helvetica bold',12))
-                            #                 c_label_21.config(font=('Helvetica bold',12))
-                            #                 c_label_22.config(font=('Helvetica bold',12))
-                            #                 c_label_23.config(font=('Helvetica bold',12))
-                            #                 c_label_24.config(font=('Helvetica',12))
-                            #                 c_label_25.config(font=('Helvetica',12))
-                            #                 c_label_26.config(font=('Helvetica',12))
-                            #                 c_label_27.config(font=('Helvetica',12))
-                            #                 c_label_28.config(font=('Helvetica',12))
-                            #                 c_label_29.config(font=('Helvetica',12))
-                            #                 c_label_30.config(font=('Helvetica',12))
-                            #                 c_label_31.config(font=('Helvetica',12))
-                            #                 c_label_32.config(font=('Helvetica',12))
-                            #                 c_label_33.config(font=('Helvetica',12))
-                            #                 c_label_34.config(font=('Helvetica',12))
-                            #                 c_label_35.config(font=('Helvetica',12))
-                            #                 c_label_36.config(font=('Helvetica',12))
-                            #                 c_label_37.config(font=('Helvetica',12))
-                            #                 c_label_38.config(font=('Helvetica',12))
-                            #                 c_label_39.config(font=('Helvetica',12))
-                            #                 c_label_40.config(font=('Helvetica',12))
-                            #                 c_label_41.config(font=('Helvetica',12))
-                            #                 c_label_42.config(font=('Helvetica',12))
-                            #                 c_label_43.config(font=('Helvetica',12))
-                            #                 c_label_44.config(font=('Helvetica',12))
-                            #                 c_label_45.config(font=('Helvetica',12))
-                            #                 c_label_46.config(font=('Helvetica',12))
-                            #                 c_label_47.config(font=('Helvetica',12))
-                            #                 c_label_48.config(font=('Helvetica',12))
-                            #                 c_label_49.config(font=('Helvetica',12))
-                            #                 c_label_50.config(font=('Helvetica',12))
-                            #                 c_label_51.config(font=('Helvetica',12))
-                            #                 c_label_52.config(font=('Helvetica',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 print('wow')
-                            #                 m_label_1.config(font=('Helvetica bold',12))
-                            #                 m_label_2.config(font=('Helvetica',12))
-                            #                 m_label_3.config(font=('Helvetica',12))
-                            #                 m_label_4.config(font=('Helvetica',12))
-                            #                 m_label_5.config(font=('Helvetica',12))
-                            #                 m_label_6.config(font=('Helvetica',12))
-                            #                 m_label_7.config(font=('Helvetica bold',20))
-                            #                 m_label_8.config(font=('Helvetica bold',14))
-                            #                 m_label_9.config(font=('Helvetica',12))
-                            #                 m_label_10.config(font=('Helvetica bold',12))
-                            #                 m_label_11.config(font=('Helvetica bold',12))
-                            #                 m_label_12.config(font=('Helvetica bold',12))
-                            #                 m_label_13.config(font=('Helvetica bold',12))
-                            #                 m_label_14.config(font=('Helvetica bold',12))
-                            #                 m_label_15.config(font=('Helvetica bold',12))
-                            #                 m_label_16.config(font=('Helvetica',12))
-                            #                 m_label_17.config(font=('Helvetica',12))
-                            #                 m_label_18.config(font=('Helvetica',12))
-                            #                 m_label_19.config(font=('Helvetica',12))
-                            #                 m_label_20.config(font=('Helvetica',12))
-                            #                 m_label_25.config(font=('Helvetica',12))
-                            #                 m_label_26.config(font=('Helvetica',12))
-                            #                 m_label_27.config(font=('Helvetica',12))
-                            #                 m_label_28.config(font=('Helvetica',12))
-                            #                 m_label_29.config(font=('Helvetica',12))
-                            #                 m_label_30.config(font=('Helvetica',12))
-                            #                 m_label_31.config(font=('Helvetica',12))
-                            #                 m_label_32.config(font=('Helvetica',12))
-                            #                 m_label_33.config(font=('Helvetica',12))
-                            #                 m_label_34.config(font=('Helvetica',12))
-                            #                 m_label_35.config(font=('Helvetica',12))
-                            #                 m_label_36.config(font=('Helvetica',12))
-                            #                 m_label_37.config(font=('Helvetica',12))
-                            #                 m_label_38.config(font=('Helvetica',12))
-                            #                 m_label_39.config(font=('Helvetica',12))
-                            #                 m_label_40.config(font=('Helvetica',12))
-                            #                 m_label_41.config(font=('Helvetica',12))
-                            #                 m_label_42.config(font=('Helvetica',12))
-                            #                 m_label_43.config(font=('Helvetica',12))
-                            #                 m_label_44.config(font=('Helvetica',12))
-                            #                 m_label_45.config(font=('Helvetica',12))
-                            #                 m_label_46.config(font=('Helvetica',12))
-                            #                 m_label_47.config(font=('Helvetica',12))
-                            #                 m_label_48.config(font=('Helvetica',12))
-                            #                 m_label_49.config(font=('Helvetica',12))
-                            #                 m_label_50.config(font=('Helvetica',12))
-                            #                 m_label_51.config(font=('Helvetica',12))
-                            #                 m_label_52.config(font=('Helvetica',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 print('wow')
-                            #                 f_label_1.config(font=('Helvetica bold',12))
-                            #                 f_label_2.config(font=('Helvetica',12))
-                            #                 f_label_3.config(font=('Helvetica',12))
-                            #                 f_label_4.config(font=('Helvetica',12))
-                            #                 f_label_5.config(font=('Helvetica',12))
-                            #                 f_label_6.config(font=('Helvetica',12))
-                            #                 f_label_24.config(font=('Helvetica bold',20))
-                            #                 f_label_7.config(font=('Helvetica bold',14))
-                            #                 f_label_8.config(font=('Helvetica',12))
-                            #                 f_label_9.config(font=('Helvetica bold',12))
-                            #                 f_label_10.config(font=('Helvetica',12))
-                            #                 f_label_11.config(font=('Helvetica bold',12))
-                            #                 f_label_12.config(font=('Helvetica',12))
-                            #                 f_label_13.config(font=('Helvetica bold',12))
-                            #                 f_label_14.config(font=('Helvetica',12))
-                            #                 f_label_15.config(font=('Helvetica bold',12))
-                            #                 f_label_16.config(font=('Helvetica',12))
-                            #                 f_label_17.config(font=('Helvetica bold',12))
-                            #                 f_label_18.config(font=('Helvetica bold',12))
-                            #                 f_label_19.config(font=('Helvetica bold',12))
-                            #                 f_label_20.config(font=('Helvetica bold',12))
-                            #                 f_label_21.config(font=('Helvetica bold',12))
-                            #                 f_label_22.config(font=('Helvetica bold',12))
-                            #                 f_label_23.config(font=('Helvetica',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 print('wow')
-                            #                 fr_label_1.config(font=('Helvetica bold',12))
-                            #                 fr_label_2.config(font=('Helvetica',12))
-                            #                 fr_label_3.config(font=('Helvetica',12))
-                            #                 fr_label_4.config(font=('Helvetica',12))
-                            #                 fr_label_5.config(font=('Helvetica',12))
-                            #                 fr_label_6.config(font=('Helvetica',12))
-                            #                 fr_label_7.config(font=('Helvetica bold',20))
-                            #                 fr_label_8.config(font=('Helvetica bold',14))
-                            #                 fr_label_9.config(font=('Helvetica',12))
-                            #                 fr_label_10.config(font=('Helvetica bold',12))
-                            #                 fr_label_11.config(font=('Helvetica',12))
-                            #                 fr_label_12.config(font=('Helvetica bold',12))
-                            #                 fr_label_13.config(font=('Helvetica',12))
-                            #                 fr_label_14.config(font=('Helvetica bold',12))
-                            #                 fr_label_15.config(font=('Helvetica',12))
-                            #                 fr_label_16.config(font=('Helvetica bold',12))
-                            #                 fr_label_17.config(font=('Helvetica',12))
-                            #                 fr_label_18.config(font=('Helvetica',12))
-                            #                 fr_label_19.config(font=('Helvetica',12))
-                            #                 fr_label_20.config(font=('Helvetica',12))
-                            #                 fr_label_21.config(font=('Helvetica',12))
-                            #                 fr_label_22.config(font=('Helvetica bold',12))
-                            #                 fr_label_23.config(font=('Helvetica bold',12))
-                            #                 fr_label_24.config(font=('Helvetica bold',12))
-                            #                 frr_label_25.config(font=('Helvetica bold',12))
-                            #                 frr_label_26.config(font=('Helvetica bold',12))
-                            #                 frr_label_27.config(font=('Helvetica',12))
-                            #             else:
-                            #                 pass
-                                    
-
-                            #         def System():
-                            #             ns_entry_5.delete(0,"end")
-                            #             ns_entry_5.insert(0, "System-ui System-ui font")
-
-                            #             #----------------------------------------Classic-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Classic":
-                            #                 print('wow')
-                            #                 c_label_1.config(font=('Roboto bold',12))
-                            #                 c_label_2.config(font=('Roboto',12))
-                            #                 c_label_3.config(font=('Roboto',12))
-                            #                 c_label_4.config(font=('Roboto',12))
-                            #                 c_label_5.config(font=('Roboto',12))
-                            #                 c_label_6.config(font=('Roboto',12))
-                            #                 c_label_7.config(font=('Roboto bold',20))
-                            #                 c_label_8.config(font=('Roboto bold',14))
-                            #                 c_label_9.config(font=('Roboto',12))
-                            #                 c_label_10.config(font=('Roboto bold',12))
-                            #                 c_label_11.config(font=('Roboto',12))
-                            #                 c_label_12.config(font=('Roboto bold',12))
-                            #                 c_label_13.config(font=('Roboto',12))
-                            #                 c_label_14.config(font=('Roboto bold',12))
-                            #                 c_label_15.config(font=('Roboto',12))
-                            #                 c_label_16.config(font=('Roboto bold',12))
-                            #                 c_label_17.config(font=('Roboto',12))
-                            #                 c_label_18.config(font=('Roboto bold',12))
-                            #                 c_label_19.config(font=('Roboto bold',12))
-                            #                 c_label_20.config(font=('Roboto bold',12))
-                            #                 c_label_21.config(font=('Roboto bold',12))
-                            #                 c_label_22.config(font=('Roboto bold',12))
-                            #                 c_label_23.config(font=('Roboto bold',12))
-                            #                 c_label_24.config(font=('Roboto',12))
-                            #                 c_label_25.config(font=('Roboto',12))
-                            #                 c_label_26.config(font=('Roboto',12))
-                            #                 c_label_27.config(font=('Roboto',12))
-                            #                 c_label_28.config(font=('Roboto',12))
-                            #                 c_label_29.config(font=('Roboto',12))
-                            #                 c_label_30.config(font=('Roboto',12))
-                            #                 c_label_31.config(font=('Roboto',12))
-                            #                 c_label_32.config(font=('Roboto',12))
-                            #                 c_label_33.config(font=('Roboto',12))
-                            #                 c_label_34.config(font=('Roboto',12))
-                            #                 c_label_35.config(font=('Roboto',12))
-                            #                 c_label_36.config(font=('Roboto',12))
-                            #                 c_label_37.config(font=('Roboto',12))
-                            #                 c_label_38.config(font=('Roboto',12))
-                            #                 c_label_39.config(font=('Roboto',12))
-                            #                 c_label_40.config(font=('Roboto',12))
-                            #                 c_label_41.config(font=('Roboto',12))
-                            #                 c_label_42.config(font=('Roboto',12))
-                            #                 c_label_43.config(font=('Roboto',12))
-                            #                 c_label_44.config(font=('Roboto',12))
-                            #                 c_label_45.config(font=('Roboto',12))
-                            #                 c_label_46.config(font=('Roboto',12))
-                            #                 c_label_47.config(font=('Roboto',12))
-                            #                 c_label_48.config(font=('Roboto',12))
-                            #                 c_label_49.config(font=('Roboto',12))
-                            #                 c_label_50.config(font=('Roboto',12))
-                            #                 c_label_51.config(font=('Roboto',12))
-                            #                 c_label_52.config(font=('Roboto',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Modern-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Modern":
-                            #                 print('wow')
-                            #                 m_label_1.config(font=('Roboto bold',12))
-                            #                 m_label_2.config(font=('Roboto',12))
-                            #                 m_label_3.config(font=('Roboto',12))
-                            #                 m_label_4.config(font=('Roboto',12))
-                            #                 m_label_5.config(font=('Roboto',12))
-                            #                 m_label_6.config(font=('Roboto',12))
-                            #                 m_label_7.config(font=('Roboto bold',20))
-                            #                 m_label_8.config(font=('Roboto bold',14))
-                            #                 m_label_9.config(font=('Roboto',12))
-                            #                 m_label_10.config(font=('Roboto bold',12))
-                            #                 m_label_11.config(font=('Roboto bold',12))
-                            #                 m_label_12.config(font=('Roboto bold',12))
-                            #                 m_label_13.config(font=('Roboto bold',12))
-                            #                 m_label_14.config(font=('Roboto bold',12))
-                            #                 m_label_15.config(font=('Roboto bold',12))
-                            #                 m_label_16.config(font=('Roboto',12))
-                            #                 m_label_17.config(font=('Roboto',12))
-                            #                 m_label_18.config(font=('Roboto',12))
-                            #                 m_label_19.config(font=('Roboto',12))
-                            #                 m_label_20.config(font=('Roboto',12))
-                            #                 m_label_25.config(font=('Roboto',12))
-                            #                 m_label_26.config(font=('Roboto',12))
-                            #                 m_label_27.config(font=('Roboto',12))
-                            #                 m_label_28.config(font=('Roboto',12))
-                            #                 m_label_29.config(font=('Roboto',12))
-                            #                 m_label_30.config(font=('Roboto',12))
-                            #                 m_label_31.config(font=('Roboto',12))
-                            #                 m_label_32.config(font=('Roboto',12))
-                            #                 m_label_33.config(font=('Roboto',12))
-                            #                 m_label_34.config(font=('Roboto',12))
-                            #                 m_label_35.config(font=('Roboto',12))
-                            #                 m_label_36.config(font=('Roboto',12))
-                            #                 m_label_37.config(font=('Roboto',12))
-                            #                 m_label_38.config(font=('Roboto',12))
-                            #                 m_label_39.config(font=('Roboto',12))
-                            #                 m_label_40.config(font=('Roboto',12))
-                            #                 m_label_41.config(font=('Roboto',12))
-                            #                 m_label_42.config(font=('Roboto',12))
-                            #                 m_label_43.config(font=('Roboto',12))
-                            #                 m_label_44.config(font=('Roboto',12))
-                            #                 m_label_45.config(font=('Roboto',12))
-                            #                 m_label_46.config(font=('Roboto',12))
-                            #                 m_label_47.config(font=('Roboto',12))
-                            #                 m_label_48.config(font=('Roboto',12))
-                            #                 m_label_49.config(font=('Roboto',12))
-                            #                 m_label_50.config(font=('Roboto',12))
-                            #                 m_label_51.config(font=('Roboto',12))
-                            #                 m_label_52.config(font=('Roboto',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Fresh-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Fresh":
-                            #                 print('wow')
-                            #                 f_label_1.config(font=('Roboto bold',12))
-                            #                 f_label_2.config(font=('Roboto',12))
-                            #                 f_label_3.config(font=('Roboto',12))
-                            #                 f_label_4.config(font=('Roboto',12))
-                            #                 f_label_5.config(font=('Roboto',12))
-                            #                 f_label_6.config(font=('Roboto',12))
-                            #                 f_label_24.config(font=('Roboto bold',20))
-                            #                 f_label_7.config(font=('Roboto bold',14))
-                            #                 f_label_8.config(font=('Roboto',12))
-                            #                 f_label_9.config(font=('Roboto bold',12))
-                            #                 f_label_10.config(font=('Roboto',12))
-                            #                 f_label_11.config(font=('Roboto bold',12))
-                            #                 f_label_12.config(font=('Roboto',12))
-                            #                 f_label_13.config(font=('Roboto bold',12))
-                            #                 f_label_14.config(font=('Roboto',12))
-                            #                 f_label_15.config(font=('Roboto bold',12))
-                            #                 f_label_16.config(font=('Roboto',12))
-                            #                 f_label_17.config(font=('Roboto bold',12))
-                            #                 f_label_18.config(font=('Roboto bold',12))
-                            #                 f_label_19.config(font=('Roboto bold',12))
-                            #                 f_label_20.config(font=('Roboto bold',12))
-                            #                 f_label_21.config(font=('Roboto bold',12))
-                            #                 f_label_22.config(font=('Roboto bold',12))
-                            #                 f_label_23.config(font=('Roboto',12))
-                            #             else:
-                            #                 pass
-
-                            #             #----------------------------------------Friendly-----------------------------------------
-
-                            #             if ns_entry_2.get()=="Friendly":
-                            #                 print('wow')
-                            #                 fr_label_1.config(font=('Roboto bold',12))
-                            #                 fr_label_2.config(font=('Roboto',12))
-                            #                 fr_label_3.config(font=('Roboto',12))
-                            #                 fr_label_4.config(font=('Roboto',12))
-                            #                 fr_label_5.config(font=('Roboto',12))
-                            #                 fr_label_6.config(font=('Roboto',12))
-                            #                 fr_label_7.config(font=('Roboto bold',20))
-                            #                 fr_label_8.config(font=('Roboto bold',14))
-                            #                 fr_label_9.config(font=('Roboto',12))
-                            #                 fr_label_10.config(font=('Roboto bold',12))
-                            #                 fr_label_11.config(font=('Roboto',12))
-                            #                 fr_label_12.config(font=('Roboto bold',12))
-                            #                 fr_label_13.config(font=('Roboto',12))
-                            #                 fr_label_14.config(font=('Roboto bold',12))
-                            #                 fr_label_15.config(font=('Roboto',12))
-                            #                 fr_label_16.config(font=('Roboto bold',12))
-                            #                 fr_label_17.config(font=('Roboto',12))
-                            #                 fr_label_18.config(font=('Roboto',12))
-                            #                 fr_label_19.config(font=('Roboto',12))
-                            #                 fr_label_20.config(font=('Roboto',12))
-                            #                 fr_label_21.config(font=('Roboto',12))
-                            #                 fr_label_22.config(font=('Roboto bold',12))
-                            #                 fr_label_23.config(font=('Roboto bold',12))
-                            #                 fr_label_24.config(font=('Roboto bold',12))
-                            #                 frr_label_25.config(font=('Roboto bold',12))
-                            #                 frr_label_26.config(font=('Roboto bold',12))
-                            #                 frr_label_27.config(font=('Roboto',12))
-                            #             else:
-                            #                 pass
-                                    
-
-                            #         ns_entry_5=Entry(cs_canvas_1,width=52,justify=LEFT,background='#2f516f',foreground="white")
-                            #         window_ns_entry_5 = cs_canvas_1.create_window(0, 0, anchor="nw", height=30,window=ns_entry_5, tags=('nsentry5'))
-                                    
-                            #         ns_btn29=Button(cs_canvas_1,text='Serif\nSerif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Serif)
-                            #         window_ns_btn29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn29, tags=("nsbutton32"))
-
-                            #         ns_btn30=Button(cs_canvas_1,text='Sans-serif\nSans-serif font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Sans)
-                            #         window_ns_btn30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn30, tags=("nsbutton33"))
-
-                            #         ns_btn31=Button(cs_canvas_1,text='Monospace\nMonospace font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=Monospace)
-                            #         window_ns_btn31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn31, tags=("nsbutton34"))
-
-                            #         ns_btn32=Button(cs_canvas_1,text='System-ui\nSystem-ui font', width=15,height=4,foreground="white",background="#1b3857",font='arial 12',command=System)
-                            #         window_ns_btn32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_btn32, tags=("nsbutton35"))
-
-                            #         ns_chk_str_1 = BooleanVar()
-                            #         ns_chkbtn2 = Checkbutton(cs_canvas_1, text = "Apply this theme", variable = ns_chk_str_1, font=("arial", 12),background="#1b3857",foreground="white",selectcolor="#2f516f")
-                            #         window_ns_chkbtn2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_chkbtn2,tags=("nscheck1"))
-
-                            #         #----------------------------------------Classic-----------------------------------------
-
-                            #         sql_u = 'select * from auth_user where username=%s'
-                            #         val_u = (nm_ent.get(),)
-                            #         fbcursor.execute(sql_u,val_u)
-                            #         u_dtl = fbcursor.fetchone()
-
-                            #         sql = "select * from app1_company where id_id=%s"
-                            #         val = (u_dtl[0],)
-                            #         fbcursor.execute(sql, val,)
-                            #         cmp_dtl=fbcursor.fetchone()
-                                    
-
-                            #         sql = 'select * from app1_invoice where cid_id=%s'
-                            #         val =  (cmp_dtl[0],)
-                            #         fbcursor.execute(sql,val,)
-                            #         cl_view = fbcursor.fetchone()
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly3"),state=HIDDEN)
-
-                            #         c_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_1, tags=("naivlabel1"),state=HIDDEN)
-
-                            #         c_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                            #         window_c_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_2, tags=("naivlabel2"),state=HIDDEN)
-
-                            #         c_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                            #         window_c_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_3, tags=("naivlabel3"),state=HIDDEN)
-
-                            #         c_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_4, tags=("naivlabel4"),state=HIDDEN)
-
-                            #         c_label_5 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_5, tags=("naivlabel5"),state=HIDDEN)
-
-                            #         c_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_6, tags=("naivlabel6"),state=HIDDEN)
-
-                            #         c_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                            #         window_c_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_7, tags=("naivlabel7"),state=HIDDEN)
-
-                            #         c_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                            #         window_c_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_8, tags=("naivlabel8"),state=HIDDEN)
-
-                            #         c_label_9 = Label(cs_canvas_1,width=20,height=8,text=cl_view[7], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_9, tags=("naivlabel17"),state=HIDDEN)
-
-                            #         c_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_10, tags=("naivlabel9"),state=HIDDEN)
-
-                            #         c_label_11 = Label(cs_canvas_1,width=11,height=1,text=cl_view[3], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_11, tags=("naivlabel18"),state=HIDDEN)
-
-                            #         c_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_12, tags=("naivlabel10"),state=HIDDEN)
-
-                            #         c_label_13 = Label(cs_canvas_1,width=10,height=1,text=cl_view[5], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_13, tags=("naivlabel19"),state=HIDDEN)
-
-                            #         c_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_14, tags=("naivlabel11"),state=HIDDEN)
-
-                            #         c_label_15 = Label(cs_canvas_1,width=10,height=1,text=cl_view[6], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_15, tags=("naivlabel20"),state=HIDDEN)
-
-                            #         c_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_16, tags=("naivlabel12"),state=HIDDEN)
-
-                            #         c_label_17 = Label(cs_canvas_1,width=15,height=1,text=cl_view[4], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_17, tags=("naivlabel21"),state=HIDDEN)
-
-                            #         fgthvi_1 = ttk.Style()
-                            #         fgthvi_1.theme_use("default")
-                            #         fgthvi_1.configure('mystyle10.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                            #         fgthvi_1.configure('mystyle10.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                            #         nsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle10.Treeview')
-                            #         nsview_tree.pack(side = 'top')
-                            #         nsview_tree.heading(1)
-                            #         nsview_tree.heading(2, text="PRODUCT/SERVICES")
-                            #         nsview_tree.heading(3, text="HSN")
-                            #         nsview_tree.heading(4, text="QTY")
-                            #         nsview_tree.heading(5, text="PRICE")
-                            #         nsview_tree.heading(6, text="TOTAL")
-                            #         nsview_tree.heading(7, text="TAX(%)")
-                                    
-                            #         nsview_tree.column(1, width = 30)
-                            #         nsview_tree.column(2, width = 200)
-                            #         nsview_tree.column(3, width = 110)
-                            #         nsview_tree.column(4, width = 90)
-                            #         nsview_tree.column(5, width = 105)
-                            #         nsview_tree.column(6, width = 110)
-                            #         nsview_tree.column(7, width = 150)
-
-                            #         window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree,tags=('naivtree1'),state=HIDDEN)
-
-
-                            #         c_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_25, tags=("naivtlabel1"),state=HIDDEN)
-
-                            #         c_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_26, tags=("naivtlabel2"),state=HIDDEN)
-
-                            #         c_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_27, tags=("naivtlabel3"),state=HIDDEN)
-
-                            #         c_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_28, tags=("naivtlabel4"),state=HIDDEN)
-
-                            #         c_label_29 = Label(cs_canvas_1,width=8,height=1,text=cl_view[9], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_29, tags=("naivtlabel5"),state=HIDDEN)
-
-                            #         c_label_30 = Label(cs_canvas_1,width=8,height=1,text=cl_view[18], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_30, tags=("naivtlabel6"),state=HIDDEN)
-
-                            #         c_label_31 = Label(cs_canvas_1,width=8,height=1,text=cl_view[25], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_31, tags=("naivtlabel7"),state=HIDDEN)
-
-                            #         c_label_32 = Label(cs_canvas_1,width=8,height=1,text=cl_view[32], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_32, tags=("naivtlabel8"),state=HIDDEN)
-
-                            #         c_label_33 = Label(cs_canvas_1,width=8,height=1,text=cl_view[10], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_33, tags=("naivtlabel9"),state=HIDDEN)
-
-                            #         c_label_34 = Label(cs_canvas_1,width=8,height=1,text=cl_view[19], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_34, tags=("naivtlabel10"),state=HIDDEN)
-
-                            #         c_label_35 = Label(cs_canvas_1,width=8,height=1,text=cl_view[26], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_35, tags=("naivtlabel11"),state=HIDDEN)
-
-                            #         c_label_36 = Label(cs_canvas_1,width=8,height=1,text=cl_view[33], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_36, tags=("naivtlabel12"),state=HIDDEN)
-
-                            #         c_label_37 = Label(cs_canvas_1,width=2,height=1,text=cl_view[12], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_37, tags=("naivtlabel13"),state=HIDDEN)
-
-                            #         c_label_38 = Label(cs_canvas_1,width=2,height=1,text=cl_view[21], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_38, tags=("naivtlabel14"),state=HIDDEN)
-
-                            #         c_label_39 = Label(cs_canvas_1,width=2,height=1,text=cl_view[28], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_39, tags=("naivtlabel15"),state=HIDDEN)
-
-                            #         c_label_40 = Label(cs_canvas_1,width=2,height=1,text=cl_view[35], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_40, tags=("naivtlabel16"),state=HIDDEN)
-
-                            #         c_label_41 = Label(cs_canvas_1,width=16,height=1,text=cl_view[13], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_41, tags=("naivtlabel25"),state=HIDDEN)
-
-                            #         c_label_42 = Label(cs_canvas_1,width=16,height=1,text=cl_view[22], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_42, tags=("naivtlabel26"),state=HIDDEN)
-
-                            #         c_label_43 = Label(cs_canvas_1,width=16,height=1,text=cl_view[29], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_43, tags=("naivtlabel27"),state=HIDDEN)
-
-                            #         c_label_44 = Label(cs_canvas_1,width=16,height=1,text=cl_view[36], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_44, tags=("naivtlabel28"),state=HIDDEN)
-
-
-                            #         c_label_45 = Label(cs_canvas_1,width=5,height=1,text=cl_view[14], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_45, tags=("naivtlabel17"),state=HIDDEN)
-
-                            #         c_label_46 = Label(cs_canvas_1,width=5,height=1,text=cl_view[23], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_46, tags=("naivtlabel18"),state=HIDDEN)
-
-                            #         c_label_47 = Label(cs_canvas_1,width=5,height=1,text=cl_view[30], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_47, tags=("naivtlabel19"),state=HIDDEN)
-
-                            #         c_label_48 = Label(cs_canvas_1,width=5,height=1,text=cl_view[37], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_48, tags=("naivtlabel20"),state=HIDDEN)
-
-                            #         c_label_49 = Label(cs_canvas_1,width=14,height=1,text=cl_view[15], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_49, tags=("naivtlabel21"),state=HIDDEN)
-
-                            #         c_label_50 = Label(cs_canvas_1,width=14,height=1,text=cl_view[24], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_50, tags=("naivtlabel22"),state=HIDDEN)
-
-                            #         c_label_51 = Label(cs_canvas_1,width=14,height=1,text=cl_view[31], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_51, tags=("naivtlabel23"),state=HIDDEN)
-
-                            #         c_label_52 = Label(cs_canvas_1,width=14,height=1,text=cl_view[38], font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_52, tags=("naivtlabel24"),state=HIDDEN)
-
-                            #         c_label_18 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_18, tags=("naivlabel13"),state=HIDDEN)
-
-                            #         c_label_19 = Label(cs_canvas_1,width=10,height=1,text=cl_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_19, tags=("naivlabels13"),state=HIDDEN)
-
-                            #         c_label_20 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_20, tags=("naivlabel14"),state=HIDDEN)
-
-                            #         c_label_21 = Label(cs_canvas_1,width=10,height=1,text=cl_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_21, tags=("naivlabels14"),state=HIDDEN)
-
-
-                            #         c_label_22 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_22, tags=("naivlabel15"),state=HIDDEN)
-
-                            #         c_label_23 = Label(cs_canvas_1,width=10,height=1,text=cl_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_c_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_23, tags=("naivlabels15"),state=HIDDEN)
-
-                            #         cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('naivline23'),state=HIDDEN)
-
-                            #         c_label_24 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                            #         window_c_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=c_label_24, tags=("naivlabel16"),state=HIDDEN)
-
-                                    
-
-                            #         #--------------------------------------Modern------------------------------------
-
-                            #         sql_u = 'select * from auth_user where username=%s'
-                            #         val_u = (nm_ent.get(),)
-                            #         fbcursor.execute(sql_u,val_u)
-                            #         u_dtl = fbcursor.fetchone()
-
-                            #         sql = "select * from app1_company where id_id=%s"
-                            #         val = (u_dtl[0],)
-                            #         fbcursor.execute(sql, val,)
-                            #         cmp_dtl=fbcursor.fetchone()
-                                    
-
-                            #         sql = 'select * from app1_invoice where cid_id=%s'
-                            #         val =  (cmp_dtl[0],)
-                            #         fbcursor.execute(sql,val,)
-                            #         m_view = fbcursor.fetchone()
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("nspoly4"),state=HIDDEN)
-
-                            #         m_label_1 = Label(cs_canvas_1,width=12,height=1,text=cmp_dtl[1], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_1, tags=("nsivlabel1"),state=HIDDEN)
-
-                            #         m_label_2 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[2], font=('arial 12 '),background="white",fg="black") 
-                            #         window_m_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_2, tags=("nsivlabel2"),state=HIDDEN)
-
-                            #         m_label_3 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[3]+","+cmp_dtl[4], font=('arial 12 '),background="white",fg="black") 
-                            #         window_m_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_3, tags=("nsivlabel3"),state=HIDDEN)
-
-                            #         m_label_4 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[5], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_4, tags=("nsivlabel4"),state=HIDDEN)
-
-                            #         m_label_5 = Label(cs_canvas_1,width=15,height=1,text=cmp_dtl[6], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_5, tags=("nsivlabel5"),state=HIDDEN)
-
-                            #         m_label_6 = Label(cs_canvas_1,width=10,height=1,text=cmp_dtl[7], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_6, tags=("nsivlabel6"),state=HIDDEN)
-
-                            #         m_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                            #         window_m_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_7, tags=("nsivlabel7"),state=HIDDEN)
-
-                            #         m_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To:", font=('arial 14 bold'),background="skyblue",fg="black") 
-                            #         window_m_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_8, tags=("nsivlabel8"),state=HIDDEN)
-
-                            #         m_label_9 = Label(cs_canvas_1,width=20,height=8,text=m_view[7], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_9, tags=("nsivlabel17"),state=HIDDEN)
-
-                            #         fgthvi = ttk.Style()
-                            #         fgthvi.configure('mystyle11.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                            #         fgthvi.configure('mystyle11.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                            #         nsview_tree_1 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5), height = 0, show = "headings",style='mystyle11.Treeview')
-                            #         nsview_tree_1.pack(side = 'top')
-                            #         nsview_tree_1.heading(1)
-                            #         nsview_tree_1.heading(2, text="INVOICE NO")
-                            #         nsview_tree_1.heading(3, text="INVOICE DATE")
-                            #         nsview_tree_1.heading(4, text="DUE DATE")
-                            #         nsview_tree_1.heading(5, text="TERMS")
-                                    
-                            #         nsview_tree_1.column(1, width = 30)
-                            #         nsview_tree_1.column(2, width = 200)
-                            #         nsview_tree_1.column(3, width = 190)
-                            #         nsview_tree_1.column(4, width = 190)
-                            #         nsview_tree_1.column(5, width = 185)
-                                    
-                            #         window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_1,tags=('nsivtree1'),state=HIDDEN)
-
-                            #         m_label_17 = Label(cs_canvas_1,width=11,height=1,text=m_view[3], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_17, tags=("nsivlabel18"),state=HIDDEN)
-
-                            #         m_label_18 = Label(cs_canvas_1,width=10,height=1,text=m_view[5], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_18, tags=("nsivlabel19"),state=HIDDEN)
-
-                            #         m_label_19 = Label(cs_canvas_1,width=10,height=1,text=m_view[6], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_19, tags=("nsivlabel20"),state=HIDDEN)
-
-                            #         m_label_20 = Label(cs_canvas_1,width=15,height=1,text=m_view[4], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_20, tags=("nsivlabel21"),state=HIDDEN)
-
-                            #         fgthvi_1 = ttk.Style()
-                            #         fgthvi_1.theme_use("default")
-                            #         fgthvi_1.configure('mystyle12.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                            #         fgthvi_1.configure('mystyle12.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black',)
-
-                            #         nsview_tree_2 = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle12.Treeview')
-                            #         nsview_tree_2.pack(side = 'top')
-                            #         nsview_tree_2.heading(1)
-                            #         nsview_tree_2.heading(2, text="PRODUCT/SERVICES")
-                            #         nsview_tree_2.heading(3, text="HSN")
-                            #         nsview_tree_2.heading(4, text="QTY")
-                            #         nsview_tree_2.heading(5, text="PRICE")
-                            #         nsview_tree_2.heading(6, text="TOTAL")
-                            #         nsview_tree_2.heading(7, text="TAX(%)")
-                                    
-                            #         nsview_tree_2.column(1, width = 30)
-                            #         nsview_tree_2.column(2, width = 200)
-                            #         nsview_tree_2.column(3, width = 110)
-                            #         nsview_tree_2.column(4, width = 90)
-                            #         nsview_tree_2.column(5, width = 105)
-                            #         nsview_tree_2.column(6, width = 110)
-                            #         nsview_tree_2.column(7, width = 150)
-
-                            #         window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=nsview_tree_2,tags=('nsivtree2'),state=HIDDEN)
-
-                            #         m_label_25 = Label(cs_canvas_1,width=1,height=1,text="1", font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_25, tags=("nsivtlabel1"),state=HIDDEN)
-
-                            #         m_label_26 = Label(cs_canvas_1,width=1,height=1,text="2", font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_26, tags=("nsivtlabel2"),state=HIDDEN)
-
-                            #         m_label_27 = Label(cs_canvas_1,width=1,height=1,text="3", font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_27, tags=("nsivtlabel3"),state=HIDDEN)
-
-                            #         m_label_28 = Label(cs_canvas_1,width=1,height=1,text="4", font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_28 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_28, tags=("nsivtlabel4"),state=HIDDEN)
-
-                            #         m_label_29 = Label(cs_canvas_1,width=8,height=1,text=m_view[9], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_29 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_29, tags=("nsivtlabel5"),state=HIDDEN)
-
-                            #         m_label_30 = Label(cs_canvas_1,width=8,height=1,text=m_view[18], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_30 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_30, tags=("nsivtlabel6"),state=HIDDEN)
-
-                            #         m_label_31 = Label(cs_canvas_1,width=8,height=1,text=m_view[25], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_31 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_31, tags=("nsivtlabel7"),state=HIDDEN)
-
-                            #         m_label_32 = Label(cs_canvas_1,width=8,height=1,text=m_view[32], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_32 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_32, tags=("nsivtlabel8"),state=HIDDEN)
-
-                            #         m_label_33 = Label(cs_canvas_1,width=8,height=1,text=m_view[10], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_33 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_33, tags=("nsivtlabel9"),state=HIDDEN)
-
-                            #         m_label_34 = Label(cs_canvas_1,width=8,height=1,text=m_view[19], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_34 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_34, tags=("nsivtlabel10"),state=HIDDEN)
-
-                            #         m_label_35 = Label(cs_canvas_1,width=8,height=1,text=m_view[26], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_35 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_35, tags=("nsivtlabel11"),state=HIDDEN)
-
-                            #         m_label_36 = Label(cs_canvas_1,width=8,height=1,text=m_view[33], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_36 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_36, tags=("nsivtlabel12"),state=HIDDEN)
-
-                            #         m_label_37 = Label(cs_canvas_1,width=2,height=1,text=m_view[12], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_37 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_37, tags=("nsivtlabel13"),state=HIDDEN)
-
-                            #         m_label_38 = Label(cs_canvas_1,width=2,height=1,text=m_view[21], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_38 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_38, tags=("nsivtlabel14"),state=HIDDEN)
-
-                            #         m_label_39 = Label(cs_canvas_1,width=2,height=1,text=m_view[28], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_39 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_39, tags=("nsivtlabel15"),state=HIDDEN)
-
-                            #         m_label_40 = Label(cs_canvas_1,width=2,height=1,text=m_view[35], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_40 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_40, tags=("nsivtlabel16"),state=HIDDEN)
-
-                            #         m_label_41 = Label(cs_canvas_1,width=16,height=1,text=m_view[13], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_41 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_41, tags=("nsivtlabel25"),state=HIDDEN)
-
-                            #         m_label_42 = Label(cs_canvas_1,width=16,height=1,text=m_view[22], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_42 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_42, tags=("nsivtlabel26"),state=HIDDEN)
-
-                            #         m_label_43 = Label(cs_canvas_1,width=16,height=1,text=m_view[29], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_43 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_43, tags=("nsivtlabel27"),state=HIDDEN)
-
-                            #         m_label_44 = Label(cs_canvas_1,width=16,height=1,text=m_view[36], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_44 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_44, tags=("nsivtlabel28"),state=HIDDEN)
-
-                            #         m_label_45 = Label(cs_canvas_1,width=5,height=1,text=m_view[14], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_45 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_45, tags=("nsivtlabel17"),state=HIDDEN)
-
-                            #         m_label_46 = Label(cs_canvas_1,width=5,height=1,text=m_view[23], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_46 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_46, tags=("nsivtlabel18"),state=HIDDEN)
-
-                            #         m_label_47 = Label(cs_canvas_1,width=5,height=1,text=m_view[30], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_47 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_47, tags=("nsivtlabel19"),state=HIDDEN)
-
-                            #         m_label_48 = Label(cs_canvas_1,width=5,height=1,text=m_view[37], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_48 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_48, tags=("nsivtlabel20"),state=HIDDEN)
-
-                            #         m_label_49 = Label(cs_canvas_1,width=14,height=1,text=m_view[15], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_49 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_49, tags=("nsivtlabel21"),state=HIDDEN)
-
-                            #         m_label_50 = Label(cs_canvas_1,width=14,height=1,text=m_view[24], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_50 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_50, tags=("nsivtlabel22"),state=HIDDEN)
-
-                            #         m_label_51 = Label(cs_canvas_1,width=14,height=1,text=m_view[31], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_51 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_51, tags=("nsivtlabel23"),state=HIDDEN)
-
-                            #         m_label_52 = Label(cs_canvas_1,width=14,height=1,text=m_view[38], font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_52 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_52, tags=("nsivtlabel24"),state=HIDDEN)
-
-                            #         m_label_10 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_10, tags=("nsivlabel13"),state=HIDDEN)
-
-                            #         m_label_11 = Label(cs_canvas_1,width=10,height=1,text=m_view[16], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_11, tags=("nsivlabels13"),state=HIDDEN)
-
-                            #         m_label_12 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_12, tags=("nsivlabel14"),state=HIDDEN)
-
-                            #         m_label_13 = Label(cs_canvas_1,width=10,height=1,text=m_view[40], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_13, tags=("nsivlabels14"),state=HIDDEN)
-
-
-                            #         m_label_14 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_14, tags=("nsivlabel15"),state=HIDDEN)
-
-                            #         m_label_15 = Label(cs_canvas_1,width=10,height=1,text=m_view[17], font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_m_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_15, tags=("nsivlabels15"),state=HIDDEN)
-
-                            #         cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('nsivline23'),state=HIDDEN)
-
-                            #         m_label_16 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                            #         window_m_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=m_label_16, tags=("nsivlabel16"),state=HIDDEN)
-
-                            #         #----------------------------------------Fresh-----------------------------------------
-
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("fnspoly3"),state=HIDDEN)
-
-                            #         f_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_1, tags=("fnaivlabel1"),state=HIDDEN)
-
-                            #         f_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                            #         window_f_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_2, tags=("fnaivlabel2"),state=HIDDEN)
-
-                            #         f_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                            #         window_f_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_3, tags=("fnaivlabel3"),state=HIDDEN)
-
-                            #         f_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                            #         window_f_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_4, tags=("fnaivlabel4"),state=HIDDEN)
-
-                            #         f_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                            #         window_f_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_5, tags=("fnaivlabel5"),state=HIDDEN)
-
-                            #         f_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                            #         window_f_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_6, tags=("fnaivlabel6"),state=HIDDEN)
-
-                            #         f_label_24 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                            #         window_f_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_24, tags=("fnaivlabel7"),state=HIDDEN)
-
-
-                            #         f_label_7 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                            #         window_f_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_7, tags=("fnaivlabel8"),state=HIDDEN)
-
-                            #         f_label_8 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_f_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_8, tags=("fnaivlabel17"),state=HIDDEN)
-
-                            #         f_label_9 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="skyblue",fg="black") 
-                            #         window_f_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_9, tags=("fnaivlabel9"),state=HIDDEN)
-
-                            #         f_label_10 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                            #         window_f_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_10, tags=("fnaivlabel18"),state=HIDDEN)
-
-                            #         f_label_11 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                            #         window_f_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_11, tags=("fnaivlabel10"),state=HIDDEN)
-
-                            #         f_label_12 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                            #         window_f_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_12, tags=("fnaivlabel19"),state=HIDDEN)
-
-                            #         f_label_13 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="skyblue",fg="black") 
-                            #         window_f_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_13, tags=("fnaivlabel11"),state=HIDDEN)
-
-                            #         f_label_14 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                            #         window_f_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_14, tags=("fnaivlabel20"),state=HIDDEN)
-
-                            #         f_label_15 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="skyblue",fg="black") 
-                            #         window_f_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_15, tags=("fnaivlabel12"),state=HIDDEN)
-
-                            #         f_label_16 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="skyblue",fg="black") 
-                            #         window_f_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_16, tags=("fnaivlabel21"),state=HIDDEN)
-
-                            #         fgthvi_1 = ttk.Style()
-                            #         fgthvi_1.theme_use("default")
-                            #         fgthvi_1.configure('mystyle13.Treeview', background='skyblue',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                            #         fgthvi_1.configure('mystyle13.Treeview.Heading', background='skyblue',State='DISABLE',foreground='black')
-
-                            #         fnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle13.Treeview')
-                            #         fnsview_tree.pack(side = 'top')
-                            #         fnsview_tree.heading(1)
-                            #         fnsview_tree.heading(2, text="PRODUCT/SERVICES")
-                            #         fnsview_tree.heading(3, text="HSN")
-                            #         fnsview_tree.heading(4, text="QTY")
-                            #         fnsview_tree.heading(5, text="PRICE")
-                            #         fnsview_tree.heading(6, text="TOTAL")
-                            #         fnsview_tree.heading(7, text="TAX(%)")
-                                    
-                            #         fnsview_tree.column(1, width = 30)
-                            #         fnsview_tree.column(2, width = 200)
-                            #         fnsview_tree.column(3, width = 110)
-                            #         fnsview_tree.column(4, width = 90)
-                            #         fnsview_tree.column(5, width = 105)
-                            #         fnsview_tree.column(6, width = 110)
-                            #         fnsview_tree.column(7, width = 150)
-
-                            #         window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=fnsview_tree,tags=('fnaivtree1'),state=HIDDEN)
-
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline3'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline4'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline5'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline6'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline7'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline8'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline9'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline10'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
-
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
-
-                            #         f_label_17 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_17, tags=("fnaivlabel13"),state=HIDDEN)
-
-                            #         f_label_18 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_18, tags=("fnaivlabels13"),state=HIDDEN)
-
-                            #         f_label_19 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_19, tags=("fnaivlabel14"),state=HIDDEN)
-
-                            #         f_label_20 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_20, tags=("fnaivlabels14"),state=HIDDEN)
-
-
-                            #         f_label_21 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_21, tags=("fnaivlabel15"),state=HIDDEN)
-
-                            #         f_label_22 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_f_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_22, tags=("fnaivlabels15"),state=HIDDEN)
-
-                            #         cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('fnaivline23'),state=HIDDEN)
-
-                            #         f_label_23 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                            #         window_f_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=f_label_23, tags=("fnaivlabel16"),state=HIDDEN)
-
-                            #         #----------------------------------------Friendly-----------------------------------------
-
-                            #         cs_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("frnspoly3"),state=HIDDEN)
-
-                            #         fr_label_1 = Label(cs_canvas_1,width=12,height=1,text='Company Name', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_1, tags=("frnaivlabel1"),state=HIDDEN)
-
-                            #         fr_label_2 = Label(cs_canvas_1,width=15,height=1,text='Address line 1', font=('arial 12 '),background="white",fg="black") 
-                            #         window_fr_label_2 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_2, tags=("frnaivlabel2"),state=HIDDEN)
-
-                            #         fr_label_3 = Label(cs_canvas_1,width=15,height=1,text='Address line 2', font=('arial 12 '),background="white",fg="black") 
-                            #         window_fr_label_3 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_3, tags=("frnaivlabel3"),state=HIDDEN)
-
-                            #         fr_label_4 = Label(cs_canvas_1,width=15,height=1,text='Address line 3', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_4 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_4, tags=("frnaivlabel4"),state=HIDDEN)
-
-                            #         fr_label_5 = Label(cs_canvas_1,width=10,height=1,text='Email id', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_5 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_5, tags=("frnaivlabel5"),state=HIDDEN)
-
-                            #         fr_label_6 = Label(cs_canvas_1,width=10,height=1,text='Mobile no', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_6 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_6, tags=("frnaivlabel6"),state=HIDDEN)
-
-                            #         fr_label_7 = Label(cs_canvas_1,width=13,height=1,text="TAX INVOICE", font=('arial 20 bold'),background="white",fg="black") 
-                            #         window_fr_label_7 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_7, tags=("frnaivlabel7"),state=HIDDEN)
-
-                            #         fr_label_8 = Label(cs_canvas_1,width=15,height=1,text="Bill To", font=('arial 14 bold'),background="white",fg="black") 
-                            #         window_fr_label_8 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_8, tags=("frnaivlabel8"),state=HIDDEN)
-
-                            #         fr_label_9 = Label(cs_canvas_1,width=20,height=8,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_9 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_9, tags=("frnaivlabel17"),state=HIDDEN)
-
-                            #         fr_label_10 = Label(cs_canvas_1,width=11,height=1,text="Invoice No", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_10 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_10, tags=("frnaivlabel9"),state=HIDDEN)
-
-                            #         fr_label_11 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_11 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_11, tags=("frnaivlabel18"),state=HIDDEN)
-
-                            #         fr_label_12 = Label(cs_canvas_1,width=11,height=1,text="Invoice Date", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_12 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_12, tags=("frnaivlabel10"),state=HIDDEN)
-
-                            #         fr_label_13 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_13 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_13, tags=("frnaivlabel19"),state=HIDDEN)
-
-                            #         fr_label_14 = Label(cs_canvas_1,width=11,height=1,text="Due Date", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_14 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_14, tags=("frnaivlabel11"),state=HIDDEN)
-
-                            #         fr_label_15 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_15 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_15, tags=("frnaivlabel20"),state=HIDDEN)
-
-                            #         fr_label_16 = Label(cs_canvas_1,width=11,height=1,text="Terms", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_16 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_16, tags=("frnaivlabel12"),state=HIDDEN)
-
-                            #         fr_label_17 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12'),background="white",fg="black") 
-                            #         window_fr_label_17 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_17, tags=("frnaivlabel21"),state=HIDDEN)
-
-                            #         fr_label_18 = Label(cs_canvas_1,width=13,height=8,text='Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                            #         window_fr_label_18 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_18, tags=("frnaivlabels19"),state=HIDDEN)
-
-                            #         fr_label_19 = Label(cs_canvas_1,width=13,height=8,text='Please Pay', font=('arial 12'),background="skyblue",fg="black") 
-                            #         window_fr_label_19 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_19, tags=("frnaivlabels20"),state=HIDDEN)
-
-                            #         fr_label_20 = Label(cs_canvas_1,width=13,height=8,text='Due Date', font=('arial 12'),background="#98c1d9",fg="black") 
-                            #         window_fr_label_20 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_20, tags=("frnaivlabels21"),state=HIDDEN)
-
-
-                            #         fgthvi_1 = ttk.Style()
-                            #         fgthvi_1.theme_use("default")
-                            #         fgthvi_1.configure('mystyle14.Treeview', background='white',State='DISABLE',foreground='black',fieldbackground='white',font=(None,11))
-                            #         fgthvi_1.configure('mystyle14.Treeview.Heading', background='white',State='DISABLE',foreground='black')
-
-                            #         frnsview_tree = ttk.Treeview(cs_canvas_1, columns = (1,2,3,4,5,6,7), height = 0, show = "headings",style='mystyle14.Treeview')
-                            #         frnsview_tree.pack(side = 'top')
-                            #         frnsview_tree.heading(1)
-                            #         frnsview_tree.heading(2, text="PRODUCT/SERVICES")
-                            #         frnsview_tree.heading(3, text="HSN")
-                            #         frnsview_tree.heading(4, text="QTY")
-                            #         frnsview_tree.heading(5, text="PRICE")
-                            #         frnsview_tree.heading(6, text="TOTAL")
-                            #         frnsview_tree.heading(7, text="TAX(%)")
-                                    
-                            #         frnsview_tree.column(1, width = 30)
-                            #         frnsview_tree.column(2, width = 200)
-                            #         frnsview_tree.column(3, width = 110)
-                            #         frnsview_tree.column(4, width = 90)
-                            #         frnsview_tree.column(5, width = 105)
-                            #         frnsview_tree.column(6, width = 110)
-                            #         frnsview_tree.column(7, width = 150)
-
-                            #         window = cs_canvas_1.create_window(0, 0, anchor="nw", height=0, window=frnsview_tree,tags=('frnaivtree1'),state=HIDDEN)
-
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline1'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline2'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline3'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline4'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline5'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline6'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline7'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline8'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline9'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline10'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline11'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivtline12'))
-
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline16'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline17'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline18'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline19'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline20'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline21'))
-                            #         # cs_canvas_1.create_line(0, 0, 0, 0, fill='black',width=1, tags=('naivline22'))
-
-                            #         fr_label_21 = Label(cs_canvas_1,width=11,height=1,text="Subtotal", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_21 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_21, tags=("frnaivlabel13"),state=HIDDEN)
-
-                            #         fr_label_22 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_22 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_22, tags=("frnaivlabels13"),state=HIDDEN)
-
-                            #         fr_label_23 = Label(cs_canvas_1,width=11,height=1,text="Tax Amount", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_23 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_23, tags=("frnaivlabel14"),state=HIDDEN)
-
-                            #         fr_label_24 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_fr_label_24 = cs_canvas_1.create_window(0, 0, anchor="nw", window=fr_label_24, tags=("frnaivlabels14"),state=HIDDEN)
-
-
-                            #         frr_label_25 = Label(cs_canvas_1,width=5,height=1,text="Total", font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_frr_label_25 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_25, tags=("frnaivlabel15"),state=HIDDEN)
-
-                            #         frr_label_26 = Label(cs_canvas_1,width=10,height=1,text='', font=('arial 12 bold'),background="white",fg="black") 
-                            #         window_frr_label_26 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_26, tags=("frnaivlabels15"),state=HIDDEN)
-
-                            #         cs_canvas_1.create_line(0, 0, 0, 0, fill='grey',width=1, tags=('frnaivline23'),state=HIDDEN)
-
-                            #         frr_label_27 = Label(cs_canvas_1,width=75,height=0,text="Invoice was created on a computer and is valid without the signature and seal.", font=('arial 12'),background="white",fg="black") 
-                            #         window_frr_label_27 = cs_canvas_1.create_window(0, 0, anchor="nw", window=frr_label_27, tags=("frnaivlabel16"),state=HIDDEN)
-
-
-
-                            #         ns_sub_btn1=Button(cs_canvas_1,text='Submit', width=15,height=2,bd=0, foreground="white",background="#2f516f",font='arial 12',activebackground="#2f516f")
-                            #         window_ns_sub_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_sub_btn1,tags=('nsbutton1'))
-
-                            #         def ns_back_1_():
-                            #             ecs_frame_1.grid_forget()
-                            #             cs_frame.grid(row=0,column=0,sticky='nsew')
-
-                            #         ns_bck_btn1=Button(cs_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=ns_back_1_)
-                            #         window_ns_bck_btn1 = cs_canvas_1.create_window(0, 0, anchor="nw", window=ns_bck_btn1,tags=('nsbutton3'))
 
                                 elif cs_comb_1.get() == "Delete":
                                     cs_del = messagebox.askyesno("Delete Invoice","Are you sure to delete this invoice?")
@@ -14718,7 +4586,7 @@ def main_sign_in():
 
                         langs_var = StringVar(value=langs_1)
                         global lst_prf_1
-                        lst_prf_1 = Listbox(root,listvariable=langs_var,height=6 ,selectmode='extended',bg="black",fg="white",width=25)
+                        lst_prf_1 = Listbox(root,listvariable=langs_var,height=7 ,selectmode='extended',bg="black",fg="white",width=30)
                         lst_prf_1.bind('<<ListboxSelect>>', lst_prf_slt_1)
                         lst_prf_1.place(relx=0.70, rely=0.10)
                         
@@ -15528,7 +5396,7 @@ def main_sign_in():
                     
                     s = ttk.Style()
                     s.theme_use('default')
-                    s.configure('TNotebook.Tab', background="#213b52",foreground="white", width=150,anchor="center", padding=5)
+                    s.configure('TNotebook.Tab', background="#213b52",foreground="white", width=225,anchor="center", padding=5)
                     s.map('TNotebook.Tab',background=[("selected","#2f516f")])
                     def right_nav():
                         
@@ -15594,6 +5462,1180 @@ def main_sign_in():
                     tabControl2.add(tab13,compound = LEFT, text ='Project Management')
                     tabControl2.add(tab14,compound = LEFT, text ='Usage Decisions')
                     tabControl2.add(tab15,compound = LEFT, text ='Account & Payable')
+
+                    #-------------------------------Quality Management-----------------------------#
+                    tab_quality = ttk.Notebook(tab12)
+                    tab12_1 =  ttk.Frame(tab_quality)
+                    tab12_2=  ttk.Frame(tab_quality)
+                    tab12_3 = ttk.Frame(tab_quality)
+
+                    tab_quality.add(tab12_1,compound = LEFT, text ='Quality Inspection')
+                    tab_quality.add(tab12_2,compound = LEFT, text ='Quality Notification')
+                    tab_quality.add(tab12_3,compound = LEFT, text ='Quality Certificate')
+
+                    tab_quality.pack(expand = 1, fill ="both")
+
+                    #-------------------------------Quality Inspection-----------------------------#
+
+                    tab12_1.grid_columnconfigure(0,weight=1)
+                    tab12_1.grid_rowconfigure(0,weight=1)
+
+                    qi_frame = Frame(tab12_1)
+                    qi_frame.grid(row=0,column=0,sticky='nsew')
+
+                    def qi_responsive_widgets(event):
+                        
+                        dwidth = event.width
+                        dheight = event.height
+                        dcanvas = event.widget
+
+                        r1 = 25
+                        x1 = dwidth/63
+                        x2 = dwidth/1.021
+                        y1 = dheight/14 
+                        y2 = dheight/3.505
+
+                        dcanvas.coords("qipoly1",x1 + r1,y1,
+                        x1 + r1,y1,
+                        x2 - r1,y1,
+                        x2 - r1,y1,     
+                        x2,y1,     
+                        #--------------------
+                        x2,y1 + r1,     
+                        x2,y1 + r1,     
+                        x2,y2 - r1,     
+                        x2,y2 - r1,     
+                        x2,y2,
+                        #--------------------
+                        x2 - r1,y2,     
+                        x2 - r1,y2,     
+                        x1 + r1,y2,
+                        x1 + r1,y2,
+                        x1,y2,
+                        #--------------------
+                        x1,y2 - r1,
+                        x1,y2 - r1,
+                        x1,y1 + r1,
+                        x1,y1 + r1,
+                        x1,y1,
+                        )
+
+                        dcanvas.coords("qihline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+                        dcanvas.coords("qilabel1",dwidth/2.5,dheight/8.00)
+
+                        r2 = 25
+                        x11 = dwidth/63
+                        x21 = dwidth/1.021
+                        y11 = dheight/2.8
+                        y21 = dheight/0.8
+
+
+                        dcanvas.coords("qipoly2",x11 + r2,y11,
+                        x11 + r2,y11,
+                        x21 - r2,y11,
+                        x21 - r2,y11,     
+                        x21,y11,     
+                        #--------------------
+                        x21,y11 + r2,     
+                        x21,y11 + r2,     
+                        x21,y21 - r2,     
+                        x21,y21 - r2,     
+                        x21,y21,
+                        #--------------------
+                        x21 - r2,y21,     
+                        x21 - r2,y21,     
+                        x11 + r2,y21,
+                        x11 + r2,y21,
+                        x11,y21,
+                        #--------------------
+                        x11,y21 - r2,
+                        x11,y21 - r2,
+                        x11,y11 + r2,
+                        x11,y11 + r2,
+                        x11,y11,
+                        )
+
+                        dcanvas.coords("qitree1",dwidth/12,dheight/1.8)
+                        dcanvas.coords("qibutton1",dwidth/1.59,dheight/2.4)
+                        dcanvas.coords("qicombo1",dwidth/1.28,dheight/2.26)
+
+                    qi_canvas=Canvas(qi_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,3000))
+
+                    qi_frame.grid_rowconfigure(0,weight=1)
+                    qi_frame.grid_columnconfigure(0,weight=1)
+
+                    vertibar=Scrollbar(qi_frame, orient=VERTICAL)
+                    vertibar.grid(row=0,column=1,sticky='ns')
+                    vertibar.config(command=qi_canvas.yview)
+                    
+                    qi_canvas.bind("<Configure>", qi_responsive_widgets)
+                    qi_canvas.config(yscrollcommand=vertibar.set)
+                    qi_canvas.grid(row=0,column=0,sticky='nsew')
+
+                    qi_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qipoly1"))
+
+                    label_1 = Label(qi_canvas,width=20,height=1,text="QUALITY INSPECTION", font=('arial 25'),background="#1b3857",fg="white",anchor="w") 
+                    window_label_1 = qi_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("qilabel1"))
+
+                    qi_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("qihline"))
+
+                    qi_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qipoly2"))
+
+
+                    fgthi = ttk.Style()
+                    fgthi.theme_use("default")
+                    fgthi.configure('mystyle121.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                    fgthi.configure('mystyle121.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                    qi_scrollbar = Scrollbar(qi_frame,orient="vertical")
+
+                    qi_tree = ttk.Treeview(qi_canvas, columns = (1,2,3,4,5,6,7,8), height = 10, show = "headings",style='mystyle121.Treeview',yscrollcommand=qi_scrollbar.set)
+                    qi_tree.heading(1)
+                    qi_tree.heading(2, text="DATE")
+                    qi_tree.heading(3, text="INSPECTION ID")
+                    qi_tree.heading(4, text="NAME")
+                    qi_tree.heading(5, text="SKU")
+                    qi_tree.heading(6, text="INSPECTED QUANTITY")
+                    qi_tree.heading(7, text="QUALIFIED QUANTITY")
+                    qi_tree.heading(8, text="DEFECTED QUANTITY")
+                    
+                    qi_tree.column(1, width = 25)
+                    qi_tree.column(2, width = 130)
+                    qi_tree.column(3, width = 120)
+                    qi_tree.column(4, width = 215)
+                    qi_tree.column(5, width = 150)
+                    qi_tree.column(6, width = 160)
+                    qi_tree.column(7, width = 160)
+                    qi_tree.column(8, width = 160)
+                    window_label_4 = qi_canvas.create_window(0, 0, anchor="nw", window=qi_tree,tags=('qitree1'))
+
+                    qi_scrollbar.config(command=qi_tree.yview)
+                    qi_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    def add_quality_inspection():
+                        qi_frame.grid_forget()
+                        qi_frame_1 = Frame(tab12_1)
+                        qi_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                        def qi_responsive_widgets_1(event):
+
+                            dwidth = event.width
+                            dheight = event.height
+                            dcanvas = event.widget
+                            
+                            r1 = 25
+                            x1 = dwidth/63
+                            x2 = dwidth/1.021
+                            y1 = dheight/14 
+                            y2 = dheight/3.505
+
+                            dcanvas.coords("qiipoly1",x1 + r1,y1,
+                            x1 + r1,y1,
+                            x2 - r1,y1,
+                            x2 - r1,y1,     
+                            x2,y1,     
+                            #--------------------
+                            x2,y1 + r1,     
+                            x2,y1 + r1,     
+                            x2,y2 - r1,     
+                            x2,y2 - r1,     
+                            x2,y2,
+                            #--------------------
+                            x2 - r1,y2,     
+                            x2 - r1,y2,     
+                            x1 + r1,y2,
+                            x1 + r1,y2,
+                            x1,y2,
+                            #--------------------
+                            x1,y2 - r1,
+                            x1,y2 - r1,
+                            x1,y1 + r1,
+                            x1,y1 + r1,
+                            x1,y1,
+                            )
+
+                            dcanvas.coords("qiilabel1",dwidth/2.5,dheight/8.24)
+                            dcanvas.coords("qiihline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                            r2 = 25
+                            x11 = dwidth/63
+                            x21 = dwidth/1.021
+                            y11 = dheight/2.8
+                            y21 = dheight/0.57
+
+
+                            dcanvas.coords("qiipoly2",x11 + r2,y11,
+                            x11 + r2,y11,
+                            x21 - r2,y11,
+                            x21 - r2,y11,     
+                            x21,y11,     
+                            #--------------------
+                            x21,y11 + r2,     
+                            x21,y11 + r2,     
+                            x21,y21 - r2,     
+                            x21,y21 - r2,     
+                            x21,y21,
+                            #--------------------
+                            x21 - r2,y21,     
+                            x21 - r2,y21,     
+                            x11 + r2,y21,
+                            x11 + r2,y21,
+                            x11,y21,
+                            #--------------------
+                            x11,y21 - r2,
+                            x11,y21 - r2,
+                            x11,y11 + r2,
+                            x11,y11 + r2,
+                            x11,y11,
+                            )
+
+                            dcanvas.coords("qiibutton1",dwidth/23,dheight/3.415)
+
+                            dcanvas.coords("qiilabel2",dwidth/13.85,dheight/1.82)
+                            dcanvas.coords("qiilabel3",dwidth/1.935,dheight/1.82)
+                            dcanvas.coords("qiilabel4",dwidth/13.85,dheight/1.39)
+                            dcanvas.coords("qiilabel5",dwidth/1.93,dheight/1.39)
+                            dcanvas.coords("qiilabel6",dwidth/13.85,dheight/1.09)
+                            dcanvas.coords("qiilabel7",dwidth/2.7,dheight/1.09)
+                            dcanvas.coords("qiilabel8",dwidth/1.5,dheight/1.09)
+                            dcanvas.coords("qiilabel9",dwidth/13.85,dheight/0.9)
+                            dcanvas.coords("qiilabel10",dwidth/1.935,dheight/0.9)
+                            dcanvas.coords("qiilabel11",dwidth/13.85,dheight/0.78)
+                            dcanvas.coords("qiilabel12",dwidth/1.935,dheight/0.78)
+
+                            dcanvas.coords("qiientry1",dwidth/1.93,dheight/1.66)
+                            dcanvas.coords("qiientry2",dwidth/13.8,dheight/1.3)
+                            dcanvas.coords("qiientry3",dwidth/1.93,dheight/1.3)
+                            dcanvas.coords("qiientry4",dwidth/13.8,dheight/1.025)
+                            dcanvas.coords("qiientry5",dwidth/2.7,dheight/1.025)
+                            dcanvas.coords("qiientry6",dwidth/1.5,dheight/1.025)
+                            dcanvas.coords("qiientry7",dwidth/13.8,dheight/0.86)
+                            dcanvas.coords("qiientry8",dwidth/1.93,dheight/0.86)
+                            dcanvas.coords("qiientry9",dwidth/13.8,dheight/0.75)
+                            dcanvas.coords("qiientry10",dwidth/1.93,dheight/0.75)
+
+                            dcanvas.coords("qiibutton2",dwidth/2.2,dheight/0.67)
+                            try:
+                                dcanvas.coords("qiidentry1",dwidth/13.8,dheight/1.66)
+                            except:
+                                pass
+
+                        qi_canvas_1=Canvas(qi_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                        qi_frame_1.grid_columnconfigure(0,weight=1)
+                        qi_frame_1.grid_rowconfigure(0,weight=1)
+                        
+                        vertibar=Scrollbar(qi_frame_1, orient=VERTICAL)
+                        vertibar.grid(row=0,column=1,sticky='ns')
+                        vertibar.config(command=qi_canvas_1.yview)
+
+                        qi_canvas_1.bind("<Configure>", qi_responsive_widgets_1)
+                        qi_canvas_1.config(yscrollcommand=vertibar.set)
+                        qi_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                        qi_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qiipoly1"))
+
+                        label_1 = Label(qi_canvas_1,width=23,height=1,text="ADD QUALITY INSPECTION", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qiilabel1"))
+
+                        qi_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qiihline"))
+
+                        qi_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qiipoly2"))
+
+                        label_1 = Label(qi_canvas_1,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qiilabel2'))
+                        
+                        label_1 = Label(qi_canvas_1,width=13,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qiilabel3'))
+
+                        qii_entry_1=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_1 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_1, tags=('qiientry1'))
+
+                        label_1 = Label(qi_canvas_1,width=10,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel4'))
+
+                        qii_entry_2=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_2 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_2, tags=('qiientry2'))
+
+                        label_1 = Label(qi_canvas_1,width=10,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel5'))
+
+                        qii_entry_3=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_3 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_3, tags=('qiientry3'))
+
+                        label_2 = Label(qi_canvas_1,width=18,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel6"))
+
+                        qii_entry_4=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f')
+                        window_qii_entry_4 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_4, tags=("qiientry4"))
+
+                        label_2 = Label(qi_canvas_1,width=20,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel7"))
+
+                        qii_entry_5=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_5 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_5, tags=("qiientry5"))
+
+                        label_2 = Label(qi_canvas_1,width=20,height=1,text="Noninspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel8"))
+
+                        qii_entry_6=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_6 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_6, tags=("qiientry6"))
+
+                        label_1 = Label(qi_canvas_1,width=13,height=1,text="Inspected By", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel9'))
+
+                        qii_entry_7=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_7 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_7, tags=('qiientry7'))
+
+                        label_1 = Label(qi_canvas_1,width=11,height=1,text="Department", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel10'))
+
+                        qii_entry_8=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_8 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_8, tags=('qiientry8'))
+
+                        label_1 = Label(qi_canvas_1,width=13,height=1,text="Qualified quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel11'))
+
+                        qii_entry_9=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_9 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_9, tags=('qiientry9'))
+
+                        label_1 = Label(qi_canvas_1,width=18,height=1,text="Defected quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel12'))
+
+                        qii_entry_10=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_entry_10 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_10, tags=('qiientry10'))
+
+                        qii_save_btn1=Button(qi_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                        window_qii_save_btn1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=qii_save_btn1,tags=('qiibutton2'))
+
+                        def qii_back_1_():
+                            qi_frame_1.grid_forget()
+                            qi_frame.grid(row=0,column=0,sticky='nsew')
+
+                        qii_bck_btn1=Button(qi_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qii_back_1_)
+                        window_qii_bck_btn1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=qii_bck_btn1,tags=('qiibutton1'))
+
+                        qii_dentry_2=DateEntry(qi_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qii_dentry_2 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_dentry_2, tags=('qiidentry1'))
+
+                    qi_btn1=Button(qi_canvas,text='Add', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=add_quality_inspection)
+                    window_qi_btn1 = qi_canvas.create_window(0, 0, anchor="nw", window=qi_btn1, tags=("qibutton1"))
+
+                    qi_comb_1 = ttk.Combobox(qi_canvas,font=('arial 10'))
+                    qi_comb_1['values'] = ("Actions","Edit","Delete")
+                    qi_comb_1.current(0)
+                    window_qi_comb_1 = qi_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qi_comb_1,tags=('qicombo1'))
+                    qi_comb_1.bind("<<ComboboxSelected>>")
+
+
+                    #-------------------------------Quality Notification-----------------------------#
+
+                    tab12_2.grid_columnconfigure(0,weight=1)
+                    tab12_2.grid_rowconfigure(0,weight=1)
+
+                    qn_frame = Frame(tab12_2)
+                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                    def qn_responsive_widgets(event):
+                        
+                        dwidth = event.width
+                        dheight = event.height
+                        dcanvas = event.widget
+
+                        r1 = 25
+                        x1 = dwidth/63
+                        x2 = dwidth/1.021
+                        y1 = dheight/14 
+                        y2 = dheight/3.505
+
+                        dcanvas.coords("qnpoly1",x1 + r1,y1,
+                        x1 + r1,y1,
+                        x2 - r1,y1,
+                        x2 - r1,y1,     
+                        x2,y1,     
+                        #--------------------
+                        x2,y1 + r1,     
+                        x2,y1 + r1,     
+                        x2,y2 - r1,     
+                        x2,y2 - r1,     
+                        x2,y2,
+                        #--------------------
+                        x2 - r1,y2,     
+                        x2 - r1,y2,     
+                        x1 + r1,y2,
+                        x1 + r1,y2,
+                        x1,y2,
+                        #--------------------
+                        x1,y2 - r1,
+                        x1,y2 - r1,
+                        x1,y1 + r1,
+                        x1,y1 + r1,
+                        x1,y1,
+                        )
+
+                        dcanvas.coords("qnhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+                        dcanvas.coords("qnlabel1",dwidth/2.5,dheight/8.00)
+
+                        r2 = 25
+                        x11 = dwidth/63
+                        x21 = dwidth/1.021
+                        y11 = dheight/2.8
+                        y21 = dheight/0.8
+
+
+                        dcanvas.coords("qnpoly2",x11 + r2,y11,
+                        x11 + r2,y11,
+                        x21 - r2,y11,
+                        x21 - r2,y11,     
+                        x21,y11,     
+                        #--------------------
+                        x21,y11 + r2,     
+                        x21,y11 + r2,     
+                        x21,y21 - r2,     
+                        x21,y21 - r2,     
+                        x21,y21,
+                        #--------------------
+                        x21 - r2,y21,     
+                        x21 - r2,y21,     
+                        x11 + r2,y21,
+                        x11 + r2,y21,
+                        x11,y21,
+                        #--------------------
+                        x11,y21 - r2,
+                        x11,y21 - r2,
+                        x11,y11 + r2,
+                        x11,y11 + r2,
+                        x11,y11,
+                        )
+
+                        dcanvas.coords("qntree1",dwidth/12,dheight/1.8)
+                        dcanvas.coords("qncombo2",dwidth/1.55,dheight/2.26)
+                        dcanvas.coords("qncombo1",dwidth/1.28,dheight/2.26)
+
+                    qn_canvas=Canvas(qn_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,3000))
+
+                    qn_frame.grid_rowconfigure(0,weight=1)
+                    qn_frame.grid_columnconfigure(0,weight=1)
+
+                    vertibar=Scrollbar(qn_frame, orient=VERTICAL)
+                    vertibar.grid(row=0,column=1,sticky='ns')
+                    vertibar.config(command=qn_canvas.yview)
+                    
+                    qn_canvas.bind("<Configure>", qn_responsive_widgets)
+                    qn_canvas.config(yscrollcommand=vertibar.set)
+                    qn_canvas.grid(row=0,column=0,sticky='nsew')
+
+                    qn_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnpoly1"))
+
+                    label_1 = Label(qn_canvas,width=20,height=1,text="QUALITY NOTIFICATION", font=('arial 25'),background="#1b3857",fg="white",anchor="w") 
+                    window_label_1 = qn_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("qnlabel1"))
+
+                    qn_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("qnhline"))
+
+                    qn_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnpoly2"))
+
+                    fgthi = ttk.Style()
+                    fgthi.theme_use("default")
+                    fgthi.configure('mystyle122.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                    fgthi.configure('mystyle122.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                    qn_scrollbar = Scrollbar(qn_frame,orient="vertical")
+
+                    qn_tree = ttk.Treeview(qn_canvas, columns = (1,2,3,4,5,6), height = 10, show = "headings",style='mystyle122.Treeview',yscrollcommand=qn_scrollbar.set)
+                    qn_tree.heading(1)
+                    qn_tree.heading(2, text="DATE")
+                    qn_tree.heading(3, text="TYPE")
+                    qn_tree.heading(4, text="NAME")
+                    qn_tree.heading(5, text="SKU")
+                    qn_tree.heading(6, text="COMPLIANT QUANTITY")
+                    
+                    qn_tree.column(1, width = 25)
+                    qn_tree.column(2, width = 175)
+                    qn_tree.column(3, width = 260)
+                    qn_tree.column(4, width = 275)
+                    qn_tree.column(5, width = 175)
+                    qn_tree.column(6, width = 210)
+                    
+                    window_label_4 = qn_canvas.create_window(0, 0, anchor="nw", window=qn_tree,tags=('qntree1'))
+
+                    qn_scrollbar.config(command=qn_tree.yview)
+                    qn_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    def quality_notification(event):
+                        if qn_comb_2.get() == "Supplier Error":
+                            qn_frame.grid_forget()
+                            qn_frame_1 = Frame(tab12_2)
+                            qn_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                            def qn_responsive_widgets_1(event):
+
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+                                
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("qnnpoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("qnnlabel1",dwidth/2.5,dheight/8.24)
+                                dcanvas.coords("qnnhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.52
+
+
+                                dcanvas.coords("qnnpoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("qnnbutton1",dwidth/23,dheight/3.415)
+
+                                dcanvas.coords("qnnlabel2",dwidth/13.85,dheight/1.82)
+                                dcanvas.coords("qnnlabel3",dwidth/1.935,dheight/1.82)
+                                dcanvas.coords("qnnlabel4",dwidth/13.85,dheight/1.39)
+                                dcanvas.coords("qnnlabel5",dwidth/1.93,dheight/1.39)
+                                dcanvas.coords("qnnlabel6",dwidth/13.85,dheight/1.095)
+                                dcanvas.coords("qnnlabel7",dwidth/1.93,dheight/1.095)
+                                dcanvas.coords("qnnlabel8",dwidth/13.85,dheight/0.9)
+                                dcanvas.coords("qnnlabel9",dwidth/13.85,dheight/0.75)
+                                dcanvas.coords("qnnlabel10",dwidth/1.935,dheight/0.75)
+
+                                dcanvas.coords("qnnentry1",dwidth/1.93,dheight/1.66)
+                                dcanvas.coords("qnnentry2",dwidth/13.8,dheight/1.3)
+                                dcanvas.coords("qnnentry3",dwidth/1.93,dheight/1.3)
+                                dcanvas.coords("qnnentry4",dwidth/13.8,dheight/1.035)
+                                dcanvas.coords("qnnentry5",dwidth/1.93,dheight/1.035)
+                                dcanvas.coords("qnnentry6",dwidth/13.8,dheight/0.86)
+                                dcanvas.coords("qnnentry7",dwidth/13.8,dheight/0.72)
+                                dcanvas.coords("qnnentry8",dwidth/1.93,dheight/0.72)
+
+                                dcanvas.coords("qnnbutton2",dwidth/2.2,dheight/0.62)
+
+                                try:
+                                    dcanvas.coords("qnndentry1",dwidth/13.8,dheight/1.66)
+                                except:
+                                    pass
+
+                            qn_canvas_1=Canvas(qn_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                            qn_frame_1.grid_columnconfigure(0,weight=1)
+                            qn_frame_1.grid_rowconfigure(0,weight=1)
+                            
+                            vertibar=Scrollbar(qn_frame_1, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=qn_canvas_1.yview)
+
+                            qn_canvas_1.bind("<Configure>", qn_responsive_widgets_1)
+                            qn_canvas_1.config(yscrollcommand=vertibar.set)
+                            qn_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            qn_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnnpoly1"))
+
+                            label_1 = Label(qn_canvas_1,width=23,height=1,text="SUPPLIER ERROR", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qnnlabel1"))
+
+                            qn_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qnnhline"))
+
+                            qn_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnnpoly2"))
+
+                            label_1 = Label(qn_canvas_1,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel2'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="Reference No.", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel3'))
+
+                            qnn_entry_1=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_1 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_1, tags=('qnnentry1'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="Supplier Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel4'))
+
+                            qnn_entry_2=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_2 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_2, tags=('qnnentry2'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel5'))
+
+                            qnn_entry_3=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_3 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_3, tags=('qnnentry3'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel6'))
+
+                            qnn_entry_4=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_4 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_4, tags=('qnnentry4'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel7'))
+
+                            qnn_entry_5=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_5 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_5, tags=('qnnentry5'))
+
+                            label_1 = Label(qn_canvas_1,width=15,height=1,text="Description", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel8'))
+
+                            qnn_entry_6=scrolledtext.ScrolledText(qn_canvas_1,width=140,background='#2f516f',foreground="white")
+                            window_qnn_entry_6 = qn_canvas_1.create_window(0, 0, anchor="nw", height=60,window=qnn_entry_6,tags=('qnnentry6'))
+
+                            label_1 = Label(qn_canvas_1,width=20,height=1,text="Purchase quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel9'))
+
+                            qnn_entry_7=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_7 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_7, tags=('qnnentry7'))
+
+                            label_1 = Label(qn_canvas_1,width=20,height=1,text="Compliant quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel10'))
+
+                            qnn_entry_8=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_entry_8 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_8, tags=('qnnentry8'))
+
+                            qnn_save_btn1=Button(qn_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                            window_qnn_save_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_save_btn1,tags=('qnnbutton2'))
+
+                            def qnn_back_1_():
+                                qn_frame_1.grid_forget()
+                                qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                            qnn_bck_btn1=Button(qn_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qnn_back_1_)
+                            window_qnn_bck_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_bck_btn1,tags=('qnnbutton1'))
+
+                            qnn_dentry_1=DateEntry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qnn_dentry_1 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_dentry_1, tags=('qnndentry1'))
+
+                    qn_comb_2 = ttk.Combobox(qn_canvas,font=('arial 10'))
+                    qn_comb_2['values'] = ("Choose","Supplier Error","Material Error","Customer Compliant")
+                    qn_comb_2.current(0)
+                    window_qn_comb_2 = qn_canvas.create_window(0, 0, anchor="nw", width=130,height=30,window=qn_comb_2,tags=('qncombo2'))
+                    qn_comb_2.bind("<<ComboboxSelected>>",quality_notification)
+
+                    qn_comb_1 = ttk.Combobox(qn_canvas,font=('arial 10'))
+                    qn_comb_1['values'] = ("Actions","Edit","Delete")
+                    qn_comb_1.current(0)
+                    window_qn_comb_1 = qn_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qn_comb_1,tags=('qncombo1'))
+                    qn_comb_1.bind("<<ComboboxSelected>>")
+
+                    #-------------------------------Quality Certificate-----------------------------#
+
+                    tab12_3.grid_columnconfigure(0,weight=1)
+                    tab12_3.grid_rowconfigure(0,weight=1)
+
+                    qc_frame = Frame(tab12_3)
+                    qc_frame.grid(row=0,column=0,sticky='nsew')
+
+                    def qc_responsive_widgets(event):
+                        
+                        dwidth = event.width
+                        dheight = event.height
+                        dcanvas = event.widget
+
+                        r1 = 25
+                        x1 = dwidth/63
+                        x2 = dwidth/1.021
+                        y1 = dheight/14 
+                        y2 = dheight/3.505
+
+                        dcanvas.coords("qcpoly1",x1 + r1,y1,
+                        x1 + r1,y1,
+                        x2 - r1,y1,
+                        x2 - r1,y1,     
+                        x2,y1,     
+                        #--------------------
+                        x2,y1 + r1,     
+                        x2,y1 + r1,     
+                        x2,y2 - r1,     
+                        x2,y2 - r1,     
+                        x2,y2,
+                        #--------------------
+                        x2 - r1,y2,     
+                        x2 - r1,y2,     
+                        x1 + r1,y2,
+                        x1 + r1,y2,
+                        x1,y2,
+                        #--------------------
+                        x1,y2 - r1,
+                        x1,y2 - r1,
+                        x1,y1 + r1,
+                        x1,y1 + r1,
+                        x1,y1,
+                        )
+
+                        dcanvas.coords("qchline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+                        dcanvas.coords("qclabel1",dwidth/2.5,dheight/8.00)
+
+                        r2 = 25
+                        x11 = dwidth/63
+                        x21 = dwidth/1.021
+                        y11 = dheight/2.8
+                        y21 = dheight/0.8
+
+
+                        dcanvas.coords("qcpoly2",x11 + r2,y11,
+                        x11 + r2,y11,
+                        x21 - r2,y11,
+                        x21 - r2,y11,     
+                        x21,y11,     
+                        #--------------------
+                        x21,y11 + r2,     
+                        x21,y11 + r2,     
+                        x21,y21 - r2,     
+                        x21,y21 - r2,     
+                        x21,y21,
+                        #--------------------
+                        x21 - r2,y21,     
+                        x21 - r2,y21,     
+                        x11 + r2,y21,
+                        x11 + r2,y21,
+                        x11,y21,
+                        #--------------------
+                        x11,y21 - r2,
+                        x11,y21 - r2,
+                        x11,y11 + r2,
+                        x11,y11 + r2,
+                        x11,y11,
+                        )
+
+                        dcanvas.coords("qctree1",dwidth/12,dheight/1.8)
+                        dcanvas.coords("qcbutton1",dwidth/1.59,dheight/2.4)
+                        dcanvas.coords("qccombo1",dwidth/1.28,dheight/2.26)
+
+                    qc_canvas=Canvas(qc_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,3000))
+
+                    qc_frame.grid_rowconfigure(0,weight=1)
+                    qc_frame.grid_columnconfigure(0,weight=1)
+
+                    vertibar=Scrollbar(qc_frame, orient=VERTICAL)
+                    vertibar.grid(row=0,column=1,sticky='ns')
+                    vertibar.config(command=qc_canvas.yview)
+                    
+                    qc_canvas.bind("<Configure>", qc_responsive_widgets)
+                    qc_canvas.config(yscrollcommand=vertibar.set)
+                    qc_canvas.grid(row=0,column=0,sticky='nsew')
+
+                    qc_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qcpoly1"))
+
+                    label_1 = Label(qc_canvas,width=20,height=1,text="QUALITY CERTIFICATE", font=('arial 25'),background="#1b3857",fg="white",anchor="w") 
+                    window_label_1 = qc_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("qclabel1"))
+
+                    qc_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("qchline"))
+
+                    qc_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qcpoly2"))
+
+
+                    fgthi = ttk.Style()
+                    fgthi.theme_use("default")
+                    fgthi.configure('mystyle121.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                    fgthi.configure('mystyle121.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                    qc_scrollbar = Scrollbar(qc_frame,orient="vertical")
+
+                    qc_tree = ttk.Treeview(qc_canvas, columns = (1,2,3,4), height = 10, show = "headings",style='mystyle121.Treeview',yscrollcommand=qc_scrollbar.set)
+                    qc_tree.heading(1)
+                    qc_tree.heading(2, text="DATE")
+                    qc_tree.heading(3, text="SUPPLIER NAME")
+                    qc_tree.heading(4, text="PRODUCT NAME")
+                    
+                    qc_tree.column(1, width = 25)
+                    qc_tree.column(2, width = 285)
+                    qc_tree.column(3, width = 400)
+                    qc_tree.column(4, width = 410)
+
+                    window_label_4 = qc_canvas.create_window(0, 0, anchor="nw", window=qc_tree,tags=('qctree1'))
+
+                    qc_scrollbar.config(command=qc_tree.yview)
+                    qc_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    qc_btn1=Button(qc_canvas,text='Add', width=20,height=2,foreground="white",background="#1b3857",font='arial 12')
+                    window_qc_btn1 = qc_canvas.create_window(0, 0, anchor="nw", window=qc_btn1, tags=("qcbutton1"))
+
+                    qc_comb_1 = ttk.Combobox(qc_canvas,font=('arial 10'))
+                    qc_comb_1['values'] = ("Actions","Edit","Delete")
+                    qc_comb_1.current(0)
+                    window_qc_comb_1 = qc_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qc_comb_1,tags=('qccombo1'))
+                    qc_comb_1.bind("<<ComboboxSelected>>")
+
+                    #-------------------------------Project Management-----------------------------#
+                    tab_pmngt = ttk.Notebook(tab13)
+                    tab13_1 =  ttk.Frame(tab_pmngt)
+
+                    tab_pmngt.add(tab13_1,compound = LEFT, text ='Project Management')
+
+                    tab_pmngt.pack(expand = 1, fill ="both")
+
+                    tab13_1.grid_columnconfigure(0,weight=1)
+                    tab13_1.grid_rowconfigure(0,weight=1)
+
+                    pmngt_frame = Frame(tab13_1)
+                    pmngt_frame.grid(row=0,column=0,sticky='nsew')
+
+                    def pmngt_responsive_widgets(event):
+                        
+                        dwidth = event.width
+                        dheight = event.height
+                        dcanvas = event.widget
+
+                        r1 = 25
+                        x1 = dwidth/63
+                        x2 = dwidth/1.021
+                        y1 = dheight/14 
+                        y2 = dheight/3.505
+
+                        dcanvas.coords("pmpoly1",x1 + r1,y1,
+                        x1 + r1,y1,
+                        x2 - r1,y1,
+                        x2 - r1,y1,     
+                        x2,y1,     
+                        #--------------------
+                        x2,y1 + r1,     
+                        x2,y1 + r1,     
+                        x2,y2 - r1,     
+                        x2,y2 - r1,     
+                        x2,y2,
+                        #--------------------
+                        x2 - r1,y2,     
+                        x2 - r1,y2,     
+                        x1 + r1,y2,
+                        x1 + r1,y2,
+                        x1,y2,
+                        #--------------------
+                        x1,y2 - r1,
+                        x1,y2 - r1,
+                        x1,y1 + r1,
+                        x1,y1 + r1,
+                        x1,y1,
+                        )
+
+                        dcanvas.coords("pmhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+                        dcanvas.coords("pmlabel1",dwidth/2.5,dheight/8.00)
+
+                        r2 = 25
+                        x11 = dwidth/63
+                        x21 = dwidth/1.021
+                        y11 = dheight/2.8
+                        y21 = dheight/0.8
+
+
+                        dcanvas.coords("pmpoly2",x11 + r2,y11,
+                        x11 + r2,y11,
+                        x21 - r2,y11,
+                        x21 - r2,y11,     
+                        x21,y11,     
+                        #--------------------
+                        x21,y11 + r2,     
+                        x21,y11 + r2,     
+                        x21,y21 - r2,     
+                        x21,y21 - r2,     
+                        x21,y21,
+                        #--------------------
+                        x21 - r2,y21,     
+                        x21 - r2,y21,     
+                        x11 + r2,y21,
+                        x11 + r2,y21,
+                        x11,y21,
+                        #--------------------
+                        x11,y21 - r2,
+                        x11,y21 - r2,
+                        x11,y11 + r2,
+                        x11,y11 + r2,
+                        x11,y11,
+                        )
+
+                        dcanvas.coords("pmtree1",dwidth/12,dheight/1.8)
+                        dcanvas.coords("pmbutton1",dwidth/1.59,dheight/2.4)
+                        dcanvas.coords("pmcombo1",dwidth/1.28,dheight/2.26)
+
+                    pm_canvas=Canvas(pmngt_frame, bg='#2f516f', width=1325, height=600, scrollregion=(0,0,700,3000))
+
+                    pmngt_frame.grid_rowconfigure(0,weight=1)
+                    pmngt_frame.grid_columnconfigure(0,weight=1)
+
+                    vertibar=Scrollbar(pmngt_frame, orient=VERTICAL)
+                    vertibar.grid(row=0,column=1,sticky='ns')
+                    vertibar.config(command=pm_canvas.yview)
+                    
+                    pm_canvas.bind("<Configure>", pmngt_responsive_widgets)
+                    pm_canvas.config(yscrollcommand=vertibar.set)
+                    pm_canvas.grid(row=0,column=0,sticky='nsew')
+
+                    pm_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("pmpoly1"))
+
+                    label_1 = Label(pm_canvas,width=22,height=1,text="PROJECT MANAGEMENT", font=('arial 25'),background="#1b3857",fg="white",anchor="w") 
+                    window_label_1 = pm_canvas.create_window(0, 0, anchor="nw", window=label_1, tags=("pmlabel1"))
+
+                    pm_canvas.create_line(0,0,0,0,fill='gray',width=1,tags=("pmhline"))
+
+                    pm_canvas.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("pmpoly2"))
+
+
+                    fgthi = ttk.Style()
+                    fgthi.theme_use("default")
+                    fgthi.configure('mystyle120.Treeview', background='#2f516f',State='DISABLE',foreground='white',fieldbackground='#2f516f',font=(None,11))
+                    fgthi.configure('mystyle120.Treeview.Heading', background='#2f516f',State='DISABLE')
+
+                    pm_scrollbar = Scrollbar(pmngt_frame,orient="vertical")
+
+                    pm_tree = ttk.Treeview(pm_canvas, columns = (1,2,3,4,5,6), height = 10, show = "headings",style='mystyle120.Treeview',yscrollcommand=pm_scrollbar.set)
+                    pm_tree.heading(1)
+                    pm_tree.heading(2, text="NAME")
+                    pm_tree.heading(3, text="DESCRIPTION")
+                    pm_tree.heading(4, text="QUANTITY")
+                    pm_tree.heading(5, text="START DATE")
+                    pm_tree.heading(6, text="END DATE")
+                    
+                    pm_tree.column(1, width = 50)
+                    pm_tree.column(2, width = 250)
+                    pm_tree.column(3, width = 320)
+                    pm_tree.column(4, width = 150)
+                    pm_tree.column(5, width = 175)
+                    pm_tree.column(6, width = 175)
+                    window_label_4 = pm_canvas.create_window(0, 0, anchor="nw", window=pm_tree,tags=('pmtree1'))
+
+                    pm_scrollbar.config(command=pm_tree.yview)
+                    pm_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    def create_project():
+                        pmngt_frame.grid_forget()
+                        pmngt_frame_1 = Frame(tab13_1)
+                        pmngt_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                        def pm_responsive_widgets_1(event):
+
+                            dwidth = event.width
+                            dheight = event.height
+                            dcanvas = event.widget
+                            
+                            r1 = 25
+                            x1 = dwidth/63
+                            x2 = dwidth/1.021
+                            y1 = dheight/14 
+                            y2 = dheight/3.505
+
+                            dcanvas.coords("cppoly1",x1 + r1,y1,
+                            x1 + r1,y1,
+                            x2 - r1,y1,
+                            x2 - r1,y1,     
+                            x2,y1,     
+                            #--------------------
+                            x2,y1 + r1,     
+                            x2,y1 + r1,     
+                            x2,y2 - r1,     
+                            x2,y2 - r1,     
+                            x2,y2,
+                            #--------------------
+                            x2 - r1,y2,     
+                            x2 - r1,y2,     
+                            x1 + r1,y2,
+                            x1 + r1,y2,
+                            x1,y2,
+                            #--------------------
+                            x1,y2 - r1,
+                            x1,y2 - r1,
+                            x1,y1 + r1,
+                            x1,y1 + r1,
+                            x1,y1,
+                            )
+
+                            dcanvas.coords("cplabel1",dwidth/2.5,dheight/8.24)
+                            dcanvas.coords("cphline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                            r2 = 25
+                            x11 = dwidth/63
+                            x21 = dwidth/1.021
+                            y11 = dheight/2.8
+                            y21 = dheight/0.59
+
+
+                            dcanvas.coords("cppoly2",x11 + r2,y11,
+                            x11 + r2,y11,
+                            x21 - r2,y11,
+                            x21 - r2,y11,     
+                            x21,y11,     
+                            #--------------------
+                            x21,y11 + r2,     
+                            x21,y11 + r2,     
+                            x21,y21 - r2,     
+                            x21,y21 - r2,     
+                            x21,y21,
+                            #--------------------
+                            x21 - r2,y21,     
+                            x21 - r2,y21,     
+                            x11 + r2,y21,
+                            x11 + r2,y21,
+                            x11,y21,
+                            #--------------------
+                            x11,y21 - r2,
+                            x11,y21 - r2,
+                            x11,y11 + r2,
+                            x11,y11 + r2,
+                            x11,y11,
+                            )
+
+                            dcanvas.coords("cpbutton1",dwidth/23,dheight/3.415)
+
+                            dcanvas.coords("cplabel2",dwidth/13.85,dheight/1.85)
+                            dcanvas.coords("cplabel3",dwidth/1.935,dheight/1.85)
+                            dcanvas.coords("cplabel4",dwidth/13.85,dheight/1.39)
+                            dcanvas.coords("cplabel5",dwidth/13.85,dheight/1.09)
+                            dcanvas.coords("cplabel6",dwidth/1.935,dheight/1.09)
+                            dcanvas.coords("cplabel7",dwidth/13.85,dheight/0.9)
+                            dcanvas.coords("cplabel8",dwidth/2.7,dheight/0.9)
+                            dcanvas.coords("cplabel9",dwidth/1.5,dheight/0.9)
+
+                            dcanvas.coords("cpentry1",dwidth/13.8,dheight/1.665)
+                            dcanvas.coords("cpentry2",dwidth/1.93,dheight/1.665)
+                            dcanvas.coords("cpentry3",dwidth/13.8,dheight/1.3)
+                            dcanvas.coords("cpentry4",dwidth/13.8,dheight/0.86)
+                            dcanvas.coords("cpentry5",dwidth/2.7,dheight/0.86)
+                            dcanvas.coords("cpentry6",dwidth/1.5,dheight/0.86)
+
+                            dcanvas.coords("cpbutton2",dwidth/2,dheight/0.73)
+
+                            try:
+                                dcanvas.coords("cpdentry1",dwidth/13.8,dheight/1.02)
+                                dcanvas.coords("cpdentry2",dwidth/1.93,dheight/1.02)
+                            except:
+                                pass
+
+                        pm_canvas_1=Canvas(pmngt_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                        pmngt_frame_1.grid_columnconfigure(0,weight=1)
+                        pmngt_frame_1.grid_rowconfigure(0,weight=1)
+                        
+                        vertibar=Scrollbar(pmngt_frame_1, orient=VERTICAL)
+                        vertibar.grid(row=0,column=1,sticky='ns')
+                        vertibar.config(command=pm_canvas_1.yview)
+
+                        pm_canvas_1.bind("<Configure>", pm_responsive_widgets_1)
+                        pm_canvas_1.config(yscrollcommand=vertibar.set)
+                        pm_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                        pm_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cppoly1"))
+
+                        label_1 = Label(pm_canvas_1,width=15,height=1,text="CREATE PROJECT", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("cplabel1"))
+
+                        pm_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("cphline"))
+
+                        pm_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cppoly2"))
+
+                        label_1 = Label(pm_canvas_1,width=13,height=2,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel2'))
+
+                        cp_entry_1=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_1 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_1, tags=('cpentry1'))
+                        
+                        label_1 = Label(pm_canvas_1,width=10,height=2,text="Quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel3'))
+
+                        cp_entry_2=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_2 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_2, tags=('cpentry2'))
+
+                        label_1 = Label(pm_canvas_1,width=10,height=1,text="Description", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('cplabel4'))
+
+                        cp_entry_3=scrolledtext.ScrolledText(pm_canvas_1,width=140,background='#2f516f',foreground="white")
+                        window_cp_entry_3 = pm_canvas_1.create_window(0, 0, anchor="nw", height=60,window=cp_entry_3,tags=('cpentry3'))
+
+                        label_1 = Label(pm_canvas_1,width=13,height=2,text="Start Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel5'))
+                        
+                        label_1 = Label(pm_canvas_1,width=10,height=2,text="End Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel6'))
+
+                        label_2 = Label(pm_canvas_1,width=18,height=1,text="Etimate Cost/Item", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel7"))
+
+                        cp_entry_6=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f')
+                        window_cp_entry_6 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_6, tags=("cpentry4"))
+
+                        label_2 = Label(pm_canvas_1,width=20,height=1,text="Etimate Price/Item", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel8"))
+
+                        cp_entry_7=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_7 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_7, tags=("cpentry5"))
+
+                        label_2 = Label(pm_canvas_1,width=20,height=1,text="Total Estimate Cost", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel9"))
+
+                        cp_entry_8=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_8 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_8, tags=("cpentry6"))
+
+                        cp_save_btn1=Button(pm_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                        window_cp_save_btn1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=cp_save_btn1,tags=('cpbutton2'))
+
+                        def cp_back_1_():
+                            pmngt_frame_1.grid_forget()
+                            pmngt_frame.grid(row=0,column=0,sticky='nsew')
+
+                        cp_bck_btn1=Button(pm_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=cp_back_1_)
+                        window_cp_bck_btn1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=cp_bck_btn1,tags=('cpbutton1'))
+
+                        cp_entry_4=DateEntry(pm_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_4 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_4, tags=('cpdentry1'))
+                        
+                        cp_entry_5=DateEntry(pm_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_5 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_5, tags=('cpdentry2'))
+
+
+
+                    pm_btn1=Button(pm_canvas,text='Create Project', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=create_project)
+                    window_pm_btn1 = pm_canvas.create_window(0, 0, anchor="nw", window=pm_btn1, tags=("pmbutton1"))
+
+                    pm_comb_1 = ttk.Combobox(pm_canvas,font=('arial 10'))
+                    pm_comb_1['values'] = ("Actions","Edit","Delete")
+                    pm_comb_1.current(0)
+                    window_pm_comb_1 = pm_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=pm_comb_1,tags=('pmcombo1'))
+                    pm_comb_1.bind("<<ComboboxSelected>>")
 
                 
                     #3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333{Dash Board}
