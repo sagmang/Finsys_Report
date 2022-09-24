@@ -4878,17 +4878,17 @@ def main_sign_in():
 
                     qi_tree = ttk.Treeview(qi_canvas, columns = (1,2,3,4,5,6,7,8), height = 10, show = "headings",style='mystyle121.Treeview',yscrollcommand=qi_scrollbar.set)
                     qi_tree.heading(1)
-                    qi_tree.heading(2, text="DATE")
-                    qi_tree.heading(3, text="INSPECTION ID")
-                    qi_tree.heading(4, text="NAME")
+                    qi_tree.heading(2, text="INSPECTION ID")
+                    qi_tree.heading(3, text="DATE")
+                    qi_tree.heading(4, text="PRODUCT NAME")
                     qi_tree.heading(5, text="SKU")
                     qi_tree.heading(6, text="INSPECTED QUANTITY")
                     qi_tree.heading(7, text="QUALIFIED QUANTITY")
                     qi_tree.heading(8, text="DEFECTED QUANTITY")
                     
                     qi_tree.column(1, width = 25)
-                    qi_tree.column(2, width = 130)
-                    qi_tree.column(3, width = 120)
+                    qi_tree.column(2, width = 120)
+                    qi_tree.column(3, width = 130)
                     qi_tree.column(4, width = 215)
                     qi_tree.column(5, width = 150)
                     qi_tree.column(6, width = 160)
@@ -4898,6 +4898,30 @@ def main_sign_in():
 
                     qi_scrollbar.config(command=qi_tree.yview)
                     qi_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    sql_pr="select * from auth_user where username=%s"
+                    sql_pr_val=(nm_ent.get(),)
+                    fbcursor.execute(sql_pr,sql_pr_val,)
+                    pr_dtl=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (pr_dtl[0],)
+                    fbcursor.execute(sql, val,)
+                    cmp_dtl=fbcursor.fetchone()
+
+                    qi_sql_1 = "SELECT * FROM app1_qualityinspection where  cid_id=%s"
+                    qi_val_1 = (cmp_dtl[0],)
+                    fbcursor.execute(qi_sql_1,qi_val_1,)
+                    qi_data_1 = fbcursor.fetchall()
+
+                    count0 = 0
+                    for i in qi_data_1:
+                        
+                        if True:
+                            qi_tree.insert(parent='',index='end',iid=i,text='',values=('',i[0],i[1],i[2],i[3],i[6],i[10],i[11]))
+                        
+                    count0 += 1
+
 
                     def add_quality_inspection():
                         qi_frame.grid_forget()
@@ -5020,6 +5044,65 @@ def main_sign_in():
                         qi_canvas_1.config(yscrollcommand=vertibar.set)
                         qi_canvas_1.grid(row=0,column=0,sticky='nsew')
 
+                        def insert_qality_inspection():
+                            date = qii_dentry_2.get_date()
+                            productname = qii_comb_1.get()
+                            sku = qii_entry_2.get()
+                            hsn = qii_entry_3.get()
+                            availableqty = qii_entry_5.get()
+                            inspectedqty = qii_entry_4.get()
+                            noninspectedqty = qii_entry_6.get()
+                            inspectedby = qii_comb_2.get()
+                            department = qii_entry_8.get()
+                            qualifiedqty = qii_entry_9.get()
+                            defectedqty = qii_entry_10.get()
+
+                            usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                            usrp_val = (nm_ent.get(),)
+                            fbcursor.execute(usrp_sql,usrp_val)
+                            usrp_data = fbcursor.fetchone()
+
+                            cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                            cmpp_val = (usrp_data[0],)
+                            fbcursor.execute(cmpp_sql,cmpp_val)
+                            cmpp_data = fbcursor.fetchone()
+                            cid = cmpp_data[0]
+
+                            qi_sql = "INSERT INTO app1_qualityinspection(date,productname,sku,hsn,availableqty,inspectedqty,noninspectedqty,inspectedby,department,qualifiedqty,defectedqty,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                            qi_val = (date,productname,sku,hsn,availableqty,inspectedqty,noninspectedqty,inspectedby,department,qualifiedqty,defectedqty,cid)
+                            fbcursor.execute(qi_sql,qi_val)
+                            finsysdb.commit()
+                            #----------Refresh Insert Tree--------#
+                            for record in qi_tree.get_children():
+                                qi_tree.delete(record)
+
+                            sql_pr="select * from auth_user where username=%s"
+                            sql_pr_val=(nm_ent.get(),)
+                            fbcursor.execute(sql_pr,sql_pr_val,)
+                            pr_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (pr_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+
+                            qi_sql_1 = "SELECT * FROM app1_qualityinspection where  cid_id=%s"
+                            qi_val_1 = (cmp_dtl[0],)
+                            fbcursor.execute(qi_sql_1,qi_val_1,)
+                            qi_data_1 = fbcursor.fetchall()
+
+                            count0 = 0
+                            for i in qi_data_1:
+                                
+                                if True:
+                                    qi_tree.insert(parent='',index='end',iid=i,text='',values=('',i[0],i[1],i[2],i[3],i[6],i[10],i[11]))
+                                
+                            count0 += 1
+
+                            qi_frame_1.destroy()
+                            qi_frame.grid(row=0,column=0,sticky='nsew')
+                                
+
                         qi_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qiipoly1"))
 
                         label_1 = Label(qi_canvas_1,width=23,height=1,text="ADD QUALITY INSPECTION", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
@@ -5035,8 +5118,52 @@ def main_sign_in():
                         label_1 = Label(qi_canvas_1,width=13,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qiilabel3'))
 
-                        qii_entry_1=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                        window_qii_entry_1 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_1, tags=('qiientry1'))
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
+
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
+
+                        i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                        i_val = (cmp_dtl_i[0],)
+                        fbcursor.execute(i_sql,i_val)
+                        i_data = fbcursor.fetchall()
+
+                        qii_data = []   
+                        
+                        for i in i_data:
+                            qii_data.append(i[0])
+
+                        def qii_details(event):
+                            qii_to_str_1 = qii_comb_1.get()
+
+                            sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                            val = (qii_to_str_1,cmp_dtl_i[0],)
+                            fbcursor.execute(sql,val)
+                            qii_sel_1 = fbcursor.fetchone()
+                            if qii_sel_1 is not None:
+                                
+                                qii_entry_2.delete(0,END)
+                                qii_entry_2.insert(0,qii_sel_1[3])
+
+                                qii_entry_3.delete(0,END)
+                                qii_entry_3.insert(0,qii_sel_1[4])
+
+                                qii_entry_5.delete(0,END)
+                                qii_entry_5.insert(0,qii_sel_1[7])
+
+                            else:
+                                pass
+                    
+
+                        qii_comb_1 = ttk.Combobox(qi_canvas_1,font=('arial 10'),values=qii_data)
+                        window_qii_comb_1 = qi_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qii_comb_1,tags=('qiientry1'))
+                        qii_comb_1.bind("<<ComboboxSelected>>",qii_details)
 
                         label_1 = Label(qi_canvas_1,width=10,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel4'))
@@ -5050,29 +5177,89 @@ def main_sign_in():
                         qii_entry_3=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
                         window_qii_entry_3 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_3, tags=('qiientry3'))
 
+                        def non_inspectedqty(event):
+                            try:
+                                y1 = 0.0
+                                y2 = 0.0
+                                y3 = 0.0
+                                y1 = float(qii_entry_5.get())
+                                y2 = float(qii_entry_4.get())
+                                tot_1 = y1-y2
+                                qii_entry_6.delete(0,END)
+                                qii_entry_6.insert(0,tot_1)
+                            except:
+                                pass
+                            try:
+                                tot_2 = float(qii_entry_4.get())-float(qii_entry_9.get()) 
+                                qii_entry_10.delete(0,END)
+                                qii_entry_10.insert(0,tot_2)
+                            except:
+                                pass
+
                         label_2 = Label(qi_canvas_1,width=18,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
-                        window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel6"))
-
-                        qii_entry_4=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f')
-                        window_qii_entry_4 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_4, tags=("qiientry4"))
-
-                        label_2 = Label(qi_canvas_1,width=20,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel7"))
 
+                        qii_entry_4=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        qii_entry_4.bind("<KeyRelease>", non_inspectedqty)
+                        window_qii_entry_4 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_4, tags=("qiientry5"))
+
+                        label_2 = Label(qi_canvas_1,width=20,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel6"))
+
                         qii_entry_5=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
-                        window_qii_entry_5 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_5, tags=("qiientry5"))
+                        qii_entry_5.bind("<KeyRelease>", non_inspectedqty)
+                        window_qii_entry_5 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_5, tags=("qiientry4"))
 
                         label_2 = Label(qi_canvas_1,width=20,height=1,text="Noninspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel8"))
 
                         qii_entry_6=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                        qii_entry_6.bind("<KeyRelease>", non_inspectedqty)
                         window_qii_entry_6 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_6, tags=("qiientry6"))
 
                         label_1 = Label(qi_canvas_1,width=13,height=1,text="Inspected By", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel9'))
 
-                        qii_entry_7=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                        window_qii_entry_7 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_7, tags=('qiientry7'))
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
+
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
+
+                        i_sql = "SELECT name FROM app1_employee where cid_id=%s"
+                        i_val = (cmp_dtl_i[0],)
+                        fbcursor.execute(i_sql,i_val)
+                        i_data = fbcursor.fetchall()
+
+                        qii_data_1 = []   
+                        
+                        for i in i_data:
+                            qii_data_1.append(i[0])
+
+                        def qii_details_1(event):
+                            qii_to_str_2 = qii_comb_2.get()
+
+                            sql = "select * from app1_employee where name=%s and cid_id=%s"
+                            val = (qii_to_str_2,cmp_dtl_i[0],)
+                            fbcursor.execute(sql,val)
+                            qii_sel_2 = fbcursor.fetchone()
+                            if qii_sel_2 is not None:
+                                
+                                qii_entry_8.delete(0,END)
+                                qii_entry_8.insert(0,qii_sel_2[5])
+
+                            else:
+                                pass
+
+                        
+                        qii_comb_2 = ttk.Combobox(qi_canvas_1,font=('arial 10'),values=qii_data_1)
+                        window_qii_comb_2 = qi_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qii_comb_2,tags=('qiientry7'))
+                        qii_comb_2.bind("<<ComboboxSelected>>",qii_details_1)
 
                         label_1 = Label(qi_canvas_1,width=11,height=1,text="Department", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel10'))
@@ -5084,15 +5271,17 @@ def main_sign_in():
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel11'))
 
                         qii_entry_9=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        qii_entry_9.bind("<KeyRelease>", non_inspectedqty)
                         window_qii_entry_9 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_9, tags=('qiientry9'))
 
                         label_1 = Label(qi_canvas_1,width=18,height=1,text="Defected quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                         window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel12'))
 
                         qii_entry_10=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        qii_entry_10.bind("<KeyRelease>", non_inspectedqty)
                         window_qii_entry_10 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_10, tags=('qiientry10'))
 
-                        qii_save_btn1=Button(qi_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                        qii_save_btn1=Button(qi_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_qality_inspection)
                         window_qii_save_btn1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=qii_save_btn1,tags=('qiibutton2'))
 
                         def qii_back_1_():
@@ -5108,11 +5297,479 @@ def main_sign_in():
                     qi_btn1=Button(qi_canvas,text='Add', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=add_quality_inspection)
                     window_qi_btn1 = qi_canvas.create_window(0, 0, anchor="nw", window=qi_btn1, tags=("qibutton1"))
 
+                    def edit_delete_qi(event):
+                        if qi_comb_1.get() == "Edit":                         
+                            qi_frame.grid_forget()
+                            qi_frame_1 = Frame(tab12_1)
+                            qi_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                            def qi_responsive_widgets_1(event):
+
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+                                
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("qiipoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("qiilabel1",dwidth/2.5,dheight/8.24)
+                                dcanvas.coords("qiihline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.57
+
+
+                                dcanvas.coords("qiipoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("qiibutton1",dwidth/23,dheight/3.415)
+
+                                dcanvas.coords("qiilabel2",dwidth/13.85,dheight/1.82)
+                                dcanvas.coords("qiilabel3",dwidth/1.935,dheight/1.82)
+                                dcanvas.coords("qiilabel4",dwidth/13.85,dheight/1.39)
+                                dcanvas.coords("qiilabel5",dwidth/1.93,dheight/1.39)
+                                dcanvas.coords("qiilabel6",dwidth/13.85,dheight/1.09)
+                                dcanvas.coords("qiilabel7",dwidth/2.7,dheight/1.09)
+                                dcanvas.coords("qiilabel8",dwidth/1.5,dheight/1.09)
+                                dcanvas.coords("qiilabel9",dwidth/13.85,dheight/0.9)
+                                dcanvas.coords("qiilabel10",dwidth/1.935,dheight/0.9)
+                                dcanvas.coords("qiilabel11",dwidth/13.85,dheight/0.78)
+                                dcanvas.coords("qiilabel12",dwidth/1.935,dheight/0.78)
+
+                                dcanvas.coords("qiientry1",dwidth/1.93,dheight/1.66)
+                                dcanvas.coords("qiientry2",dwidth/13.8,dheight/1.3)
+                                dcanvas.coords("qiientry3",dwidth/1.93,dheight/1.3)
+                                dcanvas.coords("qiientry4",dwidth/13.8,dheight/1.025)
+                                dcanvas.coords("qiientry5",dwidth/2.7,dheight/1.025)
+                                dcanvas.coords("qiientry6",dwidth/1.5,dheight/1.025)
+                                dcanvas.coords("qiientry7",dwidth/13.8,dheight/0.86)
+                                dcanvas.coords("qiientry8",dwidth/1.93,dheight/0.86)
+                                dcanvas.coords("qiientry9",dwidth/13.8,dheight/0.75)
+                                dcanvas.coords("qiientry10",dwidth/1.93,dheight/0.75)
+
+                                dcanvas.coords("qiibutton2",dwidth/2.2,dheight/0.67)
+                                try:
+                                    dcanvas.coords("qiidentry1",dwidth/13.8,dheight/1.66)
+                                except:
+                                    pass
+
+                            qi_canvas_1=Canvas(qi_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                            qi_frame_1.grid_columnconfigure(0,weight=1)
+                            qi_frame_1.grid_rowconfigure(0,weight=1)
+                            
+                            vertibar=Scrollbar(qi_frame_1, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=qi_canvas_1.yview)
+
+                            qi_canvas_1.bind("<Configure>", qi_responsive_widgets_1)
+                            qi_canvas_1.config(yscrollcommand=vertibar.set)
+                            qi_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            qi_editid = qi_tree.item(qi_tree.focus())["values"][1]
+                            print(qi_editid)
+                            
+                            sql_u = 'select * from auth_user where username=%s'
+                            val_u = (nm_ent.get(),)
+                            fbcursor.execute(sql_u,val_u)
+                            pr_dtl = fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (pr_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+                            print(cmp_dtl)
+
+                            sql = 'select * from app1_qualityinspection where inspectionid = %s and cid_id = %s'
+                            val =  (qi_editid,cmp_dtl[0],)
+                            fbcursor.execute(sql,val)
+                            edit_qi = fbcursor.fetchone()
+
+                            def edit_qality_inspection():
+                                date = qii_dentry_2.get_date()
+                                productname = qii_comb_1.get()
+                                sku = qii_entry_2.get()
+                                hsn = qii_entry_3.get()
+                                availableqty = qii_entry_5.get()
+                                inspectedqty = qii_entry_4.get()
+                                noninspectedqty = qii_entry_6.get()
+                                inspectedby = qii_comb_2.get()
+                                department = qii_entry_8.get()
+                                qualifiedqty = qii_entry_9.get()
+                                defectedqty = qii_entry_10.get()
+
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "UPDATE  app1_qualityinspection set date=%s,productname=%s,sku=%s,hsn=%s,availableqty=%s,inspectedqty=%s,noninspectedqty=%s,inspectedby=%s,department=%s,qualifiedqty=%s,defectedqty=%s,cid_id=%s where inspectionid=%s"
+                                qi_val = (date,productname,sku,hsn,availableqty,inspectedqty,noninspectedqty,inspectedby,department,qualifiedqty,defectedqty,cid,qi_editid)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+                                for record in qi_tree.get_children():
+                                    qi_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                qi_sql_1 = "SELECT * FROM app1_qualityinspection where  cid_id=%s"
+                                qi_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(qi_sql_1,qi_val_1,)
+                                qi_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in qi_data_1:
+                                    
+                                    if True:
+                                        qi_tree.insert(parent='',index='end',iid=i,text='',values=('',i[0],i[1],i[2],i[3],i[6],i[10],i[11]))
+                                    
+                                count0 += 1
+
+                                qi_frame_1.destroy()
+                                qi_frame.grid(row=0,column=0,sticky='nsew')
+                                    
+
+                            qi_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qiipoly1"))
+
+                            label_1 = Label(qi_canvas_1,width=23,height=1,text="EDIT QUALITY INSPECTION", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qiilabel1"))
+
+                            qi_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qiihline"))
+
+                            qi_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qiipoly2"))
+
+                            label_1 = Label(qi_canvas_1,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qiilabel2'))
+                            
+                            label_1 = Label(qi_canvas_1,width=13,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qiilabel3'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qii_data = []   
+                            
+                            for i in i_data:
+                                qii_data.append(i[0])
+
+                            def qii_details(event):
+                                qii_to_str_1 = qii_comb_1.get()
+
+                                sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                                val = (qii_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qii_sel_1 = fbcursor.fetchone()
+                                if qii_sel_1 is not None:
+                                    
+                                    qii_entry_2.delete(0,END)
+                                    qii_entry_2.insert(0,qii_sel_1[3])
+
+                                    qii_entry_3.delete(0,END)
+                                    qii_entry_3.insert(0,qii_sel_1[4])
+
+                                    qii_entry_5.delete(0,END)
+                                    qii_entry_5.insert(0,qii_sel_1[7])
+
+                                else:
+                                    pass
+                        
+
+                            qii_comb_1 = ttk.Combobox(qi_canvas_1,font=('arial 10'),values=qii_data)
+                            window_qii_comb_1 = qi_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qii_comb_1,tags=('qiientry1'))
+                            qii_comb_1.bind("<<ComboboxSelected>>",qii_details)
+                            qii_comb_1.delete(0,'end')
+                            qii_comb_1.insert(0, edit_qi[2])
+
+                            label_1 = Label(qi_canvas_1,width=10,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel4'))
+
+                            qii_entry_2=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qii_entry_2 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_2, tags=('qiientry2'))
+                            qii_entry_2.delete(0,'end')
+                            qii_entry_2.insert(0, edit_qi[3])
+
+                            label_1 = Label(qi_canvas_1,width=10,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel5'))
+
+                            qii_entry_3=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qii_entry_3 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_3, tags=('qiientry3'))
+                            qii_entry_3.delete(0,'end')
+                            qii_entry_3.insert(0, edit_qi[4])
+
+                            def non_inspectedqty(event):
+                                try:
+                                    y1 = 0.0
+                                    y2 = 0.0
+                                    y3 = 0.0
+                                    y1 = float(qii_entry_5.get())
+                                    y2 = float(qii_entry_4.get())
+                                    tot_1 = y1-y2
+                                    qii_entry_6.delete(0,END)
+                                    qii_entry_6.insert(0,tot_1)
+                                except:
+                                    pass
+                                try:
+                                    tot_2 = float(qii_entry_4.get())-float(qii_entry_9.get()) 
+                                    qii_entry_10.delete(0,END)
+                                    qii_entry_10.insert(0,tot_2)
+                                except:
+                                    pass
+
+                            label_2 = Label(qi_canvas_1,width=18,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel7"))
+
+                            qii_entry_4=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            qii_entry_4.bind("<KeyRelease>", non_inspectedqty)
+                            window_qii_entry_4 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_4, tags=("qiientry5"))
+                            qii_entry_4.delete(0,'end')
+                            qii_entry_4.insert(0, edit_qi[6])
+
+                            label_2 = Label(qi_canvas_1,width=20,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel6"))
+
+                            qii_entry_5=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            qii_entry_5.bind("<KeyRelease>", non_inspectedqty)
+                            window_qii_entry_5 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_5, tags=("qiientry4"))
+                            qii_entry_5.delete(0,'end')
+                            qii_entry_5.insert(0, edit_qi[5])
+
+                            label_2 = Label(qi_canvas_1,width=20,height=1,text="Noninspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qiilabel8"))
+
+                            qii_entry_6=Entry(qi_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            qii_entry_6.bind("<KeyRelease>", non_inspectedqty)
+                            window_qii_entry_6 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_6, tags=("qiientry6"))
+                            qii_entry_6.delete(0,'end')
+                            qii_entry_6.insert(0, edit_qi[7])
+
+                            label_1 = Label(qi_canvas_1,width=13,height=1,text="Inspected By", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel9'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT name FROM app1_employee where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qii_data_1 = []   
+                            
+                            for i in i_data:
+                                qii_data_1.append(i[0])
+
+                            def qii_details_1(event):
+                                qii_to_str_2 = qii_comb_2.get()
+
+                                sql = "select * from app1_employee where name=%s and cid_id=%s"
+                                val = (qii_to_str_2,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qii_sel_2 = fbcursor.fetchone()
+                                if qii_sel_2 is not None:
+                                    
+                                    qii_entry_8.delete(0,END)
+                                    qii_entry_8.insert(0,qii_sel_2[5])
+
+                                else:
+                                    pass
+
+                            
+                            qii_comb_2 = ttk.Combobox(qi_canvas_1,font=('arial 10'),values=qii_data_1)
+                            window_qii_comb_2 = qi_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qii_comb_2,tags=('qiientry7'))
+                            qii_comb_2.bind("<<ComboboxSelected>>",qii_details_1)
+                            qii_comb_2.delete(0,'end')
+                            qii_comb_2.insert(0, edit_qi[8])
+
+                            label_1 = Label(qi_canvas_1,width=11,height=1,text="Department", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel10'))
+
+                            qii_entry_8=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qii_entry_8 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_8, tags=('qiientry8'))
+                            qii_entry_8.delete(0,'end')
+                            qii_entry_8.insert(0, edit_qi[9])
+
+                            label_1 = Label(qi_canvas_1,width=13,height=1,text="Qualified quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel11'))
+
+                            qii_entry_9=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            qii_entry_9.bind("<KeyRelease>", non_inspectedqty)
+                            window_qii_entry_9 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_9, tags=('qiientry9'))
+                            qii_entry_9.delete(0,'end')
+                            qii_entry_9.insert(0, edit_qi[10])
+
+                            label_1 = Label(qi_canvas_1,width=18,height=1,text="Defected quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qiilabel12'))
+
+                            qii_entry_10=Entry(qi_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            qii_entry_10.bind("<KeyRelease>", non_inspectedqty)
+                            window_qii_entry_10 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_entry_10, tags=('qiientry10'))
+                            qii_entry_10.delete(0,'end')
+                            qii_entry_10.insert(0, edit_qi[11])
+
+                            qii_save_btn1=Button(qi_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_qality_inspection)
+                            window_qii_save_btn1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=qii_save_btn1,tags=('qiibutton2'))
+
+                            def qii_back_1_():
+                                qi_frame_1.grid_forget()
+                                qi_frame.grid(row=0,column=0,sticky='nsew')
+
+                            qii_bck_btn1=Button(qi_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qii_back_1_)
+                            window_qii_bck_btn1 = qi_canvas_1.create_window(0, 0, anchor="nw", window=qii_bck_btn1,tags=('qiibutton1'))
+
+                            qii_dentry_2=DateEntry(qi_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qii_dentry_2 = qi_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qii_dentry_2, tags=('qiidentry1'))
+                            qii_dentry_2.delete(0,'end')
+                            qii_dentry_2.insert(0, edit_qi[1])
+
+                        elif qi_comb_1.get() == "Delete":
+                            qi_del = messagebox.askyesno("Delete Quality Inspection","Are you sure to delete this quality inspection?")
+
+                            if qi_del == True:
+                                qi_id_1 = qi_tree.item(qi_tree.focus())["values"][1]
+                                print(qi_id_1)
+
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                u_dtl = fbcursor.fetchone()
+
+                                sql_c = 'select * from app1_company where id_id=%s'
+                                val_c = (u_dtl[0],)
+                                fbcursor.execute(sql_c,val_c)
+                                c_dtl = fbcursor.fetchone()
+
+                                sql = 'delete from app1_qualityinspection where inspectionid=%s and cid_id=%s'
+                                val = (qi_id_1,c_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                finsysdb.commit()
+
+                                #----------Refresh Insert Tree--------#
+                                for record in qi_tree.get_children():
+                                    qi_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                qi_sql_1 = "SELECT * FROM app1_qualityinspection where  cid_id=%s"
+                                qi_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(qi_sql_1,qi_val_1,)
+                                qi_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in qi_data_1:
+                                    
+                                    if True:
+                                        qi_tree.insert(parent='',index='end',iid=i,text='',values=('',i[0],i[1],i[2],i[3],i[6],i[10],i[11]))
+                                    
+                                count0 += 1
+
+                            else:
+                                pass
+                        
+                        else:
+                            pass
+
                     qi_comb_1 = ttk.Combobox(qi_canvas,font=('arial 10'))
                     qi_comb_1['values'] = ("Actions","Edit","Delete")
                     qi_comb_1.current(0)
                     window_qi_comb_1 = qi_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qi_comb_1,tags=('qicombo1'))
-                    qi_comb_1.bind("<<ComboboxSelected>>")
+                    qi_comb_1.bind("<<ComboboxSelected>>",edit_delete_qi)
 
 
                     #-------------------------------Quality Notification-----------------------------#
@@ -5232,7 +5889,7 @@ def main_sign_in():
                     qn_tree.heading(1)
                     qn_tree.heading(2, text="DATE")
                     qn_tree.heading(3, text="TYPE")
-                    qn_tree.heading(4, text="NAME")
+                    qn_tree.heading(4, text="PRODUCT NAME")
                     qn_tree.heading(5, text="SKU")
                     qn_tree.heading(6, text="COMPLIANT QUANTITY")
                     
@@ -5247,6 +5904,56 @@ def main_sign_in():
 
                     qn_scrollbar.config(command=qn_tree.yview)
                     qn_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    sql_p="select * from auth_user where username=%s"
+                    sql_p_val=(nm_ent.get(),)
+                    fbcursor.execute(sql_p,sql_p_val,)
+                    pr_dt=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (pr_dt[0],)
+                    fbcursor.execute(sql, val,)
+                    cmp_dt=fbcursor.fetchone()
+
+                    p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                    p_val_1 = (cmp_dt[0],)
+                    fbcursor.execute(p_sql_1,p_val_1,)
+                    qn_data_1 = fbcursor.fetchall()
+                    
+                    count0 = 0
+                    for i in qn_data_1:
+                        if True:
+                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                        else:
+                            pass
+                    count0 += 1
+
+                    p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                    p_val_2 = (cmp_dt[0],)
+                    fbcursor.execute(p_sql_2,p_val_2,)
+                    qn_data_2 = fbcursor.fetchall()
+
+                    count1 = 0
+                    for i in qn_data_2:
+                        if True:
+                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                        else:
+                            pass
+                    count1 += 1
+
+                    p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                    p_val_3 = (cmp_dt[0],)
+                    fbcursor.execute(p_sql_3,p_val_3,)
+                    qn_data_3 = fbcursor.fetchall()
+                    
+
+                    count2 = 0
+                    for i in qn_data_3:
+                        if True:
+                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                        else:
+                            pass
+                    count2 += 1
 
                     def quality_notification(event):
                         if qn_comb_2.get() == "Supplier Error":
@@ -5346,6 +6053,7 @@ def main_sign_in():
                                 dcanvas.coords("qnnentry6",dwidth/13.8,dheight/0.86)
                                 dcanvas.coords("qnnentry7",dwidth/13.8,dheight/0.72)
                                 dcanvas.coords("qnnentry8",dwidth/1.93,dheight/0.72)
+                                
 
                                 dcanvas.coords("qnnbutton2",dwidth/2.2,dheight/0.62)
 
@@ -5366,6 +6074,90 @@ def main_sign_in():
                             qn_canvas_1.bind("<Configure>", qn_responsive_widgets_1)
                             qn_canvas_1.config(yscrollcommand=vertibar.set)
                             qn_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            def insert_supplier_error():
+                                date = qnn_dentry_1.get_date()
+                                referenceno = qnn_entry_1.get()
+                                suppliername = qnn_comb_1.get()
+                                productname = qnn_comb_2.get()
+                                sku = qnn_entry_4.get()
+                                hsn = qnn_entry_5.get()
+                                desciption = qnn_entry_6.get('1.0','end-1c')
+                                purchaseqty = qnn_entry_7.get()
+                                compliantqty = qnn_entry_8.get()
+
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "INSERT INTO app1_suppliererror(date,referenceno,suppliername,productname,sku,hsn,desciption,purchaseqty,compliantqty,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                                qi_val = (date,referenceno,suppliername,productname,sku,hsn,desciption,purchaseqty,compliantqty,cid)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in qn_tree.get_children():
+                                    qn_tree.delete(record)
+                                sql_p="select * from auth_user where username=%s"
+                                sql_p_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_p,sql_p_val,)
+                                pr_dt=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dt[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dt=fbcursor.fetchone()
+
+                                p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                p_val_1 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_1,p_val_1,)
+                                qn_data_1 = fbcursor.fetchall()
+                                
+                                count0 = 0
+                                for i in qn_data_1:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                    else:
+                                        pass
+                                count0 += 1
+
+                                p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                p_val_2 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_2,p_val_2,)
+                                qn_data_2 = fbcursor.fetchall()
+
+                                count1 = 0
+                                for i in qn_data_2:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                    else:
+                                        pass
+                                count1 += 1
+
+                                p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                p_val_3 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_3,p_val_3,)
+                                qn_data_3 = fbcursor.fetchall()
+                                
+
+                                count2 = 0
+                                for i in qn_data_3:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                    else:
+                                        pass
+                                count2 += 1
+
+                                qn_frame_1.destroy()
+                                qn_frame.grid(row=0,column=0,sticky='nsew')
+
 
                             qn_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnnpoly1"))
 
@@ -5388,14 +6180,78 @@ def main_sign_in():
                             label_1 = Label(qn_canvas_1,width=15,height=1,text="Supplier Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel4'))
 
-                            qnn_entry_2=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qnn_entry_2 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_2, tags=('qnnentry2'))
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            sql_qs="select firstname,lastname from app1_supplier where cid_id=%s"
+                            val_qs=(cmp_dtl_i[0],)
+                            fbcursor.execute(sql_qs,val_qs,)
+                            i_data=fbcursor.fetchall()
+                            qs_data = []
+
+                            for i in i_data:
+                                qs_data.append(str(i[0])+" "+str(i[1]))
+
+
+                            qnn_comb_1 = ttk.Combobox(qn_canvas_1,font=('arial 10'),values=qs_data)
+                            window_qnn_comb_1 = qn_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qnn_comb_1,tags=('qnnentry2'))
 
                             label_1 = Label(qn_canvas_1,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel5'))
 
-                            qnn_entry_3=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qnn_entry_3 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_3, tags=('qnnentry3'))
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qs_data_1 = []   
+                            
+                            for i in i_data:
+                                qs_data_1.append(i[0])
+
+                            def qs_details(event):
+                                qs_to_str_1 = qnn_comb_2.get()
+
+                                sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                                val = (qs_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qs_sel_1 = fbcursor.fetchone()
+
+                                if qs_sel_1 is not None:
+                                    
+                                    qnn_entry_4.delete(0,END)
+                                    qnn_entry_4.insert(0,qs_sel_1[3])
+
+                                    qnn_entry_5.delete(0,END)
+                                    qnn_entry_5.insert(0,qs_sel_1[4])
+
+                                    qnn_entry_6.insert(1.0,qs_sel_1[11])
+
+                                else:
+                                    pass
+
+                            qnn_comb_2 = ttk.Combobox(qn_canvas_1,font=('arial 10'),values=qs_data_1)
+                            window_qnn_comb_2 = qn_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qnn_comb_2,tags=('qnnentry3'))
+                            qnn_comb_2.bind("<<ComboboxSelected>>",qs_details)
 
                             label_1 = Label(qn_canvas_1,width=15,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel6'))
@@ -5427,7 +6283,7 @@ def main_sign_in():
                             qnn_entry_8=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
                             window_qnn_entry_8 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_8, tags=('qnnentry8'))
 
-                            qnn_save_btn1=Button(qn_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                            qnn_save_btn1=Button(qn_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_supplier_error)
                             window_qnn_save_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_save_btn1,tags=('qnnbutton2'))
 
                             def qnn_back_1_():
@@ -5437,7 +6293,7 @@ def main_sign_in():
                             qnn_bck_btn1=Button(qn_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qnn_back_1_)
                             window_qnn_bck_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_bck_btn1,tags=('qnnbutton1'))
 
-                            qnn_dentry_1=DateEntry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            qnn_dentry_1=DateEntry(qn_canvas_1,width=86,justify=LEFT,background='#2f516f',foreground="white")
                             window_qnn_dentry_1 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_dentry_1, tags=('qnndentry1'))
                         
                         elif qn_comb_2.get() == "Material Error":
@@ -5554,6 +6410,87 @@ def main_sign_in():
                             qn_canvas_2.config(yscrollcommand=vertibar.set)
                             qn_canvas_2.grid(row=0,column=0,sticky='nsew')
 
+                            def insert_material_error():
+                                date = qmn_dentry_1.get_date()
+                                productname	= qmn_comb_2.get()
+                                sku = qmn_entry_2.get()
+                                hsn = qmn_entry_3.get()
+                                availableqty = qmn_entry_4.get()
+                                inspectedqty = qmn_entry_5.get()
+                                compliantqty = qmn_entry_6.get()
+                                
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "INSERT INTO app1_materialerror(date,productname,sku,hsn,availableqty,inspectedqty,compliantqty,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s)"
+                                qi_val = (date,productname,sku,hsn,availableqty,inspectedqty,compliantqty,cid)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in qn_tree.get_children():
+                                    qn_tree.delete(record)
+                                sql_p="select * from auth_user where username=%s"
+                                sql_p_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_p,sql_p_val,)
+                                pr_dt=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dt[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dt=fbcursor.fetchone()
+
+                                p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                p_val_1 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_1,p_val_1,)
+                                qn_data_1 = fbcursor.fetchall()
+                                
+                                count0 = 0
+                                for i in qn_data_1:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                    else:
+                                        pass
+                                count0 += 1
+
+                                p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                p_val_2 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_2,p_val_2,)
+                                qn_data_2 = fbcursor.fetchall()
+
+                                count1 = 0
+                                for i in qn_data_2:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                    else:
+                                        pass
+                                count1 += 1
+
+                                p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                p_val_3 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_3,p_val_3,)
+                                qn_data_3 = fbcursor.fetchall()
+                                
+
+                                count2 = 0
+                                for i in qn_data_3:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                    else:
+                                        pass
+                                count2 += 1
+
+                                qn_frame_2.destroy()
+                                qn_frame.grid(row=0,column=0,sticky='nsew')
+
                             qn_canvas_2.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qmnpoly1"))
 
                             label_1 = Label(qn_canvas_2,width=23,height=1,text="MATERIAL ERROR", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
@@ -5569,8 +6506,55 @@ def main_sign_in():
                             label_1 = Label(qn_canvas_2,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel3'))
 
-                            qmn_entry_1=Entry(qn_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qmn_entry_1 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_1, tags=('qmnentry1'))
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT productname FROM app1_qualityinspection where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qm_data_1 = []   
+                            
+                            for i in i_data:
+                                qm_data_1.append(i[0])
+
+                            def qm_details(event):
+                                qm_to_str_1 = qmn_comb_2.get()
+
+                                sql = "select * from app1_qualityinspection where productname=%s and cid_id=%s"
+                                val = (qm_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qm_sel_1 = fbcursor.fetchone()
+                                if qm_sel_1 is not None:
+                                    
+                                    qmn_entry_2.delete(0,END)
+                                    qmn_entry_2.insert(0,qm_sel_1[3])
+
+                                    qmn_entry_3.delete(0,END)
+                                    qmn_entry_3.insert(0,qm_sel_1[4])
+
+                                    qmn_entry_4.delete(0,END)
+                                    qmn_entry_4.insert(0,qm_sel_1[5])
+
+                                    qmn_entry_5.delete(0,END)
+                                    qmn_entry_5.insert(0,qm_sel_1[6])
+
+                                else:
+                                    pass
+
+                            qmn_comb_2 = ttk.Combobox(qn_canvas_2,font=('arial 10'),values=qm_data_1)
+                            window_qmn_comb_2 = qn_canvas_2.create_window(0, 0, anchor="nw", width=535,height=30,window=qmn_comb_2,tags=('qmnentry1'))
+                            qmn_comb_2.bind("<<ComboboxSelected>>",qm_details)
+                            
 
                             label_1 = Label(qn_canvas_2,width=15,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel4'))
@@ -5587,7 +6571,7 @@ def main_sign_in():
                             label_2 = Label(qn_canvas_2,width=18,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
                             window_label_2 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_2, tags=("qmnlabel6"))
 
-                            qmn_entry_4=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f')
+                            qmn_entry_4=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f',foreground="white")
                             window_qmn_entry_4 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_4, tags=("qmnentry4"))
 
                             label_2 = Label(qn_canvas_2,width=20,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
@@ -5602,7 +6586,7 @@ def main_sign_in():
                             qmn_entry_6=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f',foreground="white")
                             window_qmn_entry_6 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_6, tags=("qmnentry6"))
 
-                            qmn_save_btn1=Button(qn_canvas_2,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                            qmn_save_btn1=Button(qn_canvas_2,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_material_error)
                             window_qmn_save_btn1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=qmn_save_btn1,tags=('qmnbutton2'))
 
                             def qmn_back_1_():
@@ -5729,6 +6713,87 @@ def main_sign_in():
                             qn_canvas_3.config(yscrollcommand=vertibar.set)
                             qn_canvas_3.grid(row=0,column=0,sticky='nsew')
 
+                            def insert_customer_compliant():
+                                date = qcn_dentry_1.get_date()
+                                customername = qcn_entry_1.get()
+                                invoiceno = qcn_comb_1.get()
+                                productname = qcn_comb_2.get()
+                                soldqty = qcn_entry_4.get()
+                                compliantqty = qcn_entry_5.get()
+                                description = qcn_entry_6.get('1.0', 'end-1c')
+                                
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "INSERT INTO app1_customercompliant(date,customername,invoiceno,productname,soldqty,compliantqty,description,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s)"
+                                qi_val = (date,customername,invoiceno,productname,soldqty,compliantqty,description,cid)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in qn_tree.get_children():
+                                    qn_tree.delete(record)
+                                sql_p="select * from auth_user where username=%s"
+                                sql_p_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_p,sql_p_val,)
+                                pr_dt=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dt[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dt=fbcursor.fetchone()
+
+                                p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                p_val_1 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_1,p_val_1,)
+                                qn_data_1 = fbcursor.fetchall()
+                                
+                                count0 = 0
+                                for i in qn_data_1:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                    else:
+                                        pass
+                                count0 += 1
+
+                                p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                p_val_2 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_2,p_val_2,)
+                                qn_data_2 = fbcursor.fetchall()
+
+                                count1 = 0
+                                for i in qn_data_2:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                    else:
+                                        pass
+                                count1 += 1
+
+                                p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                p_val_3 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_3,p_val_3,)
+                                qn_data_3 = fbcursor.fetchall()
+                                
+
+                                count2 = 0
+                                for i in qn_data_3:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                    else:
+                                        pass
+                                count2 += 1
+
+                                qn_frame_3.destroy()
+                                qn_frame.grid(row=0,column=0,sticky='nsew')
+
                             qn_canvas_3.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qcnpoly1"))
 
                             label_1 = Label(qn_canvas_3,width=23,height=1,text="CUSTOMER COMPLIANT", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
@@ -5742,22 +6807,98 @@ def main_sign_in():
                             window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel2'))
 
                             label_1 = Label(qn_canvas_3,width=15,height=1,text="Customer Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
-                            window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel3'))
+                            window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel5'))
 
-                            qcn_entry_1=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qcn_entry_1 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_1, tags=('qcnentry1'))
 
                             label_1 = Label(qn_canvas_3,width=15,height=1,text="Invoice No.", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel4'))
 
-                            qcn_entry_2=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qcn_entry_2 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_2, tags=('qcnentry2'))
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT invoiceid FROM app1_invoice where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qcc_data_2 = []   
+                            
+                            for i in i_data:
+                                qcc_data_2.append(i[0])
+
+                            def qcc_details_2(event):
+                                qcc_to_str_1 = qcn_comb_1.get()
+
+                                sql = "select * from app1_invoice where invoiceid=%s and cid_id=%s"
+                                val = (qcc_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qcc_sel_2 = fbcursor.fetchone()
+
+                                if qcc_sel_2 is not None:
+                                    
+                                    qcn_entry_1.delete(0,END)
+                                    qcn_entry_1.insert(0,qcc_sel_2[1])
+
+                                else:
+                                    pass
+
+                            qcn_comb_1 = ttk.Combobox(qn_canvas_3,font=('arial 10'),values=qcc_data_2)
+                            window_qcn_comb_1 = qn_canvas_3.create_window(0, 0, anchor="nw", width=535,height=30,window=qcn_comb_1,tags=('qcnentry2'))
+                            qcn_comb_1.bind("<<ComboboxSelected>>",qcc_details_2)
+
+                            qcn_entry_1=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qcn_entry_1 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_1, tags=('qcnentry3'))
 
                             label_1 = Label(qn_canvas_3,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
-                            window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel5'))
+                            window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel3'))
 
-                            qcn_entry_3=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
-                            window_qcn_entry_3 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_3, tags=('qcnentry3'))
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qcc_data_1 = []   
+                            
+                            for i in i_data:
+                                qcc_data_1.append(i[0])
+
+                            def qcc_details(event):
+                                qc_to_str_1 = qcn_comb_2.get()
+
+                                sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                                val = (qc_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qcc_sel_1 = fbcursor.fetchone()
+
+                                if qcc_sel_1 is not None:
+                                    
+                                    qcn_entry_6.insert(1.0,qcc_sel_1[11])
+
+                                else:
+                                    pass
+
+                            qcn_comb_2 = ttk.Combobox(qn_canvas_3,font=('arial 10'),values=qcc_data_1)
+                            window_qcn_comb_2 = qn_canvas_3.create_window(0, 0, anchor="nw", width=535,height=30,window=qcn_comb_2,tags=('qcnentry1'))
+                            qcn_comb_2.bind("<<ComboboxSelected>>",qcc_details)
 
                             label_1 = Label(qn_canvas_3,width=15,height=1,text="Sold Quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                             window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel6'))
@@ -5777,7 +6918,7 @@ def main_sign_in():
                             qcn_entry_6=scrolledtext.ScrolledText(qn_canvas_3,width=140,background='#2f516f',foreground="white")
                             window_qcn_entry_6 = qn_canvas_3.create_window(0, 0, anchor="nw", height=60,window=qcn_entry_6,tags=('qcnentry6'))
 
-                            qcn_save_btn1=Button(qn_canvas_3,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                            qcn_save_btn1=Button(qn_canvas_3,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_customer_compliant)
                             window_qcn_save_btn1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=qcn_save_btn1,tags=('qcnbutton2'))
 
                             def qcn_back_1_():
@@ -5796,14 +6937,1219 @@ def main_sign_in():
                     qn_comb_2 = ttk.Combobox(qn_canvas,font=('arial 10'))
                     qn_comb_2['values'] = ("Choose","Supplier Error","Material Error","Customer Compliant")
                     qn_comb_2.current(0)
-                    window_qn_comb_2 = qn_canvas.create_window(0, 0, anchor="nw", width=130,height=30,window=qn_comb_2,tags=('qncombo2'))
+                    window_qn_comb_2 = qn_canvas.create_window(0, 0, anchor="nw", width=135,height=30,window=qn_comb_2,tags=('qncombo2'))
                     qn_comb_2.bind("<<ComboboxSelected>>",quality_notification)
 
+                    def edit_delete_qn(event):
+                        if qn_comb_1.get() == "Edit":
+                            if qn_tree.item(qn_tree.focus())["values"][2] == "Supplier Error":
+                                qn_frame.grid_forget()
+                                qn_frame_1 = Frame(tab12_2)
+                                qn_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                                def qn_responsive_widgets_1(event):
+
+                                    dwidth = event.width
+                                    dheight = event.height
+                                    dcanvas = event.widget
+                                    
+                                    r1 = 25
+                                    x1 = dwidth/63
+                                    x2 = dwidth/1.021
+                                    y1 = dheight/14 
+                                    y2 = dheight/3.505
+
+                                    dcanvas.coords("qnnpoly1",x1 + r1,y1,
+                                    x1 + r1,y1,
+                                    x2 - r1,y1,
+                                    x2 - r1,y1,     
+                                    x2,y1,     
+                                    #--------------------
+                                    x2,y1 + r1,     
+                                    x2,y1 + r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2,
+                                    #--------------------
+                                    x2 - r1,y2,     
+                                    x2 - r1,y2,     
+                                    x1 + r1,y2,
+                                    x1 + r1,y2,
+                                    x1,y2,
+                                    #--------------------
+                                    x1,y2 - r1,
+                                    x1,y2 - r1,
+                                    x1,y1 + r1,
+                                    x1,y1 + r1,
+                                    x1,y1,
+                                    )
+
+                                    dcanvas.coords("qnnlabel1",dwidth/2.5,dheight/8.24)
+                                    dcanvas.coords("qnnhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                    r2 = 25
+                                    x11 = dwidth/63
+                                    x21 = dwidth/1.021
+                                    y11 = dheight/2.8
+                                    y21 = dheight/0.52
+
+
+                                    dcanvas.coords("qnnpoly2",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("qnnbutton1",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("qnnlabel2",dwidth/13.85,dheight/1.82)
+                                    dcanvas.coords("qnnlabel3",dwidth/1.935,dheight/1.82)
+                                    dcanvas.coords("qnnlabel4",dwidth/13.85,dheight/1.39)
+                                    dcanvas.coords("qnnlabel5",dwidth/1.93,dheight/1.39)
+                                    dcanvas.coords("qnnlabel6",dwidth/13.85,dheight/1.095)
+                                    dcanvas.coords("qnnlabel7",dwidth/1.93,dheight/1.095)
+                                    dcanvas.coords("qnnlabel8",dwidth/13.85,dheight/0.9)
+                                    dcanvas.coords("qnnlabel9",dwidth/13.85,dheight/0.75)
+                                    dcanvas.coords("qnnlabel10",dwidth/1.935,dheight/0.75)
+
+                                    dcanvas.coords("qnnentry1",dwidth/1.93,dheight/1.66)
+                                    dcanvas.coords("qnnentry2",dwidth/13.8,dheight/1.3)
+                                    dcanvas.coords("qnnentry3",dwidth/1.93,dheight/1.3)
+                                    dcanvas.coords("qnnentry4",dwidth/13.8,dheight/1.035)
+                                    dcanvas.coords("qnnentry5",dwidth/1.93,dheight/1.035)
+                                    dcanvas.coords("qnnentry6",dwidth/13.8,dheight/0.86)
+                                    dcanvas.coords("qnnentry7",dwidth/13.8,dheight/0.72)
+                                    dcanvas.coords("qnnentry8",dwidth/1.93,dheight/0.72)
+
+                                    dcanvas.coords("qnnbutton2",dwidth/2.2,dheight/0.62)
+
+                                    try:
+                                        dcanvas.coords("qnndentry1",dwidth/13.8,dheight/1.66)
+                                    except:
+                                        pass
+
+                                qn_canvas_1=Canvas(qn_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                                qn_frame_1.grid_columnconfigure(0,weight=1)
+                                qn_frame_1.grid_rowconfigure(0,weight=1)
+                                
+                                vertibar=Scrollbar(qn_frame_1, orient=VERTICAL)
+                                vertibar.grid(row=0,column=1,sticky='ns')
+                                vertibar.config(command=qn_canvas_1.yview)
+
+                                qn_canvas_1.bind("<Configure>", qn_responsive_widgets_1)
+                                qn_canvas_1.config(yscrollcommand=vertibar.set)
+                                qn_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                                qn_editid_1 = qn_tree.item(qn_tree.focus())["values"][1]
+                                print(qn_editid_1)
+                                qn_editid_2 = qn_tree.item(qn_tree.focus())["values"][3]
+                                print(qn_editid_2)
+                                
+                                
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                pr_dtl = fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+                                print(cmp_dtl)
+
+                                sql = 'select * from app1_suppliererror where date = %s and productname=%s and cid_id = %s'
+                                val =  (qn_editid_1,qn_editid_2,cmp_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                edit_qn = fbcursor.fetchone()
+
+                                def edit_supplier_error():
+                                    date = qnn_dentry_1.get_date()
+                                    referenceno = qnn_entry_1.get()
+                                    suppliername = qnn_comb_1.get()
+                                    productname = qnn_comb_2.get()
+                                    sku = qnn_entry_4.get()
+                                    hsn = qnn_entry_5.get()
+                                    desciption = qnn_entry_6.get('1.0','end-1c')
+                                    purchaseqty = qnn_entry_7.get()
+                                    compliantqty = qnn_entry_8.get()
+
+                                    usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                    usrp_val = (nm_ent.get(),)
+                                    fbcursor.execute(usrp_sql,usrp_val)
+                                    usrp_data = fbcursor.fetchone()
+
+                                    cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                    cmpp_val = (usrp_data[0],)
+                                    fbcursor.execute(cmpp_sql,cmpp_val)
+                                    cmpp_data = fbcursor.fetchone()
+                                    cid = cmpp_data[0]
+
+                                    qi_sql = "update app1_suppliererror set date=%s,referenceno=%s,suppliername=%s,productname=%s,sku=%s,hsn=%s,desciption=%s,purchaseqty=%s,compliantqty=%s,cid_id=%s where date=%s and productname=%s"
+                                    qi_val = (date,referenceno,suppliername,productname,sku,hsn,desciption,purchaseqty,compliantqty,cid,qn_editid_1,qn_editid_2)
+                                    fbcursor.execute(qi_sql,qi_val)
+                                    finsysdb.commit()
+                                    #----------Refresh Insert Tree--------#
+
+                                    for record in qn_tree.get_children():
+                                        qn_tree.delete(record)
+                                    sql_p="select * from auth_user where username=%s"
+                                    sql_p_val=(nm_ent.get(),)
+                                    fbcursor.execute(sql_p,sql_p_val,)
+                                    pr_dt=fbcursor.fetchone()
+
+                                    sql = "select * from app1_company where id_id=%s"
+                                    val = (pr_dt[0],)
+                                    fbcursor.execute(sql, val,)
+                                    cmp_dt=fbcursor.fetchone()
+
+                                    p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                    p_val_1 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_1,p_val_1,)
+                                    qn_data_1 = fbcursor.fetchall()
+                                    
+                                    count0 = 0
+                                    for i in qn_data_1:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                        else:
+                                            pass
+                                    count0 += 1
+
+                                    p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                    p_val_2 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_2,p_val_2,)
+                                    qn_data_2 = fbcursor.fetchall()
+
+                                    count1 = 0
+                                    for i in qn_data_2:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                        else:
+                                            pass
+                                    count1 += 1
+
+                                    p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                    p_val_3 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_3,p_val_3,)
+                                    qn_data_3 = fbcursor.fetchall()
+                                    
+
+                                    count2 = 0
+                                    for i in qn_data_3:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                        else:
+                                            pass
+                                    count2 += 1
+
+                                    qn_frame_1.destroy()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+
+                                qn_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnnpoly1"))
+
+                                label_1 = Label(qn_canvas_1,width=23,height=1,text="SUPPLIER ERROR", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qnnlabel1"))
+
+                                qn_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qnnhline"))
+
+                                qn_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qnnpoly2"))
+
+                                label_1 = Label(qn_canvas_1,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel2'))
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="Reference No.", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel3'))
+
+                                qnn_entry_1=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_entry_1 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_1, tags=('qnnentry1'))
+                                qnn_entry_1.delete(0,'end')
+                                qnn_entry_1.insert(0, edit_qn[2])
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="Supplier Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel4'))
+
+                                sql_i="select * from auth_user where username=%s"
+                                val_i=(nm_ent.get(),)
+                                fbcursor.execute(sql_i,val_i,)
+                                p_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (p_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl_i=fbcursor.fetchone()
+                                
+
+                                sql_qs="select firstname,lastname from app1_supplier where cid_id=%s"
+                                val_qs=(cmp_dtl_i[0],)
+                                fbcursor.execute(sql_qs,val_qs,)
+                                i_data=fbcursor.fetchall()
+                                qs_data = []
+
+                                for i in i_data:
+                                    qs_data.append(str(i[0])+" "+str(i[1]))
+
+
+                                qnn_comb_1 = ttk.Combobox(qn_canvas_1,font=('arial 10'),values=qs_data)
+                                window_qnn_comb_1 = qn_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qnn_comb_1,tags=('qnnentry2'))
+                                qnn_comb_1.delete(0,'end')
+                                qnn_comb_1.insert(0, edit_qn[3])
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel5'))
+
+                                sql_i="select * from auth_user where username=%s"
+                                val_i=(nm_ent.get(),)
+                                fbcursor.execute(sql_i,val_i,)
+                                p_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (p_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl_i=fbcursor.fetchone()
+                                
+
+                                i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                                i_val = (cmp_dtl_i[0],)
+                                fbcursor.execute(i_sql,i_val)
+                                i_data = fbcursor.fetchall()
+
+                                qs_data_1 = []   
+                                
+                                for i in i_data:
+                                    qs_data_1.append(i[0])
+
+                                def qs_details(event):
+                                    qs_to_str_1 = qnn_comb_2.get()
+
+                                    sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                                    val = (qs_to_str_1,cmp_dtl_i[0],)
+                                    fbcursor.execute(sql,val)
+                                    qs_sel_1 = fbcursor.fetchone()
+
+                                    if qs_sel_1 is not None:
+                                        
+                                        qnn_entry_4.delete(0,END)
+                                        qnn_entry_4.insert(0,qs_sel_1[3])
+
+                                        qnn_entry_5.delete(0,END)
+                                        qnn_entry_5.insert(0,qs_sel_1[4])
+
+                                        qnn_entry_6.insert(1.0,qs_sel_1[11])
+
+                                    else:
+                                        pass
+
+                                qnn_comb_2 = ttk.Combobox(qn_canvas_1,font=('arial 10'),values=qs_data_1)
+                                window_qnn_comb_2 = qn_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qnn_comb_2,tags=('qnnentry3'))
+                                qnn_comb_2.bind("<<ComboboxSelected>>",qs_details)
+                                qnn_comb_2.delete(0,'end')
+                                qnn_comb_2.insert(0, edit_qn[4])
+
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel6'))
+
+                                qnn_entry_4=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_entry_4 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_4, tags=('qnnentry4'))
+                                qnn_entry_4.delete(0,'end')
+                                qnn_entry_4.insert(0, edit_qn[5])
+
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel7'))
+
+                                qnn_entry_5=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_entry_5 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_5, tags=('qnnentry5'))
+                                qnn_entry_5.delete(0,'end')
+                                qnn_entry_5.insert(0, edit_qn[6])
+
+
+                                label_1 = Label(qn_canvas_1,width=15,height=1,text="Description", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel8'))
+
+                                qnn_entry_6=scrolledtext.ScrolledText(qn_canvas_1,width=140,background='#2f516f',foreground="white")
+                                window_qnn_entry_6 = qn_canvas_1.create_window(0, 0, anchor="nw", height=60,window=qnn_entry_6,tags=('qnnentry6'))
+                                qnn_entry_6.insert(1.0, edit_qn[7])
+
+                                label_1 = Label(qn_canvas_1,width=20,height=1,text="Purchase quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel9'))
+
+                                qnn_entry_7=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_entry_7 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_7, tags=('qnnentry7'))
+                                qnn_entry_7.delete(0,'end')
+                                qnn_entry_7.insert(0, edit_qn[8])
+
+                                label_1 = Label(qn_canvas_1,width=20,height=1,text="Compliant quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qnnlabel10'))
+
+                                qnn_entry_8=Entry(qn_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_entry_8 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_entry_8, tags=('qnnentry8'))
+                                qnn_entry_8.delete(0,'end')
+                                qnn_entry_8.insert(0, edit_qn[9])
+
+                                qnn_save_btn1=Button(qn_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_supplier_error)
+                                window_qnn_save_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_save_btn1,tags=('qnnbutton2'))
+
+                                def qnn_back_1_():
+                                    qn_frame_1.grid_forget()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                                qnn_bck_btn1=Button(qn_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qnn_back_1_)
+                                window_qnn_bck_btn1 = qn_canvas_1.create_window(0, 0, anchor="nw", window=qnn_bck_btn1,tags=('qnnbutton1'))
+
+                                qnn_dentry_1=DateEntry(qn_canvas_1,width=86,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qnn_dentry_1 = qn_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qnn_dentry_1, tags=('qnndentry1'))
+                                qnn_dentry_1.delete(0,'end')
+                                qnn_dentry_1.insert(0, edit_qn[1])
+
+                            elif qn_tree.item(qn_tree.focus())["values"][2] == "Material Error":
+                                qn_frame.grid_forget()
+                                qn_frame_2 = Frame(tab12_2)
+                                qn_frame_2.grid(row=0,column=0,sticky='nsew')
+
+                                def qn_responsive_widgets_2(event):
+
+                                    dwidth = event.width
+                                    dheight = event.height
+                                    dcanvas = event.widget
+                                    
+                                    r1 = 25
+                                    x1 = dwidth/63
+                                    x2 = dwidth/1.021
+                                    y1 = dheight/14 
+                                    y2 = dheight/3.505
+
+                                    dcanvas.coords("qmnpoly1",x1 + r1,y1,
+                                    x1 + r1,y1,
+                                    x2 - r1,y1,
+                                    x2 - r1,y1,     
+                                    x2,y1,     
+                                    #--------------------
+                                    x2,y1 + r1,     
+                                    x2,y1 + r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2,
+                                    #--------------------
+                                    x2 - r1,y2,     
+                                    x2 - r1,y2,     
+                                    x1 + r1,y2,
+                                    x1 + r1,y2,
+                                    x1,y2,
+                                    #--------------------
+                                    x1,y2 - r1,
+                                    x1,y2 - r1,
+                                    x1,y1 + r1,
+                                    x1,y1 + r1,
+                                    x1,y1,
+                                    )
+
+                                    dcanvas.coords("qmnlabel1",dwidth/2.5,dheight/8.24)
+                                    dcanvas.coords("qmnhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                    r2 = 25
+                                    x11 = dwidth/63
+                                    x21 = dwidth/1.021
+                                    y11 = dheight/2.8
+                                    y21 = dheight/0.75
+
+
+                                    dcanvas.coords("qmnpoly2",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("qmnbutton1",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("qmnlabel2",dwidth/13.85,dheight/1.82)
+                                    dcanvas.coords("qmnlabel3",dwidth/1.935,dheight/1.82)
+                                    dcanvas.coords("qmnlabel4",dwidth/13.85,dheight/1.39)
+                                    dcanvas.coords("qmnlabel5",dwidth/1.93,dheight/1.39)
+                                    dcanvas.coords("qmnlabel6",dwidth/13.85,dheight/1.09)
+                                    dcanvas.coords("qmnlabel7",dwidth/2.7,dheight/1.09)
+                                    dcanvas.coords("qmnlabel8",dwidth/1.5,dheight/1.09)
+                                    
+                                    dcanvas.coords("qmnentry1",dwidth/1.93,dheight/1.66)
+                                    dcanvas.coords("qmnentry2",dwidth/13.8,dheight/1.3)
+                                    dcanvas.coords("qmnentry3",dwidth/1.93,dheight/1.3)
+                                    dcanvas.coords("qmnentry4",dwidth/13.8,dheight/1.025)
+                                    dcanvas.coords("qmnentry5",dwidth/2.7,dheight/1.025)
+                                    dcanvas.coords("qmnentry6",dwidth/1.5,dheight/1.025)
+                                    
+                                    dcanvas.coords("qmnbutton2",dwidth/2.2,dheight/0.9)
+
+                                    try:
+                                        dcanvas.coords("qmndentry1",dwidth/13.8,dheight/1.66)
+                                    except:
+                                        pass
+
+                                qn_canvas_2=Canvas(qn_frame_2, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                                qn_frame_2.grid_columnconfigure(0,weight=1)
+                                qn_frame_2.grid_rowconfigure(0,weight=1)
+                                
+                                vertibar=Scrollbar(qn_frame_2, orient=VERTICAL)
+                                vertibar.grid(row=0,column=1,sticky='ns')
+                                vertibar.config(command=qn_canvas_2.yview)
+
+                                qn_canvas_2.bind("<Configure>", qn_responsive_widgets_2)
+                                qn_canvas_2.config(yscrollcommand=vertibar.set)
+                                qn_canvas_2.grid(row=0,column=0,sticky='nsew')
+
+                                qn_editid_3 = qn_tree.item(qn_tree.focus())["values"][1]
+                                print(qn_editid_3)
+                                qn_editid_4 = qn_tree.item(qn_tree.focus())["values"][3]
+                                print(qn_editid_4)
+                                
+                                
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                pr_dtl = fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+                                print(cmp_dtl)
+
+                                sql = 'select * from app1_materialerror where date = %s and productname=%s and cid_id = %s'
+                                val =  (qn_editid_3,qn_editid_4,cmp_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                edit_qn_1 = fbcursor.fetchone()
+
+                                def edit_material_error():
+                                    date = qmn_dentry_1.get_date()
+                                    productname	= qmn_comb_2.get()
+                                    sku = qmn_entry_2.get()
+                                    hsn = qmn_entry_3.get()
+                                    availableqty = qmn_entry_4.get()
+                                    inspectedqty = qmn_entry_5.get()
+                                    compliantqty = qmn_entry_6.get()
+                                    
+                                    usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                    usrp_val = (nm_ent.get(),)
+                                    fbcursor.execute(usrp_sql,usrp_val)
+                                    usrp_data = fbcursor.fetchone()
+
+                                    cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                    cmpp_val = (usrp_data[0],)
+                                    fbcursor.execute(cmpp_sql,cmpp_val)
+                                    cmpp_data = fbcursor.fetchone()
+                                    cid = cmpp_data[0]
+
+                                    qi_sql = "update app1_materialerror set date=%s,productname=%s,sku=%s,hsn=%s,availableqty=%s,inspectedqty=%s,compliantqty=%s,cid_id=%s where date=%s and productname=%s"
+                                    qi_val = (date,productname,sku,hsn,availableqty,inspectedqty,compliantqty,cid,qn_editid_3,qn_editid_4)
+                                    fbcursor.execute(qi_sql,qi_val)
+                                    finsysdb.commit()
+                                    #----------Refresh Insert Tree--------#
+
+                                    for record in qn_tree.get_children():
+                                        qn_tree.delete(record)
+                                    sql_p="select * from auth_user where username=%s"
+                                    sql_p_val=(nm_ent.get(),)
+                                    fbcursor.execute(sql_p,sql_p_val,)
+                                    pr_dt=fbcursor.fetchone()
+
+                                    sql = "select * from app1_company where id_id=%s"
+                                    val = (pr_dt[0],)
+                                    fbcursor.execute(sql, val,)
+                                    cmp_dt=fbcursor.fetchone()
+
+                                    p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                    p_val_1 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_1,p_val_1,)
+                                    qn_data_1 = fbcursor.fetchall()
+                                    
+                                    count0 = 0
+                                    for i in qn_data_1:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                        else:
+                                            pass
+                                    count0 += 1
+
+                                    p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                    p_val_2 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_2,p_val_2,)
+                                    qn_data_2 = fbcursor.fetchall()
+
+                                    count1 = 0
+                                    for i in qn_data_2:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                        else:
+                                            pass
+                                    count1 += 1
+
+                                    p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                    p_val_3 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_3,p_val_3,)
+                                    qn_data_3 = fbcursor.fetchall()
+                                    
+
+                                    count2 = 0
+                                    for i in qn_data_3:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                        else:
+                                            pass
+                                    count2 += 1
+
+                                    qn_frame_2.destroy()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                                qn_canvas_2.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qmnpoly1"))
+
+                                label_1 = Label(qn_canvas_2,width=23,height=1,text="MATERIAL ERROR", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=("qmnlabel1"))
+
+                                qn_canvas_2.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qmnhline"))
+
+                                qn_canvas_2.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qmnpoly2"))
+
+                                label_1 = Label(qn_canvas_2,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel2'))
+
+                                label_1 = Label(qn_canvas_2,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel3'))
+
+                                sql_i="select * from auth_user where username=%s"
+                                val_i=(nm_ent.get(),)
+                                fbcursor.execute(sql_i,val_i,)
+                                p_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (p_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl_i=fbcursor.fetchone()
+                                
+
+                                i_sql = "SELECT productname FROM app1_qualityinspection where cid_id=%s"
+                                i_val = (cmp_dtl_i[0],)
+                                fbcursor.execute(i_sql,i_val)
+                                i_data = fbcursor.fetchall()
+
+                                qm_data_1 = []   
+                                
+                                for i in i_data:
+                                    qm_data_1.append(i[0])
+
+                                def qm_details(event):
+                                    qm_to_str_1 = qmn_comb_2.get()
+
+                                    sql = "select * from app1_qualityinspection where productname=%s and cid_id=%s"
+                                    val = (qm_to_str_1,cmp_dtl_i[0],)
+                                    fbcursor.execute(sql,val)
+                                    qm_sel_1 = fbcursor.fetchone()
+                                    if qm_sel_1 is not None:
+                                        
+                                        qmn_entry_2.delete(0,END)
+                                        qmn_entry_2.insert(0,qm_sel_1[3])
+
+                                        qmn_entry_3.delete(0,END)
+                                        qmn_entry_3.insert(0,qm_sel_1[4])
+
+                                        qmn_entry_4.delete(0,END)
+                                        qmn_entry_4.insert(0,qm_sel_1[5])
+
+                                        qmn_entry_5.delete(0,END)
+                                        qmn_entry_5.insert(0,qm_sel_1[6])
+
+                                    else:
+                                        pass
+
+
+                                qmn_comb_2 = ttk.Combobox(qn_canvas_2,font=('arial 10'),values=qm_data_1)
+                                window_qmn_comb_2 = qn_canvas_2.create_window(0, 0, anchor="nw", width=535,height=30,window=qmn_comb_2,tags=('qmnentry1'))
+                                qmn_comb_2.bind("<<ComboboxSelected>>",qm_details)
+                                qmn_comb_2.delete(0,'end')
+                                qmn_comb_2.insert(0, edit_qn_1[2])
+
+                                label_1 = Label(qn_canvas_2,width=15,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel4'))
+
+                                qmn_entry_2=Entry(qn_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_entry_2 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_2, tags=('qmnentry2'))
+                                qmn_entry_2.delete(0,'end')
+                                qmn_entry_2.insert(0, edit_qn_1[3])
+
+                                label_1 = Label(qn_canvas_2,width=15,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('qmnlabel5'))
+
+                                qmn_entry_3=Entry(qn_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_entry_3 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_3, tags=('qmnentry3'))
+                                qmn_entry_3.delete(0,'end')
+                                qmn_entry_3.insert(0, edit_qn_1[4])
+
+                                label_2 = Label(qn_canvas_2,width=18,height=1,text="Available Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_2 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_2, tags=("qmnlabel6"))
+
+                                qmn_entry_4=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_entry_4 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_4, tags=("qmnentry4"))
+                                qmn_entry_4.delete(0,'end')
+                                qmn_entry_4.insert(0, edit_qn_1[5])
+
+                                label_2 = Label(qn_canvas_2,width=20,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_2 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_2, tags=("qmnlabel7"))
+
+                                qmn_entry_5=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_entry_5 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_5, tags=("qmnentry5"))
+                                qmn_entry_5.delete(0,'end')
+                                qmn_entry_5.insert(0, edit_qn_1[6])
+
+                                label_2 = Label(qn_canvas_2,width=20,height=1,text="Compliant Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_2 = qn_canvas_2.create_window(0, 0, anchor="nw", window=label_2, tags=("qmnlabel8"))
+
+                                qmn_entry_6=Entry(qn_canvas_2,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_entry_6 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_entry_6, tags=("qmnentry6"))
+                                qmn_entry_6.delete(0,'end')
+                                qmn_entry_6.insert(0, edit_qn_1[7])
+
+                                qmn_save_btn1=Button(qn_canvas_2,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_material_error)
+                                window_qmn_save_btn1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=qmn_save_btn1,tags=('qmnbutton2'))
+
+                                def qmn_back_1_():
+                                    qn_frame_2.grid_forget()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                                qmn_bck_btn1=Button(qn_canvas_2,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qmn_back_1_)
+                                window_qmn_bck_btn1 = qn_canvas_2.create_window(0, 0, anchor="nw", window=qmn_bck_btn1,tags=('qmnbutton1'))
+
+                                qmn_dentry_1=DateEntry(qn_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qmn_dentry_1 = qn_canvas_2.create_window(0, 0, anchor="nw", height=30,window=qmn_dentry_1, tags=('qmndentry1'))
+                                qmn_dentry_1.delete(0,'end')
+                                qmn_dentry_1.insert(0, edit_qn_1[1])
+
+                            elif qn_tree.item(qn_tree.focus())["values"][2] == "Customer Compliant":
+                                qn_frame.grid_forget()
+                                qn_frame_3 = Frame(tab12_2)
+                                qn_frame_3.grid(row=0,column=0,sticky='nsew')
+
+                                def qn_responsive_widgets_3(event):
+
+                                    dwidth = event.width
+                                    dheight = event.height
+                                    dcanvas = event.widget
+                                    
+                                    r1 = 25
+                                    x1 = dwidth/63
+                                    x2 = dwidth/1.021
+                                    y1 = dheight/14 
+                                    y2 = dheight/3.505
+
+                                    dcanvas.coords("qcnpoly1",x1 + r1,y1,
+                                    x1 + r1,y1,
+                                    x2 - r1,y1,
+                                    x2 - r1,y1,     
+                                    x2,y1,     
+                                    #--------------------
+                                    x2,y1 + r1,     
+                                    x2,y1 + r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2 - r1,     
+                                    x2,y2,
+                                    #--------------------
+                                    x2 - r1,y2,     
+                                    x2 - r1,y2,     
+                                    x1 + r1,y2,
+                                    x1 + r1,y2,
+                                    x1,y2,
+                                    #--------------------
+                                    x1,y2 - r1,
+                                    x1,y2 - r1,
+                                    x1,y1 + r1,
+                                    x1,y1 + r1,
+                                    x1,y1,
+                                    )
+
+                                    dcanvas.coords("qcnlabel1",dwidth/2.5,dheight/8.24)
+                                    dcanvas.coords("qcnhline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                    r2 = 25
+                                    x11 = dwidth/63
+                                    x21 = dwidth/1.021
+                                    y11 = dheight/2.8
+                                    y21 = dheight/0.65
+
+
+                                    dcanvas.coords("qcnpoly2",x11 + r2,y11,
+                                    x11 + r2,y11,
+                                    x21 - r2,y11,
+                                    x21 - r2,y11,     
+                                    x21,y11,     
+                                    #--------------------
+                                    x21,y11 + r2,     
+                                    x21,y11 + r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21 - r2,     
+                                    x21,y21,
+                                    #--------------------
+                                    x21 - r2,y21,     
+                                    x21 - r2,y21,     
+                                    x11 + r2,y21,
+                                    x11 + r2,y21,
+                                    x11,y21,
+                                    #--------------------
+                                    x11,y21 - r2,
+                                    x11,y21 - r2,
+                                    x11,y11 + r2,
+                                    x11,y11 + r2,
+                                    x11,y11,
+                                    )
+
+                                    dcanvas.coords("qcnbutton1",dwidth/23,dheight/3.415)
+
+                                    dcanvas.coords("qcnlabel2",dwidth/13.85,dheight/1.82)
+                                    dcanvas.coords("qcnlabel3",dwidth/1.935,dheight/1.82)
+                                    dcanvas.coords("qcnlabel4",dwidth/13.85,dheight/1.39)
+                                    dcanvas.coords("qcnlabel5",dwidth/1.93,dheight/1.39)
+                                    dcanvas.coords("qcnlabel6",dwidth/13.85,dheight/1.095)
+                                    dcanvas.coords("qcnlabel7",dwidth/1.93,dheight/1.095)
+                                    dcanvas.coords("qcnlabel8",dwidth/13.85,dheight/0.9)
+                                    
+                                    dcanvas.coords("qcnentry1",dwidth/1.93,dheight/1.66)
+                                    dcanvas.coords("qcnentry2",dwidth/13.8,dheight/1.3)
+                                    dcanvas.coords("qcnentry3",dwidth/1.93,dheight/1.3)
+                                    dcanvas.coords("qcnentry4",dwidth/13.8,dheight/1.035)
+                                    dcanvas.coords("qcnentry5",dwidth/1.93,dheight/1.035)
+                                    dcanvas.coords("qcnentry6",dwidth/13.8,dheight/0.86)
+                                    
+                                    dcanvas.coords("qcnbutton2",dwidth/2.2,dheight/0.75)
+
+                                    try:
+                                        dcanvas.coords("qcndentry1",dwidth/13.8,dheight/1.66)
+                                    except:
+                                        pass
+
+                                qn_canvas_3=Canvas(qn_frame_3, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                                qn_frame_3.grid_columnconfigure(0,weight=1)
+                                qn_frame_3.grid_rowconfigure(0,weight=1)
+                                
+                                vertibar=Scrollbar(qn_frame_3, orient=VERTICAL)
+                                vertibar.grid(row=0,column=1,sticky='ns')
+                                vertibar.config(command=qn_canvas_3.yview)
+
+                                qn_canvas_3.bind("<Configure>", qn_responsive_widgets_3)
+                                qn_canvas_3.config(yscrollcommand=vertibar.set)
+                                qn_canvas_3.grid(row=0,column=0,sticky='nsew')
+
+                                qn_editid_5 = qn_tree.item(qn_tree.focus())["values"][1]
+                                print(qn_editid_5)
+                                qn_editid_6 = qn_tree.item(qn_tree.focus())["values"][3]
+                                print(qn_editid_6)
+                                
+                                
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                pr_dtl = fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+                                print(cmp_dtl)
+
+                                sql = 'select * from app1_customercompliant where date=%s and productname=%s and cid_id = %s'
+                                val =  (qn_editid_5,qn_editid_6,cmp_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                edit_qn_2 = fbcursor.fetchone()
+
+                                def edit_customer_compliant():
+                                    date = qcn_dentry_1.get_date()
+                                    customername = qcn_entry_1.get()
+                                    invoiceno = qcn_comb_1.get()
+                                    productname = qcn_comb_2.get()
+                                    soldqty = qcn_entry_4.get()
+                                    compliantqty = qcn_entry_5.get()
+                                    description = qcn_entry_6.get('1.0', 'end-1c')
+                                    
+                                    usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                    usrp_val = (nm_ent.get(),)
+                                    fbcursor.execute(usrp_sql,usrp_val)
+                                    usrp_data = fbcursor.fetchone()
+
+                                    cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                    cmpp_val = (usrp_data[0],)
+                                    fbcursor.execute(cmpp_sql,cmpp_val)
+                                    cmpp_data = fbcursor.fetchone()
+                                    cid = cmpp_data[0]
+
+                                    qi_sql = "update app1_customercompliant set date=%s,customername=%s,invoiceno=%s,productname=%s,soldqty=%s,compliantqty=%s,description=%s,cid_id=%s where date=%s and productname=%s"
+                                    qi_val = (date,customername,invoiceno,productname,soldqty,compliantqty,description,cid,qn_editid_5,qn_editid_6)
+                                    fbcursor.execute(qi_sql,qi_val)
+                                    finsysdb.commit()
+                                    #----------Refresh Insert Tree--------#
+
+                                    for record in qn_tree.get_children():
+                                        qn_tree.delete(record)
+                                    sql_p="select * from auth_user where username=%s"
+                                    sql_p_val=(nm_ent.get(),)
+                                    fbcursor.execute(sql_p,sql_p_val,)
+                                    pr_dt=fbcursor.fetchone()
+
+                                    sql = "select * from app1_company where id_id=%s"
+                                    val = (pr_dt[0],)
+                                    fbcursor.execute(sql, val,)
+                                    cmp_dt=fbcursor.fetchone()
+
+                                    p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                    p_val_1 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_1,p_val_1,)
+                                    qn_data_1 = fbcursor.fetchall()
+                                    
+                                    count0 = 0
+                                    for i in qn_data_1:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                        else:
+                                            pass
+                                    count0 += 1
+
+                                    p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                    p_val_2 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_2,p_val_2,)
+                                    qn_data_2 = fbcursor.fetchall()
+
+                                    count1 = 0
+                                    for i in qn_data_2:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                        else:
+                                            pass
+                                    count1 += 1
+
+                                    p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                    p_val_3 = (cmp_dt[0],)
+                                    fbcursor.execute(p_sql_3,p_val_3,)
+                                    qn_data_3 = fbcursor.fetchall()
+                                    
+
+                                    count2 = 0
+                                    for i in qn_data_3:
+                                        if True:
+                                            qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                        else:
+                                            pass
+                                    count2 += 1
+
+                                    qn_frame_3.destroy()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                                qn_canvas_3.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qcnpoly1"))
+
+                                label_1 = Label(qn_canvas_3,width=23,height=1,text="CUSTOMER COMPLIANT", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=("qcnlabel1"))
+
+                                qn_canvas_3.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qcnhline"))
+
+                                qn_canvas_3.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qcnpoly2"))
+
+                                label_1 = Label(qn_canvas_3,width=13,height=1,text="Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel2'))
+
+                                label_1 = Label(qn_canvas_3,width=15,height=1,text="Customer Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel5'))
+
+
+                                label_1 = Label(qn_canvas_3,width=15,height=1,text="Invoice No.", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel4'))
+
+                                sql_i="select * from auth_user where username=%s"
+                                val_i=(nm_ent.get(),)
+                                fbcursor.execute(sql_i,val_i,)
+                                p_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (p_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl_i=fbcursor.fetchone()
+                                
+
+                                i_sql = "SELECT invoiceid FROM app1_invoice where cid_id=%s"
+                                i_val = (cmp_dtl_i[0],)
+                                fbcursor.execute(i_sql,i_val)
+                                i_data = fbcursor.fetchall()
+
+                                qcc_data_2 = []   
+                                
+                                for i in i_data:
+                                    qcc_data_2.append(i[0])
+
+                                def qcc_details_2(event):
+                                    qcc_to_str_1 = qcn_comb_1.get()
+
+                                    sql = "select * from app1_invoice where invoiceid=%s and cid_id=%s"
+                                    val = (qcc_to_str_1,cmp_dtl_i[0],)
+                                    fbcursor.execute(sql,val)
+                                    qcc_sel_2 = fbcursor.fetchone()
+
+                                    if qcc_sel_2 is not None:
+                                        
+                                        qcn_entry_1.delete(0,END)
+                                        qcn_entry_1.insert(0,qcc_sel_2[1])
+
+                                    else:
+                                        pass
+
+                                qcn_comb_1 = ttk.Combobox(qn_canvas_3,font=('arial 10'),values=qcc_data_2)
+                                window_qcn_comb_1 = qn_canvas_3.create_window(0, 0, anchor="nw", width=535,height=30,window=qcn_comb_1,tags=('qcnentry2'))
+                                qcn_comb_1.bind("<<ComboboxSelected>>",qcc_details_2)
+                                qcn_comb_1.delete(0,'end')
+                                qcn_comb_1.insert(0, edit_qn_2[3])
+
+                                qcn_entry_1=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qcn_entry_1 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_1, tags=('qcnentry3'))
+                                qcn_entry_1.delete(0,'end')
+                                qcn_entry_1.insert(0, edit_qn_2[2])
+
+                                label_1 = Label(qn_canvas_3,width=15,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel3'))
+
+                                sql_i="select * from auth_user where username=%s"
+                                val_i=(nm_ent.get(),)
+                                fbcursor.execute(sql_i,val_i,)
+                                p_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (p_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl_i=fbcursor.fetchone()
+                                
+
+                                i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
+                                i_val = (cmp_dtl_i[0],)
+                                fbcursor.execute(i_sql,i_val)
+                                i_data = fbcursor.fetchall()
+
+                                qcc_data_1 = []   
+                                
+                                for i in i_data:
+                                    qcc_data_1.append(i[0])
+
+                                def qcc_details(event):
+                                    qc_to_str_1 = qcn_comb_2.get()
+
+                                    sql = "select * from app1_inventory where name=%s and cid_id=%s"
+                                    val = (qc_to_str_1,cmp_dtl_i[0],)
+                                    fbcursor.execute(sql,val)
+                                    qcc_sel_1 = fbcursor.fetchone()
+
+                                    if qcc_sel_1 is not None:
+                                        
+                                        qcn_entry_6.insert(1.0,qcc_sel_1[11])
+
+                                    else:
+                                        pass
+
+                                qcn_comb_2 = ttk.Combobox(qn_canvas_3,font=('arial 10'),values=qcc_data_1)
+                                window_qcn_comb_2 = qn_canvas_3.create_window(0, 0, anchor="nw", width=535,height=30,window=qcn_comb_2,tags=('qcnentry1'))
+                                qcn_comb_2.bind("<<ComboboxSelected>>",qcc_details)
+                                qcn_comb_2.delete(0,'end')
+                                qcn_comb_2.insert(0, edit_qn_2[4])
+
+                                label_1 = Label(qn_canvas_3,width=15,height=1,text="Sold Quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel6'))
+
+                                qcn_entry_4=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qcn_entry_4 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_4, tags=('qcnentry4'))
+                                qcn_entry_4.delete(0,'end')
+                                qcn_entry_4.insert(0, edit_qn_2[5])
+
+                                label_1 = Label(qn_canvas_3,width=25,height=1,text="Compliant quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel7'))
+
+                                qcn_entry_5=Entry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qcn_entry_5 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_entry_5, tags=('qcnentry5'))
+                                qcn_entry_5.delete(0,'end')
+                                qcn_entry_5.insert(0, edit_qn_2[6])
+
+                                label_1 = Label(qn_canvas_3,width=15,height=1,text="Description", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                                window_label_1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('qcnlabel8'))
+
+                                qcn_entry_6=scrolledtext.ScrolledText(qn_canvas_3,width=140,background='#2f516f',foreground="white")
+                                window_qcn_entry_6 = qn_canvas_3.create_window(0, 0, anchor="nw", height=60,window=qcn_entry_6,tags=('qcnentry6'))
+                                qcn_entry_6.insert(1.0, edit_qn_2[7])
+
+                                qcn_save_btn1=Button(qn_canvas_3,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_customer_compliant)
+                                window_qcn_save_btn1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=qcn_save_btn1,tags=('qcnbutton2'))
+
+                                def qcn_back_1_():
+                                    qn_frame_3.grid_forget()
+                                    qn_frame.grid(row=0,column=0,sticky='nsew')
+
+                                qcn_bck_btn1=Button(qn_canvas_3,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qcn_back_1_)
+                                window_qcn_bck_btn1 = qn_canvas_3.create_window(0, 0, anchor="nw", window=qcn_bck_btn1,tags=('qcnbutton1'))
+
+                                qcn_dentry_1=DateEntry(qn_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                window_qcn_dentry_1 = qn_canvas_3.create_window(0, 0, anchor="nw", height=30,window=qcn_dentry_1, tags=('qcndentry1'))
+                                qcn_dentry_1.delete(0,'end')
+                                qcn_dentry_1.insert(0, edit_qn_2[1])
+
+                            else:
+                                pass
+
+                        elif qn_comb_1.get() == "Delete":
+                            qn_del = messagebox.askyesno("Delete Quality Notification","Are you sure to delete this quality notification?")
+
+                            if qn_del == True:
+                                if qn_tree.item(qn_tree.focus())["values"][2] == 'Supplier Error':
+                                    qn_peditid = qn_tree.item(qn_tree.focus())["values"][1]
+                                    qn_peditid_1 = qn_tree.item(qn_tree.focus())["values"][3]
+                                    
+                                    sql_u = 'select * from auth_user where username=%s'
+                                    val_u = (nm_ent.get(),)
+                                    fbcursor.execute(sql_u,val_u)
+                                    u_dtl = fbcursor.fetchone()
+
+                                    sql_c = 'select * from app1_company where id_id=%s'
+                                    val_c = (u_dtl[0],)
+                                    fbcursor.execute(sql_c,val_c)
+                                    c_dtl = fbcursor.fetchone()
+
+                                    sql = 'delete from app1_suppliererror where date=%s and productname=%s and cid_id=%s'
+                                    val = (qn_peditid,qn_peditid_1,c_dtl[0],)
+                                    fbcursor.execute(sql,val)
+                                    finsysdb.commit()
+                                elif qn_tree.item(qn_tree.focus())["values"][2] == 'Material Error':
+                                    qn_peditid_2 = qn_tree.item(qn_tree.focus())["values"][1]
+                                    qn_peditid_3 = qn_tree.item(qn_tree.focus())["values"][3]
+                                    
+                                    sql_u = 'select * from auth_user where username=%s'
+                                    val_u = (nm_ent.get(),)
+                                    fbcursor.execute(sql_u,val_u)
+                                    u_dtl = fbcursor.fetchone()
+
+                                    sql_c = 'select * from app1_company where id_id=%s'
+                                    val_c = (u_dtl[0],)
+                                    fbcursor.execute(sql_c,val_c)
+                                    c_dtl = fbcursor.fetchone()
+
+                                    sql = 'delete from app1_materialerror where date=%s and productname=%s and cid_id=%s'
+                                    val = (qn_peditid_2,qn_peditid_3,c_dtl[0],)
+                                    fbcursor.execute(sql,val)
+                                    finsysdb.commit()
+                                elif qn_tree.item(qn_tree.focus())["values"][2] == 'Customer Compliant':
+                                    qn_peditid_4 = qn_tree.item(qn_tree.focus())["values"][1]
+                                    qn_peditid_5 = qn_tree.item(qn_tree.focus())["values"][3]
+                                    
+                                    sql_u = 'select * from auth_user where username=%s'
+                                    val_u = (nm_ent.get(),)
+                                    fbcursor.execute(sql_u,val_u)
+                                    u_dtl = fbcursor.fetchone()
+
+                                    sql_c = 'select * from app1_company where id_id=%s'
+                                    val_c = (u_dtl[0],)
+                                    fbcursor.execute(sql_c,val_c)
+                                    c_dtl = fbcursor.fetchone()
+
+                                    sql = 'delete from app1_customercompliant where date=%s and productname=%s and cid_id=%s'
+                                    val = (qn_peditid_4,qn_peditid_5,c_dtl[0],)
+                                    fbcursor.execute(sql,val)
+                                    finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in qn_tree.get_children():
+                                    qn_tree.delete(record)
+                                sql_p="select * from auth_user where username=%s"
+                                sql_p_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_p,sql_p_val,)
+                                pr_dt=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dt[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dt=fbcursor.fetchone()
+
+                                p_sql_1 = "SELECT * FROM app1_suppliererror where cid_id=%s"
+                                p_val_1 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_1,p_val_1,)
+                                qn_data_1 = fbcursor.fetchall()
+                                
+                                count0 = 0
+                                for i in qn_data_1:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Supplier Error',i[4],i[5],i[9])) 
+                                    else:
+                                        pass
+                                count0 += 1
+
+                                p_sql_2 = "SELECT * FROM app1_materialerror where cid_id=%s"
+                                p_val_2 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_2,p_val_2,)
+                                qn_data_2 = fbcursor.fetchall()
+
+                                count1 = 0
+                                for i in qn_data_2:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Material Error',i[2],i[3],i[7])) 
+                                    else:
+                                        pass
+                                count1 += 1
+
+                                p_sql_3 = "SELECT * FROM app1_customercompliant where cid_id=%s"
+                                p_val_3 = (cmp_dt[0],)
+                                fbcursor.execute(p_sql_3,p_val_3,)
+                                qn_data_3 = fbcursor.fetchall()
+                                
+
+                                count2 = 0
+                                for i in qn_data_3:
+                                    if True:
+                                        qn_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],'Customer Compliant',i[4],'',i[6])) 
+                                    else:
+                                        pass
+                                count2 += 1
+                        else:
+                            pass
                     qn_comb_1 = ttk.Combobox(qn_canvas,font=('arial 10'))
                     qn_comb_1['values'] = ("Actions","Edit","Delete")
                     qn_comb_1.current(0)
                     window_qn_comb_1 = qn_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qn_comb_1,tags=('qncombo1'))
-                    qn_comb_1.bind("<<ComboboxSelected>>")
+                    qn_comb_1.bind("<<ComboboxSelected>>",edit_delete_qn)
 
                     #-------------------------------Quality Certificate-----------------------------#
 
@@ -5921,7 +8267,7 @@ def main_sign_in():
 
                     qc_tree = ttk.Treeview(qc_canvas, columns = (1,2,3,4), height = 10, show = "headings",style='mystyle121.Treeview',yscrollcommand=qc_scrollbar.set)
                     qc_tree.heading(1)
-                    qc_tree.heading(2, text="DATE")
+                    qc_tree.heading(2, text="DATE OF INSPECTION")
                     qc_tree.heading(3, text="SUPPLIER NAME")
                     qc_tree.heading(4, text="PRODUCT NAME")
                     
@@ -5935,11 +8281,33 @@ def main_sign_in():
                     qc_scrollbar.config(command=qc_tree.yview)
                     qc_scrollbar.grid(row=0,column=2,sticky='ns')
 
+                    sql_pr="select * from auth_user where username=%s"
+                    sql_pr_val=(nm_ent.get(),)
+                    fbcursor.execute(sql_pr,sql_pr_val,)
+                    pr_dtl=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (pr_dtl[0],)
+                    fbcursor.execute(sql, val,)
+                    cmp_dtl=fbcursor.fetchone()
+
+                    qc_sql_1 = "SELECT * FROM app1_qualitycertificate where  cid_id=%s"
+                    qc_val_1 = (cmp_dtl[0],)
+                    fbcursor.execute(qc_sql_1,qc_val_1,)
+                    qc_data_1 = fbcursor.fetchall()
+
+                    count0 = 0
+                    for i in qc_data_1:
+                        
+                        if True:
+                            qc_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[6],i[2]))
+                        
+                    count0 += 1
+
                     def add_quality_certificate():
                         qc_frame.grid_forget()
                         qc_frame_1 = Frame(tab12_3)
                         qc_frame_1.grid(row=0,column=0,sticky='nsew')
-
                         def qc_responsive_widgets_1(event):
 
                             dwidth = event.width
@@ -5984,7 +8352,7 @@ def main_sign_in():
                             x11 = dwidth/63
                             x21 = dwidth/1.021
                             y11 = dheight/2.8
-                            y21 = dheight/0.4
+                            y21 = dheight/0.55
 
 
                             dcanvas.coords("qccpoly2",x11 + r2,y11,
@@ -6014,49 +8382,31 @@ def main_sign_in():
 
                             dcanvas.coords("qccbutton1",dwidth/23,dheight/3.415)
 
-                            dcanvas.coords("qccbutton2",dwidth/2.2,dheight/0.45)
+                            dcanvas.coords("qccbutton2",dwidth/2.2,dheight/0.7)
 
-                            r2 = 0
-                            x11 = dwidth/13
-                            x21 = dwidth/1.1
-                            y11 = dheight/2
-                            y21 = dheight/0.5
+                            dcanvas.coords("qcclabel2",dwidth/13.85,dheight/1.82)
+                            dcanvas.coords("qcclabel3",dwidth/1.935,dheight/1.82)
+                            dcanvas.coords("qcclabel4",dwidth/13.85,dheight/1.39)
+                            dcanvas.coords("qcclabel5",dwidth/1.93,dheight/1.39)
+                            dcanvas.coords("qcclabel7",dwidth/1.93,dheight/0.9)
+                            dcanvas.coords("qcclabel9",dwidth/13.85,dheight/0.9)
+                            dcanvas.coords("qcclabel8",dwidth/13.85,dheight/1.09)
+                            dcanvas.coords("qcclabel10",dwidth/1.93,dheight/1.09)
 
+                            dcanvas.coords("qccentry1",dwidth/1.93,dheight/1.66)
+                            dcanvas.coords("qccentry2",dwidth/13.8,dheight/1.3)
+                            dcanvas.coords("qccentry3",dwidth/1.93,dheight/1.3)
+                            dcanvas.coords("qccentry5",dwidth/1.93,dheight/0.86)
+                            dcanvas.coords("qccentry7",dwidth/13.8,dheight/0.86)
+                            dcanvas.coords("qccentry4",dwidth/13.8,dheight/1.025)
+                            dcanvas.coords("qccentry9",dwidth/1.93,dheight/1.025)
 
-                            dcanvas.coords("qccpoly3",x11 + r2,y11,
-                            x11 + r2,y11,
-                            x21 - r2,y11,
-                            x21 - r2,y11,     
-                            x21,y11,     
-                            #--------------------
-                            x21,y11 + r2,     
-                            x21,y11 + r2,     
-                            x21,y21 - r2,     
-                            x21,y21 - r2,     
-                            x21,y21,
-                            #--------------------
-                            x21 - r2,y21,     
-                            x21 - r2,y21,     
-                            x11 + r2,y21,
-                            x11 + r2,y21,
-                            x11,y21,
-                            #--------------------
-                            x11,y21 - r2,
-                            x11,y21 - r2,
-                            x11,y11 + r2,
-                            x11,y11 + r2,
-                            x11,y11,
-                            )
+                            try:
+                                dcanvas.coords("qccdentry1",dwidth/13.8,dheight/1.66)
+                            except:
+                                pass
 
-                            dcanvas.coords("qcclabel2",dwidth/2.6,dheight/1.15)
-                            dcanvas.coords("qcclabel3",dwidth/9,dheight/1.05)
-                            dcanvas.coords("qcclabel4",dwidth/9,dheight/0.94)
-                            dcanvas.coords("qcclabel5",dwidth/9,dheight/0.85)
-                            dcanvas.coords("qcclabel6",dwidth/9,dheight/0.8)
-                            dcanvas.coords("qcclabel7",dwidth/1.66,dheight/0.8)
-                            dcanvas.coords("qcclabel8",dwidth/2,dheight/0.85)
-
-                            dcanvas.coords("qccimage1",dwidth/9,dheight/1.7)
+                            
                         
                         qc_canvas_1=Canvas(qc_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
 
@@ -6071,6 +8421,61 @@ def main_sign_in():
                         qc_canvas_1.config(yscrollcommand=vertibar.set)
                         qc_canvas_1.grid(row=0,column=0,sticky='nsew')
 
+                        def insert_qality_certificate():
+                            dateofinspection = qcc_dentry_2.get_date()
+                            productname = qcc_comb_1.get()
+                            sku = qcc_entry_2.get()
+                            hsn = qcc_entry_3.get()
+                            customername = qcc_comb_3.get()
+                            suppliername = qcc_comb_4.get()
+                            inspectedby = qcc_comb_2.get()
+                            inspectedqty = qcc_entry_4.get()
+
+                            usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                            usrp_val = (nm_ent.get(),)
+                            fbcursor.execute(usrp_sql,usrp_val)
+                            usrp_data = fbcursor.fetchone()
+
+                            cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                            cmpp_val = (usrp_data[0],)
+                            fbcursor.execute(cmpp_sql,cmpp_val)
+                            cmpp_data = fbcursor.fetchone()
+                            cid = cmpp_data[0]
+
+                            qi_sql = "INSERT INTO app1_qualitycertificate(dateofinspection,productname,sku,hsn,customername,suppliername,inspectedby,inspectedqty,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                            qi_val = (dateofinspection,productname,sku,hsn,customername,suppliername,inspectedby,inspectedqty,cid)
+                            fbcursor.execute(qi_sql,qi_val)
+                            finsysdb.commit()
+                            #----------Refresh Insert Tree--------#
+                            for record in qc_tree.get_children():
+                                qc_tree.delete(record)
+
+                            sql_pr="select * from auth_user where username=%s"
+                            sql_pr_val=(nm_ent.get(),)
+                            fbcursor.execute(sql_pr,sql_pr_val,)
+                            pr_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (pr_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+
+                            qc_sql_1 = "SELECT * FROM app1_qualitycertificate where  cid_id=%s"
+                            qc_val_1 = (cmp_dtl[0],)
+                            fbcursor.execute(qc_sql_1,qc_val_1,)
+                            qc_data_1 = fbcursor.fetchall()
+
+                            count0 = 0
+                            for i in qc_data_1:
+                                
+                                if True:
+                                    qc_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[6],i[2]))
+                                
+                            count0 += 1
+
+                            qc_frame_1.grid_forget()
+                            qc_frame.grid(row=0,column=0,sticky='nsew')
+
                         qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly1"))
 
                         label_1 = Label(qc_canvas_1,width=25,height=1,text="ADD QUALITY CERTIFICATE", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
@@ -6080,50 +8485,886 @@ def main_sign_in():
 
                         qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly2"))
 
-                        qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("qccpoly3"))
+                        label_1 = Label(qc_canvas_1,width=20,height=1,text="Date of Inspection", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qcclabel2'))
+                        
+                        label_1 = Label(qc_canvas_1,width=13,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qcclabel3'))
 
-                        qcc_image_1=Label(qc_canvas_1,  image = prof_pics,bg="#213b52",width=150,height=150,  anchor="center",font=('Calibri 14 bold'))
-                        win_qcc_image_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_image_1,tags=("qccimage1"))
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
 
-                        label_1 = Label(qc_canvas_1,width=30,height=1,text="CERTIFICATE OF CONFORMANCE", font=('arial 16 bold'),background="white",fg="black",anchor="w") 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel2"))
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
 
-                        label_1 = Label(qc_canvas_1,width=115,height=2,text="This will certify that the below identified product was built, formulated, and assembled under the rigid quality requirements of our Engineering \nspecifications for materials and processes. All direct and associated processing materials have been tested and approved.", font=('arial 12'),background="white",fg="black",anchor="w", justify= LEFT) 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel3"))
+                        i_sql = "SELECT productname FROM app1_qualityinspection where cid_id=%s"
+                        i_val = (cmp_dtl_i[0],)
+                        fbcursor.execute(i_sql,i_val)
+                        i_data = fbcursor.fetchall()
 
-                        label_1 = Label(qc_canvas_1,width=115,height=2,text="All process and testing operations have been verified as acceptable by the Quality Assurance Department in conformance with the requirements \nof our Quality Program Manual and are certified to meet all general performance specifications stated in our current published catalogs.", font=('arial 12'),background="white",fg="black",anchor="w", justify= LEFT) 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel4"))
+                        qcc_data = []   
+                        
+                        for i in i_data:
+                            qcc_data.append(i[0])
 
-                        label_1 = Label(qc_canvas_1,width=18,height=1,text="CUSTOMER NAME:", font=('arial 12'),background="white",fg="black",anchor="w") 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel5"))
+                        def qcc_details(event):
+                            qcc_to_str_1 = qcc_comb_1.get()
 
-                        label_1 = Label(qc_canvas_1,width=15,height=1,text="PRODUCT NAME:", font=('arial 12'),background="white",fg="black",anchor="w") 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel6"))
+                            sql = "select * from app1_qualityinspection where productname=%s and cid_id=%s"
+                            val = (qcc_to_str_1,cmp_dtl_i[0],)
+                            fbcursor.execute(sql,val)
+                            qcc_sel_1 = fbcursor.fetchone()
+                            if qcc_sel_1 is not None:
+                                
+                                qcc_entry_2.delete(0,END)
+                                qcc_entry_2.insert(0,qcc_sel_1[3])
 
-                        label_1 = Label(qc_canvas_1,width=5,height=1,text="SKU:", font=('arial 12'),background="white",fg="black",anchor="w") 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel7"))
+                                qcc_entry_3.delete(0,END)
+                                qcc_entry_3.insert(0,qcc_sel_1[4])
 
-                        label_1 = Label(qc_canvas_1,width=20,height=1,text="DATE OF INSPECTION:", font=('arial 12'),background="white",fg="black",anchor="w") 
-                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel8"))
+                                qcc_entry_4.delete(0,END)
+                                qcc_entry_4.insert(0,qcc_sel_1[6])
 
-                        qcc_save_btn1=Button(qc_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                            else:
+                                pass
+                    
+
+                        qcc_comb_1 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data)
+                        window_qcc_comb_1 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_1,tags=('qccentry1'))
+                        qcc_comb_1.bind("<<ComboboxSelected>>",qcc_details)
+
+                        label_1 = Label(qc_canvas_1,width=10,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel4'))
+
+                        qcc_entry_2=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qcc_entry_2 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_2, tags=('qccentry2'))
+
+                        label_1 = Label(qc_canvas_1,width=10,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel5'))
+
+                        qcc_entry_3=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qcc_entry_3 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_3, tags=('qccentry3'))
+
+                        label_1 = Label(qc_canvas_1,width=13,height=1,text="Inspected By", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel9'))
+
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
+
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
+
+                        i_sql = "SELECT name FROM app1_employee where cid_id=%s"
+                        i_val = (cmp_dtl_i[0],)
+                        fbcursor.execute(i_sql,i_val)
+                        i_data = fbcursor.fetchall()
+
+                        qcc_data_1 = []   
+                        
+                        for i in i_data:
+                            qcc_data_1.append(i[0])
+
+                        qcc_comb_2 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_1)
+                        window_qcc_comb_2 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_2,tags=('qccentry7'))
+
+                        label_2 = Label(qc_canvas_1,width=18,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_2 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qcclabel7"))
+
+                        qcc_entry_4=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qcc_entry_4 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_4, tags=("qccentry5"))
+
+                        label_1 = Label(qc_canvas_1,width=13,height=1,text="Customer Name", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel8'))
+
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
+
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
+
+                        i_sql = "SELECT customername FROM app1_invoice where cid_id=%s"
+                        i_val = (cmp_dtl_i[0],)
+                        fbcursor.execute(i_sql,i_val)
+                        i_data = fbcursor.fetchall()
+
+                        qcc_data_2 = []   
+                        
+                        for i in i_data:
+                            qcc_data_2.append(i[0])
+
+                        qcc_comb_3 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_2)
+                        window_qcc_comb_3 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_3,tags=('qccentry4'))
+
+                        label_1 = Label(qc_canvas_1,width=13,height=1,text="Supplier Name", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                        window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel10'))
+
+                        sql_i="select * from auth_user where username=%s"
+                        val_i=(nm_ent.get(),)
+                        fbcursor.execute(sql_i,val_i,)
+                        p_dtl=fbcursor.fetchone()
+
+                        sql = "select * from app1_company where id_id=%s"
+                        val = (p_dtl[0],)
+                        fbcursor.execute(sql, val,)
+                        cmp_dtl_i=fbcursor.fetchone()
+                        
+
+                        sql_pr_cmp="select firstname,lastname from app1_supplier where cid_id=%s"
+                        sql_pr_cmp_val=(cmp_dtl[0],)
+                        fbcursor.execute(sql_pr_cmp,sql_pr_cmp_val,)
+                        i_data=fbcursor.fetchall()
+                        qcc_data_3 = []
+
+                        for i in i_data:
+                            qcc_data_3.append(str(i[0])+" "+str(i[1]))
+
+                    
+                        qcc_comb_4 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_3)
+                        window_qcc_comb_4 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_4,tags=('qccentry9'))
+
+                        qcc_save_btn1=Button(qc_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_qality_certificate)
                         window_qcc_save_btn1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_save_btn1,tags=('qccbutton2'))
 
                         def qcc_back_1_():
-                            qc_frame_1.grid_forget()
-                            qc_frame.grid(row=0,column=0,sticky='nsew')
+                                qc_frame_1.grid_forget()
+                                qc_frame.grid(row=0,column=0,sticky='nsew')
 
                         qcc_bck_btn1=Button(qc_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qcc_back_1_)
                         window_qcc_bck_btn1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_bck_btn1,tags=('qccbutton1'))
 
+                        qcc_dentry_2=DateEntry(qc_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                        window_qcc_dentry_2 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_dentry_2, tags=('qccdentry1'))
+
                     qc_btn1=Button(qc_canvas,text='Add', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=add_quality_certificate)
                     window_qc_btn1 = qc_canvas.create_window(0, 0, anchor="nw", window=qc_btn1, tags=("qcbutton1"))
 
+                    def edit_view_delete_quality_certificate(event):
+                        if qc_comb_1.get() == "Edit":
+                            qc_frame.grid_forget()
+                            qc_frame_1 = Frame(tab12_3)
+                            qc_frame_1.grid(row=0,column=0,sticky='nsew')
+                            def qc_responsive_widgets_1(event):
+
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+                                
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("qccpoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("qcclabel1",dwidth/2.5,dheight/8.24)
+                                dcanvas.coords("qcchline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.55
+
+
+                                dcanvas.coords("qccpoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("qccbutton1",dwidth/23,dheight/3.415)
+
+                                dcanvas.coords("qccbutton2",dwidth/2.2,dheight/0.7)
+
+                                dcanvas.coords("qcclabel2",dwidth/13.85,dheight/1.82)
+                                dcanvas.coords("qcclabel3",dwidth/1.935,dheight/1.82)
+                                dcanvas.coords("qcclabel4",dwidth/13.85,dheight/1.39)
+                                dcanvas.coords("qcclabel5",dwidth/1.93,dheight/1.39)
+                                dcanvas.coords("qcclabel7",dwidth/1.93,dheight/0.9)
+                                dcanvas.coords("qcclabel9",dwidth/13.85,dheight/0.9)
+                                dcanvas.coords("qcclabel8",dwidth/13.85,dheight/1.09)
+                                dcanvas.coords("qcclabel10",dwidth/1.93,dheight/1.09)
+
+                                dcanvas.coords("qccentry1",dwidth/1.93,dheight/1.66)
+                                dcanvas.coords("qccentry2",dwidth/13.8,dheight/1.3)
+                                dcanvas.coords("qccentry3",dwidth/1.93,dheight/1.3)
+                                dcanvas.coords("qccentry5",dwidth/1.93,dheight/0.86)
+                                dcanvas.coords("qccentry7",dwidth/13.8,dheight/0.86)
+                                dcanvas.coords("qccentry4",dwidth/13.8,dheight/1.025)
+                                dcanvas.coords("qccentry9",dwidth/1.93,dheight/1.025)
+
+                                try:
+                                    dcanvas.coords("qccdentry1",dwidth/13.8,dheight/1.66)
+                                except:
+                                    pass
+
+                                
+                            
+                            qc_canvas_1=Canvas(qc_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                            qc_frame_1.grid_columnconfigure(0,weight=1)
+                            qc_frame_1.grid_rowconfigure(0,weight=1)
+                            
+                            vertibar=Scrollbar(qc_frame_1, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=qc_canvas_1.yview)
+
+                            qc_canvas_1.bind("<Configure>", qc_responsive_widgets_1)
+                            qc_canvas_1.config(yscrollcommand=vertibar.set)
+                            qc_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            qc_edit_id_1 = qc_tree.item(qc_tree.focus())["values"][1]
+                            qc_edit_id_2 = qc_tree.item(qc_tree.focus())["values"][2]
+                            
+
+                            sql_u = 'select * from auth_user where username=%s'
+                            val_u = (nm_ent.get(),)
+                            fbcursor.execute(sql_u,val_u)
+                            u_dtl = fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (u_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+                            
+
+                            sql = 'select * from app1_qualitycertificate where dateofinspection=%s and suppliername=%s and cid_id = %s'
+                            val =  (qc_edit_id_1,qc_edit_id_2,cmp_dtl[0],)
+                            fbcursor.execute(sql,val)
+                            edit_qc = fbcursor.fetchone()
+
+                            def edit_quality_certificate():
+                                dateofinspection = qcc_dentry_2.get_date()
+                                productname = qcc_comb_1.get()
+                                sku = qcc_entry_2.get()
+                                hsn = qcc_entry_3.get()
+                                customername = qcc_comb_3.get()
+                                suppliername = qcc_comb_4.get()
+                                inspectedby = qcc_comb_2.get()
+                                inspectedqty = qcc_entry_4.get()
+
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "update app1_qualitycertificate set dateofinspection=%s,productname=%s,sku=%s,hsn=%s,customername=%s,suppliername=%s,inspectedby=%s,inspectedqty=%s,cid_id=%s where dateofinspection=%s and suppliername=%s"
+                                qi_val = (dateofinspection,productname,sku,hsn,customername,suppliername,inspectedby,inspectedqty,cid,qc_edit_id_1,qc_edit_id_2)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+                                for record in qc_tree.get_children():
+                                    qc_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                qc_sql_1 = "SELECT * FROM app1_qualitycertificate where  cid_id=%s"
+                                qc_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(qc_sql_1,qc_val_1,)
+                                qc_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in qc_data_1:
+                                    
+                                    if True:
+                                        qc_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[6],i[2]))
+                                    
+                                count0 += 1
+
+                                qc_frame_1.grid_forget()
+                                qc_frame.grid(row=0,column=0,sticky='nsew')
+
+                            qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly1"))
+
+                            label_1 = Label(qc_canvas_1,width=25,height=1,text="EDIT QUALITY CERTIFICATE", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel1"))
+
+                            qc_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qcchline"))
+
+                            qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly2"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text="Date of Inspection", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qcclabel2'))
+                            
+                            label_1 = Label(qc_canvas_1,width=13,height=1,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('qcclabel3'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT productname FROM app1_qualityinspection where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qcc_data = []   
+                            
+                            for i in i_data:
+                                qcc_data.append(i[0])
+
+                            def qcc_details(event):
+                                qcc_to_str_1 = qcc_comb_1.get()
+
+                                sql = "select * from app1_qualityinspection where productname=%s and cid_id=%s"
+                                val = (qcc_to_str_1,cmp_dtl_i[0],)
+                                fbcursor.execute(sql,val)
+                                qcc_sel_1 = fbcursor.fetchone()
+                                if qcc_sel_1 is not None:
+                                    
+                                    qcc_entry_2.delete(0,END)
+                                    qcc_entry_2.insert(0,qcc_sel_1[3])
+
+                                    qcc_entry_3.delete(0,END)
+                                    qcc_entry_3.insert(0,qcc_sel_1[4])
+
+                                    qcc_entry_4.delete(0,END)
+                                    qcc_entry_4.insert(0,qcc_sel_1[6])
+
+                                else:
+                                    pass
+                        
+
+                            qcc_comb_1 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data)
+                            window_qcc_comb_1 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_1,tags=('qccentry1'))
+                            qcc_comb_1.bind("<<ComboboxSelected>>",qcc_details)
+                            qcc_comb_1.delete(0,END)
+                            qcc_comb_1.insert(0, edit_qc[2])
+
+                            label_1 = Label(qc_canvas_1,width=10,height=1,text="SKU", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel4'))
+
+                            qcc_entry_2=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qcc_entry_2 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_2, tags=('qccentry2'))
+                            qcc_entry_2.delete(0,END)
+                            qcc_entry_2.insert(0, edit_qc[3])
+
+                            label_1 = Label(qc_canvas_1,width=10,height=1,text="HSN", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel5'))
+
+                            qcc_entry_3=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qcc_entry_3 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_3, tags=('qccentry3'))
+                            qcc_entry_3.delete(0,END)
+                            qcc_entry_3.insert(0, edit_qc[4])
+
+                            label_1 = Label(qc_canvas_1,width=13,height=1,text="Inspected By", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel9'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT name FROM app1_employee where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qcc_data_1 = []   
+                            
+                            for i in i_data:
+                                qcc_data_1.append(i[0])
+
+                            qcc_comb_2 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_1)
+                            window_qcc_comb_2 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_2,tags=('qccentry7'))
+                            qcc_comb_2.delete(0,END)
+                            qcc_comb_2.insert(0, edit_qc[7])
+
+
+                            label_2 = Label(qc_canvas_1,width=18,height=1,text="Inspected Quantity", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("qcclabel7"))
+
+                            qcc_entry_4=Entry(qc_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qcc_entry_4 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_entry_4, tags=("qccentry5"))
+                            qcc_entry_4.delete(0,END)
+                            qcc_entry_4.insert(0, edit_qc[8])
+
+
+                            label_1 = Label(qc_canvas_1,width=13,height=1,text="Customer Name", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel8'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            i_sql = "SELECT customername FROM app1_invoice where cid_id=%s"
+                            i_val = (cmp_dtl_i[0],)
+                            fbcursor.execute(i_sql,i_val)
+                            i_data = fbcursor.fetchall()
+
+                            qcc_data_2 = []   
+                            
+                            for i in i_data:
+                                qcc_data_2.append(i[0])
+
+                            qcc_comb_3 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_2)
+                            window_qcc_comb_3 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_3,tags=('qccentry4'))
+                            qcc_comb_3.delete(0,END)
+                            qcc_comb_3.insert(0, edit_qc[5])
+
+                            label_1 = Label(qc_canvas_1,width=13,height=1,text="Supplier Name", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('qcclabel10'))
+
+                            sql_i="select * from auth_user where username=%s"
+                            val_i=(nm_ent.get(),)
+                            fbcursor.execute(sql_i,val_i,)
+                            p_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (p_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl_i=fbcursor.fetchone()
+                            
+
+                            sql_pr_cmp="select firstname,lastname from app1_supplier where cid_id=%s"
+                            sql_pr_cmp_val=(cmp_dtl[0],)
+                            fbcursor.execute(sql_pr_cmp,sql_pr_cmp_val,)
+                            i_data=fbcursor.fetchall()
+                            qcc_data_3 = []
+
+                            for i in i_data:
+                                qcc_data_3.append(str(i[0])+" "+str(i[1]))
+
+                        
+                            qcc_comb_4 = ttk.Combobox(qc_canvas_1,font=('arial 10'),values=qcc_data_3)
+                            window_qcc_comb_4 = qc_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=qcc_comb_4,tags=('qccentry9'))
+                            qcc_comb_4.delete(0,END)
+                            qcc_comb_4.insert(0, edit_qc[6])
+
+                            qcc_save_btn1=Button(qc_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_quality_certificate)
+                            window_qcc_save_btn1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_save_btn1,tags=('qccbutton2'))
+
+                            def qcc_back_1_():
+                                    qc_frame_1.grid_forget()
+                                    qc_frame.grid(row=0,column=0,sticky='nsew')
+
+                            qcc_bck_btn1=Button(qc_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qcc_back_1_)
+                            window_qcc_bck_btn1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_bck_btn1,tags=('qccbutton1'))
+
+                            qcc_dentry_2=DateEntry(qc_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                            window_qcc_dentry_2 = qc_canvas_1.create_window(0, 0, anchor="nw", height=30,window=qcc_dentry_2, tags=('qccdentry1'))
+                            qcc_dentry_2.delete(0,END)
+                            qcc_dentry_2.insert(0, edit_qc[1])
+
+                        elif qc_comb_1.get() == "Delete":
+                            qc_del = messagebox.askyesno("Delete Quality Certificate","Are you sure to delete this quality certificate?")
+
+                            if qc_del == True:
+                                qc_edit_id_5 = qc_tree.item(qc_tree.focus())["values"][1]
+                                qc_edit_id_6 = qc_tree.item(qc_tree.focus())["values"][2]
+
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                u_dtl = fbcursor.fetchone()
+
+                                sql_c = 'select * from app1_company where id_id=%s'
+                                val_c = (u_dtl[0],)
+                                fbcursor.execute(sql_c,val_c)
+                                c_dtl = fbcursor.fetchone()
+
+                                sql = 'delete from app1_qualitycertificate where dateofinspection=%s and suppliername=%s and cid_id = %s'
+                                val = (qc_edit_id_5,qc_edit_id_6,c_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+                                for record in qc_tree.get_children():
+                                    qc_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                qc_sql_1 = "SELECT * FROM app1_qualitycertificate where  cid_id=%s"
+                                qc_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(qc_sql_1,qc_val_1,)
+                                qc_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in qc_data_1:
+                                    
+                                    if True:
+                                        qc_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[6],i[2]))
+                                    
+                                count0 += 1
+                            else:
+                                pass
+
+                        elif qc_comb_1.get() == "View":
+                            qc_frame.grid_forget()
+                            qc_frame_1 = Frame(tab12_3)
+                            qc_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                            def qc_responsive_widgets_1(event):
+
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+                                
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("qccpoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("qcclabel1",dwidth/2.5,dheight/8.24)
+                                dcanvas.coords("qcchline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.4
+
+
+                                dcanvas.coords("qccpoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("qccbutton1",dwidth/23,dheight/3.415)
+
+                                dcanvas.coords("qccbutton2",dwidth/2.2,dheight/0.45)
+
+                                r2 = 0
+                                x11 = dwidth/13
+                                x21 = dwidth/1.1
+                                y11 = dheight/2
+                                y21 = dheight/0.45
+
+
+                                dcanvas.coords("qccpoly3",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("qcclabel2",dwidth/2.6,dheight/1.15)
+                                dcanvas.coords("qcclabel3",dwidth/9,dheight/1.05)
+                                dcanvas.coords("qcclabel4",dwidth/9,dheight/0.94)
+                                dcanvas.coords("qcclabel5",dwidth/9,dheight/0.85)
+                                dcanvas.coords("qcclabel6",dwidth/9,dheight/0.8)
+                                dcanvas.coords("qcclabel7",dwidth/1.66,dheight/0.8)
+                                dcanvas.coords("qcclabel8",dwidth/2,dheight/0.85)
+
+                                dcanvas.coords("qcclabel9",dwidth/4.4,dheight/0.85)
+                                dcanvas.coords("qcclabel10",dwidth/4.4,dheight/0.8)
+                                dcanvas.coords("qcclabel11",dwidth/1.55,dheight/0.8)
+                                dcanvas.coords("qcclabel12",dwidth/1.55,dheight/0.85)
+
+                                dcanvas.coords("qcclabel13",dwidth/8,dheight/0.74)
+                                dcanvas.coords("qcclabel14",dwidth/4,dheight/0.74)
+                                dcanvas.coords("qcclabel15",dwidth/2.5,dheight/0.74)
+                                dcanvas.coords("qcclabel16",dwidth/1.8,dheight/0.74)
+                                dcanvas.coords("qcclabel17",dwidth/1.3,dheight/0.74)
+
+                                dcanvas.coords("qcclabel18",dwidth/8,dheight/0.69)
+                                dcanvas.coords("qcclabel19",dwidth/4,dheight/0.69)
+                                dcanvas.coords("qcclabel20",dwidth/2.5,dheight/0.69)
+                                dcanvas.coords("qcclabel21",dwidth/1.78,dheight/0.69)
+                                dcanvas.coords("qcclabel22",dwidth/1.28,dheight/0.69)
+
+                                dcanvas.coords("qcclabel23",dwidth/5,dheight/0.58)
+                                dcanvas.coords("qcclabel24",dwidth/4.9,dheight/0.56)
+                                dcanvas.coords("qcclabel25",dwidth/2,dheight/0.58)
+                                
+
+                                dcanvas.coords("qccimage1",dwidth/9,dheight/1.7)
+                            
+                            qc_canvas_1=Canvas(qc_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                            qc_frame_1.grid_columnconfigure(0,weight=1)
+                            qc_frame_1.grid_rowconfigure(0,weight=1)
+                            
+                            vertibar=Scrollbar(qc_frame_1, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=qc_canvas_1.yview)
+
+                            qc_canvas_1.bind("<Configure>", qc_responsive_widgets_1)
+                            qc_canvas_1.config(yscrollcommand=vertibar.set)
+                            qc_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            qc_edit_id_3 = qc_tree.item(qc_tree.focus())["values"][1]
+                            qc_edit_id_4 = qc_tree.item(qc_tree.focus())["values"][2]
+                            
+
+                            sql_u = 'select * from auth_user where username=%s'
+                            val_u = (nm_ent.get(),)
+                            fbcursor.execute(sql_u,val_u)
+                            u_dtl = fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (u_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+                            
+
+                            sql = 'select * from app1_qualitycertificate where dateofinspection=%s and suppliername=%s and cid_id = %s'
+                            val =  (qc_edit_id_3,qc_edit_id_4,cmp_dtl[0],)
+                            fbcursor.execute(sql,val)
+                            view_qc = fbcursor.fetchone()
+
+                            qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly1"))
+
+                            label_1 = Label(qc_canvas_1,width=25,height=1,text="QUALITY CERTIFICATE", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel1"))
+
+                            qc_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("qcchline"))
+
+                            qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("qccpoly2"))
+
+                            qc_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="white",tags=("qccpoly3"))
+
+                            qcc_image_1=Label(qc_canvas_1,  image = prof_pics,bg="#213b52",width=150,height=150,  anchor="center",font=('Calibri 14 bold'))
+                            win_qcc_image_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_image_1,tags=("qccimage1"))
+
+                            label_1 = Label(qc_canvas_1,width=30,height=1,text="CERTIFICATE OF CONFORMANCE", font=('arial 16 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel2"))
+
+                            label_1 = Label(qc_canvas_1,width=115,height=2,text="This will certify that the below identified product was built, formulated, and assembled under the rigid quality requirements of our Engineering \nspecifications for materials and processes. All direct and associated processing materials have been tested and approved.", font=('arial 12'),background="white",fg="black",anchor="w", justify= LEFT) 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel3"))
+
+                            label_1 = Label(qc_canvas_1,width=115,height=2,text="All process and testing operations have been verified as acceptable by the Quality Assurance Department in conformance with the requirements \nof our Quality Program Manual and are certified to meet all general performance specifications stated in our current published catalogs.", font=('arial 12'),background="white",fg="black",anchor="w", justify= LEFT) 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel4"))
+
+                            label_1 = Label(qc_canvas_1,width=18,height=1,text="CUSTOMER NAME:", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel5"))
+
+                            label_1 = Label(qc_canvas_1,width=18,height=1,text=view_qc[5], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel9"))
+
+                            label_1 = Label(qc_canvas_1,width=15,height=1,text="PRODUCT NAME:", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel6"))
+
+                            label_1 = Label(qc_canvas_1,width=18,height=1,text=view_qc[2], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel10"))
+
+                            label_1 = Label(qc_canvas_1,width=5,height=1,text="SKU:", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel7"))
+
+                            label_1 = Label(qc_canvas_1,width=18,height=1,text=view_qc[3], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel11"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text="DATE OF INSPECTION:", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel8"))
+
+                            label_1 = Label(qc_canvas_1,width=18,height=1,text=view_qc[1], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel12"))
+
+                            label_1 = Label(qc_canvas_1,width=6,height=1,text="SL NO.", font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel13"))
+
+                            label_1 = Label(qc_canvas_1,width=6,height=1,text="ITEM", font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel14"))
+
+                            label_1 = Label(qc_canvas_1,width=6,height=1,text="HSN", font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel15"))
+
+                            label_1 = Label(qc_canvas_1,width=15,height=1,text="SUPPLIER NAME", font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel16"))
+
+                            label_1 = Label(qc_canvas_1,width=10,height=1,text="QUANTITY", font=('arial 12 bold'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel17"))
+
+                            label_1 = Label(qc_canvas_1,width=6,height=1,text="1", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel18"))
+
+                            label_1 = Label(qc_canvas_1,width=6,height=1,text=view_qc[2], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel19"))
+
+                            label_1 = Label(qc_canvas_1,width=12,height=1,text=view_qc[4], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel20"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text=view_qc[6], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel21"))
+
+                            label_1 = Label(qc_canvas_1,width=10,height=1,text=view_qc[8], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel22"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text="INSPECTED BY", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel23"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text=view_qc[7], font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel24"))
+
+                            label_1 = Label(qc_canvas_1,width=20,height=1,text="SIGNATURE", font=('arial 12'),background="white",fg="black",anchor="w") 
+                            window_label_1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("qcclabel25"))
+
+
+                            def qcc_back_1_():
+                                qc_frame_1.grid_forget()
+                                qc_frame.grid(row=0,column=0,sticky='nsew')
+
+                            qcc_bck_btn1=Button(qc_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=qcc_back_1_)
+                            window_qcc_bck_btn1 = qc_canvas_1.create_window(0, 0, anchor="nw", window=qcc_bck_btn1,tags=('qccbutton1'))
+
                     qc_comb_1 = ttk.Combobox(qc_canvas,font=('arial 10'))
-                    qc_comb_1['values'] = ("Actions","Edit","Delete")
+                    qc_comb_1['values'] = ("Actions","Edit","View","Delete")
                     qc_comb_1.current(0)
                     window_qc_comb_1 = qc_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=qc_comb_1,tags=('qccombo1'))
-                    qc_comb_1.bind("<<ComboboxSelected>>")
+                    qc_comb_1.bind("<<ComboboxSelected>>",edit_view_delete_quality_certificate)
 
                     #-------------------------------Project Management-----------------------------#
                     tab_pmngt = ttk.Notebook(tab13)
@@ -6247,7 +9488,7 @@ def main_sign_in():
 
                     pm_tree = ttk.Treeview(pm_canvas, columns = (1,2,3,4,5,6), height = 10, show = "headings",style='mystyle120.Treeview',yscrollcommand=pm_scrollbar.set)
                     pm_tree.heading(1)
-                    pm_tree.heading(2, text="NAME")
+                    pm_tree.heading(2, text="PRODUCT NAME")
                     pm_tree.heading(3, text="DESCRIPTION")
                     pm_tree.heading(4, text="QUANTITY")
                     pm_tree.heading(5, text="START DATE")
@@ -6263,6 +9504,29 @@ def main_sign_in():
 
                     pm_scrollbar.config(command=pm_tree.yview)
                     pm_scrollbar.grid(row=0,column=2,sticky='ns')
+
+                    sql_pr="select * from auth_user where username=%s"
+                    sql_pr_val=(nm_ent.get(),)
+                    fbcursor.execute(sql_pr,sql_pr_val,)
+                    pr_dtl=fbcursor.fetchone()
+
+                    sql = "select * from app1_company where id_id=%s"
+                    val = (pr_dtl[0],)
+                    fbcursor.execute(sql, val,)
+                    cmp_dtl=fbcursor.fetchone()
+
+                    pm_sql_1 = "SELECT * FROM app1_projectmanagement where  cid_id=%s"
+                    pm_val_1 = (cmp_dtl[0],)
+                    fbcursor.execute(pm_sql_1,pm_val_1,)
+                    pm_data_1 = fbcursor.fetchall()
+
+                    count0 = 0
+                    for i in pm_data_1:
+                        
+                        if True:
+                            pm_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[3],i[2],i[4],i[5]))
+                        
+                    count0 += 1
 
                     def create_project():
                         pmngt_frame.grid_forget()
@@ -6380,6 +9644,63 @@ def main_sign_in():
                         pm_canvas_1.config(yscrollcommand=vertibar.set)
                         pm_canvas_1.grid(row=0,column=0,sticky='nsew')
 
+                        def insert_project():
+                            productname = cp_entry_1.get()
+                            quantity = cp_entry_2.get()
+                            description = cp_entry_3.get('1.0', 'end-1c')
+                            startdate = cp_entry_4.get()
+                            enddate = cp_entry_5.get()
+                            estimatecost_item = cp_entry_6.get()
+                            estimateprice_item = cp_entry_7.get()
+                            totalestimatecost = cp_entry_8.get()
+
+
+                            usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                            usrp_val = (nm_ent.get(),)
+                            fbcursor.execute(usrp_sql,usrp_val)
+                            usrp_data = fbcursor.fetchone()
+
+                            cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                            cmpp_val = (usrp_data[0],)
+                            fbcursor.execute(cmpp_sql,cmpp_val)
+                            cmpp_data = fbcursor.fetchone()
+                            cid = cmpp_data[0]
+
+                            qi_sql = "INSERT INTO app1_projectmanagement(productname,quantity,description,startdate,enddate,estimatecost_item,estimateprice_item,totalestimatecost,cid_id) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                            qi_val = (productname,quantity,description,startdate,enddate,estimatecost_item,estimateprice_item,totalestimatecost,cid)
+                            fbcursor.execute(qi_sql,qi_val)
+                            finsysdb.commit()
+                            #----------Refresh Insert Tree--------#
+
+                            for record in pm_tree.get_children():
+                                pm_tree.delete(record)
+
+                            sql_pr="select * from auth_user where username=%s"
+                            sql_pr_val=(nm_ent.get(),)
+                            fbcursor.execute(sql_pr,sql_pr_val,)
+                            pr_dtl=fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (pr_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+
+                            pm_sql_1 = "SELECT * FROM app1_projectmanagement where  cid_id=%s"
+                            pm_val_1 = (cmp_dtl[0],)
+                            fbcursor.execute(pm_sql_1,pm_val_1,)
+                            pm_data_1 = fbcursor.fetchall()
+
+                            count0 = 0
+                            for i in pm_data_1:
+                                
+                                if True:
+                                    pm_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[3],i[2],i[4],i[5]))
+                                
+                            count0 += 1
+
+                            pmngt_frame_1.destroy()
+                            pmngt_frame.grid(row=0,column=0,sticky='nsew')
+
                         pm_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cppoly1"))
 
                         label_1 = Label(pm_canvas_1,width=15,height=1,text="CREATE PROJECT", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
@@ -6392,67 +9713,24 @@ def main_sign_in():
                         label_1 = Label(pm_canvas_1,width=13,height=2,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                         window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel2'))
 
-                        sql_i="select * from auth_user where username=%s"
-                        val_i=(nm_ent.get(),)
-                        fbcursor.execute(sql_i,val_i,)
-                        p_dtl=fbcursor.fetchone()
 
-                        sql = "select * from app1_company where id_id=%s"
-                        val = (p_dtl[0],)
-                        fbcursor.execute(sql, val,)
-                        cmp_dtl_i=fbcursor.fetchone()
-                        
-
-                        i_sql = "SELECT name FROM app1_inventory where cid_id=%s"
-                        i_val = (cmp_dtl_i[0],)
-                        fbcursor.execute(i_sql,i_val)
-                        i_data = fbcursor.fetchall()
-                        
-                        # ii_sql = "SELECT name FROM app1_noninventory where cid_id=%s"
-                        # ii_val = (cmp_dtl_i[0],)
-                        # fbcursor.execute(ii_sql,ii_val)
-                        # ii_data = fbcursor.fetchall()
-
-                        cp_data = []   
-                        
-                        for i in i_data:
-                            cp_data.append(i[0])
-                        # for i in ii_data:
-                        #     cp_data.append(i[0])
-
-                        def cp_details(event):
-                            cp_to_str_1 = cp_comb_1.get()
-
-                            sql = "select * from app1_inventory where name=%s and cid_id=%s"
-                            val = (cp_to_str_1,cmp_dtl_i[0],)
-                            fbcursor.execute(sql,val)
-                            cp_sel_1 = fbcursor.fetchone()
-                            if cp_sel_1 is not None:
-                                
-                                cp_entry_2.delete(0,END)
-                                cp_entry_2.insert(0,cp_sel_1[7])
-
-                                cp_entry_3.insert(1.0,cp_sel_1[11])
-
-                            else:
-                                pass
-                    
-
-                        cp_comb_1 = ttk.Combobox(pm_canvas_1,font=('arial 10'),values=cp_data)
-                        window_cp_comb_1 = pm_canvas_1.create_window(0, 0, anchor="nw", width=535,height=30,window=cp_comb_1,tags=('cpentry1'))
-                        cp_comb_1.bind("<<ComboboxSelected>>",cp_details)
+                        cp_entry_1=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                        window_cp_entry_1 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_1, tags=('cpentry1'))
                         
                         label_1 = Label(pm_canvas_1,width=10,height=2,text="Quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
                         window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel3'))
 
                         def total_estimatecost(event):
-                            x1 = 0.0
-                            x2 = 0.0
-                            x1 = float(cp_entry_2.get())
-                            x2 = float(cp_entry_6.get())
-                            tot = x1*x2
-                            cp_entry_8.delete(0,END)
-                            cp_entry_8.insert(0,tot)
+                            try:
+                                x1 = 0.0
+                                x2 = 0.0
+                                x1 = float(cp_entry_2.get())
+                                x2 = float(cp_entry_6.get())
+                                tot = x1*x2
+                                cp_entry_8.delete(0,END)
+                                cp_entry_8.insert(0,tot)
+                            except:
+                                pass
 
                         cp_entry_2=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
                         cp_entry_2.bind("<KeyRelease>", total_estimatecost)
@@ -6492,7 +9770,7 @@ def main_sign_in():
                         window_cp_entry_8 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_8, tags=("cpentry6"))
                         
 
-                        cp_save_btn1=Button(pm_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12')
+                        cp_save_btn1=Button(pm_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=insert_project)
                         window_cp_save_btn1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=cp_save_btn1,tags=('cpbutton2'))
 
                         def cp_back_1_():
@@ -6513,11 +9791,361 @@ def main_sign_in():
                     pm_btn1=Button(pm_canvas,text='Create Project', width=20,height=2,foreground="white",background="#1b3857",font='arial 12',command=create_project)
                     window_pm_btn1 = pm_canvas.create_window(0, 0, anchor="nw", window=pm_btn1, tags=("pmbutton1"))
 
+                    def edit_delete_pm(event):
+                        if pm_comb_1.get() == "Edit":
+                            pmngt_frame.grid_forget()
+                            pmngt_frame_1 = Frame(tab13_1)
+                            pmngt_frame_1.grid(row=0,column=0,sticky='nsew')
+
+                            def pm_responsive_widgets_1(event):
+
+                                dwidth = event.width
+                                dheight = event.height
+                                dcanvas = event.widget
+                                
+                                r1 = 25
+                                x1 = dwidth/63
+                                x2 = dwidth/1.021
+                                y1 = dheight/14 
+                                y2 = dheight/3.505
+
+                                dcanvas.coords("cppoly1",x1 + r1,y1,
+                                x1 + r1,y1,
+                                x2 - r1,y1,
+                                x2 - r1,y1,     
+                                x2,y1,     
+                                #--------------------
+                                x2,y1 + r1,     
+                                x2,y1 + r1,     
+                                x2,y2 - r1,     
+                                x2,y2 - r1,     
+                                x2,y2,
+                                #--------------------
+                                x2 - r1,y2,     
+                                x2 - r1,y2,     
+                                x1 + r1,y2,
+                                x1 + r1,y2,
+                                x1,y2,
+                                #--------------------
+                                x1,y2 - r1,
+                                x1,y2 - r1,
+                                x1,y1 + r1,
+                                x1,y1 + r1,
+                                x1,y1,
+                                )
+
+                                dcanvas.coords("cplabel1",dwidth/2.5,dheight/8.24)
+                                dcanvas.coords("cphline",dwidth/21,dheight/4.67,dwidth/1.055,dheight/4.67)
+
+                                r2 = 25
+                                x11 = dwidth/63
+                                x21 = dwidth/1.021
+                                y11 = dheight/2.8
+                                y21 = dheight/0.59
+
+
+                                dcanvas.coords("cppoly2",x11 + r2,y11,
+                                x11 + r2,y11,
+                                x21 - r2,y11,
+                                x21 - r2,y11,     
+                                x21,y11,     
+                                #--------------------
+                                x21,y11 + r2,     
+                                x21,y11 + r2,     
+                                x21,y21 - r2,     
+                                x21,y21 - r2,     
+                                x21,y21,
+                                #--------------------
+                                x21 - r2,y21,     
+                                x21 - r2,y21,     
+                                x11 + r2,y21,
+                                x11 + r2,y21,
+                                x11,y21,
+                                #--------------------
+                                x11,y21 - r2,
+                                x11,y21 - r2,
+                                x11,y11 + r2,
+                                x11,y11 + r2,
+                                x11,y11,
+                                )
+
+                                dcanvas.coords("cpbutton1",dwidth/23,dheight/3.415)
+
+                                dcanvas.coords("cplabel2",dwidth/13.85,dheight/1.85)
+                                dcanvas.coords("cplabel3",dwidth/1.935,dheight/1.85)
+                                dcanvas.coords("cplabel4",dwidth/13.85,dheight/1.39)
+                                dcanvas.coords("cplabel5",dwidth/13.85,dheight/1.09)
+                                dcanvas.coords("cplabel6",dwidth/1.935,dheight/1.09)
+                                dcanvas.coords("cplabel7",dwidth/13.85,dheight/0.9)
+                                dcanvas.coords("cplabel8",dwidth/2.7,dheight/0.9)
+                                dcanvas.coords("cplabel9",dwidth/1.5,dheight/0.9)
+
+                                dcanvas.coords("cpentry1",dwidth/13.8,dheight/1.665)
+                                dcanvas.coords("cpentry2",dwidth/1.93,dheight/1.665)
+                                dcanvas.coords("cpentry3",dwidth/13.8,dheight/1.3)
+                                dcanvas.coords("cpentry4",dwidth/13.8,dheight/0.86)
+                                dcanvas.coords("cpentry5",dwidth/2.7,dheight/0.86)
+                                dcanvas.coords("cpentry6",dwidth/1.5,dheight/0.86)
+
+                                dcanvas.coords("cpbutton2",dwidth/2,dheight/0.73)
+
+                                try:
+                                    dcanvas.coords("cpdentry1",dwidth/13.8,dheight/1.02)
+                                    dcanvas.coords("cpdentry2",dwidth/1.93,dheight/1.02)
+                                except:
+                                    pass
+
+                            pm_canvas_1=Canvas(pmngt_frame_1, bg='#2f516f', width=953, height=600, scrollregion=(0,0,700,1600))
+
+                            pmngt_frame_1.grid_columnconfigure(0,weight=1)
+                            pmngt_frame_1.grid_rowconfigure(0,weight=1)
+                            
+                            vertibar=Scrollbar(pmngt_frame_1, orient=VERTICAL)
+                            vertibar.grid(row=0,column=1,sticky='ns')
+                            vertibar.config(command=pm_canvas_1.yview)
+
+                            pm_canvas_1.bind("<Configure>", pm_responsive_widgets_1)
+                            pm_canvas_1.config(yscrollcommand=vertibar.set)
+                            pm_canvas_1.grid(row=0,column=0,sticky='nsew')
+
+                            pm_editid = pm_tree.item(pm_tree.focus())["values"][1]
+                            print(pm_editid)
+                            pm_editid_1 = pm_tree.item(pm_tree.focus())["values"][4]
+                            print(pm_editid_1)
+                            
+                            sql_u = 'select * from auth_user where username=%s'
+                            val_u = (nm_ent.get(),)
+                            fbcursor.execute(sql_u,val_u)
+                            pr_dtl = fbcursor.fetchone()
+
+                            sql = "select * from app1_company where id_id=%s"
+                            val = (pr_dtl[0],)
+                            fbcursor.execute(sql, val,)
+                            cmp_dtl=fbcursor.fetchone()
+                            print(cmp_dtl)
+
+                            sql = 'select * from app1_projectmanagement where productname=%s  and startdate=%s and cid_id = %s'
+                            val =  (pm_editid,pm_editid_1,cmp_dtl[0],)
+                            fbcursor.execute(sql,val)
+                            edit_pm = fbcursor.fetchone()
+
+
+                            def edit_project():
+                                productname = cp_entry_1.get()
+                                quantity = cp_entry_2.get()
+                                description = cp_entry_3.get('1.0', 'end-1c')
+                                startdate = cp_entry_4.get()
+                                enddate = cp_entry_5.get()
+                                estimatecost_item = cp_entry_6.get()
+                                estimateprice_item = cp_entry_7.get()
+                                totalestimatecost = cp_entry_8.get()
+
+
+                                usrp_sql = "SELECT id FROM auth_user WHERE username=%s"
+                                usrp_val = (nm_ent.get(),)
+                                fbcursor.execute(usrp_sql,usrp_val)
+                                usrp_data = fbcursor.fetchone()
+
+                                cmpp_sql = "SELECT cid FROM app1_company WHERE id_id=%s"
+                                cmpp_val = (usrp_data[0],)
+                                fbcursor.execute(cmpp_sql,cmpp_val)
+                                cmpp_data = fbcursor.fetchone()
+                                cid = cmpp_data[0]
+
+                                qi_sql = "update app1_projectmanagement set productname=%s,quantity=%s,description=%s,startdate=%s,enddate=%s,estimatecost_item=%s,estimateprice_item=%s,totalestimatecost=%s,cid_id=%s where productname=%s  and startdate=%s"
+                                qi_val = (productname,quantity,description,startdate,enddate,estimatecost_item,estimateprice_item,totalestimatecost,cid,pm_editid,pm_editid_1)
+                                fbcursor.execute(qi_sql,qi_val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in pm_tree.get_children():
+                                    pm_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                pm_sql_1 = "SELECT * FROM app1_projectmanagement where  cid_id=%s"
+                                pm_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(pm_sql_1,pm_val_1,)
+                                pm_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in pm_data_1:
+                                    
+                                    if True:
+                                        pm_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[3],i[2],i[4],i[5]))
+                                    
+                                count0 += 1
+
+                                pmngt_frame_1.destroy()
+                                pmngt_frame.grid(row=0,column=0,sticky='nsew')
+
+                            pm_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cppoly1"))
+
+                            label_1 = Label(pm_canvas_1,width=15,height=1,text="EDIT PROJECT", font=('arial 20'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=("cplabel1"))
+
+                            pm_canvas_1.create_line(0, 0, 0, 0, fill='gray',width=1, tags=("cphline"))
+
+                            pm_canvas_1.create_polygon(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,smooth=True,fill="#1b3857",tags=("cppoly2"))
+
+                            label_1 = Label(pm_canvas_1,width=13,height=2,text="Product Name", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel2'))
+
+
+
+                            cp_entry_1=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            window_cp_entry_1 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_1, tags=('cpentry1'))
+                            
+                            label_1 = Label(pm_canvas_1,width=10,height=2,text="Quantity", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel3'))
+
+                            def total_estimatecost(event):
+                                try:
+                                    x1 = 0.0
+                                    x2 = 0.0
+                                    x1 = float(cp_entry_2.get())
+                                    x2 = float(cp_entry_6.get())
+                                    tot = x1*x2
+                                    cp_entry_8.delete(0,END)
+                                    cp_entry_8.insert(0,tot)
+                                except:
+                                    pass
+
+                            cp_entry_2=Entry(pm_canvas_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            cp_entry_2.bind("<KeyRelease>", total_estimatecost)
+                            window_cp_entry_2 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_2, tags=('cpentry2'))
+                            cp_entry_2.delete(0,END)
+                            cp_entry_2.insert(0, edit_pm[2])
+
+                            label_1 = Label(pm_canvas_1,width=10,height=1,text="Description", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1,tags=('cplabel4'))
+
+                            cp_entry_3=scrolledtext.ScrolledText(pm_canvas_1,width=140,background='#2f516f',foreground="white")
+                            window_cp_entry_3 = pm_canvas_1.create_window(0, 0, anchor="nw", height=60,window=cp_entry_3,tags=('cpentry3'))
+                            cp_entry_3.insert(1.0, edit_pm[3])
+
+                            label_1 = Label(pm_canvas_1,width=13,height=2,text="Start Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel5'))
+                            
+                            label_1 = Label(pm_canvas_1,width=10,height=2,text="End Date", font=('arial 12'),background="#1b3857",fg="white", anchor="w") 
+                            window_label_1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_1, tags=('cplabel6'))
+
+                            label_2 = Label(pm_canvas_1,width=18,height=1,text="Etimate Cost/Item", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel7"))
+
+                            cp_entry_6=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            cp_entry_6.bind("<KeyRelease>", total_estimatecost)
+                            window_cp_entry_6 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_6, tags=("cpentry4"))
+                            cp_entry_6.delete(0,END)
+                            cp_entry_6.insert(0, edit_pm[6])
+
+
+                            label_2 = Label(pm_canvas_1,width=20,height=1,text="Etimate Price/Item", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel8"))
+
+                            cp_entry_7=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            window_cp_entry_7 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_7, tags=("cpentry5"))
+                            cp_entry_7.delete(0,END)
+                            cp_entry_7.insert(0, edit_pm[7])
+
+                            label_2 = Label(pm_canvas_1,width=20,height=1,text="Total Estimate Cost", font=('arial 12'),background="#1b3857",fg="white",anchor="w") 
+                            window_label_2 = pm_canvas_1.create_window(0, 0, anchor="nw", window=label_2, tags=("cplabel9"))
+
+
+                            cp_entry_8=Entry(pm_canvas_1,width=57,justify=LEFT,background='#2f516f',foreground="white")
+                            cp_entry_8.bind("<KeyRelease>", total_estimatecost)
+                            window_cp_entry_8 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_8, tags=("cpentry6"))
+                            cp_entry_8.delete(0,END)
+                            cp_entry_8.insert(0, edit_pm[8])
+                            
+
+                            cp_save_btn1=Button(pm_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=edit_project)
+                            window_cp_save_btn1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=cp_save_btn1,tags=('cpbutton2'))
+
+                            def cp_back_1_():
+                                pmngt_frame_1.grid_forget()
+                                pmngt_frame.grid(row=0,column=0,sticky='nsew')
+
+                            cp_bck_btn1=Button(pm_canvas_1,text='← Back', bd=0, foreground="white",background="#2f516f",font='arial 10 bold',activebackground="#1b3857",command=cp_back_1_)
+                            window_cp_bck_btn1 = pm_canvas_1.create_window(0, 0, anchor="nw", window=cp_bck_btn1,tags=('cpbutton1'))
+
+                            cp_entry_4=DateEntry(pm_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                            window_cp_entry_4 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_4, tags=('cpdentry1'))
+                            cp_entry_4.delete(0,END)
+                            cp_entry_4.insert(0, edit_pm[4])
+                            
+                            cp_entry_5=DateEntry(pm_canvas_1,width=87,justify=LEFT,background='#2f516f',foreground="white")
+                            window_cp_entry_5 = pm_canvas_1.create_window(0, 0, anchor="nw", height=30,window=cp_entry_5, tags=('cpdentry2'))
+                            cp_entry_5.delete(0,END)
+                            cp_entry_5.insert(0, edit_pm[5])
+
+                        elif pm_comb_1.get() == "Delete":
+                            pm_del = messagebox.askyesno("Delete Project","Are you sure to delete this project?")
+
+                            if pm_del == True:
+                                pm_editid_2 = pm_tree.item(pm_tree.focus())["values"][1]
+                                print(pm_editid_2)
+                                pm_editid_3 = pm_tree.item(pm_tree.focus())["values"][4]
+                                print(pm_editid_3)
+
+                                sql_u = 'select * from auth_user where username=%s'
+                                val_u = (nm_ent.get(),)
+                                fbcursor.execute(sql_u,val_u)
+                                u_dtl = fbcursor.fetchone()
+
+                                sql_c = 'select * from app1_company where id_id=%s'
+                                val_c = (u_dtl[0],)
+                                fbcursor.execute(sql_c,val_c)
+                                c_dtl = fbcursor.fetchone()
+
+                                sql = 'delete from app1_projectmanagement where productname=%s  and startdate=%s and cid_id = %s'
+                                val = (pm_editid_2,pm_editid_3,c_dtl[0],)
+                                fbcursor.execute(sql,val)
+                                finsysdb.commit()
+                                #----------Refresh Insert Tree--------#
+
+                                for record in pm_tree.get_children():
+                                    pm_tree.delete(record)
+
+                                sql_pr="select * from auth_user where username=%s"
+                                sql_pr_val=(nm_ent.get(),)
+                                fbcursor.execute(sql_pr,sql_pr_val,)
+                                pr_dtl=fbcursor.fetchone()
+
+                                sql = "select * from app1_company where id_id=%s"
+                                val = (pr_dtl[0],)
+                                fbcursor.execute(sql, val,)
+                                cmp_dtl=fbcursor.fetchone()
+
+                                pm_sql_1 = "SELECT * FROM app1_projectmanagement where  cid_id=%s"
+                                pm_val_1 = (cmp_dtl[0],)
+                                fbcursor.execute(pm_sql_1,pm_val_1,)
+                                pm_data_1 = fbcursor.fetchall()
+
+                                count0 = 0
+                                for i in pm_data_1:
+                                    
+                                    if True:
+                                        pm_tree.insert(parent='',index='end',iid=i,text='',values=('',i[1],i[3],i[2],i[4],i[5]))
+                                    
+                                count0 += 1
+
+                            else:
+                                pass
+
                     pm_comb_1 = ttk.Combobox(pm_canvas,font=('arial 10'))
                     pm_comb_1['values'] = ("Actions","Edit","Delete")
                     pm_comb_1.current(0)
                     window_pm_comb_1 = pm_canvas.create_window(0, 0, anchor="nw", width=110,height=30,window=pm_comb_1,tags=('pmcombo1'))
-                    pm_comb_1.bind("<<ComboboxSelected>>")
+                    pm_comb_1.bind("<<ComboboxSelected>>",edit_delete_pm)
 
                 
                     #3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333{Dash Board}
@@ -7758,13 +11386,11 @@ def main_sign_in():
                             total = ai_entry_p_1_5.get()
                             tax = ai_comb_p_1_2.get()
 
-
                             if bsub_entry_1.get() == "0":
                                 subtotal = sub_entry_1.get()
-                                print("hai")
+                                
                             else:
-                                subtotal = bsub_entry_1.get()
-                                print("hello")
+                                subtotal = bsub_entry_1.get()                               
 
                             print(subtotal)
 
@@ -7772,7 +11398,6 @@ def main_sign_in():
                                 grandtotal = grand_entry_1.get()
                             else:
                                 grandtotal = bgrand_entry_1.get()
-
 
                             product2 = ai_comb_p_2.get()
                             hsn2 = ai_entry_p_2.get()
@@ -7795,15 +11420,15 @@ def main_sign_in():
                             price4 = ai_entry_4_3.get()
                             total4 = ai_entry_4_4.get()
                             tax4 = ai_comb_P_4_2.get()
-                            if amount_entry_1 is not None:
+                            if bamount_entry_1.get() == "0":
                                 amtrecvd = amount_entry_1.get()
                             else:
                                 amtrecvd = bamount_entry_1.get()
-                            if tax_entry_1 is not None:
+                            if btax_entry_1.get() == "0":
                                 taxamount = tax_entry_1.get()
                             else:
                                 taxamount = btax_entry_1.get()
-                            if bal_entry_1 is not None:
+                            if bbal_entry_1.get() == "0":
                                 baldue = bal_entry_1.get()
                             else:
                                 baldue = bbal_entry_1.get()
@@ -11708,27 +15333,26 @@ def main_sign_in():
                         bsub_entry_1.insert(0,0)
                         print(bsub_entry_1.get())
                         window_bsub_entry_1 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bsub_entry_1,tags=('bient29'),state=HIDDEN)
-                        #print("Coordinates of the object are:", inv_canvas_1.state(window_bsub_entry_1))
-                        #print(bsub_entry_1["state"])
-                        if bsub_entry_1.get() == "0":
-                            print('welcome')
-                        else:
-                            print('hai')
+                        
                         
                         btax_str=StringVar()
                         btax_entry_1=Entry(inv_canvas_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=btax_str)
+                        btax_entry_1.insert(0,0)
                         window_btax_entry_1 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=btax_entry_1,tags=('bient30'),state=HIDDEN)
 
                         bgrd_str=StringVar()
                         bgrand_entry_1=Entry(inv_canvas_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=bgrd_str)
+                        bgrand_entry_1.insert(0,0)
                         window_bgrand_entry_1 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bgrand_entry_1,tags=('bient31'),state=HIDDEN)
 
                         
                         bamount_entry_1=Entry(inv_canvas_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                        bamount_entry_1.insert(0,0)
                         window_bamount_entry_1 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bamount_entry_1,tags=('bient32'),state=HIDDEN)
 
                         bbal_str=StringVar()
                         bbal_entry_1=Entry(inv_canvas_1,width=30,justify=LEFT, background='#2f516f',foreground="white",textvariable=bbal_str)
+                        bbal_entry_1.insert(0,0)
                         window_bbal_entry_1 = inv_canvas_1.create_window(0, 0, anchor="nw", height=30, window=bbal_entry_1,tags=('bient33'),state=HIDDEN)
 
                         bai_save_btn1=Button(inv_canvas_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=sales_add_new_inv)
@@ -12103,13 +15727,16 @@ def main_sign_in():
                                 price = eai_entry_p_1_4.get()
                                 total = eai_entry_p_1_5.get()
                                 tax = eai_comb_p_1_2.get()
+
                                 if ebsub_entry_1.get() == "0":
-                                    subtotal=ebsub_entry_1.get()
-                                    print("hai")
+                                    subtotal=ebsub_entry_1.get()  
                                 else:
                                     subtotal = esub_entry_1.get()
-                                    print("welcome")
-                                grandtotal = egrand_entry_1.get()
+                                if ebgrand_entry_1.get() == "0":    
+                                    grandtotal = egrand_entry_1.get()
+                                else:
+                                    grandtotal = ebgrand_entry_1.get()
+
                                 product2 = eai_comb_P_2.get()
                                 hsn2 = eai_entry_p_2.get()
                                 description2 = eai_entry_p_2_1.get('1.0', 'end-1c')
@@ -12131,9 +15758,19 @@ def main_sign_in():
                                 price4 = eai_entry_4_3.get()
                                 total4 = eai_entry_4_4.get()
                                 tax4 = eai_comb_P_4_2.get()
-                                amtrecvd = eamount_entry_1.get()
-                                taxamount = etax_entry_1.get()
-                                baldue = ebal_entry_1.get()
+
+                                if ebamount_entry_1.get() == "0":    
+                                    amtrecvd = eamount_entry_1.get()
+                                else:
+                                    amtrecvd = ebamount_entry_1.get()
+                                if ebtax_entry_1.get() == "0":    
+                                    taxamount = etax_entry_1.get()
+                                else:
+                                    taxamount = ebtax_entry_1.get()
+                                if ebbal_entry_1.get() == "0":  
+                                    baldue = ebal_entry_1.get()
+                                else:
+                                    baldue = ebbal_entry_1.get()
 
 
                                 usr_sql = "SELECT id FROM auth_user WHERE username=%s"
@@ -15589,18 +19226,22 @@ def main_sign_in():
                             
                             ebtax_str=StringVar()
                             ebtax_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=ebtax_str)
+                            ebtax_entry_1.insert(0,0)
                             window_ebtax_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebtax_entry_1,tags=('bient30'),state=HIDDEN)
 
                             ebgrd_str=StringVar()
                             ebgrand_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white",textvariable=ebgrd_str)
+                            ebgrand_entry_1.insert(0,0)
                             window_ebgrand_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebgrand_entry_1,tags=('bient31'),state=HIDDEN)
 
                             
                             ebamount_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT,background='#2f516f',foreground="white")
+                            ebamount_entry_1.insert(0,0)
                             window_ebamount_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebamount_entry_1,tags=('bient32'),state=HIDDEN)
 
                             ebbal_str=StringVar()
                             ebbal_entry_1=Entry(inv_canvas_edit_1,width=30,justify=LEFT, background='#2f516f',foreground="white",textvariable=ebbal_str)
+                            ebbal_entry_1.insert(0,0)
                             window_ebbal_entry_1 = inv_canvas_edit_1.create_window(0, 0, anchor="nw", height=30, window=ebbal_entry_1,tags=('bient33'),state=HIDDEN)
 
                             ebai_save_btn1=Button(inv_canvas_edit_1,text='Save', width=15,height=2,foreground="white",background="#1b3857",font='arial 12',command=sales_edit_new_inv)
@@ -18158,17 +21799,59 @@ def main_sign_in():
                                     entry_inv_item_2.delete(0,END)
                                 else:
                                     pass
+
+                            def sku_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_inv_item_2.config(fg="white")
+                                return True
+
+                            def on_sku_validate_1():
+                                entry_inv_item_2.config(fg="red")
                             
                             entry_inv_item_2=Entry(p_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            skuvl = (p_canvas_2.register(sku_validate_1), '%P')
+                            skuivl = (p_canvas_2.register(on_sku_validate_1),)
+                            entry_inv_item_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                             window_entry_entry_inv_item_2 = p_canvas_2.create_window(0, 0, anchor="nw", height=30,window=entry_inv_item_2, tags=('ipentry2'))
                             entry_inv_item_2.insert(0,"N41554")
                             entry_inv_item_2.bind("<Button-1>",p_sku_1)
+
+                            def hsn_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[0-9]{8}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_inv_item_h2.config(fg="white")
+                                return True
+
+                            def on_hsn_validate_1():
+                                entry_inv_item_h2.config(fg="red")
 
 
                             label_1 = Label(p_canvas_2,width=9,height=1,text="HSN Code", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = p_canvas_2.create_window(0, 0, anchor="nw", window=label_1, tags=('iplabel5'))
 
                             entry_inv_item_h2=Entry(p_canvas_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            hsnvl = (p_canvas_2.register(hsn_validate_1), '%P')
+                            hsnivl = (p_canvas_2.register(on_hsn_validate_1),)
+                            entry_inv_item_h2.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                             window_entry_entry_inv_item_h2 = p_canvas_2.create_window(0, 0, anchor="nw", height=30,window=entry_inv_item_h2, tags=('ipentry3'))
 
                             #Define a callback function
@@ -20173,8 +23856,29 @@ def main_sign_in():
                                     entry_non_iitem_2.delete(0,END)
                                 else:
                                     pass
+                            
+                            def sku_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_non_iitem_2.config(fg="white")
+                                return True
+
+                            def on_sku_validate_1():
+                                entry_non_iitem_2.config(fg="red")
 
                             entry_non_iitem_2=Entry(p_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            skuvl = (p_canvas_3.register(sku_validate_1), '%P')
+                            skuivl = (p_canvas_3.register(on_sku_validate_1),)
+                            entry_non_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                             window_entry_non_iitem_2 = p_canvas_3.create_window(0, 0, anchor="nw", height=30,window=entry_non_iitem_2, tags=('npentry2'))
                             entry_non_iitem_2.insert(0,"N41554")
                             entry_non_iitem_2.bind("<Button-1>",ps_2)
@@ -20182,7 +23886,28 @@ def main_sign_in():
                             label_1 = Label(p_canvas_3,width=9,height=1,text="HSN Code", font=('arial 12'),background="#1b3857",fg="white") 
                             window_label_1 = p_canvas_3.create_window(0, 0, anchor="nw", window=label_1, tags=('nplabel5'))
 
+                            def hsn_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[0-9]{8}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_non_item_2.config(fg="white")
+                                return True
+
+                            def on_hsn_validate_1():
+                                entry_non_item_2.config(fg="red")
+
                             entry_non_item_2=Entry(p_canvas_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            hsnvl = (p_canvas_3.register(hsn_validate_1), '%P')
+                            hsnivl = (p_canvas_3.register(on_hsn_validate_1),)
+                            entry_non_item_2.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                             window_entry_non_item_2 = p_canvas_3.create_window(0, 0, anchor="nw", height=30,window=entry_non_item_2, tags=('npentry3'))
 
                             #Define a callback function
@@ -22048,7 +25773,28 @@ def main_sign_in():
                                 else:
                                     pass
 
+                            def sku_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_ser_iitem_2.config(fg="white")
+                                return True
+
+                            def on_sku_validate_1():
+                                entry_ser_iitem_2.config(fg="red")
+
                             entry_ser_iitem_2=Entry(p_canvas_4,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            skuvl = (p_canvas_4.register(sku_validate_1), '%P')
+                            skuivl = (p_canvas_4.register(on_sku_validate_1),)
+                            entry_ser_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                             window_entry_ser_iitem_2 = p_canvas_4.create_window(0, 0, anchor="nw", height=30,window=entry_ser_iitem_2, tags=('spentry2'))
                             entry_ser_iitem_2.insert(0,"N41554")
                             entry_ser_iitem_2.bind("<Button-1>",ps_3)
@@ -22061,7 +25807,27 @@ def main_sign_in():
                                     entry_ser_item_2.delete(0,END)
                                 else:
                                     pass
+                            def sac_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[0-9]{6}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_ser_item_2.config(fg="white")
+                                return True
+
+                            def on_sac_validate_1():
+                                entry_ser_item_2.config(fg="red")
                             entry_ser_item_2=Entry(p_canvas_4,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            hsnvl = (p_canvas_4.register(sac_validate_1), '%P')
+                            hsnivl = (p_canvas_4.register(on_sac_validate_1),)
+                            entry_ser_item_2.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                             window_entry_ser_item_2 = p_canvas_4.create_window(710, 630, anchor="nw", height=30,window=entry_ser_item_2, tags=('spentry3'))
                             entry_ser_item_2.insert(0,"Eg: 998841-Coke and refined petroleum product manufacturing services")
                             entry_ser_item_2.bind("<Button-1>",p_sac_1)
@@ -24305,8 +28071,28 @@ def main_sign_in():
                                     entry_bun_iitem_2.delete(0,END)
                                 else:
                                     pass
+                            def sku_validate_1(value):
+        
+                                """
+                                Validat the email entry
+                                :param value:
+                                :return:
+                                """
+                                pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                if re.fullmatch(pattern, value) is None:
+                                    
+                                    return False
+
+                                entry_bun_iitem_2.config(fg="white")
+                                return True
+
+                            def on_sku_validate_1():
+                                entry_bun_iitem_2.config(fg="red")
 
                             entry_bun_iitem_2=Entry(p_canvas_5,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                            skuvl = (p_canvas_5.register(sku_validate_1), '%P')
+                            skuivl = (p_canvas_5.register(on_sku_validate_1),)
+                            entry_bun_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                             window_entry_bun_iitem_2 = p_canvas_5.create_window(0, 0, anchor="nw", height=30,window=entry_bun_iitem_2, tags=('bpentry2'))
                             entry_bun_iitem_2.insert(0,"N41554")
                             entry_bun_iitem_2.bind("<Button-1>",ps_4)
@@ -25031,8 +28817,29 @@ def main_sign_in():
                                         edit_inv_pitem_2.delete(0,END)
                                     else:
                                         pass
+                                def sku_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_inv_pitem_2.config(fg="white")
+                                    return True
+
+                                def on_sku_validate_1():
+                                    edit_inv_pitem_2.config(fg="red")
+                            
                                 
                                 edit_inv_pitem_2=Entry(p_canvas_edit_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                skuvl = (p_canvas_edit_1.register(sku_validate_1), '%P')
+                                skuivl = (p_canvas_edit_1.register(on_sku_validate_1),)
+                                edit_inv_pitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                                 window_edit_inv_pitem_2 = p_canvas_edit_1.create_window(0, 0, anchor="nw", height=30,window=edit_inv_pitem_2, tags=('iepentry2'))
                                 # edit_inv_pitem_2.insert(0,"N41554")
                                 edit_inv_pitem_2.bind("<Button-1>",pei_sku_1)
@@ -25043,7 +28850,28 @@ def main_sign_in():
                                 label_1 = Label(p_canvas_edit_1,width=9,height=1,text="HSN Code", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = p_canvas_edit_1.create_window(0, 0, anchor="nw", window=label_1, tags=('ieplabel5'))
 
+                                def hsn_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[0-9]{8}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_inv_pitem_h1.config(fg="white")
+                                    return True
+
+                                def on_hsn_validate_1():
+                                    edit_inv_pitem_h1.config(fg="red")
+
                                 edit_inv_pitem_h1=Entry(p_canvas_edit_1,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                hsnvl = (p_canvas_edit_1.register(hsn_validate_1), '%P')
+                                hsnivl = (p_canvas_edit_1.register(on_hsn_validate_1),)
+                                edit_inv_pitem_h1.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                                 window_edit_inv_pitem_h1 = p_canvas_edit_1.create_window(0, 0, anchor="nw", height=30,window=edit_inv_pitem_h1, tags=('iepentry3'))
                                 edit_inv_pitem_h1.delete(0,'end')
                                 edit_inv_pitem_h1.insert(0, edit_pinv[4])
@@ -26249,8 +30077,29 @@ def main_sign_in():
                                         edit_non_iitem_2.delete(0,END)
                                     else:
                                         pass
+                                def sku_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_non_iitem_2.config(fg="white")
+                                    return True
+
+                                def on_sku_validate_1():
+                                    edit_non_iitem_2.config(fg="red")
+                            
 
                                 edit_non_iitem_2=Entry(p_canvas_edit_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                skuvl = (p_canvas_edit_2.register(sku_validate_1), '%P')
+                                skuivl = (p_canvas_edit_2.register(on_sku_validate_1),)
+                                edit_non_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                                 window_edit_non_iitem_2 = p_canvas_edit_2.create_window(0, 0, anchor="nw", height=30,window=edit_non_iitem_2, tags=('nepentry2'))
                                 edit_non_iitem_2.insert(0,"N41554")
                                 edit_non_iitem_2.bind("<Button-1>",pns_2)
@@ -26260,7 +30109,28 @@ def main_sign_in():
                                 label_1 = Label(p_canvas_edit_2,width=9,height=1,text="HSN Code", font=('arial 12'),background="#1b3857",fg="white") 
                                 window_label_1 = p_canvas_edit_2.create_window(0, 0, anchor="nw", window=label_1, tags=('neplabel5'))
 
+                                def hsn_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[0-9]{8}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_non_item_2.config(fg="white")
+                                    return True
+
+                                def on_hsn_validate_1():
+                                    edit_non_item_2.config(fg="red")
+
                                 edit_non_item_2=Entry(p_canvas_edit_2,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                hsnvl = (p_canvas_edit_2.register(hsn_validate_1), '%P')
+                                hsnivl = (p_canvas_edit_2.register(on_hsn_validate_1),)
+                                edit_non_item_2.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                                 window_edit_non_item_2 = p_canvas_edit_2.create_window(0, 0, anchor="nw", height=30,window=edit_non_item_2, tags=('nepentry3'))
                                 edit_non_item_2.delete(0,'end')
                                 edit_non_item_2.insert(0, edit_pnon[4])
@@ -28227,8 +32097,28 @@ def main_sign_in():
                                         edit_ser_iitem_2.delete(0,END)
                                     else:
                                         pass
+                                def sku_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_ser_iitem_2.config(fg="white")
+                                    return True
+
+                                def on_sku_validate_1():
+                                    edit_ser_iitem_2.config(fg="red")
 
                                 edit_ser_iitem_2=Entry(p_canvas_edit_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                skuvl = (p_canvas_edit_3.register(sku_validate_1), '%P')
+                                skuivl = (p_canvas_edit_3.register(on_sku_validate_1),)
+                                edit_ser_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                                 window_edit_ser_iitem_2 = p_canvas_edit_3.create_window(0, 0, anchor="nw", height=30,window=edit_ser_iitem_2, tags=('sepentry2'))
                                 edit_ser_iitem_2.insert(0,"N41554")
                                 edit_ser_iitem_2.bind("<Button-1>",pse_3)
@@ -28243,7 +32133,27 @@ def main_sign_in():
                                         edit_ser_item_2.delete(0,END)
                                     else:
                                         pass
+                                def sac_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[0-9]{6}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    edit_ser_item_2.config(fg="white")
+                                    return True
+
+                                def on_sac_validate_1():
+                                    edit_ser_item_2.config(fg="red")
                                 edit_ser_item_2=Entry(p_canvas_edit_3,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                hsnvl = (p_canvas_edit_3.register(sac_validate_1), '%P')
+                                hsnivl = (p_canvas_edit_3.register(on_sac_validate_1),)
+                                edit_ser_item_2.config(validate='focusout', validatecommand=hsnvl, invalidcommand=hsnivl)
                                 window_edit_ser_item_2 = p_canvas_edit_3.create_window(710, 630, anchor="nw", height=30,window=edit_ser_item_2, tags=('sepentry3'))
                                 edit_ser_item_2.insert(0,"Eg: 998841-Coke and refined petroleum product manufacturing services")
                                 edit_ser_item_2.bind("<Button-1>",p_sac_e1)
@@ -30278,8 +34188,29 @@ def main_sign_in():
                                         entry_ebun_iitem_2.delete(0,END)
                                     else:
                                         pass
+                                
+                                def sku_validate_1(value):
+        
+                                    """
+                                    Validat the email entry
+                                    :param value:
+                                    :return:
+                                    """
+                                    pattern = r'\b[A-Z]{1}[0-9]{5}\b'
+                                    if re.fullmatch(pattern, value) is None:
+                                        
+                                        return False
+
+                                    entry_ebun_iitem_2.config(fg="white")
+                                    return True
+
+                                def on_sku_validate_1():
+                                    entry_ebun_iitem_2.config(fg="red")
 
                                 entry_ebun_iitem_2=Entry(pro_canvas_edit_4,width=90,justify=LEFT,background='#2f516f',foreground="white")
+                                skuvl = (pro_canvas_edit_4.register(sku_validate_1), '%P')
+                                skuivl = (pro_canvas_edit_4.register(on_sku_validate_1),)
+                                entry_ebun_iitem_2.config(validate='focusout', validatecommand=skuvl, invalidcommand=skuivl)
                                 window_entry_ebun_iitem_2 = pro_canvas_edit_4.create_window(0, 0, anchor="nw", height=30,window=entry_ebun_iitem_2, tags=('bepentry2'))
                                 entry_ebun_iitem_2.delete(0,'end')
                                 entry_ebun_iitem_2.insert(0, edit_pbun[3])
@@ -38617,7 +42548,7 @@ def cmpny_crt1():
                             
                             return False
 
-                        cmp_email.config(fg="black")
+                        cmp_email.config(fg="white")
                         return True
 
                 def on_invalidb211():
